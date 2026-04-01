@@ -1,0 +1,128 @@
+---
+import { Image } from 'astro:assets';
+import Layout from "../../layouts/Layout.astro"
+import mindfulness from '../../assets/img.png'
+import meditatie from '../../assets/img.png'
+import moed from '../../assets/img.png'
+import reconstructive from '../../assets/img.png'
+
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<Layout>
+	<section class="s1 text-align-center back-gray text-gray">
+		<h1 class="text-red" set:html={t('aanbod.s1.title')} />
+		<p set:html={t('aanbod.s1.text')} />
+	</section>
+	<section class="s2 text-align-center back-red">
+		<p>{t('aanbod.s2.text1')}</p>
+		<p>{t('aanbod.s2.text2')}</p>
+		<p>{t('aanbod.s2.text3')}</p>
+		<p>{t('aanbod.s2.text4')}</p>
+	</section>
+	<section class="s3 text-align-center back-white text-red">
+		<p class="p2" set:html={t('aanbod.s3.text')} />
+	</section>
+	<section class="s4 back-gray text-align-center">
+		<div class="grid">
+			<div>
+				<Image src={mindfulness} alt="Tekening van mindfulness" height={400} width={400}/>
+				<p class="text-red">{t('aanbod.s4.col1.title')}</p>
+				<p>{t('aanbod.s4.col1.text')}</p>
+			</div>
+	
+			<div>
+				<Image src={meditatie} alt="Tekening van meditatie" height={400} width={400}/>
+				<p class="text-red">{t('aanbod.s4.col2.title')}</p>
+				<p>{t('aanbod.s4.col2.text')}</p>
+			</div>
+	
+			<div>
+				<Image src={moed} alt="Tekening van moed" height={400} width={400}/>
+				<p class="text-red">{t('aanbod.s4.col3.title')}</p>
+				<p>{t('aanbod.s4.col3.text')}</p>
+			</div>
+	
+			<div>
+				<Image src={reconstructive} alt="Tekening van Reconstructive" height={400} width={400}/>
+				<p class="text-red">{t('aanbod.s4.col4.title')}</p>
+				<p>{t('aanbod.s4.col4.text')}</p>
+			</div>
+		</div>
+	</section>
+	<section class="back-red text-align-center">
+		<h1 class="text-white">{t('aanbod.s5.title')}</h1>
+		<p set:html={t('aanbod.s5.text')} />
+	</section>
+	<section class="s6 back-white text-red">
+		<p class="p1">{t('aanbod.s6.individuals')}</p>
+		<p class="p1">{t('aanbod.s6.teams')}</p>
+	</section>
+	<section class="s7 back-red">
+		<div class="grid">
+			<div>
+				<h2>{t('aanbod.s7.col1.title')}</h2>
+				<p>{t('aanbod.s7.col1.subtitle')}</p>
+				<p class="text-white">{t('aanbod.s7.col1.text1')}</p>
+				<p>{t('aanbod.s7.col1.reconstructive.title')}</p>
+				<p class="text-white">{t('aanbod.s7.col1.reconstructive.text')}</p>
+				<ul class="text-white">
+					<li>{t('aanbod.s7.col1.list1')}</li>
+					<li>{t('aanbod.s7.col1.list2')}</li>
+					<li>{t('aanbod.s7.col1.list3')}</li>
+					<li>{t('aanbod.s7.col1.list4')}</li>
+					<li>{t('aanbod.s7.col1.list5')}</li>
+				</ul>
+			</div>
+			<div>
+				<h2>{t('aanbod.s7.col2.title')}</h2>
+				<p>{t('aanbod.s7.col2.subtitle')}</p>
+				<p class="text-white">{t('aanbod.s7.col2.text1')}</p>
+				<p>{t('aanbod.s7.col2.walk.title')}</p>
+				<p class="text-white">{t('aanbod.s7.col2.walk.text')}</p>
+			</div>
+		</div>
+	</section>
+	<section class="back-white text-align-center">
+		<h1 class="text-red" set:html={t('aanbod.s8.title')} />
+		<p set:html={t('aanbod.s8.text')} />
+	</section>
+</Layout>
+
+<style>
+	section {
+		padding: 2rem;
+	}
+
+	.s4{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.s4 .grid {
+		display: grid;
+		grid-template-columns: 400px 400px;
+		column-gap: 5rem;
+	}
+
+	.s6{
+		display: flex;
+		gap: 20%;
+		justify-content: center;
+	}
+
+	.s7{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.s7 .grid {
+		display: grid;
+		column-gap: 5rem;
+		grid-template-columns: 400px 400px;
+	}
+</style>

@@ -1,0 +1,26 @@
+---
+interface Props {
+    pathname: string
+}
+const {pathname} = Astro.props;
+---
+
+<nav>
+    <a href="/" class={pathname === "/" ? "active" : ""}>HOME</a>
+    <a href="/filosofie" class={pathname === "/filosofie" ? "active" : ""}>FILOSOFIE</a>
+    <a href="/aanbod" class={pathname === "/aanbod" ? "active" : ""}>AANBOD</a>
+    <a href="/hartcirkels" class={pathname === "/hartcirkels" ? "active" : ""}>HARTCIRKELS</a>
+    <a href="/about" class={pathname === "/about" ? "active" : ""}>OVER MIJ</a>
+</nav>
+
+<style>
+    nav {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .active{
+        color: var(--mooyo-text-red);
+    }
+</style>

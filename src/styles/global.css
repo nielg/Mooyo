@@ -1,0 +1,99 @@
+:root {
+  --mooyo-gray: #f2f2f2;
+  --mooyo-red: #a5655f;
+  --mooyo-black: #424242;
+  --mooyo-white: #ffffff;
+  --mooyo-text-gray: #737373;
+  --mooyo-text-red: #a5655f;
+}
+
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(250, 246, 246);
+  font-family: "Open Sans", "sans-serif";
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+  color: var(--mooyo-text-gray);
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 400;
+}
+
+p,
+li {
+  font-size: 1.2rem;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.text-align-justify {
+  text-align: justify;
+}
+
+.back-gray {
+  background-color: var(--mooyo-gray);
+}
+
+.back-red {
+  background-color: var(--mooyo-red);
+}
+
+.back-white {
+  background-color: var(--mooyo-white);
+}
+
+.back-black {
+  background-color: var(--mooyo-black);
+}
+
+.text-gray {
+  color: var(--mooyo-text-gray);
+}
+
+.text-red {
+  color: var(--mooyo-text-red);
+}
+.text-white {
+  color: white;
+}
+.text-black {
+  color: black;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+.p1 {
+  font-size: 2rem;
+}
+.p2 {
+  font-size: 1.75rem;
+}
+
+.bold {
+  font-weight: 700;
+}

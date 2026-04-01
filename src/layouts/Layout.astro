@@ -1,0 +1,93 @@
+---
+import { Image } from 'astro:assets';
+import logo from '../assets/img.png'
+import "../styles/global.css"
+import Nav from '../components/Nav.astro';
+
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const pathname = new URL(Astro.url).pathname;
+console.log(pathname)
+---
+
+<!doctype html>
+<html lang={lang}>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Mooyo</title>
+	</head>
+	<body>
+		<header>
+			<div>
+				<Image src={logo} alt="Mooyo logo" height={100} width={100}/>
+				<h1><span class="big-text">Mooyo -</span> {t('layout.header.subtitle')}</h1>
+			</div>
+			<Nav pathname={pathname}/>
+		</header>
+		<main>
+			<slot />
+			{pathname != "/" && (
+				<section class="back-gray text-align-center text-gray">
+					<p>{t('layout.contact')}</p>
+					<p>+32 473 52 30 94</p>
+					<p>bramgeysen@gmail.com</p>
+				</section>
+			)}
+		</main>
+		<footer class="back-black text-gray">
+			<p>© 2026 Mooyo</p>
+			<p>{t('layout.footer.madeBy')}</p>
+		</footer>
+	</body>
+</html>
+
+<style>
+	header {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		gap: 4rem;
+		color: var(--mooyo-text-red);
+		background-color: var(--mooyo-white);
+		padding: 3rem 0;
+	}
+
+	header div {
+		display: flex;
+		align-items: center;
+		gap: 5rem;
+	}
+
+	header .big-text{
+    	font-size: 48px;
+	}
+
+	section {
+		padding: 2rem;
+	}
+
+	footer {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: auto;
+	}
+
+	footer p {
+		color: var(--text-gray);
+		font-size: 1.1rem;
+	}
+
+	footer .border-bottom{
+		border-bottom: 1px solid var(--text-gray);
+		padding: 0 1rem 2rem 1rem;
+	}
+</style>

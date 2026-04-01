@@ -1,0 +1,31 @@
+---
+import Layout from "../../layouts/Layout.astro"
+import Text from "./Text.astro"
+import "../../styles/global.css"
+---
+    <div>
+        <section class="back-red">
+            <Text/>
+        </section>
+        <section class="back-gray">
+            <Text/>
+        </section>
+        <section class="back-black">
+            <Text/>
+        </section>
+        <section class="back-white">
+            <Text/>
+        </section>
+    </div>
+
+<style>
+    div {
+        display: flex;
+        flex-direction: row;
+    }
+    section {
+        padding: 1rem;
+        width: 25%;
+    }
+
+</style>

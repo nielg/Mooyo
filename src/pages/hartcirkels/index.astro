@@ -1,0 +1,172 @@
+---
+import { Image } from 'astro:assets';
+import Layout from "../../layouts/Layout.astro"
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+import meditatie from '../../assets/img.png'
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<Layout>
+    <section class="s1 back-gray text-align-center">
+        <p class="text-red p2" set:html={t("hartcirkels.s1.title")}/>
+        <p class="text-gray" set:html={t("hartcirkels.s1.text")}/>
+    </section>
+    <section class="s2 back-red text-align-center">
+        <div class="grid">
+            <div>
+                <h3 class="text-black" set:html={t("hartcirkels.s2.col1.title")}></h3>
+                <p class="text-white" set:html={t("hartcirkels.s2.col1.text1")}/>
+                <p class="text-white" set:html={t("hartcirkels.s2.col1.text2")}/>
+                <p class="text-white" set:html={t("hartcirkels.s2.col1.text3")}/>
+            </div>
+            <div>
+                <h3 class="text-black" set:html={t("hartcirkels.s2.col2.title")}></h3>
+                <p class="text-white" set:html={t("hartcirkels.s2.col2.text1")}/>
+                <p class="text-white" set:html={t("hartcirkels.s2.col2.text2")}/>
+                <p class="text-white" set:html={t("hartcirkels.s2.col2.text3")}/>
+            </div>
+        </div>
+    </section>
+    <section class="s3 back-gray text-align-center">
+        <div class="grid">
+            <div>
+                <h3 class="text-black" set:html={t("hartcirkels.s3.col1.title")}></h3>
+                <p class="text-gray" set:html={t("hartcirkels.s3.col1.text1")}/>
+                <p class="text-gray" set:html={t("hartcirkels.s3.col1.text2")}/>
+                <p class="text-gray" set:html={t("hartcirkels.s3.col1.text3")}/>
+                <p class="text-gray" set:html={t("hartcirkels.s3.col1.text4")}/>
+            </div>
+            <div>
+                <h3 class="text-black" set:html={t("hartcirkels.s3.col2.title")}></h3>
+                <p class="text-gray" set:html={t("hartcirkels.s3.col2.text1")}/>
+                <p class="text-gray" set:html={t("hartcirkels.s3.col2.text2")}/>
+                <p class="text-gray" set:html={t("hartcirkels.s3.col2.text3")}/>
+            </div>
+        </div>
+    </section>
+    <section class="s4 back-white text-align-center text-red">
+        <h1>{t("global.hartcirkels")}</h1>
+    </section>
+    <section class="s5 back-red text-white">
+        <div>
+            <h1>{t("hartcirkels.s5.title")}</h1>
+            <p>{t("hartcirkels.s5.text1")} <a href="www.hartcirkles.be" class="text-black">www.hartcirkels.be</a></p>
+            <p>{t("hartcirkels.s5.text2")}</p>
+            <p>{t("hartcirkels.s5.text3")}</p>
+        </div>
+    </section>
+    <section class="s6 back-white text-gray">
+        <div class="container">
+            <div class="header">
+                <h1 class="text-red">{t("hartcirkels.s6.title")}</h1>
+                <p>{t("hartcirkels.s6.text1")}</p>
+            </div>
+            <div class="child">
+                <div>
+                    <h2 class="text-red text-align-center">{t("hartcirkels.s6.e1.title")}</h2>
+                    <ul>
+                        <li set:html={t("hartcirkels.s6.e1.list1")}/>
+                        <li set:html={t("hartcirkels.s6.e1.list2")}/>
+                    </ul>
+                </div>
+                <Image src={meditatie} width={400} height={400} alt="meditatie"/> 
+            </div>
+            <div class="child">
+                <div>
+                    <h2 class="text-red text-align-center">{t("hartcirkels.s6.e2.title")}</h2>
+                    <ul>
+                        <li set:html={t("hartcirkels.s6.e2.list1")}/>
+                        <li set:html={t("hartcirkels.s6.e2.list2")}/>
+                    </ul>
+                </div>
+                <Image src={meditatie} width={400} height={400} alt="meditatie"/> 
+            </div>
+            <div class="child">
+                <div>
+                    <h2 class="text-red text-align-center">{t("hartcirkels.s6.e3.title")}</h2>
+                    <ul>
+                        <li set:html={t("hartcirkels.s6.e3.list1")}/>
+                        <li set:html={t("hartcirkels.s6.e3.list2")}/>
+                    </ul>
+                </div>
+                <Image src={meditatie} width={400} height={400} alt="meditatie"/> 
+            </div>
+            <div class="child">
+                <div>
+                    <h2 class="text-red text-align-center">{t("hartcirkels.s6.e4.title")}</h2>
+                    <ul>
+                        <li set:html={t("hartcirkels.s6.e4.list1")}/>
+                        <li set:html={t("hartcirkels.s6.e4.list2")}/>
+                    </ul>
+                </div>
+                <Image src={meditatie} width={400} height={400} alt="meditatie"/> 
+            </div>
+            <div class="child">
+                <div>
+                    <h2 class="text-red text-align-center">{t("hartcirkels.s6.e5.title")}</h2>
+                    <ul>
+                        <li set:html={t("hartcirkels.s6.e5.list1")}/>
+                        <li set:html={t("hartcirkels.s6.e5.list2")}/>
+                        <li set:html={t("hartcirkels.s6.e5.list3")}/>
+                    </ul>
+                </div>
+                <Image src={meditatie} width={400} height={400} alt="meditatie"/> 
+            </div>
+            <div class="child">
+                <div>
+                    <h2 class="text-red text-align-center">{t("hartcirkels.s6.e6.title")}</h2>
+                    <ul>
+                        <li set:html={t("hartcirkels.s6.e6.list1")}/>
+                    </ul>
+                </div>
+                <Image src={meditatie} width={400} height={400} alt="meditatie"/> 
+            </div>
+        </div>
+    </section>
+</Layout>
+
+<style>
+    section {
+        padding: 2rem;
+    }
+
+    .s2, .s3, .s5, .s6 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 70%;
+    }
+
+    .s5 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .s5 div{
+        width: 50%;
+    }
+    .s6 {
+        flex-direction: column;
+    }
+    .s6 .container{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+    }
+    .s6 .child, .header{
+        margin-bottom: 3rem;
+    }
+    .s6 .child{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+    }
+
+</style>
