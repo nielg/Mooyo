@@ -14,25 +14,29 @@ const t = useTranslations(lang);
 
 <Layout>
 	<section class="s1 back-gray text-align-center text-gray">
-		<Image src={logo} alt="Mooyo logo" width={700} height={700}/>
-		<div class="text">
-			<h1 class="text-red">Mooyo</h1>
-			<p>{t("index.s1.text1")}</p>
-			<p>{t("index.s1.text2")}</p>
-			<p>∞ ∞ ∞</p>
-			<p>{t("index.s1.text3")}</p>
-			<p>∞ ∞ ∞</p>
-			<p>{t("index.s1.text4")}</p>
-			<p>∞ ∞ ∞</p>
-			<p>{t("index.s1.text5")}</p>
+		<div class="container">
+			<Image src={logo} alt="Mooyo logo" width={500} height={500}/>
+			<div class="text">
+				<h1 class="text-red">Mooyo</h1>
+				<p>{t("index.s1.text1")}</p>
+				<p>{t("index.s1.text2")}</p>
+				<p>∞ ∞ ∞</p>
+				<p>{t("index.s1.text3")}</p>
+				<p>∞ ∞ ∞</p>
+				<p>{t("index.s1.text4")}</p>
+				<p>∞ ∞ ∞</p>
+				<p>{t("index.s1.text5")}</p>
+			</div>
 		</div>
 	</section>
 	<section class="s2 back-red text-white">
-		<Image src={tekening} alt="tekening" width={500} height={500}/>
-		<div>
-			<h1 class="text-align-center">{t("index.s2.title")}</h1>
-			<p set:html={t("index.s2.text")}></p>
-			<p>Francis Weller</p>
+		<div class="container">
+			<Image src={tekening} alt="tekening" width={500} height={500}/>
+			<div>
+				<h1 class="text-align-center">{t("index.s2.title")}</h1>
+				<p set:html={t("index.s2.text")}></p>
+				<p>Francis Weller</p>
+			</div>
 		</div>
 	</section>
 	<section class="s3 back-gray text-align-center">
@@ -74,19 +78,18 @@ const t = useTranslations(lang);
 	section {
 		padding: 2rem;
 	}
-
 	.s1, .s2 {
 		display: flex;
-		flex-direction: row;
 		align-items: center;
-		justify-content: space-between;
-		padding: 0 10%;
+		justify-content: center;
 	}
-
-	.s1 .text{
-		width: 400px;
+	.s1 .container, .s2 .container {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		max-width: 70rem;
+		column-gap: 2rem;
 	}
-
+	
 	.s3{
 		display: flex;
 		align-items: center;
