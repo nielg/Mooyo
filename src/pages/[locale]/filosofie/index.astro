@@ -1,12 +1,12 @@
 ---
 import { Image } from 'astro:assets';
-import Layout from "@layouts/Layout.astro"
-import adem_rond from '@assets/rondevormen/adem_rond.png'
-import bewustzijn_rond from '@assets/rondevormen/bewustzijn_rond.png'
-import hart_rond from '@assets/rondevormen/hart_rond.png'
-import lichaam_rond from '@assets/rondevormen/lichaam_rond.png'
+import Layout from "../../../layouts/Layout.astro"
+import adem_rond from '../../../assets/rondevormen/adem_rond.png'
+import bewustzijn_rond from '../../../assets/rondevormen/bewustzijn_rond.png'
+import hart_rond from '../../../assets/rondevormen/hart_rond.png'
+import lichaam_rond from '../../../assets/rondevormen/lichaam_rond.png'
 
-import { getLangFromUrl, useTranslations, getStaticPaths } from '@src/i18n/utils';
+import { getLangFromUrl, useTranslations, getStaticPaths } from '../../../i18n/utils';
 export { getStaticPaths };
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);

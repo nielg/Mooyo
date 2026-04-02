@@ -1,10 +1,10 @@
 ---
 import { Image } from 'astro:assets';
-import Layout from "@layouts/Layout.astro"
-import { getLangFromUrl, useTranslations, getStaticPaths } from '@src/i18n/utils';
-import zon from '@assets/zon.jpg'
-import vuur_camping from '@assets/vuur_camping.jpeg'
-import zweden_uitzicht from '@assets/zweden_uitzicht.jpg'
+import Layout from "../../../layouts/Layout.astro"
+import { getLangFromUrl, useTranslations, getStaticPaths } from '../../../i18n/utils';
+import zon from '../../../assets/zon.jpg'
+import vuur_camping from '../../../assets/vuur_camping.jpeg'
+import zweden_uitzicht from '../../../assets/zweden_uitzicht.jpg'
 
 export { getStaticPaths };
 const lang = getLangFromUrl(Astro.url);
