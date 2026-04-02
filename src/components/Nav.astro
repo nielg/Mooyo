@@ -12,11 +12,11 @@ const {pathname} = Astro.props;
 ---
 
 <nav>
-    <a href={translatePath('/')} class={pathname === translatePath('/') ? "text-red" : ""}>HOME</a>
-    <a href={translatePath('/filosofie')} class={pathname === translatePath('/filosofie') ? "text-red" : ""}>{t('nav.filosofie')}</a>
-    <a href={translatePath('/aanbod')} class={pathname === translatePath('/aanbod') ? "text-red" : ""}>{t('nav.aanbod')}</a>
-    <a href={translatePath('/hartcirkels')} class={pathname === translatePath('/hartcirkels') ? "text-red" : ""}>{t('nav.hartcirkels')}</a>
-    <a href={translatePath('/about')} class={pathname === translatePath('/about') ? "text-red" : ""}>{t('nav.about')}</a>
+    <a href={translatePath('/')} class={pathname.endsWith('/') ? "text-red" : ""}>HOME</a>
+    <a href={translatePath('/filosofie')} class={pathname.endsWith('/filosofie') ? "text-red" : ""}>{t('nav.filosofie')}</a>
+    <a href={translatePath('/aanbod')} class={pathname.endsWith('/aanbod') ? "text-red" : ""}>{t('nav.aanbod')}</a>
+    <a href={translatePath('/hartcirkels')} class={pathname.endsWith('/hartcirkels') ? "text-red" : ""}>{t('nav.hartcirkels')}</a>
+    <a href={translatePath('/about')} class={pathname.endsWith('/about') ? "text-red" : ""}>{t('nav.about')}</a>
 </nav>
 
 <style>
