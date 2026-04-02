@@ -1,6 +1,9 @@
 export const languages = {
   nl: "Nederlands",
+  en: "English",
 };
+
+export const showDefaultLang = true;
 
 export const defaultLang = "nl";
 

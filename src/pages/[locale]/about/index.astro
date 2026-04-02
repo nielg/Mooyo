@@ -1,0 +1,78 @@
+---
+import { Image } from 'astro:assets';
+import Layout from "@layouts/Layout.astro"
+import { getLangFromUrl, useTranslations, getStaticPaths } from '@src/i18n/utils';
+import meditatie from '@assets/img.png'
+
+export { getStaticPaths };
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<Layout>
+    <section class="s1 back-gray text-align-center">
+        <h1 class="text-red">{t("about.s1.title")}</h1>
+        <p class="text-gray">{t("about.s1.text")}</p>
+    </section>
+    <section class="s2 back-white">
+        <div class="child">
+            <Image class="img" src={meditatie} width={100} height={100} alt="meditatie"/>
+            <div class="text">
+                <h2 class="text-red">{t("about.s2.e1.title")}</h2>
+                <p class="text-gray text-align-justify" set:html={t("about.s2.e1.text")}/>
+            </div>
+        </div>
+        <div class="child">
+            <div class="text right">
+                <h2 class="text-red">{t("about.s2.e2.title")}</h2>
+                <p class="text-gray text-align-justify" set:html={t("about.s2.e2.text")}/>
+            </div>
+            <Image class="img" src={meditatie} width={100} height={100} alt="meditatie"/>
+        </div>
+        <div class="child">
+            <Image class="img" src={meditatie} width={100} height={100} alt="meditatie"/>
+            <div class="text">
+                <h2 class="text-red">{t("about.s2.e3.title")}</h2>
+                <p class="text-gray" set:html={t("about.s2.e3.text1")}/>
+                <p class="text-gray" set:html={t("about.s2.e3.text2")}/>
+                <p class="text-gray" set:html={t("about.s2.e3.text3")}/>
+                <p class="text-gray" set:html={t("about.s2.e3.text4")}/>
+                <p class="text-gray" set:html={t("about.s2.e3.text5")}/>
+                <p class="text-gray" set:html={t("about.s2.e3.text6")}/>
+                <p class="text-gray" set:html={t("about.s2.e3.text7")}/>
+                <p class="text-gray" set:html={t("about.s2.e3.text8")}/>
+                <p class="text-gray" set:html={t("about.s2.e3.text8")}/>
+                <p class="text-gray" set:html={t("about.s2.e3.text10")}/>
+            </div>
+        </div>
+    </section>
+</Layout>
+
+<style>
+    .s1 {
+        padding: 2rem;
+    }
+
+    .s2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .s2 .child{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .s2 .child .img{
+        width: 100%;
+        height: auto;
+    }
+    
+    .s2 .child .text{
+        padding: 2rem;
+        width: 50%;
+    }
+
+    .right{
+        justify-self: end;
+    }
+</style>
