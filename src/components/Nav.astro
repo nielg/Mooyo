@@ -2,6 +2,7 @@
 import { getLangFromUrl, useTranslations, useTranslatedPath } from '../i18n/utils';
 const lang = getLangFromUrl(Astro.url);
 const translatePath = useTranslatedPath(lang);
+const t = useTranslations(lang);
 
 interface Props {
     pathname: string
@@ -12,10 +13,10 @@ const {pathname} = Astro.props;
 
 <nav>
     <a href={translatePath('/')} class={pathname === translatePath('/') ? "text-red" : ""}>HOME</a>
-    <a href={translatePath('/filosofie')} class={pathname === translatePath('/filosofie') ? "text-red" : ""}>FILOSOFIE</a>
-    <a href={translatePath('/aanbod')} class={pathname === translatePath('/aanbod') ? "text-red" : ""}>AANBOD</a>
-    <a href={translatePath('/hartcirkels')} class={pathname === translatePath('/hartcirkels') ? "text-red" : ""}>HARTCIRKELS</a>
-    <a href={translatePath('/about')} class={pathname === translatePath('/about') ? "text-red" : ""}>OVER MIJ</a>
+    <a href={translatePath('/filosofie')} class={pathname === translatePath('/filosofie') ? "text-red" : ""}>{t('nav.filosofie')}</a>
+    <a href={translatePath('/aanbod')} class={pathname === translatePath('/aanbod') ? "text-red" : ""}>{t('nav.aanbod')}</a>
+    <a href={translatePath('/hartcirkels')} class={pathname === translatePath('/hartcirkels') ? "text-red" : ""}>{t('nav.hartcirkels')}</a>
+    <a href={translatePath('/about')} class={pathname === translatePath('/about') ? "text-red" : ""}>{t('nav.about')}</a>
 </nav>
 
 <style>

@@ -1,10 +1,10 @@
 ---
 import { Image } from 'astro:assets';
 import Layout from "@layouts/Layout.astro"
-import mindfulness from '@assets/img.png'
-import meditatie from '@assets/img.png'
-import moed from '@assets/img.png'
-import reconstructive from '@assets/img.png'
+import adem_rond from '@assets/rondevormen/adem_rond.png'
+import bewustzijn_rond from '@assets/rondevormen/bewustzijn_rond.png'
+import hart_rond from '@assets/rondevormen/hart_rond.png'
+import lichaam_rond from '@assets/rondevormen/lichaam_rond.png'
 
 import { getLangFromUrl, useTranslations, getStaticPaths } from '@src/i18n/utils';
 export { getStaticPaths };
@@ -94,25 +94,25 @@ const t = useTranslations(lang);
     <section class="s5 back-gray text-align-center">
 		<div class="grid">
 			<div>
-				<Image src={mindfulness} alt="Tekening van mindfulness" height={400} width={400}/>
+				<Image src={bewustzijn_rond} alt="Tekening van bewustzijn" height={400} width={400}/>
 				<p class="text-red">{t('filosofie.s5.e1.title')}</p>
 				<p>{t('filosofie.s5.e1.text')}</p>
 			</div>
 	
 			<div>
-				<Image src={meditatie} alt="Tekening van meditatie" height={400} width={400}/>
+				<Image src={adem_rond} alt="Tekening van adem" height={400} width={400}/>
 				<p class="text-red">{t('filosofie.s5.e2.title')}</p>
 				<p>{t('filosofie.s5.e2.text')}</p>
 			</div>
 	
 			<div>
-				<Image src={moed} alt="Tekening van moed" height={400} width={400}/>
+				<Image src={hart_rond} alt="Tekening van hart" height={400} width={400}/>
 				<p class="text-red">{t('filosofie.s5.e3.title')}</p>
 				<p>{t('filosofie.s5.e3.text')}</p>
 			</div>
 	
 			<div>
-				<Image src={reconstructive} alt="Tekening van Reconstructive" height={400} width={400}/>
+				<Image src={lichaam_rond} alt="Tekening van lichaam" height={400} width={400}/>
 				<p class="text-red">{t('filosofie.s5.e4.title')}</p>
 				<p>{t('filosofie.s5.e4.text ')}</p>
 			</div>

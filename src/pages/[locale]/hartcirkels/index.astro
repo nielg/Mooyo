@@ -2,8 +2,14 @@
 import { Image } from 'astro:assets';
 import Layout from "@layouts/Layout.astro"
 import { getLangFromUrl, useTranslations, getStaticPaths } from '@src/i18n/utils';
-import meditatie from '@assets/img.png'
 export { getStaticPaths };
+
+import adem from '@assets/adem_hartcirkel.jpeg'
+import adem_rond from '@assets/rondevormen/adem_rond.png'
+import bewustzijn from '@assets/bewustzijn.jpg'
+import hart_rond from '@assets/rondevormen/hart_rond.png'
+import lichaam_rond from '@assets/rondevormen/lichaam_rond.png'
+import zon from '@assets/zon.jpg'
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -72,7 +78,7 @@ const t = useTranslations(lang);
                         <li set:html={t("hartcirkels.s6.e1.list2")}/>
                     </ul>
                 </div>
-                <Image src={meditatie} width={400} height={400} alt="meditatie"/> 
+                <Image src={adem_rond} width={400} height={400} alt="Tekening van adem"/> 
             </div>
             <div class="child">
                 <div>
@@ -82,7 +88,7 @@ const t = useTranslations(lang);
                         <li set:html={t("hartcirkels.s6.e2.list2")}/>
                     </ul>
                 </div>
-                <Image src={meditatie} width={400} height={400} alt="meditatie"/> 
+                <Image src={lichaam_rond} width={400} height={400} alt="meditatie"/> 
             </div>
             <div class="child">
                 <div>
@@ -92,7 +98,7 @@ const t = useTranslations(lang);
                         <li set:html={t("hartcirkels.s6.e3.list2")}/>
                     </ul>
                 </div>
-                <Image src={meditatie} width={400} height={400} alt="meditatie"/> 
+                <Image src={hart_rond} width={400} height={400} alt="meditatie"/> 
             </div>
             <div class="child">
                 <div>
@@ -102,7 +108,7 @@ const t = useTranslations(lang);
                         <li set:html={t("hartcirkels.s6.e4.list2")}/>
                     </ul>
                 </div>
-                <Image src={meditatie} width={400} height={400} alt="meditatie"/> 
+                <Image src={bewustzijn} width={400} height={400} alt="meditatie"/> 
             </div>
             <div class="child">
                 <div>
@@ -113,7 +119,7 @@ const t = useTranslations(lang);
                         <li set:html={t("hartcirkels.s6.e5.list3")}/>
                     </ul>
                 </div>
-                <Image src={meditatie} width={400} height={400} alt="meditatie"/> 
+                <Image class="img" src={adem} width={400} height={400} alt="meditatie"/> 
             </div>
             <div class="child">
                 <div>
@@ -122,7 +128,7 @@ const t = useTranslations(lang);
                         <li set:html={t("hartcirkels.s6.e6.list1")}/>
                     </ul>
                 </div>
-                <Image src={meditatie} width={400} height={400} alt="meditatie"/> 
+                <Image class="img" src={zon} width={400} height={400} alt="Tekening van de zon"/> 
             </div>
         </div>
     </section>
@@ -131,6 +137,10 @@ const t = useTranslations(lang);
 <style>
     section {
         padding: 2rem;
+    }
+
+    .img{
+        border-radius: 0.5rem;
     }
 
     .s2, .s3, .s5, .s6 {

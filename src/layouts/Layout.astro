@@ -18,8 +18,8 @@ const pathname = new URL(Astro.url).pathname;
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
+		<link rel="icon" type="image/svg+xml" href={`${import.meta.env.BASE_URL}/favicon.svg`} />
+		<link rel="icon" type="image/x-icon" href={`${import.meta.env.BASE_URL}/favicon.ico`} />
 		<meta name="generator" content={Astro.generator} />
 		<title>Mooyo</title>
 	</head>
@@ -27,7 +27,7 @@ const pathname = new URL(Astro.url).pathname;
 		<header>
 			<LanguagePicker/>
 			<div>
-				<Image src={hart_rond} alt="Mooyo logo" height={100} width={100}/>
+				<Image src={hart_rond} alt="Mooyo logo" height={100} width={100} loading="eager"/>
 				<h1><span class="big-text">Mooyo -</span> {t('layout.header.subtitle')}</h1>
 			</div>
 			<Nav pathname={pathname}/>
