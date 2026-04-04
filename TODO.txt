@@ -1,0 +1,3 @@
+Voor productie
+- Sitemap toevoegen aan de google search console
+- Verschillende path names per taal
