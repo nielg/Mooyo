@@ -21,7 +21,7 @@ const t = useTranslations(lang);
         <p class="text-gray" set:html={t("hartcirkels.s1.text")}/>
     </section>
     <section class="s2 back-red text-align-center">
-        <div class="grid">
+        <div class="col2">
             <div>
                 <h3 class="text-black" set:html={t("hartcirkels.s2.col1.title")}></h3>
                 <p class="text-white" set:html={t("hartcirkels.s2.col1.text1")}/>
@@ -37,7 +37,7 @@ const t = useTranslations(lang);
         </div>
     </section>
     <section class="s3 back-gray text-align-center">
-        <div class="grid">
+        <div class="col2">
             <div>
                 <h3 class="text-black" set:html={t("hartcirkels.s3.col1.title")}></h3>
                 <p class="text-gray" set:html={t("hartcirkels.s3.col1.text1")}/>
@@ -179,6 +179,18 @@ const t = useTranslations(lang);
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 2rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 1400px){
+        .s6 .child {
+            grid-template-columns: 1fr;
+            align-content: center;
+            place-items: center;
+        }
+        .s6 .img{
+            margin: auto;
+        }
     }
 
 </style>

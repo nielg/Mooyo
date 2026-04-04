@@ -17,7 +17,6 @@ const t = useTranslations(lang);
         <p class="text-gray">{t("about.s1.text")}</p>
     </section>
     <section class="s2 back-white">
-        <div class="child">
             <div class="img-container">
                 <Image class="img" src={zon} alt="Tekening van de zon"/>
             </div>
@@ -25,60 +24,56 @@ const t = useTranslations(lang);
                 <h2 class="text-red">{t("about.s2.e1.title")}</h2>
                 <p class="text-gray text-align-justify" set:html={t("about.s2.e1.text")}/>
             </div>
-        </div>
-        <div class="child">
-            <div class="text right">
+        
+            <div class="text right row4">
                 <h2 class="text-red">{t("about.s2.e2.title")}</h2>
                 <p class="text-gray text-align-justify" set:html={t("about.s2.e2.text")}/>
             </div>
             <div class="img-container">
-                <Image class="img" src={vuur_camping} alt="Foto kamperen met kampvuur"/>
+                <Image class="img row3" src={vuur_camping} alt="Foto kamperen met kampvuur"/>
             </div>
-        </div>
-        <div class="child">
             <div class="img-container">
                 <Image class="img" src={zweden_uitzicht} alt="Uitzicht op meer in Zweden"/>
             </div>
-            <div class="text">
+            <div class="text row2">
                 <h2 class="text-red">{t("about.s2.e3.title")}</h2>
-                <p class="text-gray" set:html={t("about.s2.e3.text1")}/>
-                <p class="text-gray" set:html={t("about.s2.e3.text2")}/>
-                <p class="text-gray" set:html={t("about.s2.e3.text3")}/>
-                <p class="text-gray" set:html={t("about.s2.e3.text4")}/>
-                <p class="text-gray" set:html={t("about.s2.e3.text5")}/>
-                <p class="text-gray" set:html={t("about.s2.e3.text6")}/>
-                <p class="text-gray" set:html={t("about.s2.e3.text7")}/>
-                <p class="text-gray" set:html={t("about.s2.e3.text8")}/>
-                <p class="text-gray" set:html={t("about.s2.e3.text8")}/>
-                <p class="text-gray" set:html={t("about.s2.e3.text10")}/>
+                <p class="text-gray p3" set:html={t("about.s2.e3.text1")}/>
+                <p class="text-gray p3" set:html={t("about.s2.e3.text2")}/>
+                <p class="text-gray p3" set:html={t("about.s2.e3.text3")}/>
+                <p class="text-gray p3" set:html={t("about.s2.e3.text4")}/>
+                <p class="text-gray p3" set:html={t("about.s2.e3.text5")}/>
+                <p class="text-gray p3" set:html={t("about.s2.e3.text6")}/>
+                <p class="text-gray p3" set:html={t("about.s2.e3.text7")}/>
+                <p class="text-gray p3" set:html={t("about.s2.e3.text8")}/>
+                <p class="text-gray p3" set:html={t("about.s2.e3.text8")}/>
+                <p class="text-gray p3" set:html={t("about.s2.e3.text10")}/>
             </div>
-        </div>
+    </section>
+    <section class="s3 back-red text-white text-align-center">
+        <h3 set:html={t('about.s3.text')}/>
+        <p>[Ellen]</p>
     </section>
 </Layout>
 
 <style>
-    .s1 {
+    .s1, .s3 {
         padding: 2rem;
     }
 
     .s2 {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .s2 .child{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        max-height: 40rem;
+        grid-row: 10rem;
     }
-    .s2 .child .img{
+
+    .s2 .img{
         width: 100%;
-        height: auto;
+        height: 100%;
     }
     
-    .s2 .child .text{
+    .s2 .text{
         padding: 2rem;
-        width: 50%;
+        width: 80%;
     }
     .right{
         justify-self: end;
@@ -92,5 +87,25 @@ const t = useTranslations(lang);
         width: 100%;
         overflow: hidden;
         position: relative;
+    }
+
+    /* Responsive */
+    @media (max-width: 1550px){
+        .s2 {
+            grid-template-columns: 1fr;
+        }
+
+        .row3 {
+            grid-row: 3;
+        }
+
+        .row4{
+            grid-row: 4;
+        }
+
+        .text{
+            justify-self: center;
+        }
+
     }
 </style>

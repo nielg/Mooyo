@@ -28,7 +28,7 @@ export { getStaticPaths };
 		<p class="p2" set:html={t('aanbod.s3.text')} />
 	</section>
 	<section class="s4 back-gray text-align-center">
-		<div class="grid">
+		<div class="col2">
 			<div>
 				<Image src={bewustzijn_rond} alt="Tekening van bewustzijn" height={400} width={400}/>
 				<p class="text-red">{t('aanbod.s4.col1.title')}</p>
@@ -63,7 +63,7 @@ export { getStaticPaths };
 		<p class="p1">{t('aanbod.s6.teams')}</p>
 	</section>
 	<section class="s7 back-red">
-		<div class="grid">
+		<div class="col2">
 			<div>
 				<h2>{t('aanbod.s7.col1.title')}</h2>
 				<p>{t('aanbod.s7.col1.subtitle')}</p>
@@ -98,26 +98,15 @@ export { getStaticPaths };
 		padding: 2rem;
 	}
 
-	.s4{
+	.s4, .s7{
 		display: flex;
 		align-items: center;
 		justify-content: center;
-	}
-	.s4 .grid {
-		display: grid;
-		grid-template-columns: 400px 400px;
-		column-gap: 5rem;
 	}
 
 	.s6{
 		display: flex;
 		gap: 20%;
-		justify-content: center;
-	}
-
-	.s7{
-		display: flex;
-		align-items: center;
 		justify-content: center;
 	}
 

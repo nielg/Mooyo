@@ -13,7 +13,7 @@ const t = useTranslations(lang);
 <Layout>
 	<section class="s1 back-gray text-align-center text-gray">
 		<div class="container">
-			<Image src={hart_rond} alt="Mooyo logo" width={550} height={550}/>
+			<Image src={hart_rond} class="img" alt="Mooyo logo" width={550} height={550}/>
 			<div class="text">
 				<h1 class="text-red">Mooyo</h1>
 				<p>{t("index.s1.text1")}</p>
@@ -29,7 +29,7 @@ const t = useTranslations(lang);
 	</section>
 	<section class="s2 back-red text-white">
 		<div class="container">
-			<Image src={zon} alt="tekening" width={500} height={500}/>
+			<Image src={zon} alt="tekening" class="img" width={500} height={500}/>
 			<div>
 				<h1 class="text-align-center">{t("index.s2.title")}</h1>
 				<p set:html={t("index.s2.text")}></p>
@@ -37,7 +37,7 @@ const t = useTranslations(lang);
 			</div>
 		</div>
 	</section>
-	<section class="s3 back-gray text-align-center">
+	<section class="s3 back-gray text-align-center col3">
 		<div class="grid">
 			<div>
 				<p class="text-red text-align-center">{t("index.s3.col1.title")}</p>
@@ -94,21 +94,18 @@ const t = useTranslations(lang);
 		justify-content: center;
 	}
 
-	.s3 .grid{
-		display: grid;
-		grid-template-columns: 350px 350px 350px;
-		column-gap: 2rem;
-	}
-
 	.s5 {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		padding: 0;
+		min-height: 500px;
 	}
-
+	
 	.s5 .img{
 		width: 100%;
 		height: auto;
+		min-height: 500px;
+
 	}
 
 	.s5 .text{
@@ -118,4 +115,36 @@ const t = useTranslations(lang);
 	.s5 .title{
 		font-weight: 700;
 	}
+
+
+	/* Responsive */
+
+	@media (max-width: 1200px){
+		.s3 .grid{
+			grid-template-columns: auto;
+		}
+	}
+
+	@media (max-width: 900px){
+
+		.s1 .container, .s2 .container, .s5 {
+			grid-template-columns: auto;
+			padding: 0 3rem 0 3rem;
+		}
+		.s1 .img{
+			display: none;
+		}
+
+		.s2 .img, .s5 .img{
+			grid-row: 2;
+		}
+
+		.s5{
+			padding: 0;
+		}
+		.s5 .img{
+			width: 100%;
+		}
+	}
+
 </style>

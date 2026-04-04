@@ -35,4 +35,13 @@ const {pathname} = Astro.props;
         border-color: var(--mooyo-red);
         transition: all 0.2s ease;
     }
+
+    /* Responsive */
+
+    @media (max-width: 800px ){
+        nav {
+            flex-direction: column;
+            gap: 2rem;
+        }
+    }
 </style>
