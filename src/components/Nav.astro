@@ -9,14 +9,19 @@ interface Props {
 }
 const {pathname} = Astro.props;
 
+const isActive = (path: string) => {
+  const normalize = (p: string) => p.replace(/\/+$/, '').replace(/^\/+/, '');
+  return normalize(pathname) === normalize(path);
+};
+
 ---
 
 <nav>
-    <a href={translatePath('/')} class={pathname.endsWith('/') ? "text-red" : ""}>HOME</a>
-    <a href={translatePath('/filosofie')} class={pathname.endsWith('/filosofie/') ? "text-red" : ""}>{t('nav.filosofie')}</a>
-    <a href={translatePath('/aanbod')} class={pathname.endsWith('/aanbod/') ? "text-red" : ""}>{t('nav.aanbod')}</a>
-    <a href={translatePath('/hartcirkels')} class={pathname.endsWith('/hartcirkels/') ? "text-red" : ""}>{t('nav.hartcirkels')}</a>
-    <a href={translatePath('/about')} class={pathname.endsWith('/about/') ? "text-red" : ""}>{t('nav.about')}</a>
+    <a href={translatePath('/')} class={isActive(translatePath('')) ? "text-red" : ""}>HOME</a>
+    <a href={translatePath('/filosofie')} class={isActive(translatePath('/filosofie')) ? "text-red" : ""}>{t('nav.filosofie')}</a>
+    <a href={translatePath('/aanbod')} class={isActive(translatePath('/aanbod')) ? "text-red" : ""}>{t('nav.aanbod')}</a>
+    <a href={translatePath('/hartcirkels')} class={isActive(translatePath('/hartcirkels')) ? "text-red" : ""}>{t('nav.hartcirkels')}</a>
+    <a href={translatePath('/about')} class={isActive(translatePath('/about')) ? "text-red" : ""}>{t('nav.about')}</a>
 </nav>
 
 <style>
