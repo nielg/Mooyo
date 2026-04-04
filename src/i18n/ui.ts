@@ -486,42 +486,85 @@ export const ui = {
       "We let our actions and thoughts be influenced too much by our inner child. Footprints is an experiential method that allows us to distinguish the child in us from the adult in us and put each part in its strength. Ceasing to believe and experiencing that life is based on what is simple, clear, and effective by listening to your body.",
 
     // Aanbod section 5
+    "aanbod.s5.title":
+      "The meeting between the child in you and the adult in you",
+    "aanbod.s5.col1.title": "The child in you: the source of life force",
+    "aanbod.s5.col1.text1": "The child stands for:",
+    "aanbod.s5.col1.list1": "spontaneity",
+    "aanbod.s5.col1.list2": "curiosity",
+    "aanbod.s5.col1.list3": "playfulness",
+    "aanbod.s5.col1.list4": "vulnerability",
+    "aanbod.s5.col1.list5": "creativity",
+    "aanbod.s5.col1.list6": "the ability to feel without a filter",
+    "aanbod.s5.col1.text2":
+      "In many people, this part becomes covered by expectations, traumas, roles, responsibilities. The child does not disappear — it becomes quiet.",
+    "aanbod.s5.col2.title": "The adult in you: the conscious bearer",
+    "aanbod.s5.col2.text1": "The adult stands for:",
+    "aanbod.s5.col2.list1": "boundaries",
+    "aanbod.s5.col2.list2": "care",
+    "aanbod.s5.col2.list3": "responsibility",
+    "aanbod.s5.col2.list4": "reflection",
+    "aanbod.s5.col2.list5": "stability",
+    "aanbod.s5.col2.list6": "the ability to carry",
+    "aanbod.s5.col2.text2":
+      "Without the child, the adult becomes dry, functional, cut off. Without the adult, the child becomes unsafe, ungrounded, unprotected.",
+    "aanbod.s5.col3.title":
+      "When the child and the adult find each other, there arises:",
+    "aanbod.s5.col3.list1": "safety without rigidity",
+    "aanbod.s5.col3.list2": "playfulness without chaos",
+    "aanbod.s5.col3.list3": "strength without hardness",
+    "aanbod.s5.col3.list4": "softness without fragility",
+    "aanbod.s5.col3.text1": "They are two voices in you singing in harmony.",
+
+    // Aanbod section 6
     "aanbod.s6.title": "For whom?",
     "aanbod.s6.text":
       "I guide people who are ready to embrace change and want to take on the challenge. <br> People who want to choose actively, or choose for life again <br> and want to live their full potential. <br> If you are looking for healing, clarity, growth, or a new direction, Mooyo is for you. <br> As an (exceptionally) high-conscious/gifted person, you can also count on mirroring and recognition here.",
 
-    // Aanbod section 6
-    "aanbod.s6.individuals": "Individuals",
-    "aanbod.s6.teams": "Teams - Companies",
-
     // Aanbod section 7
-    "aanbod.s7.col1.title": "Multi-day retreat",
-    "aanbod.s7.col1.subtitle":
-      "(2 to 3 days), back-to-basic, learn from nature",
-    "aanbod.s7.col1.text1":
-      "Multi-day retreat in the Ardennes to get in sync with nature and yourself.",
-    "aanbod.s7.col1.reconstructive.title": "Reconstructive (2 days)",
-    "aanbod.s7.col1.reconstructive.text":
-      "Reconstructive is a bodily experience that brings us:",
-    "aanbod.s7.col1.list1": "Experiencing our limitations within our own body",
-    "aanbod.s7.col1.list2": "Seeing the space of ignorance in which we live",
-    "aanbod.s7.col1.list3":
-      "Temporarily setting aside knowledge (stored data) that keeps us trapped",
-    "aanbod.s7.col1.list4":
-      "Getting to know what we deeply know exists inside, but do not yet dare to live",
-    "aanbod.s7.col1.list5":
-      "The absolute realization that the health of the planet starts with us",
-    "aanbod.s7.col2.title": "Workshops",
-    "aanbod.s7.col2.subtitle": "(1/2 to 1 day) Companies",
-    "aanbod.s7.col2.text1": "Teambuilding,",
-    "aanbod.s7.col2.walk.title": "Deeptime Walk (1/2 to 1 day)",
-    "aanbod.s7.col2.walk.text":
-      "For companies, schools, friend groups, organizations",
+    "aanbod.s7.individuals": "Individuals",
+    "aanbod.s7.teams": "Teams - Companies",
 
     // Aanbod section 8
-    "aanbod.s8.title":
+    "aanbod.s8.col1.title": "Multi-day retreat",
+    "aanbod.s8.col1.subtitle":
+      "(2 to 3 days), back-to-basic, learn from nature",
+    "aanbod.s8.col1.text1":
+      "Multi-day retreat in the Ardennes to get in sync with nature and yourself.",
+    "aanbod.s8.col1.reconstructive.title": "Reconstructive (2 days)",
+    "aanbod.s8.col1.reconstructive.text":
+      "Reconstructive is a bodily experience that brings us:",
+    "aanbod.s8.col1.list1": "Experiencing our limitations within our own body",
+    "aanbod.s8.col1.list2": "Seeing the space of ignorance in which we live",
+    "aanbod.s8.col1.list3":
+      "Temporarily setting aside knowledge (stored data) that keeps us trapped",
+    "aanbod.s8.col1.list4":
+      "Getting to know what we deeply know exists inside, but do not yet dare to live",
+    "aanbod.s8.col1.list5":
+      "The absolute realization that the health of the planet starts with us",
+    "aanbod.s8.col2.title": "Workshops",
+    "aanbod.s8.col2.subtitle": "(1/2 to 1 day) Companies",
+    "aanbod.s8.col2.text1": "Teambuilding,",
+    "aanbod.s8.col2.walk.title": "Deeptime Walk (1/2 to 1 day)",
+    "aanbod.s8.col2.walk.text":
+      "For companies, schools, friend groups, organizations",
+
+    // Aanbod section 9
+    "aanbod.s9.title":
       '"When the heart speaks in truth, <br> the head follows naturally."',
-    "aanbod.s8.text":
+    "aanbod.s9.text":
+      "That makes your behavior authentic and your choices clear. <br> You no longer live from old patterns, but from inner truth.",
+
+    // Aanbod section 10
+    "aanbod.s10.text":
+      '"When the heart speaks in truth, the head follows naturally."',
+
+    // Aanbod section 11
+    "aanbod.s11.text":
+      '"The child brings the life force. The adult brings the bedding. <br> Together they form a whole human being."',
+
+    // Aanbod section 12
+    "aanbod.s12.text":
       "That makes your behavior authentic and your choices clear. <br> You no longer live from old patterns, but from inner truth.",
 
     // Filosofie section 1
