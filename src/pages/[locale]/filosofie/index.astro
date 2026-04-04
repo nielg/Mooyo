@@ -72,12 +72,13 @@ const t = useTranslations(lang);
             <div>
                 <p class="title">{t('filosofie.s3.col2.title')}</p>
                 <p>{t('filosofie.s3.col2.text1')}</p>
+                <p>{t('filosofie.s3.col2.text2')}</p>
                 <ul>
                     <li>{t('filosofie.s3.col2.list1')}</li>
                     <li>{t('filosofie.s3.col2.list2')}</li>
                     <li>{t('filosofie.s3.col2.list3')}</li>
                 </ul>
-                <p>{t('filosofie.s3.col2.text2')}</p>
+                <p>{t('filosofie.s3.col2.text3')}</p>
             </div>
             <div>
                 <p class="title">{t('filosofie.s3.col3.title')}</p>
@@ -91,7 +92,7 @@ const t = useTranslations(lang);
         <h1 set:html={t('filosofie.s4.title')}/>
         <p set:html={t("filosofie.s4.text")}/>
     </section>
-    <section class="s5 back-gray text-align-center">
+    <section class="s5 back-gray text-align-center center">
 		<div class="grid col2">
 			<div>
 				<Image src={bewustzijn_rond} alt="Tekening van bewustzijn" height={400} width={400}/>
@@ -118,8 +119,8 @@ const t = useTranslations(lang);
 			</div>
 		</div>
 	</section>
-    <section class="s6 back-red text-align-center">
-        <div class="grid">
+    <section class="s6 back-red text-align-center center">
+        <div class="col3">
             <p class="text-white">{t('filosofie.s6.text1')}</p>
             <p class="text-black">{t('filosofie.s6.text2')}</p>
             <p class="text-white">{t('filosofie.s6.text3')}</p>
@@ -146,15 +147,5 @@ const t = useTranslations(lang);
     .title{
         font-weight: 600;
         font-size: 1.3rem;
-    }
-
-    .s5, .s6{
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
-
-    .s6 .grid {
-        grid-template-columns: 300px 300px 300px;
     }
 </style>

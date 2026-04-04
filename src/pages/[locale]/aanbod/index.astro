@@ -54,42 +54,93 @@ export { getStaticPaths };
 			</div>
 		</div>
 	</section>
-	<section class="back-red text-align-center">
-		<h1 class="text-white">{t('aanbod.s5.title')}</h1>
-		<p set:html={t('aanbod.s5.text')} />
-	</section>
-	<section class="s6 back-white text-red">
-		<p class="p1">{t('aanbod.s6.individuals')}</p>
-		<p class="p1">{t('aanbod.s6.teams')}</p>
-	</section>
-	<section class="s7 back-red">
+	<section class="s5 back-red text-white">
+		<h2>{t("aanbod.s5.title")}</h2>
 		<div class="col2">
 			<div>
-				<h2>{t('aanbod.s7.col1.title')}</h2>
-				<p>{t('aanbod.s7.col1.subtitle')}</p>
-				<p class="text-white">{t('aanbod.s7.col1.text1')}</p>
-				<p>{t('aanbod.s7.col1.reconstructive.title')}</p>
-				<p class="text-white">{t('aanbod.s7.col1.reconstructive.text')}</p>
+				<p class="bold">{t("aanbod.s5.col1.title")}</p>
+				<p>{t("aanbod.s5.col1.text1")}</p>
+				<ul>
+					<li>{t("aanbod.s5.col1.list1")}</li>
+					<li>{t("aanbod.s5.col1.list2")}</li>
+					<li>{t("aanbod.s5.col1.list3")}</li>
+					<li>{t("aanbod.s5.col1.list4")}</li>
+					<li>{t("aanbod.s5.col1.list5")}</li>
+					<li>{t("aanbod.s5.col1.list6")}</li>
+				</ul>
+				<p>{t("aanbod.s5.col1.text2")}</p>
+			</div>
+			<div>
+				<p class="bold">{t("aanbod.s5.col2.title")}</p>
+				<p>{t("aanbod.s5.col2.text1")}</p>
+				<ul>
+					<li>{t("aanbod.s5.col2.list1")}</li>
+					<li>{t("aanbod.s5.col2.list2")}</li>
+					<li>{t("aanbod.s5.col2.list3")}</li>
+					<li>{t("aanbod.s5.col2.list4")}</li>
+					<li>{t("aanbod.s5.col2.list5")}</li>
+					<li>{t("aanbod.s5.col2.list6")}</li>
+				</ul>
+				<p>{t("aanbod.s5.col2.text2")}</p>
+			</div>
+		</div>
+		<div class="text-align-center">
+			<p class="bold">{t("aanbod.s5.col3.title")}</p>
+			<ul class="star-list">
+				<li class="bold">{t("aanbod.s5.col3.list1")}</li>
+				<li class="bold">{t("aanbod.s5.col3.list2")}</li>
+				<li class="bold">{t("aanbod.s5.col3.list3")}</li>
+				<li class="bold">{t("aanbod.s5.col3.list4")}</li>
+			</ul>
+			<p>{t("aanbod.s5.col3.text1")}</p>
+		</div>
+
+	</section>
+	<section class="s6 back-white text-align-center">
+		<h1 class="text-red">{t('aanbod.s6.title')}</h1>
+		<p set:html={t('aanbod.s6.text')} />
+	</section>
+	<section class="s7 back-white text-red">
+		<p class="p1">{t('aanbod.s7.individuals')}</p>
+		<p class="p1">{t('aanbod.s7.teams')}</p>
+	</section>
+	<section class="s8 back-red">
+		<div class="col2">
+			<div>
+				<h2>{t('aanbod.s8.col1.title')}</h2>
+				<p>{t('aanbod.s8.col1.subtitle')}</p>
+				<p class="text-white">{t('aanbod.s8.col1.text1')}</p>
+				<p>{t('aanbod.s8.col1.reconstructive.title')}</p>
+				<p class="text-white">{t('aanbod.s8.col1.reconstructive.text')}</p>
 				<ul class="text-white">
-					<li>{t('aanbod.s7.col1.list1')}</li>
-					<li>{t('aanbod.s7.col1.list2')}</li>
-					<li>{t('aanbod.s7.col1.list3')}</li>
-					<li>{t('aanbod.s7.col1.list4')}</li>
-					<li>{t('aanbod.s7.col1.list5')}</li>
+					<li>{t('aanbod.s8.col1.list1')}</li>
+					<li>{t('aanbod.s8.col1.list2')}</li>
+					<li>{t('aanbod.s8.col1.list3')}</li>
+					<li>{t('aanbod.s8.col1.list4')}</li>
+					<li>{t('aanbod.s8.col1.list5')}</li>
 				</ul>
 			</div>
 			<div>
-				<h2>{t('aanbod.s7.col2.title')}</h2>
-				<p>{t('aanbod.s7.col2.subtitle')}</p>
-				<p class="text-white">{t('aanbod.s7.col2.text1')}</p>
-				<p>{t('aanbod.s7.col2.walk.title')}</p>
-				<p class="text-white">{t('aanbod.s7.col2.walk.text')}</p>
+				<h2>{t('aanbod.s8.col2.title')}</h2>
+				<p>{t('aanbod.s8.col2.subtitle')}</p>
+				<p class="text-white">{t('aanbod.s8.col2.text1')}</p>
+				<p class="text-white">{t("aanbod.s8.col2.text2")}</p>
+				<p>{t('aanbod.s8.col2.walk.title')}</p>
+				<p class="text-white">{t('aanbod.s8.col2.walk.text')}</p>
+				<ul class="text-white">
+					<li>{t("aanbod.s8.col2.walk.list1")}</li>
+				</ul>
 			</div>
 		</div>
 	</section>
-	<section class="back-white text-align-center">
-		<h1 class="text-red" set:html={t('aanbod.s8.title')} />
-		<p set:html={t('aanbod.s8.text')} />
+	<section class="s10 back-white text-red text-align-center">
+		<h3 set:html={t("aanbod.s10.text")}/>
+	</section>
+	<section class="s11 back-red text-white text-align-center">
+		<h3 set:html={t("aanbod.s11.text")}/>
+	</section>
+	<section class="s12 back-white text-red text-align-center">
+		<h3 set:html={t("aanbod.s12.text")}/>
 	</section>
 </Layout>
 
@@ -98,21 +149,19 @@ export { getStaticPaths };
 		padding: 2rem;
 	}
 
-	.s4, .s7{
+	.s4, .s8, .s5{
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		flex-direction: column;
 	}
 
-	.s6{
+	.s5 {
+		di
+	}
+	.s7{
 		display: flex;
 		gap: 20%;
 		justify-content: center;
-	}
-
-	.s7 .grid {
-		display: grid;
-		column-gap: 5rem;
-		grid-template-columns: 400px 400px;
 	}
 </style>

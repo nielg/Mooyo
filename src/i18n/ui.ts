@@ -49,7 +49,7 @@ export const ui = {
     "index.s3.col2.text1":
       "Tederheid is een bron van menselijke verbinding en kwetsbaarheid.",
     "index.s3.col2.text2":
-      "Tederheid is ook de zachtste, eerlijkste manier waarop waarheid spreekt. <br>Met tederheid ontstaat veiligheid en kan je de intimiteit met jezelf en met het leven herstellen. <br>Leer eerst jezelf kennen op diep niveau, in je eigen hart, zodat je vandaar uit verbinding kunt maken met de wereld.",
+      "Tederheid is ook de zachtste, eerlijkste manier waarop waarheid spreekt. <br>Met tederheid ontstaat veiligheid en kan je de intimiteit met jezelf en met het leven herstellen. <br><br>Leer eerst jezelf kennen op diep niveau, in je eigen hart, zodat je vandaar uit verbinding kunt maken met de wereld.",
     "index.s3.col3.title": "Verlangen naar iets ouds en geworteld",
     "index.s3.col3.text1":
       "Is een oproep om terug te keren naar je kern, gemeenschap, tradities en aarde. ",
@@ -93,44 +93,92 @@ export const ui = {
       "We laten ons handelen en denken teveel door ons kind beïnvloeden. Footprints is een ervaringsgerichte methode die ons toelaat het kind in ons van de volwassen in ons te onderscheiden. en elk deel in hun sterkte te zetten. Stoppen met geloven en ervaren dat het leven gebaseerd is op dat wat eenvoudig, helder en effectief is door naar je lichaam te luisteren.",
 
     // Aanbod section 5
-    "aanbod.s5.title": "Voor wie?",
-    "aanbod.s5.text":
-      "Ik begeleid mensen die klaar zijn om verandering te omarmen en de uitdaging willen aangaan. <br> Mensen die actief willen kiezen, of die opnieuw willen kiezen voor het leven <br> en hun volle potentieel willen leven. <br> Als je op zoek bent naar heling, helderheid, groei of een nieuwe richting, dan is Mooyo iets voor jou. <br> Als (uitzonderlijk) hoogbewuste/begaafde kan je hier ook rekenen op spiegeling en herkenning",
+    "aanbod.s5.title":
+      "De ontmoeting tussen het kind in jou en de volwassene in jou",
+    "aanbod.s5.col1.title": "Het kind in jou: de bron van levenskracht",
+    "aanbod.s5.col1.text1": "Het kind staat voor;",
+    "aanbod.s5.col1.list1": "spontaniteit",
+    "aanbod.s5.col1.list2": "nieuwsgierigheid",
+    "aanbod.s5.col1.list3": "speelsheid",
+    "aanbod.s5.col1.list4": "kwetsbaarheid",
+    "aanbod.s5.col1.list5": "creativiteit",
+    "aanbod.s5.col1.list6": "het vermogen om te voelen zonder filter",
+    "aanbod.s5.col1.text2":
+      "In veel mensen raakt dit deel bedekt door verwachtingen, trauma’s, rollen, verantwoordelijkheden. Het kind verdwijnt niet — het wordt stil.",
+    "aanbod.s5.col2.title": "De volwassene in jou: de bewuste drager",
+    "aanbod.s5.col2.text1": "De volwassene staat voor:",
+    "aanbod.s5.col2.list1": "begrenzing",
+    "aanbod.s5.col2.list2": "zorg",
+    "aanbod.s5.col2.list3": "verantwoordelijkheid",
+    "aanbod.s5.col2.list4": "reflectie",
+    "aanbod.s5.col2.list5": "stabiliteit",
+    "aanbod.s5.col2.list6": "het vermogen om te dragen",
+    "aanbod.s5.col2.text2":
+      "Zonder het kind wordt de volwassene droog, functioneel, afgesneden. Zonder de volwassene wordt het kind onveilig, ongegrond, onbeschermd.",
+    "aanbod.s5.col3.title":
+      "Wanneer het kind en de volwassene elkaar vinden, onstaat:",
+    "aanbod.s5.col3.list1": "veiligheid zonder verstarring",
+    "aanbod.s5.col3.list2": "speelsheid zonder chaos",
+    "aanbod.s5.col3.list3": "kracht zonder hardheid",
+    "aanbod.s5.col3.list4": "zachtheid zonder breekbaarheid",
+    "aanbod.s5.col3.text1":
+      "Het zijn twee stemmen in jou die in harmonie zingen.",
 
     // Aanbod section 6
-    "aanbod.s6.individuals": "Individuen",
-    "aanbod.s6.teams": "Teams - Bedrijven",
+    "aanbod.s6.title": "Voor wie?",
+    "aanbod.s6.text":
+      "Ik begeleid mensen die klaar zijn om verandering te omarmen en de uitdaging willen aangaan. <br> Mensen die actief willen kiezen, of die opnieuw willen kiezen voor het leven <br> en hun volle potentieel willen leven. <br> Als je op zoek bent naar heling, helderheid, groei of een nieuwe richting, dan is Mooyo iets voor jou. <br> Als (uitzonderlijk) hoogbewuste/begaafde kan je hier ook rekenen op spiegeling en herkenning",
 
     // Aanbod section 7
-    "aanbod.s7.col1.title": "Meerdaagse",
-    "aanbod.s7.col1.subtitle": "(2à3 daagse), back-to-basic, learn form nature",
-    "aanbod.s7.col1.text1":
-      "Meerdaagse in de Ardennen om in sinc met de natuur en tot jezelf te komen.",
-    "aanbod.s7.col1.reconstructive.title": "Reconstructive (2 daagse)",
-    "aanbod.s7.col1.reconstructive.text":
-      "Reconstructive is een lichaamservaring die ons brengt:",
-    "aanbod.s7.col1.list1":
-      "Het in eigen lichaam ervaren van onzer beperkingen",
-    "aanbod.s7.col1.list2":
-      "Het zien van de ruimte van onwetendheid waarin we leven",
-    "aanbod.s7.col1.list3":
-      "Het even opzij zetten van kennis (opgeslagen data) die ons gevangen houdt",
-    "aanbod.s7.col1.list4":
-      "Het leren kennen van wat we diep vanbiien weten dat bestaat, maar nog niet durven leven",
-    "aanbod.s7.col1.list5":
-      "Het absolute besef dat de gezondheid van de planeet bij ons begint",
-    "aanbod.s7.col2.title": "Workshops",
-    "aanbod.s7.col2.subtitle": "(1/2à1 dag) Bedrijven",
-    "aanbod.s7.col2.text1": "Teambuilding,",
-    "aanbod.s7.col2.walk.title": "Deeptime Walk (1/2à1 dag)",
-    "aanbod.s7.col2.walk.text":
-      "Voor bedrijven, scholen, vriendengroep, organistaties",
+    "aanbod.s7.individuals": "Individuen",
+    "aanbod.s7.teams": "Teams - Bedrijven",
 
     // Aanbod section 8
-    "aanbod.s8.title":
+    "aanbod.s8.col1.title": "Meerdaagse",
+    "aanbod.s8.col1.subtitle": "(2à3 daagse), back-to-basic, learn form nature",
+    "aanbod.s8.col1.text1":
+      "Meerdaagse in de Ardennen om in sinc met de natuur en tot jezelf te komen.",
+    "aanbod.s8.col1.reconstructive.title": "Reconstructive (2 daagse)",
+    "aanbod.s8.col1.reconstructive.text":
+      "Reconstructive is een lichaamservaring die ons brengt:",
+    "aanbod.s8.col1.list1":
+      "Het in eigen lichaam ervaren van onzer beperkingen",
+    "aanbod.s8.col1.list2":
+      "Het zien van de ruimte van onwetendheid waarin we leven",
+    "aanbod.s8.col1.list3":
+      "Het even opzij zetten van kennis (opgeslagen data) die ons gevangen houdt",
+    "aanbod.s8.col1.list4":
+      "Het leren kennen van wat we diep vanbiien weten dat bestaat, maar nog niet durven leven",
+    "aanbod.s8.col1.list5":
+      "Het absolute besef dat de gezondheid van de planeet bij ons begint",
+    "aanbod.s8.col2.title": "Workshops",
+    "aanbod.s8.col2.subtitle": "(1/2à1 dag) Bedrijven",
+    "aanbod.s8.col2.text1": "Teambuilding,",
+    "aanbod.s8.col2.text2":
+      "Reconstructive (2 dagen) is een groepslichaamservaring. Meer uitleg en aanbod: ",
+    "aanbod.s8.col2.walk.title": "Deeptime Walk (1/2à1 dag)",
+    "aanbod.s8.col2.walk.text":
+      "Voor bedrijven, scholen, vriendengroep, organistaties",
+    "aanbod.s8.col2.walk.list1":
+      "Het absolute besef dat de gezondheid van de planeet bij ons begint",
+
+    // Aanbod section 9
+    "aanbod.s9.title":
       '"Wanneer het hart in waarheid spreekt, <br> volg het hoofd vanzelf."',
-    "aanbod.s8.text":
+    "aanbod.s9.text":
       "Dat maakt je gedrag authentiek en je keuzes helder. <br> Je leeft niet langer vanuit oude patronen, maar vanuit innerlijk waarheid.",
+
+    // Aanbod section 10
+    "aanbod.s10.text":
+      '"Wanneer het hart in waarheid spreekt, volg het hoofd vanzelf."',
+
+    // Aanbod section 11
+    "aanbod.s11.text":
+      '"Het kind brengt de levenskracht. De volwassene brengt de bedding. <br> Samen vormen ze een heel mens."',
+
+    // Aanbod section 12
+    "aanbod.s12.text":
+      "Dat maakt je gedrag authentiek en je keuzes helder. <br> Je leeft niet langer vanuit oude patronen, maar vanuit innerlijke waarheid.",
 
     // Filosofie section 1
     "filosofie.s1.title": "Open je hart",
@@ -438,8 +486,8 @@ export const ui = {
       "We let our actions and thoughts be influenced too much by our inner child. Footprints is an experiential method that allows us to distinguish the child in us from the adult in us and put each part in its strength. Ceasing to believe and experiencing that life is based on what is simple, clear, and effective by listening to your body.",
 
     // Aanbod section 5
-    "aanbod.s5.title": "For whom?",
-    "aanbod.s5.text":
+    "aanbod.s6.title": "For whom?",
+    "aanbod.s6.text":
       "I guide people who are ready to embrace change and want to take on the challenge. <br> People who want to choose actively, or choose for life again <br> and want to live their full potential. <br> If you are looking for healing, clarity, growth, or a new direction, Mooyo is for you. <br> As an (exceptionally) high-conscious/gifted person, you can also count on mirroring and recognition here.",
 
     // Aanbod section 6

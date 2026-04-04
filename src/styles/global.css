@@ -113,6 +113,24 @@ h4 {
   column-gap: 5rem;
 }
 
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ul.star-list {
+  list-style: none;
+  padding-left: 1.5rem;
+}
+
+ul.star-list li::before {
+  content: "✦";
+  display: inline-block;
+  width: 1.5em;
+  margin-left: -1.5em;
+}
+
 /* Responsive */
 
 @media (max-width: 1100px) {
