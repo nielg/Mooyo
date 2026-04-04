@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /Mooyo/moodboard
+
+Sitemap: https://nielg.github.io/Mooyo/sitemap-index.xml
