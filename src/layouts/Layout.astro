@@ -4,14 +4,19 @@ import hart_rond from '../assets/rondevormen/hart_rond.png'
 import "../styles/global.css"
 import Nav from '../components/Nav.astro';
 import LanguagePicker from '../components/LanguagePicker.astro';
-
 import { getLangFromUrl, useTranslations } from '../i18n/utils';
 
+interface Props {
+	title: string;
+	description?: string; 
+}
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
-
 const pathname = new URL(Astro.url).pathname;
 const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
+const { title, description = "Standaard omschrijving voor Mooyo" } = Astro.props;
 ---
 
 <!doctype html>
@@ -21,7 +26,9 @@ const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/png" href={`${baseUrl}/favicon.png`} />
 		<meta name="generator" content={Astro.generator} />
-		<title>Mooyo</title>
+		<title>{title} | Mooyo</title>
+		<meta name="description" content={description}>
+		<link rel="canonical" href={canonicalURL} />
 	</head>
 	<body>
 		<header>
@@ -99,4 +106,17 @@ const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
             gap: 3rem;
         }
     }
+
+	@media (max-width: 500px){
+		header div {
+			flex-direction: column;
+			gap: 1rem;
+			justify-content: center;
+		}
+
+		header {
+			padding-top: 7rem;
+			text-align: center;
+		}
+	}
 </style>

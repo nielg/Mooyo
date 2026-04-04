@@ -10,10 +10,10 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
 
-<Layout>
-	<section class="s1 back-gray text-align-center text-gray">
+<Layout title='Home'>
+	<section class="s1 back-gray text-align-center text-gray center">
 		<div class="container">
-			<Image src={hart_rond} class="img" alt="Mooyo logo" width={550} height={550}/>
+			<Image src={hart_rond} class="img" alt="Mooyo logo" width={550} height={550} loading="eager"/>
 			<div class="text">
 				<h1 class="text-red">Mooyo</h1>
 				<p>{t("index.s1.text1")}</p>
@@ -27,17 +27,17 @@ const t = useTranslations(lang);
 			</div>
 		</div>
 	</section>
-	<section class="s2 back-red text-white">
+	<section class="s2 back-red text-white center">
 		<div class="container">
 			<Image src={zon} alt="tekening" class="img" width={500} height={500}/>
 			<div>
 				<h1 class="text-align-center">{t("index.s2.title")}</h1>
 				<p set:html={t("index.s2.text")}></p>
-				<p>Francis Weller</p>
+				<p class="content-end">Francis Weller</p>
 			</div>
 		</div>
 	</section>
-	<section class="s3 back-gray text-align-center">
+	<section class="s3 back-gray text-align-center center">
 		<div class="col3">
 			<div>
 				<p class="text-red text-align-center bold">{t("index.s3.col1.title")}</p>
@@ -77,11 +77,6 @@ const t = useTranslations(lang);
 	section {
 		padding: 2rem;
 	}
-	.s1, .s2 {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
 	.s1 .container, .s2 .container {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
@@ -89,17 +84,16 @@ const t = useTranslations(lang);
 		column-gap: 2rem;
 	}
 	
-	.s3{
-		display: flex;
-		align-items: center;
-		justify-content: center;
+	.s2 .img {
+		max-width: 500px;
+		max-height: 500px;
+		width: 100%;
+		height: auto;
 	}
-
 	.s5 {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		padding: 0;
-		min-height: 500px;
 	}
 	
 	.s5 .img{
@@ -110,11 +104,15 @@ const t = useTranslations(lang);
 	}
 
 	.s5 .text{
-		padding: 5rem;
+		padding: 2rem;
 	}
 
 	.s5 .title{
 		font-weight: 700;
+	}
+
+	.content-end {
+		text-align: end;
 	}
 
 
@@ -130,7 +128,6 @@ const t = useTranslations(lang);
 
 		.s1 .container, .s2 .container, .s5 {
 			grid-template-columns: auto;
-			padding: 0 3rem 0 3rem;
 		}
 		.s1 .img{
 			display: none;
@@ -147,5 +144,4 @@ const t = useTranslations(lang);
 			width: 100%;
 		}
 	}
-
 </style>

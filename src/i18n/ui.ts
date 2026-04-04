@@ -22,7 +22,9 @@ export const ui = {
     "layout.header.subtitle": "hartgedragen begeleiding",
     "layout.footer.madeBy": "Website gemaakt door Niel Geysen",
     "layout.contact": "Maak een afspraak of stuur een bericht naar: ",
+    // Index
 
+    "index.title": "Home",
     // Index section 1
     "index.s1.text1": "Hart; leven; ziel; geest.",
     "index.s1.text2":
@@ -61,6 +63,9 @@ export const ui = {
     // Index section 4
     "index.s4.text":
       "Hoe kan je jaren conditionering tot stilstand brengen en omkeren? <br>Hiervoor is een enorme kracht nodig. <br>Alleen de kracht van het hart kan dit initiëren.",
+
+    // Aanbod
+    "aanbod.title": "Aanbod",
 
     // Aanbod section 1
     "aanbod.s1.title": "Ben je bereid om naar je <br> hart te luisteren?",
@@ -180,6 +185,9 @@ export const ui = {
     "aanbod.s12.text":
       "Dat maakt je gedrag authentiek en je keuzes helder. <br> Je leeft niet langer vanuit oude patronen, maar vanuit innerlijke waarheid.",
 
+    // Filosofie
+    "filosofie.title": "Filosofie",
+
     // Filosofie section 1
     "filosofie.s1.title": "Open je hart",
     "filosofie.s1.text":
@@ -287,6 +295,9 @@ export const ui = {
     "filosofie.s6.text9":
       "Je kiest voor richting in plaats van controle. Het hart wijst een pad, het hoofd plant de stappen.",
 
+    // Hartcirkels
+    "hartcirkels.title": "Hartcirkels",
+
     // Hartcirkels section 1
     "hartcirkels.s1.title":
       "De cirkel als metafoor voor <br> innerlijk werk en hartgedragen gemeenschap.",
@@ -372,6 +383,9 @@ export const ui = {
     "hartcirkels.s6.e6.list1":
       "<span style='font-weight: 800;'>Samen creëren werkt helend.</span> Denk aan muziek, dans, kunst, koken, rituelen. Expressie in groep kan emoties losmaken en verwerken.",
 
+    // About
+    "about.title": "Over mij",
+
     // About section 1
     "about.s1.title": "Het verhaal van Mooyo",
     "about.s1.text":
@@ -454,6 +468,9 @@ export const ui = {
     // Index section 4
     "index.s4.text":
       "How can you bring years of conditioning to a halt and reverse it? <br>This requires an enormous force. <br>Only the power of the heart can initiate this.",
+
+    // Aanbod
+    "aanbod.title": "Offerings",
 
     // Aanbod section 1
     "aanbod.s1.title": "Are you willing to <br> listen to your heart?",
@@ -567,6 +584,9 @@ export const ui = {
     "aanbod.s12.text":
       "That makes your behavior authentic and your choices clear. <br> You no longer live from old patterns, but from inner truth.",
 
+    // Filosofie
+    "filosofie.title": "Philosophy",
+
     // Filosofie section 1
     "filosofie.s1.title": "Open your heart",
     "filosofie.s1.text":
@@ -671,6 +691,9 @@ export const ui = {
     "filosofie.s6.text9":
       "You choose direction instead of control. The heart points a path, the head plans the steps.",
 
+    // Hartcirkels
+    "hartcirkels.title": "Heart circles",
+
     // Hartcirkels section 1
     "hartcirkels.s1.title":
       "The circle as a metaphor for <br> inner work and heart-centered community.",
@@ -755,6 +778,9 @@ export const ui = {
     "hartcirkels.s6.e6.title": "Creation and expression",
     "hartcirkels.s6.e6.list1":
       "<span style='font-weight: 800;'>Creating together is healing.</span> Think of music, dance, art, cooking, rituals. Expression in a group can release and process emotions.",
+
+    // About
+    "about.title": "About me",
 
     // About section 1
     "about.s1.title": "The story of Mooyo",

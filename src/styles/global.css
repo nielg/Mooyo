@@ -143,6 +143,5 @@ ul.star-list li::before {
 @media (max-width: 1000px) {
   .col2 {
     grid-template-columns: auto;
-    padding: 0 2rem;
   }
 }

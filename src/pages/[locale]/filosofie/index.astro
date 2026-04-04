@@ -12,12 +12,12 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
 
-<Layout>
+<Layout title={t("filosofie.title")}>
     <section class="s1 back-gray text-align-center">
         <h1 class="text-red">{t('filosofie.s1.title')}</h1>
         <p class="text-gray" set:html={t('filosofie.s1.text')}/>
     </section>
-    <section class="s2 back-red text-white">
+    <section class="s2 back-red text-white center">
         <div class="grid col3">
             <div>
                 <p class="title">{t('filosofie.s2.col1.title')}</p>
@@ -57,7 +57,7 @@ const t = useTranslations(lang);
         </div>
     </section>
 
-    <section class="s3 back-gray text-gray">
+    <section class="s3 back-gray text-gray center">
         <div class="grid col3">
             <div>
                 <p class="title">{t('filosofie.s3.col1.title')}</p>
@@ -93,27 +93,27 @@ const t = useTranslations(lang);
         <p set:html={t("filosofie.s4.text")}/>
     </section>
     <section class="s5 back-gray text-align-center center">
-		<div class="grid col2">
+		<div class="col2">
 			<div>
-				<Image src={bewustzijn_rond} alt="Tekening van bewustzijn" height={400} width={400}/>
+				<Image src={bewustzijn_rond} alt="Tekening van bewustzijn" height={375} width={375}/>
 				<p class="text-red">{t('filosofie.s5.e1.title')}</p>
 				<p>{t('filosofie.s5.e1.text')}</p>
 			</div>
 	
 			<div>
-				<Image src={adem_rond} alt="Tekening van adem" height={400} width={400}/>
+				<Image src={adem_rond} alt="Tekening van adem" height={375} width={375}/>
 				<p class="text-red">{t('filosofie.s5.e2.title')}</p>
 				<p>{t('filosofie.s5.e2.text')}</p>
 			</div>
 	
 			<div>
-				<Image src={hart_rond} alt="Tekening van hart" height={400} width={400}/>
+				<Image src={hart_rond} alt="Tekening van hart" height={375} width={375}/>
 				<p class="text-red">{t('filosofie.s5.e3.title')}</p>
 				<p>{t('filosofie.s5.e3.text')}</p>
 			</div>
 	
 			<div>
-				<Image src={lichaam_rond} alt="Tekening van lichaam" height={400} width={400}/>
+				<Image src={lichaam_rond} alt="Tekening van lichaam" height={375} width={375}/>
 				<p class="text-red">{t('filosofie.s5.e4.title')}</p>
 				<p>{t('filosofie.s5.e4.text ')}</p>
 			</div>
@@ -137,11 +137,6 @@ const t = useTranslations(lang);
 <style>
     section{
         padding: 2rem;
-    }
-    .s2, .s3{
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
 
     .title{

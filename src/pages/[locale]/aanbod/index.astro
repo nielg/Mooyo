@@ -13,7 +13,7 @@ const t = useTranslations(lang);
 export { getStaticPaths };
 ---
 
-<Layout>
+<Layout title={t('aanbod.title')}>
 	<section class="s1 text-align-center back-gray text-gray">
 		<h1 class="text-red" set:html={t('aanbod.s1.title')} />
 		<p set:html={t('aanbod.s1.text')} />
@@ -30,25 +30,25 @@ export { getStaticPaths };
 	<section class="s4 back-gray text-align-center">
 		<div class="col2">
 			<div>
-				<Image src={bewustzijn_rond} alt="Tekening van bewustzijn" height={400} width={400}/>
+				<Image src={bewustzijn_rond} alt="Tekening van bewustzijn" height={375} width={375}/>
 				<p class="text-red">{t('aanbod.s4.col1.title')}</p>
 				<p class="text-align-justify">{t('aanbod.s4.col1.text')}</p>
 			</div>
 	
 			<div>
-				<Image src={adem_rond} alt="Tekening van adem" height={400} width={400}/>
+				<Image src={adem_rond} alt="Tekening van adem" height={375} width={375}/>
 				<p class="text-red">{t('aanbod.s4.col2.title')}</p>
 				<p class="text-align-justify">{t('aanbod.s4.col2.text')}</p>
 			</div>
 	
 			<div>
-				<Image src={hart_rond} alt="Tekening van hart" height={400} width={400}/>
+				<Image src={hart_rond} alt="Tekening van hart" height={375} width={375}/>
 				<p class="text-red">{t('aanbod.s4.col3.title')}</p>
 				<p class="text-align-justify">{t('aanbod.s4.col3.text')}</p>
 			</div>
 	
 			<div>
-				<Image src={lichaam_rond} alt="Tekening van lichaam" height={400} width={400}/>
+				<Image src={lichaam_rond} alt="Tekening van lichaam" height={375} width={375}/>
 				<p class="text-red">{t('aanbod.s4.col4.title')}</p>
 				<p class="text-align-justify">{t('aanbod.s4.col4.text')}</p>
 			</div>
@@ -68,7 +68,7 @@ export { getStaticPaths };
 					<li>{t("aanbod.s5.col1.list5")}</li>
 					<li>{t("aanbod.s5.col1.list6")}</li>
 				</ul>
-				<p>{t("aanbod.s5.col1.text2")}</p>
+				<p class="text-align-justify">{t("aanbod.s5.col1.text2")}</p>
 			</div>
 			<div>
 				<p class="bold">{t("aanbod.s5.col2.title")}</p>
@@ -81,7 +81,7 @@ export { getStaticPaths };
 					<li>{t("aanbod.s5.col2.list5")}</li>
 					<li>{t("aanbod.s5.col2.list6")}</li>
 				</ul>
-				<p>{t("aanbod.s5.col2.text2")}</p>
+				<p class="text-align-justify">{t("aanbod.s5.col2.text2")}</p>
 			</div>
 		</div>
 		<div class="text-align-center">
@@ -98,7 +98,7 @@ export { getStaticPaths };
 	</section>
 	<section class="s6 back-white text-align-center">
 		<h1 class="text-red">{t('aanbod.s6.title')}</h1>
-		<p set:html={t('aanbod.s6.text')} />
+		<p set:html={t('aanbod.s6.text')}/>
 	</section>
 	<section class="s7 back-white text-red">
 		<p class="p1">{t('aanbod.s7.individuals')}</p>
