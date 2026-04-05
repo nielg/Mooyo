@@ -133,10 +133,10 @@ ul.star-list li::before {
 
 /* Responsive */
 
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
   .col3 {
     grid-template-columns: auto;
-    padding: 0 3rem 0 3rem;
+    padding: 0 3rem;
   }
 }
 

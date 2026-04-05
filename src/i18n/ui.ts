@@ -145,7 +145,8 @@ export const ui = {
       "Meerdaagse in de Ardennen om in sinc met de natuur en tot jezelf te komen.",
     "aanbod.s8.col1.reconstructive.title": "Reconstructive (2 daagse)",
     "aanbod.s8.col1.reconstructive.text":
-      "Reconstructive is een lichaamservaring die ons brengt:",
+      "Reconstructive is een groepslichaamservaring waar je je als individu voor kunt inschrijven. Meer uitleg en aanbod:",
+    "aanbod.s8.listTitle": "Hier even kort wat je kan verwachten:",
     "aanbod.s8.col1.list1":
       "Het in eigen lichaam ervaren van onzer beperkingen",
     "aanbod.s8.col1.list2":

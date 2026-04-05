@@ -30,25 +30,25 @@ export { getStaticPaths };
 	<section class="s4 back-gray text-align-center">
 		<div class="col2">
 			<div>
-				<Image src={bewustzijn_rond} alt="Tekening van bewustzijn" height={375} width={375}/>
+				<Image src={bewustzijn_rond} alt="Tekening van bewustzijn" height={300} width={300}/>
 				<p class="text-red">{t('aanbod.s4.col1.title')}</p>
 				<p class="text-align-justify">{t('aanbod.s4.col1.text')}</p>
 			</div>
 	
 			<div>
-				<Image src={adem_rond} alt="Tekening van adem" height={375} width={375}/>
+				<Image src={adem_rond} alt="Tekening van adem" height={300} width={300}/>
 				<p class="text-red">{t('aanbod.s4.col2.title')}</p>
 				<p class="text-align-justify">{t('aanbod.s4.col2.text')}</p>
 			</div>
 	
 			<div>
-				<Image src={hart_rond} alt="Tekening van hart" height={375} width={375}/>
+				<Image src={hart_rond} alt="Tekening van hart" height={300} width={300}/>
 				<p class="text-red">{t('aanbod.s4.col3.title')}</p>
 				<p class="text-align-justify">{t('aanbod.s4.col3.text')}</p>
 			</div>
 	
 			<div>
-				<Image src={lichaam_rond} alt="Tekening van lichaam" height={375} width={375}/>
+				<Image src={lichaam_rond} alt="Tekening van lichaam" height={300} width={300}/>
 				<p class="text-red">{t('aanbod.s4.col4.title')}</p>
 				<p class="text-align-justify">{t('aanbod.s4.col4.text')}</p>
 			</div>
@@ -107,11 +107,13 @@ export { getStaticPaths };
 	<section class="s8 back-red">
 		<div class="col2">
 			<div>
-				<h2>{t('aanbod.s8.col1.title')}</h2>
-				<p>{t('aanbod.s8.col1.subtitle')}</p>
+				<h2 class="text-align-center">{t('aanbod.s8.col1.title')}</h2>
+				<p class="text-align-center">{t('aanbod.s8.col1.subtitle')}</p>
 				<p class="text-white">{t('aanbod.s8.col1.text1')}</p>
-				<p>{t('aanbod.s8.col1.reconstructive.title')}</p>
+				<p class="text-align-center">{t('aanbod.s8.col1.reconstructive.title')}</p>
 				<p class="text-white">{t('aanbod.s8.col1.reconstructive.text')}</p>
+				<a href=""><p class="text-black text-align-center">www.reconstructive.be</p></a>
+				<p class="text-white">{t('aanbod.s8.listTitle')}</p>
 				<ul class="text-white">
 					<li>{t('aanbod.s8.col1.list1')}</li>
 					<li>{t('aanbod.s8.col1.list2')}</li>
@@ -121,11 +123,11 @@ export { getStaticPaths };
 				</ul>
 			</div>
 			<div>
-				<h2>{t('aanbod.s8.col2.title')}</h2>
-				<p>{t('aanbod.s8.col2.subtitle')}</p>
+				<h2 class="text-align-center">{t('aanbod.s8.col2.title')}</h2>
+				<p class="text-align-center">{t('aanbod.s8.col2.subtitle')}</p>
 				<p class="text-white">{t('aanbod.s8.col2.text1')}</p>
-				<p class="text-white">{t("aanbod.s8.col2.text2")}</p>
-				<p>{t('aanbod.s8.col2.walk.title')}</p>
+				<p class="text-white">{t("aanbod.s8.col2.text2")} <a href="" class="text-black">www.reconstructive.be</a></p>
+				<p class="text-align-center">{t('aanbod.s8.col2.walk.title')}</p>
 				<p class="text-white">{t('aanbod.s8.col2.walk.text')}</p>
 				<ul class="text-white">
 					<li>{t("aanbod.s8.col2.walk.list1")}</li>
@@ -154,6 +156,10 @@ export { getStaticPaths };
 		align-items: center;
 		justify-content: center;
 		flex-direction: column;
+	}
+
+	.s8 .col2{
+		grid-template-columns: 500px 500px;
 	}
 
 	.s5 {
