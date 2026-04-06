@@ -1,6 +1,6 @@
 export const languages = {
-  nl: "Nederlands",
-  en: "English",
+  nl: "nl",
+  en: "en",
 };
 
 export const showDefaultLang = true;
