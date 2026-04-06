@@ -29,5 +29,5 @@ jobs:
           source-directory: "./dist"
           storage-zone-name: "mooyo"
           storage-zone-password: ${{ secrets.BUNNY_STORAGE_PASSWORD }}
-          storage-endpoint: "storage.bunnycdn.com"
+          storage-endpoint: "https://storage.bunnycdn.com"
           purge-pull-zone-id: "5640984" # Add your Pull Zone ID to clear cache automatically
