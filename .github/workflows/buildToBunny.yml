@@ -26,8 +26,10 @@ jobs:
       - name: Deploy to Bunny.net
         uses: R-J-dev/bunny-deploy@main
         with:
-          source-directory: "./dist"
+          directory-to-upload: "./dist"
           storage-zone-name: "mooyo"
           storage-zone-password: ${{ secrets.BUNNY_STORAGE_PASSWORD }}
           storage-endpoint: "https://storage.bunnycdn.com"
-          purge-pull-zone-id: "5640984" # Add your Pull Zone ID to clear cache automatically
+          pull-zone-id: "5640984"
+          concurrency: 50
+          enable-purge-pull-zone: true
