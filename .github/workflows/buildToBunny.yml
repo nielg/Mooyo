@@ -18,7 +18,7 @@ jobs:
         run: npm run build
 
       - name: Deploy to Bunny.net
-        uses: R-J-dev/bunny-deploy@v2.2.0
+        uses: R-J-dev/bunny-deploy@main
         with:
           source-directory: "./dist"
           storage-zone-name: "mooyo"
