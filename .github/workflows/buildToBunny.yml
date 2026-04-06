@@ -1,0 +1,27 @@
+name: Deploy Astro to Bunny.net
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build Astro site
+        run: npm run build
+
+      - name: Deploy to Bunny.net
+        uses: R-J-dev/bunny-deploy@v2.2.0
+        with:
+          source-directory: "./dist"
+          storage-zone-name: "mooyo"
+          storage-zone-password: ${{ secrets.BUNNY_STORAGE_PASSWORD }}
+          storage-endpoint: "storage.bunnycdn.com"
+          purge-pull-zone-id: "5640984" # Add your Pull Zone ID to clear cache automatically
