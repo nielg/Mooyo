@@ -26,6 +26,7 @@ jobs:
       - name: Deploy to Bunny.net
         uses: R-J-dev/bunny-deploy@main
         with:
+          access-key: ${{ secrets.BUNNY_API_KEY }}
           directory-to-upload: "./dist"
           storage-zone-name: "mooyo"
           storage-zone-password: ${{ secrets.BUNNY_STORAGE_PASSWORD }}
