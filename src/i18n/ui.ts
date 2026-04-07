@@ -18,10 +18,18 @@ export const ui = {
     "nav.hartcirkels": "HARTCIRKELS",
     "nav.about": "OVER MIJ",
 
+    // Footer
+    "footer.home": "home",
+    "footer.filosofie": "filosofie",
+    "footer.aanbod": "aanbod",
+    "footer.hartcirkels": "hartcirkels",
+    "footer.about": "over mij",
+    "footer.madeBy": "Deze Website is gemaakt met Astro door Niel Geysen.",
+
     // Layout
     "layout.header.subtitle": "hartgedragen begeleiding",
-    "layout.footer.madeBy": "Website gemaakt door Niel Geysen",
     "layout.contact": "Maak een afspraak of stuur een bericht naar: ",
+
     // Index
 
     "index.title": "Home",
@@ -62,7 +70,7 @@ export const ui = {
 
     // Index section 4
     "index.s4.text":
-      "Hoe kan je jaren conditionering tot stilstand brengen en omkeren? <br>Hiervoor is een enorme kracht nodig. <br>Alleen de kracht van het hart kan dit initiëren.",
+      "Ben je bereid om in beweging te komen en naar je hart te luisteren?",
 
     // Aanbod
     "aanbod.title": "Aanbod",
@@ -77,16 +85,16 @@ export const ui = {
     "aanbod.s2.text2": "Eerst waarheid, dan vorm.",
     "aanbod.s2.text3": "Eerst innerlijke afstemming, dan actie.",
     "aanbod.s2.text4":
-      "Mooyo is een uitnodigin om van binnenuit te leven, niet vanuit gewoonte of verwachting.",
+      "Mooyo is een uitnodiging om van binnenuit te leven, niet vanuit gewoonte of verwachting.",
 
     // Aanbod section 3
     "aanbod.s3.text":
       "Samen Gaan we op zoek naar wat bij je past en wat je nodig hebt, <br> daarbij vormen de vier peilers de stevige ondergrond om in te landen en vanuit te vertrekken.",
 
     // Aanbod section 4
-    "aanbod.s4.col1.title": "Systemisce begeleiding - mindfulness",
+    "aanbod.s4.col1.title": "Systemische begeleiding - mindfulness",
     "aanbod.s4.col1.text":
-      "Truth-telling: eerlijk kijken naar je verleden, je patronen. Psycho-eductatie is een belangrijk onderdeel van heling, transformatie Begrijpen wat perceptie, conditionering en programmering van 0 tot 6 jaar inhoudt en hoe het je leven beïnvloedt. Je plaats herkennen bij je ouders en in het familiesysteem om je leerprocessen en gedragingen te begrijpen",
+      "Truth-telling: eerlijk kijken naar je verleden, je patronen. Psycho-educatie is een belangrijk onderdeel van heling, transformatie Begrijpen wat perceptie, conditionering en programmering van 0 tot 6 jaar inhoudt en hoe het je leven beïnvloedt. Je plaats herkennen bij je ouders en in het familiesysteem om je leerprocessen en gedragingen te begrijpen",
     "aanbod.s4.col2.title": "Ademhalingsoefening - Meditatie",
     "aanbod.s4.col2.text":
       "Het leven aanvaarden zoals het nu is, niet zoals je het zou willen. Zonder weerstand. De tijdelijkheid ervan inzien. Ademhaling is de poort tussen het bewuste en onbewuste: we kunnen de ademhaling bewust sturen en tegelijk werkt de ademhaling autonoom. Regulering bij pijnlijke ervaringen die gevoeld mogen worden.",
@@ -154,7 +162,7 @@ export const ui = {
     "aanbod.s8.col1.list3":
       "Het even opzij zetten van kennis (opgeslagen data) die ons gevangen houdt",
     "aanbod.s8.col1.list4":
-      "Het leren kennen van wat we diep vanbiien weten dat bestaat, maar nog niet durven leven",
+      "Het leren kennen van wat we diep vanbinnen weten dat bestaat, maar nog niet durven leven",
     "aanbod.s8.col1.list5":
       "Het absolute besef dat de gezondheid van de planeet bij ons begint",
     "aanbod.s8.col2.title": "Workshops",
@@ -197,7 +205,7 @@ export const ui = {
     // Filosofie section 2
     "filosofie.s2.col1.title":
       "1. Het hart als bron van motivatie en eerlijkheid",
-    "filosofie.s2.col1.text1": "De kract van het hart omvat:",
+    "filosofie.s2.col1.text1": "De kracht van het hart omvat:",
     "filosofie.s2.col1.list1": "oprechte zelfcompassie",
     "filosofie.s2.col1.list2": "de moed om ongemak toe te laten",
     "filosofie.s2.col1.list3":
@@ -212,7 +220,7 @@ export const ui = {
       "Patronen blijven bestaan zolang ze automatisch verlopen.",
     "filosofie.s2.col2.text2": "Ze beginnen te verschuiven wanneer je:",
     "filosofie.s2.col2.list1":
-      "het patroon opgmerkt op het moment dat het gebeurd",
+      "het patroon opgemerkt op het moment dat het gebeurt",
     "filosofie.s2.col2.list2": "de lichamelijke sensaties erbij voelt",
     "filosofie.s2.col2.list3": "niet meteen reageert zoals je altijd deed",
     "filosofie.s2.col2.text3":
@@ -220,9 +228,9 @@ export const ui = {
     "filosofie.s2.col3.title":
       "3. Omkeren gebeurt door kleine herhaalde keuzes",
     "filosofie.s2.col3.text1":
-      "Grote transformaties onstaan zelfde door één grote daad",
-    "filosofie.s2.col3.text2": "Ze onstaan door:",
-    "filosofie.s2.col3.list1": "telkens opneiuw kiezen voor een andere reactie",
+      "Grote transformaties ontstaan zelden door één grote daad",
+    "filosofie.s2.col3.text2": "Ze ontstaan door:",
+    "filosofie.s2.col3.list1": "telkens opnieuw kiezen voor een andere reactie",
     "filosofie.s2.col3.list2": "mild blijven wanneer het niet lukt",
     "filosofie.s2.col3.list3":
       'jezelf toestaan om te groeien in plaats van te "fixen"',
@@ -307,7 +315,7 @@ export const ui = {
 
     // Hartcirkels section 2
     "hartcirkels.s2.col1.title":
-      "De cirkel als helende bewegin, <br> <span style='font-size: 1.5rem; font-weight: 400 '>de cirkel als beweging van het leven</span>",
+      "De cirkel als helende beweging, <br> <span style='font-size: 1.5rem; font-weight: 400 '>de cirkel als beweging van het leven</span>",
     "hartcirkels.s2.col1.subtitle": "de cirkel als beweging van het leven",
     "hartcirkels.s2.col1.text1":
       "Het leven/de ziel beweegt in cycli van afdalen en opstaan",
@@ -427,9 +435,16 @@ export const ui = {
     "nav.hartcirkels": "HEART CIRCLES",
     "nav.about": "ABOUT ME",
 
+    // Footer
+    "footer.home": "home",
+    "footer.filosofie": "philosophy",
+    "footer.aanbod": "offerings",
+    "footer.hartcirkels": "heart circles",
+    "footer.about": "about me",
+    "footer.madeBy": "This website was made with Astro by Niel Geysen.",
+
     // Layout
     "layout.header.subtitle": "heart-centered guidance",
-    "layout.footer.madeBy": "Website created by Niel Geysen",
     "layout.contact": "Make an appointment or send a message to: ",
 
     // Index section 1
@@ -467,8 +482,7 @@ export const ui = {
     "index.s3.col3.text3": "Are you willing to move and listen to your heart?",
 
     // Index section 4
-    "index.s4.text":
-      "How can you bring years of conditioning to a halt and reverse it? <br>This requires an enormous force. <br>Only the power of the heart can initiate this.",
+    "index.s4.text": "Are you ready to take action and listen to your heart?",
 
     // Aanbod
     "aanbod.title": "Offerings",
