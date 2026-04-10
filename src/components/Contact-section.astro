@@ -1,0 +1,22 @@
+---
+import "../styles/global.css"
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+<section class="back-gray text-align-center">
+    <p>{t('layout.contact')}</p>
+	<p>+32 473 52 30 94</p>
+    <p class="red-btn">
+  	    <a href="mailto:bramgeysen@gmail.com" class="border-bottom">bramgeysen@gmail.com</a>
+    </p>
+<section>
+<style>
+    section {
+        padding: 1rem;
+    }
+
+    .red-btn {
+        margin-bottom: 0;
+    }
+</style>

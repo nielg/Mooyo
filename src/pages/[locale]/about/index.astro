@@ -2,9 +2,8 @@
 import { Image } from 'astro:assets';
 import Layout from "../../../layouts/Layout.astro"
 import { getLangFromUrl, useTranslations, getStaticPaths } from '../../../i18n/utils';
-import zon from '../../../assets/zon.jpg'
+import afrika from '../../../assets/afrika.png'
 import vuur_camping from '../../../assets/vuur_camping.jpeg'
-import zweden_uitzicht from '../../../assets/zweden_uitzicht.jpg'
 
 export { getStaticPaths };
 const lang = getLangFromUrl(Astro.url);
@@ -16,42 +15,29 @@ const t = useTranslations(lang);
         <h1 class="text-red">{t("about.s1.title")}</h1>
         <p class="text-gray">{t("about.s1.text")}</p>
     </section>
-    <section class="s2 back-white">
+    <section class="s2 back-white text-gray text-align-justify">
             <div class="center">
-                <Image class="img" src={zon} alt="Tekening van de zon" width={500} height={500} loading='eager'/>
+                <Image class="img" src={afrika} alt="Tekening van de zon" width={500} height={500} loading='eager'/>
             </div>
             <div class="text">
                 <h2 class="text-red">{t("about.s2.e1.title")}</h2>
-                <p class="text-gray text-align-justify" set:html={t("about.s2.e1.text")}/>
+                <p>{t("about.s2.e1.text1")}<p/>
+                <p>{t("about.s2.e1.text2")}<p/>
+                <p>{t("about.s2.e1.text3")}<p/>
+                <p>{t("about.s2.e1.text4")}<p/>
+                <p>{t("about.s2.e1.text5")}<p/>
+                <p>{t("about.s2.e1.text6")}<p/>
+                <p>{t("about.s2.e1.text7")}<p/>
             </div>
         
             <div class="text right row4">
                 <h2 class="text-red">{t("about.s2.e2.title")}</h2>
-                <p class="text-gray text-align-justify" set:html={t("about.s2.e2.text")}/>
+                <p>{t("about.s2.e2.text1")}<p/>
+                <p>{t("about.s2.e2.text2")}<p/>
             </div>
             <div class="img-container">
                 <Image class="img row3" src={vuur_camping} alt="Foto kamperen met kampvuur" width={1000} height={1000}/>
             </div>
-            <div class="img-container center">
-                <Image class="img" src={zweden_uitzicht} alt="Uitzicht op meer in Zweden" width={1000} height={1000}/>
-            </div>
-            <div class="text row2">
-                <h2 class="text-red">{t("about.s2.e3.title")}</h2>
-                <p class="text-gray p3" set:html={t("about.s2.e3.text1")}/>
-                <p class="text-gray p3" set:html={t("about.s2.e3.text2")}/>
-                <p class="text-gray p3" set:html={t("about.s2.e3.text3")}/>
-                <p class="text-gray p3" set:html={t("about.s2.e3.text4")}/>
-                <p class="text-gray p3" set:html={t("about.s2.e3.text5")}/>
-                <p class="text-gray p3" set:html={t("about.s2.e3.text6")}/>
-                <p class="text-gray p3" set:html={t("about.s2.e3.text7")}/>
-                <p class="text-gray p3" set:html={t("about.s2.e3.text8")}/>
-                <p class="text-gray p3" set:html={t("about.s2.e3.text8")}/>
-                <p class="text-gray p3" set:html={t("about.s2.e3.text10")}/>
-            </div>
-    </section>
-    <section class="s3 back-red text-white text-align-center">
-        <h3 set:html={t('about.s3.text')}/>
-        <p>[Ellen]</p>
     </section>
 </Layout>
 
@@ -67,9 +53,8 @@ const t = useTranslations(lang);
 
     .s2 .text {
         padding: 3rem;
-        width: 100%; 
-        max-width: 600px;
-        margin: 0 auto;
+        height: auto;
+
     }
 
     .img {
@@ -81,7 +66,9 @@ const t = useTranslations(lang);
 
     .img-container {
         width: 100%;
-        height: 700px; 
+        height: auto;        
+        min-height: 400px;   
+        max-height: 700px;   
         overflow: hidden;
     }
 
@@ -101,7 +88,6 @@ const t = useTranslations(lang);
         }
 
         .s2 .text {
-            width: 90%;
             padding: 2rem;
         }
 

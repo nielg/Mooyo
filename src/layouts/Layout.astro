@@ -25,15 +25,27 @@ const { title, description = "Standaard omschrijving voor Mooyo" } = Astro.props
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/png" href={`${baseUrl}/favicon.png`} />
 		<meta name="generator" content={Astro.generator} />
-		<title>{title} | Mooyo</title>
 		<meta name="description" content={description}>
+		<meta name="keywords" content="Astro, coaching">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://www.mooyo.be/">
+		<meta property="og:title" content="Mooyo Hard begeleiding coachen">
+		<meta property="og:description" content="Description voor mooyo site">
+		<meta property="og:image" content="https://www.mooyo.be/favicon.png">
+		<meta property="og:site_name" content="mooyo">
+		<meta property="twitter:card" content="summary_large_image">
+		<meta property="twitter:url" content="https://www.mooyo.be/">
+		<meta property="twitter:title" content="Mooyo Hard begeleiding coachen">
+		<meta property="twitter:description" content="Description voor mooyo site">
+		<meta property="twitter:image" content="https://www.mooyo.be/favicon.png">
+		<title>{title} | Mooyo</title>
+		<link rel="icon" type="image/png" href={`${baseUrl}/favicon.png`} />
 		<link rel="canonical" href={canonicalURL} />
 	</head>
 	<body>
 		<header>
-			<LanguagePicker/>
+			<LanguagePicker place='header'/>
 			<div>
 				<Image src={hart_rond} alt="Mooyo logo" height={100} width={100} loading="eager"/>
 				<h1><span class="big-text">Mooyo -</span> {t('layout.header.subtitle')}</h1>
@@ -42,34 +54,34 @@ const { title, description = "Standaard omschrijving voor Mooyo" } = Astro.props
 		</header>
 		<main>
 			<slot />
-			{pathname != "/" && (
-				<section class="back-gray text-align-center text-gray">
-					<p>{t('layout.contact')}</p>
-					<p>+32 473 52 30 94</p>
-					<p>
-  						<a href="mailto:bramgeysen@gmail.com" class="border-bottom">bramgeysen@gmail.com</a>
-					</p>
-				</section>
-			)}
 		</main>
 		<footer class="back-black text-gray">
 			<p>© 2026 Mooyo</p>
 			<div class="flex">
 				<div>
-					<p>Links</p>
-					<ul>
-						<li><a href={translatePath('/')}></a>{t('footer.home')}</li>
-						<li><a href={translatePath('/filosofie')}></a>{t('footer.filosofie')}</li>
-						<li><a href={translatePath('/aanbod')}></a>{t('footer.aanbod')}</li>
-						<li><a href={translatePath('/hartcirkels')}></a>{t('footer.hartcirkels')}</li>
-						<li><a href={translatePath('/about')}></a>{t('footer.about')}</li>
-						<li><a href="">www.hartcirkels.be</a></li>
-						<li><a href="">www.reconstructive.be</a></li>
+					<p>Mooyo</p>
+					<ul class="none-list">
+    					<li><a href={translatePath('/')}>{t('footer.home')}</a></li>
+    					<li><a href={translatePath('/filosofie')}>{t('footer.filosofie')}</a></li>
+    					<li><a href={translatePath('/aanbod')}>{t('footer.aanbod')}</a></li>
+    					<li><a href={translatePath('/about')}>{t('footer.about')}</a></li>
+    					<li><a href="https://www.hartcirkels.be">www.hartcirkels.be</a></li>
+    					<li><a href="https://www.reconstructive.be">www.reconstructive.be</a></li>
 					</ul>
 				</div>
-				<div class="text-align-center">
-					<p>{t('footer.madeBy')}</p>
+				<div>
+					<p>Bram Geysen</p>
+					<p>+32 473 52 30 94</p>
+					<p><a href="mailto:bramgeysen@gmail.com">bramgeysen@gmail.com</a></p>
+				</div>
+				<div>
+					<p>{t('footer.artwork')}</p>
+					<p>{t('footer.zon')}</p>
+					<p>{t('footer.website')}</p>
 					<p><a href="mailto:nielgeysen@gmail.com">nielgeysen@gmail.com</a></p>
+				</div>
+				<div>
+					<LanguagePicker place='footer'/>
 				</div>
 			</div>
 		</footer>
@@ -115,15 +127,24 @@ const { title, description = "Standaard omschrijving voor Mooyo" } = Astro.props
 
 	footer .flex {
 		display: flex;
-		justify-content: space-between;
-		width: 80%;
+		justify-content: space-around;
+		width: 100%;
 	}
 
-	.border-bottom{
-		border-bottom: 1px solid var(--mooyo-text-gray);
+	footer .ul {
+		list-style-type: none;
 	}
+
 
 	/* Responsive */
+
+	@media (max-width: 800px){
+		footer .flex{
+			flex-direction: column;
+			width: 50%;
+			margin: auto;
+		}
+	}
 
     @media (max-width: 700px ){
         header {

@@ -5,9 +5,14 @@ import { getLangFromUrl, getRouteFromUrl, useTranslatedPath } from "../i18n/util
 const langFromUrl = getLangFromUrl(Astro.url);
 const route = getRouteFromUrl(Astro.url);
 const translatePath = useTranslatedPath(langFromUrl);
+const { place } = Astro.props;
+
+interface Props {
+	place: "header" | "footer";
+}
 ---
 
-<div class="taal-switch">
+<div class="taal-switch" data-place={place}>
     {Object.entries(languages).map(([lang, label]) => (
         <a 
           href={translatePath(`/${route || ""}`, lang)} 
@@ -20,32 +25,49 @@ const translatePath = useTranslatedPath(langFromUrl);
 
 <style>
     .taal-switch{
-		position: absolute;
-		right: 2rem;
-		top: 1rem;
 		display: flex;
 		flex-direction: row;
 		align-items: center;
 		gap: 1rem;
 		font-size: 1rem;
 	}
+	
+	.taal-switch[data-place="header"]{
+		position: absolute;
+		right: 2rem;
+		top: 1.5rem;
+	}
 
 	a {
-		border: 1px solid var(--mooyo-red);
-		border-radius: 1rem;
-		padding: 0.5rem 1.2rem;
+		border-radius: 0.5rem;
+		padding: 0.5rem 1.5rem;
 		transition: background-color 0.3s ease-in, color 0.3s ease-in;
 		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 	}
+	
+	.taal-switch[data-place="header"] a{
+		border: 1px solid var(--mooyo-red);
+	}
+	
+	.taal-switch[data-place="footer"] a{
+		border: 1px solid black;
+		background-color: var(--mooyo-gray);
+	}
 
-	a:hover {
+	.taal-switch[data-place="header"] a:hover {
 		background-color: rgb(128, 119, 119);
 		border-color: rgb(128, 119, 119);
 		color: white;
 	}
 
-	.active {
+	.taal-switch[data-place="header"] .active {
 		color: white;
 		background-color: var(--mooyo-red);
+	}
+
+	.taal-switch[data-place="footer"] .active {
+		color: white;
+		background-color: rgb(39, 32, 32);
+		border-color: ;
 	}
 </style>

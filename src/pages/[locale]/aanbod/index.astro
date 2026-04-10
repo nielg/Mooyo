@@ -6,6 +6,7 @@ import bewustzijn_rond from '../../../assets/rondevormen/bewustzijn_rond.png';
 import hart_rond from '../../../assets/rondevormen/hart_rond.png';
 import lichaam_rond from '../../../assets/rondevormen/lichaam_rond.png';
 import { getLangFromUrl, useTranslations, getStaticPaths } from '../../../i18n/utils';
+import ContactSection from '@components/Contact-section.astro';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -18,131 +19,76 @@ export { getStaticPaths };
 		<h1 class="text-red" set:html={t('aanbod.s1.title')} />
 		<p set:html={t('aanbod.s1.text')} />
 	</section>
-	<section class="s2 text-align-center back-red">
-		<p>{t('aanbod.s2.text1')}</p>
-		<p>{t('aanbod.s2.text2')}</p>
-		<p>{t('aanbod.s2.text3')}</p>
-		<p>{t('aanbod.s2.text4')}</p>
-	</section>
-	<section class="s3 text-align-center back-white text-red">
-		<p class="p2" set:html={t('aanbod.s3.text')} />
-	</section>
-	<section class="s4 back-gray text-align-center">
-		<div class="col2">
-			<div>
-				<Image src={bewustzijn_rond} alt="Tekening van bewustzijn" height={300} width={300}/>
-				<p class="text-red">{t('aanbod.s4.col1.title')}</p>
-				<p class="text-align-justify">{t('aanbod.s4.col1.text')}</p>
-			</div>
-	
-			<div>
-				<Image src={adem_rond} alt="Tekening van adem" height={300} width={300}/>
-				<p class="text-red">{t('aanbod.s4.col2.title')}</p>
-				<p class="text-align-justify">{t('aanbod.s4.col2.text')}</p>
-			</div>
-	
-			<div>
-				<Image src={hart_rond} alt="Tekening van hart" height={300} width={300}/>
-				<p class="text-red">{t('aanbod.s4.col3.title')}</p>
-				<p class="text-align-justify">{t('aanbod.s4.col3.text')}</p>
-			</div>
-	
-			<div>
-				<Image src={lichaam_rond} alt="Tekening van lichaam" height={300} width={300}/>
-				<p class="text-red">{t('aanbod.s4.col4.title')}</p>
-				<p class="text-align-justify">{t('aanbod.s4.col4.text')}</p>
-			</div>
+	<section class="s2 back-red text-white center">
+		<div class="container">
+			<h4 class="border-bottom text-align-center">{t('aanbod.s2.text1')}</h4>
+			<p class="text-align-center border-bottom" set:html={t('aanbod.s2.text3')}/>
+			<div class="col2">
+				<div>
+					<ul class="infinity-list">
+						<li>Hartcoherentie - Heartmath</li>
+						<li>Footprints - Reconstructive International School - Carola Castillo</li>
+						<li>Reconstructive - Reconstructive International School - Carola Castillo</li>
+						<li>InterFamilySystems - IFS instituut</li>
+						<li>A Parts Approach to Preverbal Attachment Trauma - nicabem</li>
+						<li>Talentgedreven coachen - BlijMetMijAcademie</li>
+						<li>Familie Opstellingen - Stephan Hausser</li>
+					</ul>
+				</div>
+				<div>
+					<ul class="infinity-list">
+						<li>Mastering the Treatment of Trauma - nicabem</li>
+						<li>Advanced Mastering program on Treatment of Trauma - nicabem</li>
+						<li>Working with Emerging Adults: Key Factors That Can Impact Treatment - nicabem</li>
+						<li>How to work with shame - nicabem</li>
+						<li>Radical Compassion - Tara Brach</li>
+						<li> Meditatie - Mindfulness</li>
+						<li>SAND - Indigenous wisdom and healing</li>
+					</ul>
+				</div>
+			</div>	
 		</div>
 	</section>
-	<section class="s5 back-red text-white">
-		<h2>{t("aanbod.s5.title")}</h2>
-		<div class="col2">
-			<div>
-				<p class="bold">{t("aanbod.s5.col1.title")}</p>
-				<p>{t("aanbod.s5.col1.text1")}</p>
-				<ul>
-					<li>{t("aanbod.s5.col1.list1")}</li>
-					<li>{t("aanbod.s5.col1.list2")}</li>
-					<li>{t("aanbod.s5.col1.list3")}</li>
-					<li>{t("aanbod.s5.col1.list4")}</li>
-					<li>{t("aanbod.s5.col1.list5")}</li>
-					<li>{t("aanbod.s5.col1.list6")}</li>
-				</ul>
-				<p class="text-align-justify">{t("aanbod.s5.col1.text2")}</p>
-			</div>
-			<div>
-				<p class="bold">{t("aanbod.s5.col2.title")}</p>
-				<p>{t("aanbod.s5.col2.text1")}</p>
-				<ul>
-					<li>{t("aanbod.s5.col2.list1")}</li>
-					<li>{t("aanbod.s5.col2.list2")}</li>
-					<li>{t("aanbod.s5.col2.list3")}</li>
-					<li>{t("aanbod.s5.col2.list4")}</li>
-					<li>{t("aanbod.s5.col2.list5")}</li>
-					<li>{t("aanbod.s5.col2.list6")}</li>
-				</ul>
-				<p class="text-align-justify">{t("aanbod.s5.col2.text2")}</p>
-			</div>
-		</div>
-		<div class="text-align-center">
-			<p class="bold">{t("aanbod.s5.col3.title")}</p>
-			<ul class="star-list">
-				<li class="bold">{t("aanbod.s5.col3.list1")}</li>
-				<li class="bold">{t("aanbod.s5.col3.list2")}</li>
-				<li class="bold">{t("aanbod.s5.col3.list3")}</li>
-				<li class="bold">{t("aanbod.s5.col3.list4")}</li>
-			</ul>
-			<p>{t("aanbod.s5.col3.text1")}</p>
-		</div>
+	<ContactSection/>
 
-	</section>
-	<section class="s6 back-white text-align-center">
-		<h1 class="text-red">{t('aanbod.s6.title')}</h1>
-		<p set:html={t('aanbod.s6.text')}/>
-	</section>
-	<section class="s7 back-white text-red">
-		<p class="p1">{t('aanbod.s7.individuals')}</p>
-		<p class="p1">{t('aanbod.s7.teams')}</p>
-	</section>
-	<section class="s8 back-red">
+	<section class="s4 back-red center text-white">
 		<div class="col2">
 			<div>
-				<h2 class="text-align-center">{t('aanbod.s8.col1.title')}</h2>
-				<p class="text-align-center">{t('aanbod.s8.col1.subtitle')}</p>
-				<p class="text-white">{t('aanbod.s8.col1.text1')}</p>
-				<p class="text-align-center">{t('aanbod.s8.col1.reconstructive.title')}</p>
-				<p class="text-white">{t('aanbod.s8.col1.reconstructive.text')}</p>
-				<a href=""><p class="text-black text-align-center">www.reconstructive.be</p></a>
-				<p class="text-white">{t('aanbod.s8.listTitle')}</p>
-				<ul class="text-white">
-					<li>{t('aanbod.s8.col1.list1')}</li>
-					<li>{t('aanbod.s8.col1.list2')}</li>
-					<li>{t('aanbod.s8.col1.list3')}</li>
-					<li>{t('aanbod.s8.col1.list4')}</li>
-					<li>{t('aanbod.s8.col1.list5')}</li>
+				<p class="bold">{t('aanbod.s4.e1.title1')}</p>
+				<ul class="infinity-list">
+					<li>{t('aanbod.s4.e1.li1')}</li>
+					<li>{t('aanbod.s4.e1.li2')}</li>
 				</ul>
+				<p class="bold">{t('aanbod.s4.e1.title2')}</p>
+				<p>{t('aanbod.s4.e1.text1')}</p>
+				<p>{t('aanbod.s4.e1.text2')}</p>
 			</div>
 			<div>
-				<h2 class="text-align-center">{t('aanbod.s8.col2.title')}</h2>
-				<p class="text-align-center">{t('aanbod.s8.col2.subtitle')}</p>
-				<p class="text-white">{t('aanbod.s8.col2.text1')}</p>
-				<p class="text-white">{t("aanbod.s8.col2.text2")} <a href="" class="text-black">www.reconstructive.be</a></p>
-				<p class="text-align-center">{t('aanbod.s8.col2.walk.title')}</p>
-				<p class="text-white">{t('aanbod.s8.col2.walk.text')}</p>
-				<ul class="text-white">
-					<li>{t("aanbod.s8.col2.walk.list1")}</li>
+				<p class="bold">{t('aanbod.s4.e2.title1')}</p>
+				<ul class="infinity-list">
+					<li>{t('aanbod.s4.e2.li1')}</li>
+					<li>{t('aanbod.s4.e2.li2')}</li>
+				</ul>
+				<p class="bold">{t('aanbod.s4.e2.title2')}</p>
+				<ul class="infinity-list">
+					<li>{t('aanbod.s4.e2.li3')}</li>
+					<li>{t('aanbod.s4.e2.li4')}</li>
 				</ul>
 			</div>
 		</div>
 	</section>
-	<section class="s10 back-white text-red text-align-center">
-		<h3 set:html={t("aanbod.s10.text")}/>
+	<section class="s5 back-white text-gray center">
+		<h3 class="text-red bold">{t('aanbod.s5.title')}</h3>
+		<p>{t('aanbod.s5.text')} <a href="#" class="text-red">www.hartcirkels.be</a></p>
 	</section>
-	<section class="s11 back-red text-white text-align-center">
-		<h3 set:html={t("aanbod.s11.text")}/>
+	<section class="s6 back-red text-white text-align-center">
+		<h3 set:html={t("aanbod.s6.text")}/>
 	</section>
-	<section class="s12 back-white text-red text-align-center">
-		<h3 set:html={t("aanbod.s12.text")}/>
+	<section class="s7 back-white text-red text-align-center">
+		<h3 set:html={t("aanbod.s7.text")}/>
+	</section>
+	<section class="s8 back-red text-white text-align-center">
+		<h3 set:html={t("aanbod.s8.text")}/>
 	</section>
 </Layout>
 
@@ -151,23 +97,41 @@ export { getStaticPaths };
 		padding: 2rem;
 	}
 
-	.s4, .s8, .s5{
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		flex-direction: column;
+	.s2 .container{
+		width: 60%;
 	}
 
-	.s8 .col2{
+	.s2 .border-bottom {
+		border-bottom: 1px solid rgba(255, 255, 255, 0.333);
+		padding: 2rem;
+	}
+
+	.s2 .col2 {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.s4 .col2 {
 		grid-template-columns: 500px 500px;
 	}
 
-	.s5 {
-		di
+	@media (max-width: 900px){
+		.s2 .col2 {
+			grid-template-columns: auto;
+		}
 	}
-	.s7{
-		display: flex;
-		gap: 20%;
-		justify-content: center;
+
+	@media (max-width: 1200px){
+		.s4 .col2 {
+			display: flex;
+			flex-direction: column;
+			width: 70vw;
+			max-width: 500px;
+		}
+
+		.s4 {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
 	}
 </style>

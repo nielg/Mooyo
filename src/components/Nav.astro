@@ -17,11 +17,10 @@ const isActive = (path: string) => {
 ---
 
 <nav>
-    <a href={translatePath('/')} class={isActive(translatePath('')) ? "text-red" : ""}>HOME</a>
-    <a href={translatePath('/filosofie')} class={isActive(translatePath('/filosofie')) ? "text-red" : ""}>{t('nav.filosofie')}</a>
-    <a href={translatePath('/aanbod')} class={isActive(translatePath('/aanbod')) ? "text-red" : ""}>{t('nav.aanbod')}</a>
-    <a href={translatePath('/hartcirkels')} class={isActive(translatePath('/hartcirkels')) ? "text-red" : ""}>{t('nav.hartcirkels')}</a>
-    <a href={translatePath('/about')} class={isActive(translatePath('/about')) ? "text-red" : ""}>{t('nav.about')}</a>
+    <a href={translatePath('/')} class={isActive(translatePath('')) ? "text-red" : "text-gray"}>HOME</a>
+    <a href={translatePath('/filosofie')} class={isActive(translatePath('/filosofie')) ? "text-red" : "text-gray"}>{t('nav.filosofie')}</a>
+    <a href={translatePath('/aanbod')} class={isActive(translatePath('/aanbod')) ? "text-red" : "text-gray"}>{t('nav.aanbod')}</a>
+    <a href={translatePath('/about')} class={isActive(translatePath('/about')) ? "text-red" : "text-gray"}>{t('nav.about')}</a>
 </nav>
 
 <style>

@@ -19,12 +19,13 @@ body {
 
 a {
   text-decoration: none;
-  color: var(--mooyo-text-gray);
+  color: inherit;
 }
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-weight: 400;
 }
 
@@ -117,9 +118,12 @@ h4 {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
-ul.star-list {
+ul.star-list,
+ul.none-list,
+ul.infinity-list {
   list-style: none;
   padding-left: 1.5rem;
 }
@@ -129,6 +133,25 @@ ul.star-list li::before {
   display: inline-block;
   width: 1.5em;
   margin-left: -1.5em;
+}
+
+ul.infinity-list li::before {
+  content: "∞";
+  display: inline-block;
+  width: 1.5em;
+  margin-left: -1.5em;
+}
+
+.red-btn {
+  display: inline-block;
+  background-color: var(--mooyo-red);
+  color: white;
+  padding: 0.8rem 2rem;
+  border-radius: 1rem;
+}
+
+.red-btn:hover {
+  opacity: 0.8;
 }
 
 /* Responsive */

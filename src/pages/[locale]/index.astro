@@ -3,7 +3,7 @@ import { Image } from 'astro:assets';
 import Layout from "../../layouts/Layout.astro"
 import hart_rond from '../../assets/rondevormen/hart_rond.png'
 import zon from '../../assets/zon.jpg'
-import uitzicht from '../../assets/zweden_uitzicht.jpg'
+import profiel from '../../assets/profiel-square.png'
 import { getLangFromUrl, useTranslations, getStaticPaths } from '../../i18n/utils';
 export { getStaticPaths };
 const lang = getLangFromUrl(Astro.url);
@@ -22,8 +22,6 @@ const t = useTranslations(lang);
 				<p>{t("index.s1.text3")}</p>
 				<p>∞ ∞ ∞</p>
 				<p>{t("index.s1.text4")}</p>
-				<p>∞ ∞ ∞</p>
-				<p>{t("index.s1.text5")}</p>
 			</div>
 		</div>
 	</section>
@@ -38,30 +36,33 @@ const t = useTranslations(lang);
 		</div>
 	</section>
 	<section class="s3 back-gray text-align-center center">
-		<div class="col3">
-			<div>
-				<p class="text-red text-align-center bold">{t("index.s3.col1.title")}</p>
-				<p class="text-red text-align-center">{t("index.s3.col1.text1")}</p>
-				<p class="text-gray text-align-justify" set:html={t("index.s3.col1.text2")}/>
+		<div class="col3 text-gray text-align-justify">
+			<div class="text-gray text-align-justify">
+				<p class="text-align-center text-red bold">{t("index.s3.col1.title")}</p>
+				<p>{t("index.s3.col1.text1")}</p>
+				 <p>{t("index.s3.col1.text2")}<p/>
+				 <p>{t("index.s3.col1.text3")}<p/>
 			</div>
-			<div>
+			<div class="text-gray text-align-justify">
 				<p class="text-red text-align-center bold">{t("index.s3.col2.title")}</p>
-				<p class="text-red text-align-center">{t("index.s3.col2.text1")}</p>
-				<p class="text-gray text-align-justify" set:html={t("index.s3.col2.text2")}/>
+				<p>{t("index.s3.col2.text1")}</p>
+				<p>{t("index.s3.col2.text2")}</p>
+				<p>{t("index.s3.col2.text3")}</p>
 			</div>
 			<div>
 				<p class="text-red text-align-center bold">{t("index.s3.col3.title")}</p>
-				<p class="text-red text-align-center">{t("index.s3.col3.text1")}</p>
-				<p class="text-gray text-align-justify" set:html={t("index.s3.col3.text2")}/>
-				<p class="text-red text-align-justify" set:html={t("index.s3.col3.text3")}/>
+				<p>{t("index.s3.col3.text1")}</p>
+				<p>{t("index.s3.col3.text2")}</p>
 			</div>
 		</div>
 	</section>
 	<section class="s4 back-red text-align-center text-white">
-		<p class="p2" set:html={t("index.s4.text")} />
+		<p class="p2 bold" set:html={t("index.s4.text")} />
 	</section>
 	<section class="s5 back-white">
-		<Image src={uitzicht} class="img" alt="zweden foto"/>
+		<div class="img-container">
+			<Image src={profiel} class="img" alt="Profiel foto van Bram Geysen"/>
+		</div>
 		<div class="text">
 			<h1 class="text-red">Bram Geysen</h1>
 			<p class="text-gray">Rondestraat 38 <br> 3000 Leuven, Belgium</p>
@@ -70,6 +71,12 @@ const t = useTranslations(lang);
 			<p class="text-red"><a href="mailto:bramgeysen@gmail.com" class="text-red">[bramgeysen@gmail.com]</a></p>
 			<p class="text-gray title">Socials</p>
 		</div>
+	</section>
+	<section class="s6 back-gray text-red text-align-center bold">
+		<p>{t('index.s6.text1')}</p>
+		<p>{t('index.s6.text2')}</p>
+		<p>{t('index.s6.text3')}</p>
+		<p>{t('index.s6.text4')}</p>
 	</section>
 </Layout>
 
@@ -96,11 +103,19 @@ const t = useTranslations(lang);
 		padding: 0;
 	}
 	
+    .img-container {
+        width: 100%;
+        height: 600px; 
+        overflow: hidden;
+    }
 	.s5 .img{
+		position: relative;
+		top: -10rem;
+		min-width: 600px;
 		width: 100%;
 		height: auto;
-		min-height: 500px;
-
+		object-fit: cover;
+  		object-position: bottom;
 	}
 
 	.s5 .text{
@@ -117,6 +132,12 @@ const t = useTranslations(lang);
 
 
 	/* Responsive */
+
+	@media (max-width: 1900px) {
+		.s5 .img {
+			top: 0;
+		}
+	}
 
 	@media (max-width: 1200px){
 		.s3 .col3{
@@ -135,6 +156,7 @@ const t = useTranslations(lang);
 
 		.s2 .img, .s5 .img{
 			grid-row: 2;
+			min-width: none;
 		}
 
 		.s5{

@@ -1,3 +1,4 @@
 Voor productie
 - Sitemap toevoegen aan de google search console
 - Verschillende path names per taal
+- Add social media optimazation SMO SocialSharePreview.com 
