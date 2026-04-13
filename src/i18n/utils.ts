@@ -1,7 +1,9 @@
 import { defaultLang, ui, showDefaultLang, languages } from "./ui";
 
 export function getStaticPaths() {
-  return Object.keys(ui).map((locale) => ({ params: { locale } }));
+  return Object.keys(languages).map((locale) => ({
+    params: { locale: locale === defaultLang ? undefined : locale },
+  }));
 }
 
 export function getLangFromUrl(url: URL) {
