@@ -5,6 +5,7 @@ import "../styles/global.css"
 import Nav from '../components/Nav.astro';
 import LanguagePicker from '../components/LanguagePicker.astro';
 import { getLangFromUrl, useTranslatedPath, useTranslations } from '../i18n/utils';
+import Footer from '@components/Footer.astro';
 
 interface Props {
 	title: string;
@@ -35,45 +36,18 @@ const { title, description = "Standaard omschrijving voor Mooyo" } = Astro.props
 	<body>
 		<header>
 			<LanguagePicker place='header'/>
-			<div>
-				<Image src={hart_rond} alt="Mooyo logo" height={100} width={100} loading="eager"/>
-				<h1><span class="big-text">Mooyo -</span> {t('layout.header.subtitle')}</h1>
-			</div>
+			<a href={translatePath('/')}>
+				<div>
+					<Image src={hart_rond} alt="Mooyo logo" height={100} width={100} loading="eager"/>
+					<h1><span class="big-text">Mooyo -</span> {t('layout.header.subtitle')}</h1>
+				</div>
+			</a>
 			<Nav pathname={pathname}/>
 		</header>
 		<main>
 			<slot />
 		</main>
-		<footer class="back-black text-gray">
-			<p>© 2026 Mooyo</p>
-			<div class="flex">
-				<div>
-					<p>Mooyo</p>
-					<ul class="none-list">
-    					<li><a href={translatePath('/')}>{t('footer.home')}</a></li>
-    					<li><a href={translatePath('/filosofie')}>{t('footer.filosofie')}</a></li>
-    					<li><a href={translatePath('/aanbod')}>{t('footer.aanbod')}</a></li>
-    					<li><a href={translatePath('/about')}>{t('footer.about')}</a></li>
-    					<li><a href="https://www.hartcirkels.be">www.hartcirkels.be</a></li>
-    					<li><a href="https://www.reconstructive.be">www.reconstructive.be</a></li>
-					</ul>
-				</div>
-				<div>
-					<p>Bram Geysen</p>
-					<p>+32 473 52 30 94</p>
-					<p><a href="mailto:bramgeysen@gmail.com">bramgeysen@gmail.com</a></p>
-				</div>
-				<div>
-					<p>{t('footer.artwork')}</p>
-					<p>{t('footer.zon')}</p>
-					<p>{t('footer.website')}</p>
-					<p><a href="mailto:nielgeysen@gmail.com">nielgeysen@gmail.com</a></p>
-				</div>
-				<div>
-					<LanguagePicker place='footer'/>
-				</div>
-			</div>
-		</footer>
+		<Footer/>
 	</body>
 </html>
 
@@ -109,19 +83,11 @@ const { title, description = "Standaard omschrijving voor Mooyo" } = Astro.props
 		margin: auto;
 	}
 
-	footer p {
-		color: var(--text-gray);
-		font-size: 1.1rem;
-	}
-
 	footer .flex {
 		display: flex;
 		justify-content: space-around;
 		width: 100%;
-	}
-
-	footer .ul {
-		list-style-type: none;
+		margin: 2rem;
 	}
 
 

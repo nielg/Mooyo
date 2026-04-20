@@ -1,4 +1,7 @@
 Voor productie
 - Sitemap toevoegen aan de google search console
 - Verschillende path names per taal
-- Add social media optimazation SMO SocialSharePreview.com 
+- Add social media optimazation SMO SocialSharePreview.com
+- Beschrijving per pagina toevoegen
+- Keywoords per pagina
+- Socials invullen op index pagina als bram er heeft

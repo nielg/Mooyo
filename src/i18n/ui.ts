@@ -25,8 +25,8 @@ export const ui = {
     "footer.hartcirkels": "hartcirkels",
     "footer.about": "over mij",
     "footer.artwork": "Artwork door Bea Haazen",
-    "footer.zon": "Afrikaanse zon door Marcel Haazn",
-    "footer.website": "De Website is gemaakt met Astro door Niel Geysen.",
+    "footer.zon": "Afrikaanse zon door Marcel Haazen",
+    "footer.website": "De Website is gemaakt met Astro door:",
 
     // Layout
     "layout.header.subtitle": "hartgedragen begeleiding",
@@ -98,19 +98,19 @@ export const ui = {
 
     // Aanbod section 4
     "aanbod.s4.e1.title1": "Individuele begeleidingen (fysiek of online)",
-    "aanbod.s4.e1.li1": "Een sessie van 60min is 75euro (incl BTW)",
-    "aanbod.s4.e1.li2": "Een sessie van 90min is 100euro (incl BTW)",
+    "aanbod.s4.e1.li1": "Een sessie van 60min is 75 euro (incl BTW)",
+    "aanbod.s4.e1.li2": "Een sessie van 90min is 100 euro (incl BTW)",
     "aanbod.s4.e1.title2": "Reconstructive (2 daagse)",
     "aanbod.s4.e1.text1":
       "Re-constructive is een lichamelijke groepsbeleving waarin je voorbij je patronen beweegt en ruimte maakt voor intuïtie.",
     "aanbod.s4.e1.text2":
       "Als individu kan je je hiervoor inschrijven. Meer uitleg volgt later.",
     "aanbod.s4.e2.title1": "Begeleiding van teamleden (fysiek of online)",
-    "aanbod.s4.e2.li1": "Een sessie van 60min is 100euro (excl BTW)",
-    "aanbod.s4.e2.li2": "Een sessie van 90minu is 150euro (excl BTW)",
+    "aanbod.s4.e2.li1": "Een sessie van 60min is 100 euro (excl BTW)",
+    "aanbod.s4.e2.li2": "Een sessie van 90minu is 150 euro (excl BTW)",
     "aanbod.s4.e2.title2": "Begeleiding van teams",
-    "aanbod.s4.e2.li3": "Een sessie van halve dag is 500euro (excl BTW)",
-    "aanbod.s4.e2.li4": " Een sessie van één dag is 800euro (excl BTW)",
+    "aanbod.s4.e2.li3": "Een sessie van halve dag is 500 euro (excl BTW)",
+    "aanbod.s4.e2.li4": " Een sessie van één dag is 800 euro (excl BTW)",
 
     // Aanbod section 5
     "aanbod.s5.title": "Open hartcirkels",
@@ -315,7 +315,7 @@ export const ui = {
     "footer.about": "about me",
     "footer.artwork": "Artwork by Bea Haazen",
     "footer.zon": "African sun by Marcel Haazen",
-    "footer.website": "This Website was made with Astro by Niel Geysen.",
+    "footer.website": "This Website was made with Astro by:",
 
     // Layout
     "layout.header.subtitle": "heart-centered guidance",

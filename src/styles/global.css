@@ -20,6 +20,7 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+  font-size: 1.2rem;
 }
 
 h1,
@@ -30,7 +31,8 @@ h4 {
 }
 
 p,
-li {
+li,
+.normal-font-size {
   font-size: 1.2rem;
 }
 

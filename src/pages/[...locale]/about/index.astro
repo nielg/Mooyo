@@ -4,6 +4,7 @@ import Layout from "../../../layouts/Layout.astro"
 import { getLangFromUrl, useTranslations, getStaticPaths } from '../../../i18n/utils';
 import afrika from '../../../assets/afrika.png'
 import vuur_camping from '../../../assets/vuur_camping.jpeg'
+import ContactSection from '@components/Contact-section.astro';
 
 export { getStaticPaths };
 const lang = getLangFromUrl(Astro.url);
@@ -38,7 +39,8 @@ const t = useTranslations(lang);
             <div class="img-container">
                 <Image class="img row3" src={vuur_camping} alt="Foto kamperen met kampvuur" width={1000} height={1000}/>
             </div>
-    </section>
+        </section>
+        <ContactSection/>
 </Layout>
 
 <style>

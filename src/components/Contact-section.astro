@@ -4,19 +4,23 @@ import { getLangFromUrl, useTranslations } from '../i18n/utils';
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
+
 <section class="back-gray text-align-center">
     <p>{t('layout.contact')}</p>
-	<p>+32 473 52 30 94</p>
-    <p class="red-btn">
-  	    <a href="mailto:bramgeysen@gmail.com" class="border-bottom">bramgeysen@gmail.com</a>
-    </p>
-<section>
+    <p>+32 473 52 30 94</p>
+    
+    <a href="mailto:bramgeysen@gmail.com" class="red-link-container">
+        <p class="red-btn">bramgeysen@gmail.com</p>
+    </a>
+</section>
+
 <style>
     section {
         padding: 1rem;
     }
 
-    .red-btn {
-        margin-bottom: 0;
+    .red-link-container {
+        text-decoration: none;
+        display: inline-block; 
     }
 </style>
