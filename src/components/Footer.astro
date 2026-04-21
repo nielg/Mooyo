@@ -31,7 +31,7 @@ const t = useTranslations(lang);
 			<p>+32 473 52 30 94</p>
 			<a href="mailto:bramgeysen@gmail.com">bramgeysen@gmail.com</a>
         </div>
-		<div>
+		<div class="credits">
             <h4>Credits</h4>
 			<p>{t('footer.artwork')}</p>
 			<p>{t('footer.zon')}</p>
@@ -55,7 +55,7 @@ const t = useTranslations(lang);
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding: 1rem 2rem;
+        padding: 0 2rem;
     }
 
     .col3 {
@@ -64,10 +64,11 @@ const t = useTranslations(lang);
         column-gap: 1rem;
         margin: 1rem 2rem;
     }
-
-    h4 {
-    }
     .ul {
 		list-style-type: none;
 	}
+
+    p{
+        margin: 0.5rem;
+    }
 </style>
