@@ -147,7 +147,8 @@ ul.infinity-list li::before {
 .red-btn {
   display: inline-block;
   background-color: var(--mooyo-red);
-  color: white;
+  color: var(--mooyo-white);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   padding: 0.8rem 2rem;
   border-radius: 1rem;
 }
