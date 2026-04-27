@@ -107,7 +107,7 @@ export const ui = {
       "Als individu kan je je hiervoor inschrijven. Meer uitleg volgt later.",
     "aanbod.s4.e2.title1": "Begeleiding van teamleden (fysiek of online)",
     "aanbod.s4.e2.li1": "Een sessie van 60min is 100 euro (excl BTW)",
-    "aanbod.s4.e2.li2": "Een sessie van 90minu is 150 euro (excl BTW)",
+    "aanbod.s4.e2.li2": "Een sessie van 90min is 150 euro (excl BTW)",
     "aanbod.s4.e2.title2": "Begeleiding van teams",
     "aanbod.s4.e2.li3": "Een sessie van halve dag is 500 euro (excl BTW)",
     "aanbod.s4.e2.li4": " Een sessie van één dag is 800 euro (excl BTW)",

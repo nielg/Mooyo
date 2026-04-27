@@ -44,12 +44,9 @@ const t = useTranslations(lang);
 
 <style>
     footer {
-        color: #decfcf;
+        color: #b7aaaa;
     }
     
-    h2, h4 {
-        color: #ecdfdf;
-    }
 
     .row {
         display: flex;
@@ -70,5 +67,11 @@ const t = useTranslations(lang);
 
     p{
         margin: 0.5rem;
+    }
+
+    @media (max-width: 750px ) {
+        .col3 {
+            grid-template-columns: 1fr;
+        }
     }
 </style>
