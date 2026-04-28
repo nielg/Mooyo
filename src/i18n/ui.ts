@@ -253,7 +253,7 @@ export const ui = {
     "filosofie.s6.text2":
       "Spreek eerlijker en zachter. <br>Check je intentie: Wil je overtuigen? of Blijf je trouw aan wat je voelt?",
     "filosofie.s6.text3":
-      "Kies voor waarheid boven comfort. brSoms is dat spannend, maar het brengt wel rust.",
+      "Kies voor waarheid boven comfort. <br>Soms is dat spannend, maar het brengt wel rust.",
     "filosofie.s6.text4":
       "Vertraag wanneer iets niet goed voelt. <br>Checkt eerst: Wat voel ik eigenlijk? Wat klopt voor mij?",
     "filosofie.s6.text5":
