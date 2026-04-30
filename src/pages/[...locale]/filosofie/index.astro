@@ -14,58 +14,57 @@ const t = useTranslations(lang);
 ---
 
 <Layout title={t("filosofie.title")}>
-    <section class="s4 back-red text-align-center text-white">
-        <h1 set:html={t('filosofie.s4.title')}/>
-        <p set:html={t("filosofie.s4.text1")}/>
-        <p class="bold" set:html={t("filosofie.s4.text2")}/>
+    <section class="intro-pillars back-red text-align-center text-white">
+        <h1 set:html={t('intro-pillars.title')}/>
+        <p set:html={t("intro-pillars.text1")}/>
+        <p class="bold" set:html={t("intro-pillars.text2")}/>
     </section>
-    <section class="s5 back-gray text-align-center center text-gray">
+    <section class="pillars back-gray text-align-center center text-gray">
         <div class="col2">
             <div>
-                <h3 class="text-red">{t('filosofie.s5.e1.title1')}</h3>
-                <Image src={bewustzijn_rond} alt="Tekening van bewustzijn" height={500} width={500}/>
-                <h4 class="text-red">{t('filosofie.s5.e1.title2')}</h4>
+                <h3 class="text-red">{t('pillars.e1.title1')}</h3>
+                <Image src={bewustzijn_rond} alt="Tekening van bewustzijn" height={400} width={400}/>
+                <h4 class="text-red">{t('pillars.e1.title2')}</h4>
                 <ul class="text-align-justify infinity-list">
-                    <li>{t('filosofie.s5.e1.list1')}</li>
-                    <li>{t('filosofie.s5.e1.list2')}</li>
-                    <li>{t('filosofie.s5.e1.list3')}</li>
-                    <li>{t('filosofie.s5.e1.list4')}</li>
-                    <li>{t('filosofie.s5.e1.list5')}</li>
+                    <li>{t('pillars.e1.list1')}</li>
+                    <li>{t('pillars.e1.list2')}</li>
+                    <li>{t('pillars.e1.list3')}</li>
+                    <li>{t('pillars.e1.list4')}</li>
                 </ul>
             </div>
     
             <div>
-                <h3 class="text-red">{t('filosofie.s5.e2.title1')}</h3>
-                <Image src={adem_rond} alt="Tekening van adem" height={500} width={500}/>
-                <h4 class="text-red">{t('filosofie.s5.e2.title2')}</h4>
+                <h3 class="text-red">{t('pillars.e2.title1')}</h3>
+                <Image src={adem_rond} alt="Tekening van adem" height={400} width={400}/>
+                <h4 class="text-red">{t('pillars.e2.title2')}</h4>
                 <ul class="text-align-justify infinity-list">
-                    <li>{t('filosofie.s5.e2.list1')}</li>
-                    <li>{t('filosofie.s5.e2.list2')}</li>
-                    <li>{t('filosofie.s5.e2.list3')}</li>
-                    <li>{t('filosofie.s5.e2.list4')}</li>
+                    <li>{t('pillars.e2.list1')}</li>
+                    <li>{t('pillars.e2.list2')}</li>
+                    <li>{t('pillars.e2.list3')}</li>
+                    <li>{t('pillars.e2.list4')}</li>
                 </ul>
             </div>
     
             <div>
-                <h3 class="text-red">{t('filosofie.s5.e3.title1')}</h3>
-                <Image src={hart_rond} alt="Tekening van hart" height={500} width={500}/>
-                <h4 class="text-red">{t('filosofie.s5.e3.title2')}</h4>
+                <h3 class="text-red">{t('pillars.e3.title1')}</h3>
+                <Image src={hart_rond} alt="Tekening van hart" height={400} width={400}/>
+                <h4 class="text-red">{t('pillars.e3.title2')}</h4>
                 <ul class="text-align-justify infinity-list">
-                    <li>{t('filosofie.s5.e3.list1')}</li>
-                    <li>{t('filosofie.s5.e3.list2')}</li>
-                    <li>{t('filosofie.s5.e3.list3')}</li>
+                    <li>{t('pillars.e3.list1')}</li>
+                    <li>{t('pillars.e3.list2')}</li>
+                    <li>{t('pillars.e3.list3')}</li>
                 </ul>
             </div>
     
             <div>
-                <h3 class="text-red">{t('filosofie.s5.e4.title1')}</h3>
-                <Image src={lichaam_rond} alt="Tekening van lichaam" height={500} width={500}/>
-                <h4 class="text-red">{t('filosofie.s5.e4.title2')}</h4>
+                <h3 class="text-red">{t('pillars.e4.title1')}</h3>
+                <Image src={lichaam_rond} alt="Tekening van lichaam" height={400} width={400}/>
+                <h4 class="text-red">{t('pillars.e4.title2')}</h4>
                 <ul class="text-align-justify infinity-list">
-                    <li>{t('filosofie.s5.e4.list1')}</li>
-                    <li>{t('filosofie.s5.e4.list2')}</li>
-                    <li>{t('filosofie.s5.e4.list3')}</li>
-                    <li set:html={t('filosofie.s5.e4.list4')}/>
+                    <li>{t('pillars.e4.list1')}</li>
+                    <li>{t('pillars.e4.list2')}</li>
+                    <li>{t('pillars.e4.list3')}</li>
+                    <li set:html={t('pillars.e4.list4')}/>
                 </ul>
             </div>
         </div>
@@ -173,10 +172,10 @@ const t = useTranslations(lang);
         align-items: start;
     }
 
-    .s5 img {
+    .pillars img {
         width: 100%;
         height: auto;
-        max-width: 500px;
+        max-width: 400px;
         margin-bottom: 1rem;
     }
 
@@ -186,7 +185,7 @@ const t = useTranslations(lang);
             grid-template-columns: 1fr;
             gap: 2rem;
         }
-        .s5 img {
+        .pillars img {
             max-width: 100%;
         }
     }

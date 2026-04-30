@@ -1,5 +1,4 @@
 ---
-import { record } from 'astro:schema';
 import { getLangFromUrl, useTranslations } from '../i18n/utils';
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -14,13 +13,14 @@ const {color, reconstructive = true} = Astro.props
 const sectionClasses = color === "red"
     ? "back-red text-white"
     : "back-white";
+
 ---
 
 <section class=`center ${sectionClasses}`>
     <h2>{t('Prices.title')}</h2>
 	<p class="online-p text-align-center">{t('Prices.text')}</p>
 	<div class="col3">
-		<div class="card">
+		<div class="card expanding">
 			<h4 class="bold text-red">{t('Prices.e1.title1')}</h4>
 			<ul class="infinity-list text-black">
 				<li>{t('Prices.e1.li1')}</li>
@@ -35,7 +35,7 @@ const sectionClasses = color === "red"
 				</div>
 			</div>
 		</div>
-		<div class="card">
+		<div class="card expanding">
 			<h4 class="bold text-red">{t('Prices.e2.title1')}</h4>
 			<ul class="infinity-list text-black">
 				<li>{t('Prices.e2.li1')}</li>
@@ -46,7 +46,7 @@ const sectionClasses = color === "red"
 				<p>{t('Prices.e2.details')}</p>
 			</div>
 		</div>
-		<div class="card">
+		<div class="card expanding">
 			<h4 class="bold text-red">{t('Prices.e3.title')}</h4>
 			<ul class="infinity-list text-black">
 				<li>{t('Prices.e3.li1')}</li>
@@ -76,43 +76,71 @@ const sectionClasses = color === "red"
         width: 75%;
     }
 
-    .col3{
-		grid-template-columns: 1fr 1fr 1fr;
-	}
+   .col3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start; 
+        width: 100%;
+        gap: 2rem;
+        perspective: 1000px; /* Geeft diepte aan de animatie */
+    }
 
-	.card {
-		background-color: var(--mooyo-gray);
-		padding: 2rem;
-		border-radius: 0.5rem;
-		box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-		margin: 1rem;
-		color: black;
-	}
-	
-	.card .details {
-		transition: all 0.4s ease-in-out; 
-		transition-delay: 0.4s;
-    	opacity: 0;
-    	visibility: hidden;
-    	max-height: 0;
-    	overflow: hidden;
-    	transform: translateY(10px);
-	}
-	
-	.card:hover .details {
-		opacity: 1;
-    	visibility: visible;
-	    max-height: 1000px; 
-    	transform: translateY(0);
-	}
-	
-	.seeMore {
-		margin-bottom: 0;
-		transition: all 0.4s ease-in-out; 
-	}
-	.card:hover .seeMore {
-		opacity: 0;
-	}
+    .card {
+        background-color: var(--mooyo-gray);
+        padding: 2rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin: 2rem 0; 
+        color: black;
+        box-sizing: border-box;
+    }
+    
+    .expanding {
+        flex: 1;
+        overflow: hidden;
+		min-width: 0;
+        transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1); 
+    }
+    
+    .expanding:hover {
+        flex: 2;
+    }
+
+    .details {
+        opacity: 0;
+        max-height: 0;
+        transform: translateY(20px);
+        transition: 
+            opacity 0.5s ease-out,
+            transform 0.4s ease-out,
+            max-height 0.6s ease-in-out;
+        visibility: hidden;
+		width: 100vw;
+    }
+    
+    .expanding:hover .details {
+        opacity: 1;
+        visibility: visible;
+        max-height: 500px;
+		width: 100%;
+        transform: translateY(0);
+        transition-delay: 0.1s; 
+    }
+    
+    .seeMore {
+        margin-top: 1rem;
+        margin-bottom: 0;
+        font-weight: bold;
+        transition: opacity 0.3s ease;
+    }
+
+    .expanding:hover .seeMore {
+        opacity: 0;
+        height: 0;
+        margin: 0;
+        overflow: hidden;
+    }
 
 
 

@@ -183,52 +183,50 @@ export const ui = {
     "filosofie.s3.col3.text3": "Mensen helen in relatie tot anderen.",
 
     // Filosofie section 4
-    "filosofie.s4.title":
+    "intro-pillars.title":
       "De begeleiding is gebaseerd op 4 basispeilers die steeds <br> in dialoog zijn met elkaar.",
-    "filosofie.s4.text1":
-      "Bij deze 4 peilers wordt voldoende stilgestaan en afhankelijk van het moment zal de ene of de andere meer op de voorgrond zijn. <br> De peilers zijn steeds in communicatie met elkaar en in balans met elkaar.",
-    "filosofie.s4.text2":
+    "intro-pillars.text1":
+      "Bij deze 4 peilers wordt voldoende stilgestaan en afhankelijk van het moment zal de ene of de andere meer op de voorgrond zijn. <br>De peilers dienen steeds in communicatie met elkaar te zijn en in balans. ",
+    "intro-pillars.text2":
       "Mooyo brengt mensen dichter bij hun essentie zodat ze hartgedragen keuzes in hun leven maken.",
 
     // Filosofie section 5
-    "filosofie.s5.e1.title1": "Bewustzijn - Het geheel",
-    "filosofie.s5.e1.title2": "De kracht van je wortels",
-    "filosofie.s5.e1.list1":
+    "pillars.e1.title1": "Bewustzijn - Het geheel",
+    "pillars.e1.title2": "De kracht van je wortels",
+    "pillars.e1.list1":
       "Truth-telling: eerlijk kijken naar je verleden, je patronen.",
-    "filosofie.s5.e1.list2":
-      "Psycho-eductatie is eveneens een belangrijk onderdeel van heling, transformatie.",
-    "filosofie.s5.e1.list3": "Families zijn de boodschappers van onze cultuur.",
-    "filosofie.s5.e1.list4":
-      "Begrijpen wat perceptie, conditionering en programmering van 0 tot 6 jaar inhoudt en hoe het je leven beïnvloedt. ",
-    "filosofie.s5.e1.list5":
-      "Je plaats herkennen bij je ouders en in het familiesysteem om je leerprocessen en gedragingen te begrijpen.",
-    "filosofie.s5.e2.title1": "Adem - Het nu",
-    "filosofie.s5.e2.title2": "De kracht van de adem",
-    "filosofie.s5.e2.list1":
+    "pillars.e1.list2":
+      "Begrijpen wat perceptie en conditionering van 0 tot 6 jaar inhoudt en hoe het je leven beïnvloedt.",
+    "pillars.e1.list3":
+      "Conditioneringen ontstaan vaak vóór taalontwikkeling, zijn daardoor emotioneel van aard en niet via het verstand te bereiken.",
+    "pillars.e1.list4":
+      "Elke conditionering heeft zowel een energetisch aspect als een bewustzijnsdeel.",
+    "pillars.e2.title1": "Adem - Het nu",
+    "pillars.e2.title2": "De kracht van de adem",
+    "pillars.e2.list1":
       "Het leven aanvaarden zoals het nu is, niet zoals je het zou willen dat het is.",
-    "filosofie.s5.e2.list2":
-      "De tijdelijkheid ervan inzien. Zonder weerstand. ",
-    "filosofie.s5.e2.list3":
+    "pillars.e2.list2": "De tijdelijkheid ervan inzien. Zonder weerstand. ",
+    "pillars.e2.list3":
       " Ademhaling is de poort tussen het bewuste en onbewuste: we kunnen de ademhaling bewust sturen en tegelijk werkt de ademhaling autonoom.",
-    "filosofie.s5.e2.list4":
+    "pillars.e2.list4":
       "Ademhaling speelt een belangrijke rol in ons dagelijks leven en kan ingezet worden als regulatie tijdens pijnlijke ervaringen die gevoeld mogen worden.",
-    "filosofie.s5.e3.title1": "Het Hart - De Toekomst",
-    "filosofie.s5.e3.title2": "De kracht van hartcoherentie",
-    "filosofie.s5.e3.list1":
+    "pillars.e3.title1": "Het Hart - De Toekomst",
+    "pillars.e3.title2": "De kracht van hartcoherentie",
+    "pillars.e3.list1":
       "Hartcoherentie is een manier om aan zelfregulering te doen. en een uitnodiging om veerkracht op te bouwen. Eveneens is het een toegangspoort tot je hoger zelf. ",
-    "filosofie.s5.e3.list2":
+    "pillars.e3.list2":
       "De moed om je plek (terug) in te nemen met alles wat daar bijhoort.",
-    "filosofie.s5.e3.list3":
+    "pillars.e3.list3":
       "Herkennen van gewoonten, overtuigingssystemen met compassie en de moed ontwikkelen om dit te doorbreken.",
-    "filosofie.s5.e4.title1": "Lichaam - Het Verleden",
-    "filosofie.s5.e4.title2": "De kracht van opgroeien",
-    "filosofie.s5.e4.list1":
+    "pillars.e4.title1": "Lichaam - Het Verleden",
+    "pillars.e4.title2": "De kracht van opgroeien",
+    "pillars.e4.list1":
       "De ontmoeting tussen het kind in jou en de volwassene in jou.",
-    "filosofie.s5.e4.list2":
+    "pillars.e4.list2":
       "In veel mensen raakt het kinddeel bedekt door verwachtingen, rollen, verantwoordelijkheden, trauma’s. Het kind verdwijnt niet — het wordt stil.",
-    "filosofie.s5.e4.list3":
+    "pillars.e4.list3":
       "Zonder het kind wordt de volwassene droog, functioneel, afgesneden. Zonder de volwassene wordt het kind onveilig, ongegrond, onbeschermd.",
-    "filosofie.s5.e4.list4":
+    "pillars.e4.list4":
       "Wanneer het kind en de volwassene elkaar vinden, ontstaat: <br> veiligheid zonder verstarring, speelsheid zonder chaos, kracht zonder hardheid, zachtheid zonder breekbaarheid",
 
     // Filosofie section 6
@@ -496,51 +494,51 @@ export const ui = {
     "filosofie.s3.col3.text3": "People heal in relation to others.",
 
     // Filosofie section 4
-    "filosofie.s4.title":
+    "intro-pillars.title":
       "The guidance is based on 4 basic pillars that are constantly <br> in dialogue with each other.",
-    "filosofie.s4.text1":
+    "intro-pillars.text1":
       "Sufficient attention is given to these 4 pillars, and depending on the moment, one or the other will be more prominent. <br> The pillars are always in communication and balance with each other.",
-    "filosofie.s4.text2":
+    "intro-pillars.text2":
       "Mooyo brings people closer to their essence so that they make heart-centered choices in their lives.",
 
     // Filosofie section 5
-    "filosofie.s5.e1.title1": "Awareness - The Whole",
-    "filosofie.s5.e1.title2": "The power of your roots",
-    "filosofie.s5.e1.list1":
+    "pillars.e1.title1": "Awareness - The Whole",
+    "pillars.e1.title2": "The power of your roots",
+    "pillars.e1.list1":
       "Truth-telling: honestly looking at your past, your patterns.",
-    "filosofie.s5.e1.list2":
+    "pillars.e1.list2":
       "Psycho-education is also an important part of healing, transformation.",
-    "filosofie.s5.e1.list3": "Families are the messengers of our culture.",
-    "filosofie.s5.e1.list4":
+    "pillars.e1.list3": "Families are the messengers of our culture.",
+    "pillars.e1.list4":
       "Understanding what perception, conditioning, and programming from 0 to 6 years entail and how they affect your life.",
-    "filosofie.s5.e1.list5":
+    "pillars.e1.list5":
       "Recognizing your place with your parents and in the family system to understand your learning processes and behaviors.",
-    "filosofie.s5.e2.title1": "Breath - The Now",
-    "filosofie.s5.e2.title2": "The power of the breath",
-    "filosofie.s5.e2.list1":
+    "pillars.e2.title1": "Breath - The Now",
+    "pillars.e2.title2": "The power of the breath",
+    "pillars.e2.list1":
       "Accepting life as it is now, not as you would want it to be.",
-    "filosofie.s5.e2.list2": "Seeing its impermanence. Without resistance.",
-    "filosofie.s5.e2.list3":
+    "pillars.e2.list2": "Seeing its impermanence. Without resistance.",
+    "pillars.e2.list3":
       "Breathing is the gateway between the conscious and unconscious: we can direct the breath consciously, while it also functions autonomously.",
-    "filosofie.s5.e2.list4":
+    "pillars.e2.list4":
       "Breathing plays an important role in our daily lives and can be used as regulation during painful experiences that deserve to be felt.",
-    "filosofie.s5.e3.title1": "The Heart - The Future",
-    "filosofie.s5.e3.title2": "The power of heart coherence",
-    "filosofie.s5.e3.list1":
+    "pillars.e3.title1": "The Heart - The Future",
+    "pillars.e3.title2": "The power of heart coherence",
+    "pillars.e3.list1":
       "Heart coherence is a way to practice self-regulation and an invitation to build resilience. It is also a gateway to your higher self.",
-    "filosofie.s5.e3.list2":
+    "pillars.e3.list2":
       "The courage to take (back) your place with everything that belongs to it.",
-    "filosofie.s5.e3.list3":
+    "pillars.e3.list3":
       "Recognizing habits and belief systems with compassion and developing the courage to break them.",
-    "filosofie.s5.e4.title1": "Body - The Past",
-    "filosofie.s5.e4.title2": "The power of growing up",
-    "filosofie.s5.e4.list1":
+    "pillars.e4.title1": "Body - The Past",
+    "pillars.e4.title2": "The power of growing up",
+    "pillars.e4.list1":
       "The meeting between the child in you and the adult in you.",
-    "filosofie.s5.e4.list2":
+    "pillars.e4.list2":
       "In many people, the child part becomes covered by expectations, roles, responsibilities, traumas. The child does not disappear — it becomes quiet.",
-    "filosofie.s5.e4.list3":
+    "pillars.e4.list3":
       "Without the child, the adult becomes dry, functional, cut off. Without the adult, the child becomes unsafe, ungrounded, unprotected.",
-    "filosofie.s5.e4.list4":
+    "pillars.e4.list4":
       "When the child and the adult find each other, there arises: <br> safety without rigidity, playfulness without chaos, strength without hardness, softness without fragility",
 
     // Filosofie section 6
