@@ -1,50 +1,54 @@
 ---
+import { record } from 'astro:schema';
 import { getLangFromUrl, useTranslations } from '../i18n/utils';
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
 interface Props {
     color: "white" | "red"
+	reconstructive?: boolean 
 }
 
-const {color} = Astro.props
+const {color, reconstructive = true} = Astro.props
 
 const sectionClasses = color === "red"
     ? "back-red text-white"
-    : "back-white"
+    : "back-white";
 ---
 
 <section class=`center ${sectionClasses}`>
     <h2>{t('Prices.title')}</h2>
-    <p class="online-p text-align-center">{t('Prices.text')}</p>
+	<p class="online-p text-align-center">{t('Prices.text')}</p>
 	<div class="col3">
 		<div class="card">
-            <h4 class="bold text-red">{t('Prices.e1.title1')}</h4>
+			<h4 class="bold text-red">{t('Prices.e1.title1')}</h4>
 			<ul class="infinity-list text-black">
-			    <li>{t('Prices.e1.li1')}</li>
+				<li>{t('Prices.e1.li1')}</li>
 				<li>{t('Prices.e1.li2')}</li>
 			</ul>
 		</div>
 		<div class="card">
-		    <h4 class="bold text-red">{t('Prices.e2.title1')}</h4>
+			<h4 class="bold text-red">{t('Prices.e2.title1')}</h4>
 			<ul class="infinity-list text-black">
-			    <li>{t('Prices.e2.li1')}</li>
+				<li>{t('Prices.e2.li1')}</li>
 				<li>{t('Prices.e2.li2')}</li>
 			</ul>
 		</div>
 		<div class="card">
-		    <h4 class="bold text-red">{t('Prices.e2.title2')}</h4>
+			<h4 class="bold text-red">{t('Prices.e2.title2')}</h4>
 			<ul class="infinity-list text-black">
-			    <li>{t('Prices.e2.li3')}</li>
+				<li>{t('Prices.e2.li3')}</li>
 				<li>{t('Prices.e2.li4')}</li>
 			</ul>
 		</div>
 	</div>
-	<div class="text-align-center card">
-	    <h4 class="bold text-red">{t('Prices.e1.title2')}</h4>
-		<p class="text-black">{t('Prices.e1.text1')}</p>
-		<p class="text-black">{t('Prices.e1.text2')}</p>
-	</div>
+	{reconstructive && 
+		<div class="text-align-center card">
+	    	<h4 class="bold text-red">{t('Prices.e1.title2')}</h4>
+			<p class="text-black">{t('Prices.e1.text1')}</p>
+			<p class="text-black">{t('Prices.e1.text2')}</p>
+		</div>
+	}
 </section>
 
 <style>

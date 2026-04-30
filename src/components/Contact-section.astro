@@ -3,14 +3,30 @@ import "../styles/global.css"
 import { getLangFromUrl, useTranslations } from '../i18n/utils';
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
+
+interface Props {
+    color: "red" | "gray"
+}
+
+const {color} = Astro.props
+
+const sectionClasses = color === "red"
+    ? "back-red text-white"
+    : "back-gray text-black";
+
+const buttonClasses = color === "red"
+    ? "white-btn"
+    : "red-btn";
 ---
 
-<section class="back-gray text-black text-align-center">
+<section class=`${sectionClasses} text-align-center`>
     <p>{t('layout.contact')}</p>
     <p>+32 473 52 30 94</p>
     
     <a href="mailto:bramgeysen@gmail.com" class="red-link-container">
-        <p class="red-btn bold">bramgeysen@gmail.com</p>
+        <button class=`${buttonClasses}`>
+            <p class="bold">bramgeysen@gmail.com</p>
+        </button>
     </a>
 </section>
 

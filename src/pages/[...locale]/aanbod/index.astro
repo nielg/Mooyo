@@ -11,8 +11,8 @@ export { getStaticPaths };
 ---
 
 <Layout title={t('aanbod.title')}>
-	<section class="forWho text-align-center back-gray text-gray">
-		<h1 class="text-red" set:html={t('aanbod.forwho.title')} />
+	<section class="forWho text-align-center back-red text-white">
+		<h1 set:html={t('aanbod.forwho.title')} />
 		<p set:html={t('aanbod.forwho.text')} />
 	</section>
 	<Prices color='white'/>
@@ -29,9 +29,9 @@ export { getStaticPaths };
             <p class="text-white" set:html={t('quotes.text9')} />
         </div>
     </section>
-	<section class="methodieken back-red text-white center">
+	<section class="methodieken back-gray text-black center">
 		<div class="container">
-			<h4 class="border-bottom text-align-center">{t('methodieken.title')}</h4>
+			<h3 class=" text-align-center text-red">{t('methodieken.title')}</h3>
 			<p class="text-align-center border-bottom" set:html={t('methodieken.text')}/>
 			<div class="col2">
 				<div>
@@ -60,7 +60,7 @@ export { getStaticPaths };
 		</div>
 	</section>
 	
-	<ContactSection/>
+	<ContactSection color='red'/>
 	<section class="openHartcirkels back-white text-gray center">
 		<h3 class="text-red bold">{t('openHartCirkels.title')}</h3>
 		<p>{t('openHartCirkels.text')} <a href="#" class="text-red">www.hartcirkels.be</a></p>
@@ -81,12 +81,16 @@ export { getStaticPaths };
 		padding: 2rem;
 	}
 
+	.forWho p {
+		margin: 0 20%;
+	}
+
 	.methodieken .container{
 		width: 60%;
 	}
 
 	.methodieken .border-bottom {
-		border-bottom: 1px solid rgba(255, 255, 255, 0.333);
+		border-bottom: 1px solid var(--mooyo-red);
 		padding: 2rem;
 	}
 

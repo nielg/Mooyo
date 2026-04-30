@@ -87,7 +87,7 @@ export const ui = {
     // Aanbod section 1
     "aanbod.forwho.title": "Voor wie?",
     "aanbod.forwho.text":
-      "Ik begeleid mensen die voelen dat ze in bewegng willen komen. <br>Mensen die actief willen kiezen, of die opnieuw willen kiezen voor het leven en hun volle potentieel willen leven. <br>Als je op zoek bent naar heling, helderheid, groei of een nieuwe richting, dan is Mooyo iets voor jou. <br>Als (uitzonderlijk) hoogbewuste/begaafde kan je hier ook rekenen op spiegeling en herkenning. <br>Organisaties die bereid zijn het hart mee te laten spreken.",
+      "De begeleiding bij Mooyo gaat altijd naar de kern van wie we zijn en wat we meedragen. We kijken naar de lagen onder gedrag, onder patronen, onder wat zichtbaar is. Want echte beweging ontstaat wanneer we durven voelen wat er in ons leeft — en wanneer we dat niet alleen hoeven te dragen. We helen in relatie: in relatie met onszelf, met de ander, met het leven. Daarom is elke begeleiding tegelijk universeel én volledig op maat. Universeel, omdat we allemaal verlangen naar verbinding, helderheid, richting en innerlijke rust. Op maat, omdat ieder mens, elk koppel en elke levensgeschiedenis uniek is. Of je nu komt als individu, als koppel dat opnieuw wil verbinden, of als iemand die worstelt met hardnekkige patronen of verslavingsproblematieken: je wordt ontvangen in een veilige, open ruimte waar je mag landen zoals je bent. Vanuit hartgedragen aanwezigheid onderzoeken we wat gezien wil worden, zodat je opnieuw toegang krijgt tot je eigen kracht, keuzevrijheid en levensstroom. Mooyo is er voor iedereen die voelt dat het tijd is om terug te keren naar zichzelf — en van daaruit het leven opnieuw te omarmen.",
 
     // Aanbod section 2
     "methodieken.title":
@@ -282,7 +282,7 @@ export const ui = {
       "Drie jaar geleden kwam ik in aanraking met het boeddhisme en meditatie. Sindsdien is het boeddhistisch gedachten goed en dagelijkse meditatie een vast onderdeel van mijn leven geworden. Het helpt me om met meer helderheid, rust en aanwezigheid in het leven te staan — kwaliteiten die ik ook meeneem in mijn werk met anderen.",
     // Components
 
-    "Prices.title": "Tarieven",
+    "Prices.title": "Aanbod ∞ Tarieven",
     "Prices.text":
       "Begeleidingen kunnen ook online doorgaan. Verandering gebeurt in het lichaam — en dat lichaam reist altijd met je mee. Daarom werkt online begeleiding net zo diep, net zo transformerend en net zo effectief. Het gaat erom dat er een interne beweging plaats vindt en dat onafhankelijk van fysieke afstand. Belangrijk is dat je je er comfortabel bij voelt.",
     "Prices.e1.title1": "Individuele begeleidingen (fysiek of online)",
