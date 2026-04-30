@@ -2,6 +2,7 @@
 import Layout from '../../../layouts/Layout.astro';
 import { getLangFromUrl, useTranslations, getStaticPaths } from '../../../i18n/utils';
 import ContactSection from '@components/Contact-section.astro';
+import Prices from '@components/Prices.astro';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -10,14 +11,28 @@ export { getStaticPaths };
 ---
 
 <Layout title={t('aanbod.title')}>
-	<section class="s1 text-align-center back-gray text-gray">
-		<h1 class="text-red" set:html={t('aanbod.s1.title')} />
-		<p set:html={t('aanbod.s1.text')} />
+	<section class="forWho text-align-center back-gray text-gray">
+		<h1 class="text-red" set:html={t('aanbod.forwho.title')} />
+		<p set:html={t('aanbod.forwho.text')} />
 	</section>
-	<section class="s2 back-red text-white center">
+	<Prices color='white'/>
+	<section class="quotes back-red text-align-center center">
+        <div class="col3">
+            <p class="text-white" set:html={t('quotes.text1')} />
+            <p class="text-black" set:html={t('quotes.text2')} />
+            <p class="text-white" set:html={t('quotes.text3')} />
+            <p class="text-black" set:html={t('quotes.text4')} />
+            <p class="text-white" set:html={t('quotes.text5')} />
+            <p class="text-black" set:html={t('quotes.text6')} />
+            <p class="text-white" set:html={t('quotes.text7')} />
+            <p class="text-black" set:html={t('quotes.text8')} />
+            <p class="text-white" set:html={t('quotes.text9')} />
+        </div>
+    </section>
+	<section class="methodieken back-red text-white center">
 		<div class="container">
-			<h4 class="border-bottom text-align-center">{t('aanbod.s2.text1')}</h4>
-			<p class="text-align-center border-bottom" set:html={t('aanbod.s2.text3')}/>
+			<h4 class="border-bottom text-align-center">{t('methodieken.title')}</h4>
+			<p class="text-align-center border-bottom" set:html={t('methodieken.text')}/>
 			<div class="col2">
 				<div>
 					<ul class="infinity-list">
@@ -45,40 +60,10 @@ export { getStaticPaths };
 		</div>
 	</section>
 	
-	<section class="s4 back-white center">
-		<div class="col3">
-			<div class="card">
-				<h4 class="bold text-red">{t('aanbod.s4.e1.title1')}</h4>
-				<ul class="infinity-list">
-					<li>{t('aanbod.s4.e1.li1')}</li>
-					<li>{t('aanbod.s4.e1.li2')}</li>
-				</ul>
-			</div>
-			<div class="card">
-				<h4 class="bold text-red">{t('aanbod.s4.e2.title1')}</h4>
-				<ul class="infinity-list">
-					<li>{t('aanbod.s4.e2.li1')}</li>
-					<li>{t('aanbod.s4.e2.li2')}</li>
-				</ul>
-			</div>
-			<div class="card">
-				<h4 class="bold text-red">{t('aanbod.s4.e2.title2')}</h4>
-				<ul class="infinity-list">
-					<li>{t('aanbod.s4.e2.li3')}</li>
-					<li>{t('aanbod.s4.e2.li4')}</li>
-				</ul>
-			</div>
-		</div>
-		<div class="text-align-center card">
-			<h4 class="bold text-red">{t('aanbod.s4.e1.title2')}</h4>
-			<p>{t('aanbod.s4.e1.text1')}</p>
-			<p>{t('aanbod.s4.e1.text2')}</p>
-		</div>
-	</section>
 	<ContactSection/>
-	<section class="s5 back-white text-gray center">
-		<h3 class="text-red bold">{t('aanbod.s5.title')}</h3>
-		<p>{t('aanbod.s5.text')} <a href="#" class="text-red">www.hartcirkels.be</a></p>
+	<section class="openHartcirkels back-white text-gray center">
+		<h3 class="text-red bold">{t('openHartCirkels.title')}</h3>
+		<p>{t('openHartCirkels.text')} <a href="#" class="text-red">www.hartcirkels.be</a></p>
 	</section>
 	<section class="s6 back-red text-white text-align-center">
 		<h3 set:html={t("aanbod.s6.text")}/>
@@ -96,49 +81,23 @@ export { getStaticPaths };
 		padding: 2rem;
 	}
 
-	.s2 .container{
+	.methodieken .container{
 		width: 60%;
 	}
 
-	.s2 .border-bottom {
+	.methodieken .border-bottom {
 		border-bottom: 1px solid rgba(255, 255, 255, 0.333);
 		padding: 2rem;
 	}
 
-	.s2 .col2 {
+	.methodieken .col2 {
 		grid-template-columns: 1fr 1fr;
 	}
 
-	.s4 .col3{
-		grid-template-columns: 1fr 1fr 1fr;
-	}
-
-	.s4 .card {
-		background-color: var(--mooyo-gray);
-		padding: 2rem;
-		border-radius: 0.5rem;
-		box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-		margin: 1rem;
-	}
 
 	@media (max-width: 900px){
-		.s2 .col2 {
+		.methodieken .col2 {
 			grid-template-columns: auto;
-		}
-	}
-
-	@media (max-width: 1200px){
-		.s4 .col2 {
-			display: flex;
-			flex-direction: column;
-			width: 70vw;
-			max-width: 500px;
-		}
-
-		.s4 {
-			display: flex;
-			align-items: center;
-			justify-content: center;
 		}
 	}
 </style>

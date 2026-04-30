@@ -36,17 +36,17 @@ export const ui = {
 
     "index.title": "Home",
     // Index section 1
-    "index.s1.text1": "Hart, leven, ziel, geest.",
-    "index.s1.text2":
+    "index.intro.text1": "Hart, leven, ziel, geest.",
+    "index.intro.text2":
       "In verschillende Afrikaanse talen verwijst Mooyo zowel naar het fysieke hart als naar de innerlijke essentie of levensenergie.",
-    "index.s1.text3":
+    "index.intro.text3":
       "Mooyo is een uitnodiging om volledig aanwezig te zijn met alles wat je meedraagt, precies zoals je bent.",
-    "index.s1.text4":
+    "index.intro.text4":
       "Ben je bereid om naar je hart te luisteren en te ontdekken hoe je elke situatie kunt benaderen vanuit de stevigheid van je hart?",
 
     // Index section 2
-    "index.s2.title": "Wees Welkom",
-    "index.s2.text":
+    "index.welcome.title": "Wees Welkom",
+    "index.welcome.text":
       '"kom met je desoriëntatie, <br> kom met je tederheid, <br> kom met je verlangen naar iets ouds, geworteld en echts"',
 
     // Index section 3
@@ -85,36 +85,20 @@ export const ui = {
     "aanbod.title": "Aanbod",
 
     // Aanbod section 1
-    "aanbod.s1.title": "Voor wie?",
-    "aanbod.s1.text":
+    "aanbod.forwho.title": "Voor wie?",
+    "aanbod.forwho.text":
       "Ik begeleid mensen die voelen dat ze in bewegng willen komen. <br>Mensen die actief willen kiezen, of die opnieuw willen kiezen voor het leven en hun volle potentieel willen leven. <br>Als je op zoek bent naar heling, helderheid, groei of een nieuwe richting, dan is Mooyo iets voor jou. <br>Als (uitzonderlijk) hoogbewuste/begaafde kan je hier ook rekenen op spiegeling en herkenning. <br>Organisaties die bereid zijn het hart mee te laten spreken.",
 
     // Aanbod section 2
-    "aanbod.s2.text1":
+    "methodieken.title":
       "Mijn begeleiding is gebaseerd op onderstaande filosofie, methodieken:",
-    "aanbod.s2.text2": "Eerst waarheid, dan vorm.",
-    "aanbod.s2.text3":
-      "Alle benaderingen en methodieken laten je lichamelijk ervaren hoe verandering kan aanvoelen. <br>Ook houden deze methodieken rekening met het feit dat mensen relationele wezens zijn. We kijken bijgevolg ook naar het systeem  waar je deel van uitmaken. Gedrag ontstaat in wisselwerking met anderen.",
-
-    // Aanbod section 4
-    "aanbod.s4.e1.title1": "Individuele begeleidingen (fysiek of online)",
-    "aanbod.s4.e1.li1": "Een sessie van 60min is 75 euro (incl BTW)",
-    "aanbod.s4.e1.li2": "Een sessie van 90min is 100 euro (incl BTW)",
-    "aanbod.s4.e1.title2": "Reconstructive (2 daagse)",
-    "aanbod.s4.e1.text1":
-      "Re-constructive is een lichamelijke groepsbeleving waarin je voorbij je patronen beweegt en ruimte maakt voor intuïtie.",
-    "aanbod.s4.e1.text2":
-      "Als individu kan je je hiervoor inschrijven. Meer uitleg volgt later.",
-    "aanbod.s4.e2.title1": "Begeleiding van teamleden (fysiek of online)",
-    "aanbod.s4.e2.li1": "Een sessie van 60min is 100 euro (excl BTW)",
-    "aanbod.s4.e2.li2": "Een sessie van 90min is 150 euro (excl BTW)",
-    "aanbod.s4.e2.title2": "Begeleiding van teams",
-    "aanbod.s4.e2.li3": "Een sessie van halve dag is 500 euro (excl BTW)",
-    "aanbod.s4.e2.li4": " Een sessie van één dag is 800 euro (excl BTW)",
+    "methodieken.text":
+      "Alle benaderingen en methodieken laten je lichamelijk ervaren hoe verandering kan aanvoelen. Ook houden deze methodieken rekening met het feit dat mensen relationele wezens zijn. We kijken bijgevolg ook naar het systeem  waar je deel van uitmaken. Gedrag en problemen ontstaat in wisselwerking met anderen en is nooit alleen van het individueel. Ook de verschillende relaties die we met onszelf hebben, krijgen een plek in de begeleiding",
 
     // Aanbod section 5
-    "aanbod.s5.title": "Open hartcirkels",
-    "aanbod.s5.text": "Voor meer informatie zie (verwachting begin mei):",
+    "openHartCirkels.title": "Open hartcirkels",
+    "openHartCirkels.text":
+      "Voor meer informatie zie (verwachting begin juni):",
 
     // Aanbod section 6
     "aanbod.s6.text":
@@ -248,23 +232,23 @@ export const ui = {
       "Wanneer het kind en de volwassene elkaar vinden, ontstaat: <br> veiligheid zonder verstarring, speelsheid zonder chaos, kracht zonder hardheid, zachtheid zonder breekbaarheid",
 
     // Filosofie section 6
-    "filosofie.s6.text1":
+    "quotes.text1":
       "Kies niet langer uit angst, maar uit afstemming. <br>Wat zegt je angst: “Wat als…?” <br>Wat zegt je hart: “Wat klopt nu?”",
-    "filosofie.s6.text2":
+    "quotes.text2":
       "Spreek eerlijker en zachter. <br>Check je intentie: Wil je overtuigen? of Blijf je trouw aan wat je voelt?",
-    "filosofie.s6.text3":
+    "quotes.text3":
       "Kies voor waarheid boven comfort. <br>Soms is dat spannend, maar het brengt wel rust.",
-    "filosofie.s6.text4":
+    "quotes.text4":
       "Vertraag wanneer iets niet goed voelt. <br>Checkt eerst: Wat voel ik eigenlijk? Wat klopt voor mij?",
-    "filosofie.s6.text5":
+    "quotes.text5":
       "Kies eenvoudiger! <br>Het hoofd maakt dingen ingewikkeld. <br>Het hart voelt: ja, nee, of nog niet.",
-    "filosofie.s6.text6":
+    "quotes.text6":
       "Wees mild met jezelf. <br>Het hart zoekt helderheid, niet strijd.",
-    "filosofie.s6.text7":
+    "quotes.text7":
       "Kies voor wat je voedt, niet voor wat leegmaakt. <br>Zowel in relaties, werk, ritme, omgeving.",
-    "filosofie.s6.text8":
+    "quotes.text8":
       "Stel grenzen zonder hard te worden. <br>Kies voor verbinding in plaats van verdediging.",
-    "filosofie.s6.text9":
+    "quotes.text9":
       "Kies voor richting in plaats van controle. <br>Het hart wijst het pad, <br>het hoofd plant de stappen.",
 
     // About
@@ -296,6 +280,25 @@ export const ui = {
       "Mijn begeleidingsstijl wordt gekenmerkt door een diepe kwaliteit van aanwezigheid en een kalme rust. Dit stelt mij in staat om een veilige en ondersteunende omgeving te creëren waarin jij je volledig kunt openstellen en groeien.",
     "about.s2.e2.text2":
       "Drie jaar geleden kwam ik in aanraking met het boeddhisme en meditatie. Sindsdien is het boeddhistisch gedachten goed en dagelijkse meditatie een vast onderdeel van mijn leven geworden. Het helpt me om met meer helderheid, rust en aanwezigheid in het leven te staan — kwaliteiten die ik ook meeneem in mijn werk met anderen.",
+    // Components
+
+    "Prices.title": "Tarieven",
+    "Prices.text":
+      "Begeleidingen kunnen ook online doorgaan. Verandering gebeurt in het lichaam — en dat lichaam reist altijd met je mee. Daarom werkt online begeleiding net zo diep, net zo transformerend en net zo effectief. Het gaat erom dat er een interne beweging plaats vindt en dat onafhankelijk van fysieke afstand. Belangrijk is dat je je er comfortabel bij voelt.",
+    "Prices.e1.title1": "Individuele begeleidingen (fysiek of online)",
+    "Prices.e1.li1": "Een sessie van 60min is 75 euro (incl BTW)",
+    "Prices.e1.li2": "Een sessie van 90min is 100 euro (incl BTW)",
+    "Prices.e1.title2": "Reconstructive (2 daagse)",
+    "Prices.e1.text1":
+      "Re-constructive is een lichamelijke groepsbeleving waarin je voorbij je patronen beweegt en ruimte maakt voor intuïtie.",
+    "Prices.e1.text2":
+      "Als individu kan je je hiervoor inschrijven. Meer uitleg volgt later.",
+    "Prices.e2.title1": "Begeleiding van teamleden (fysiek of online)",
+    "Prices.e2.li1": "Een sessie van 60min is 100 euro (excl BTW)",
+    "Prices.e2.li2": "Een sessie van 90min is 150 euro (excl BTW)",
+    "Prices.e2.title2": "Begeleiding van teams",
+    "Prices.e2.li3": "Een sessie van halve dag is 500 euro (excl BTW)",
+    "Prices.e2.li4": " Een sessie van één dag is 800 euro (excl BTW)",
   },
   en: {
     // Global
@@ -324,17 +327,17 @@ export const ui = {
     // Index
     "index.title": "Home",
     // Index section 1
-    "index.s1.text1": "Heart, life, soul, spirit.",
-    "index.s1.text2":
+    "index.intro.text1": "Heart, life, soul, spirit.",
+    "index.intro.text2":
       "In various African languages, Mooyo refers to both the physical heart and the inner essence or life energy.",
-    "index.s1.text3":
+    "index.intro.text3":
       "Mooyo is an invitation to be fully present with everything you carry, exactly as you are.",
-    "index.s1.text4":
+    "index.intro.text4":
       "Are you prepared to listen to your heart and discover how you can approach every situation from the steadiness of your heart?",
 
     // Index section 2
-    "index.s2.title": "Welcome",
-    "index.s2.text":
+    "index.welcome.title": "Welcome",
+    "index.welcome.text":
       '"come with your disorientation, <br> come with your tenderness, <br> come with your longing for something old, rooted and real"',
 
     // Index section 3
@@ -372,15 +375,15 @@ export const ui = {
     "aanbod.title": "Offerings",
 
     // Aanbod section 1
-    "aanbod.s1.title": "For whom?",
-    "aanbod.s1.text":
+    "aanbod.forwho.title": "For whom?",
+    "aanbod.forwho.text":
       "I guide people who feel they want to embrace change. <br>People who want to choose actively, or choose for life again and want to live their full potential. <br>If you are looking for healing, clarity, growth, or a new direction, then Mooyo is for you. <br>As an (exceptionally) high-conscious/gifted person, you can also count on mirroring and recognition here. <br>Organizations that are willing to let the heart speak as well.",
 
     // Aanbod section 2
-    "aanbod.s2.text1":
+    "methodieken.text1":
       "My guidance is based on the philosophy and methodologies below:",
-    "aanbod.s2.text2": "Truth first, then form.",
-    "aanbod.s2.text3":
+    "methodieken.text2": "Truth first, then form.",
+    "methodieken.text3":
       "All approaches and methodologies allow you to physically experience how change can feel. <br>These methodologies also take into account that people are relational beings. Consequently, we also look at the system you are part of. Behavior arises in interaction with others.",
 
     // Aanbod section 4
@@ -400,8 +403,8 @@ export const ui = {
     "aanbod.s4.e2.li4": "A full-day session is 800euro (excl VAT)",
 
     // Aanbod section 5
-    "aanbod.s5.title": "Open heart circles",
-    "aanbod.s5.text": "For more information see (expected early May):",
+    "openHartCirkels.title": "Open heart circles",
+    "openHartCirkels.text": "For more information see (expected early May):",
 
     // Aanbod section 6
     "aanbod.s6.text":
@@ -531,23 +534,23 @@ export const ui = {
       "When the child and the adult find each other, there arises: <br> safety without rigidity, playfulness without chaos, strength without hardness, softness without fragility",
 
     // Filosofie section 6
-    "filosofie.s6.text1":
+    "quotes.text1":
       "No longer choose out of fear, but out of alignment. <br>What does your fear say: “What if…?” <br>What does your heart say: “What feels right now?”",
-    "filosofie.s6.text2":
+    "quotes.text2":
       "Speak more honestly and gently. <br>Check your intention: Do you want to convince? Or do you stay true to what you feel?",
-    "filosofie.s6.text3":
+    "quotes.text3":
       "Choose truth over comfort. <br>Sometimes that is exciting, but it does bring peace.",
-    "filosofie.s6.text4":
+    "quotes.text4":
       "Slow down when something doesn't feel right. <br>Check first: What am I actually feeling? What is right for me?",
-    "filosofie.s6.text5":
+    "quotes.text5":
       "Choose more simply! <br>The head makes things complicated. <br>The heart feels: yes, no, or not yet.",
-    "filosofie.s6.text6":
+    "quotes.text6":
       "Be kind to yourself. <br>The heart seeks clarity, not struggle.",
-    "filosofie.s6.text7":
+    "quotes.text7":
       "Choose what nourishes you, not what depletes you. <br>Both in relationships, work, rhythm, environment.",
-    "filosofie.s6.text8":
+    "quotes.text8":
       "Set boundaries without becoming hard. <br>Choose connection instead of defense.",
-    "filosofie.s6.text9":
+    "quotes.text9":
       "Choose direction instead of control. <br>The heart points the path, <br>the head plans the steps.",
 
     // About

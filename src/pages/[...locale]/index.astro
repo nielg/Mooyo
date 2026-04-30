@@ -5,32 +5,33 @@ import hart_rond from '../../assets/rondevormen/hart_rond.png'
 import zon from '../../assets/zon.jpg'
 import profiel from '../../assets/profiel-square.png'
 import { getLangFromUrl, useTranslations, getStaticPaths } from '../../i18n/utils';
+import Prices from '@components/Prices.astro';
 export { getStaticPaths };
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
 
 <Layout title='Home'>
-	<section class="s1 back-gray text-align-center text-gray center">
+	<section class="intro back-gray text-align-center text-gray center">
 		<div class="container">
 			<Image src={hart_rond} class="img" alt="Mooyo logo" width={550} height={550} loading="eager"/>
 			<div class="text">
 				<h1 class="text-red">Mooyo</h1>
-				<p>{t("index.s1.text1")}</p>
-				<p>{t("index.s1.text2")}</p>
+				<p>{t("index.intro.text1")}</p>
+				<p>{t("index.intro.text2")}</p>
 				<p>∞ ∞ ∞</p>
-				<p>{t("index.s1.text3")}</p>
+				<p>{t("index.intro.text3")}</p>
 				<p>∞ ∞ ∞</p>
-				<p>{t("index.s1.text4")}</p>
+				<p>{t("index.intro.text4")}</p>
 			</div>
 		</div>
 	</section>
-	<section class="s2 back-red text-white center">
+	<section class="welcome back-red text-white center">
 		<div class="container">
 			<Image src={zon} alt="tekening" class="img" width={500} height={500}/>
 			<div>
-				<h1 class="text-align-center">{t("index.s2.title")}</h1>
-				<p set:html={t("index.s2.text")}></p>
+				<h1 class="text-align-center">{t("index.welcome.title")}</h1>
+				<p set:html={t("index.welcome.text")}></p>
 				<p class="content-end">Francis Weller</p>
 			</div>
 		</div>
@@ -59,7 +60,7 @@ const t = useTranslations(lang);
 	<section class="s4 back-red text-align-center text-white">
 		<p class="p2 bold" set:html={t("index.s4.text")} />
 	</section>
-	<section class="s5 back-white">
+	<section class="profile back-white">
 		<div class="img-container">
 			<Image src={profiel} class="img" alt="Profiel foto van Bram Geysen"/>
 		</div>
@@ -72,6 +73,7 @@ const t = useTranslations(lang);
 			<p class="text-gray title">Socials</p>
 		</div>
 	</section>
+	<Prices color='red'/>
 	<section class="s6 back-gray text-red text-align-center bold">
 		<p>{t('index.s6.text1')}</p>
 		<p>{t('index.s6.text2')}</p>
@@ -84,20 +86,21 @@ const t = useTranslations(lang);
 	section {
 		padding: 2rem;
 	}
-	.s1 .container, .s2 .container {
+	.intro .container,
+	 .welcome .container {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		max-width: 70rem;
 		column-gap: 2rem;
 	}
 	
-	.s2 .img {
+	.welcome .img {
 		max-width: 500px;
 		max-height: 500px;
 		width: 100%;
 		height: auto;
 	}
-	.s5 {
+	.profile {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		padding: 0;
@@ -108,7 +111,7 @@ const t = useTranslations(lang);
         height: 600px; 
         overflow: hidden;
     }
-	.s5 .img{
+	.profile .img{
 		position: relative;
 		top: -10rem;
 		min-width: 600px;
@@ -118,11 +121,11 @@ const t = useTranslations(lang);
   		object-position: bottom;
 	}
 
-	.s5 .text{
+	.profile .text{
 		padding: 2rem;
 	}
 
-	.s5 .title{
+	.profile .title{
 		font-weight: 700;
 	}
 
@@ -134,7 +137,7 @@ const t = useTranslations(lang);
 	/* Responsive */
 
 	@media (max-width: 1900px) {
-		.s5 .img {
+		.profile .img {
 			top: 0;
 		}
 	}
@@ -147,22 +150,24 @@ const t = useTranslations(lang);
 
 	@media (max-width: 900px){
 
-		.s1 .container, .s2 .container, .s5 {
+		.intro .container,
+		.welcome .container,
+		.profile {
 			grid-template-columns: auto;
 		}
-		.s1 .img{
+		.intro .img{
 			display: none;
 		}
 
-		.s2 .img, .s5 .img{
+		.welcome .img, .profile .img{
 			grid-row: 2;
 			min-width: none;
 		}
 
-		.s5{
+		.profile{
 			padding: 0;
 		}
-		.s5 .img{
+		.profile .img{
 			width: 100%;
 		}
 	}

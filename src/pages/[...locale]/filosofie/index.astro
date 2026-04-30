@@ -14,6 +14,68 @@ const t = useTranslations(lang);
 ---
 
 <Layout title={t("filosofie.title")}>
+    <section class="s4 back-red text-align-center text-white">
+        <h1 set:html={t('filosofie.s4.title')}/>
+        <p set:html={t("filosofie.s4.text1")}/>
+        <p class="bold" set:html={t("filosofie.s4.text2")}/>
+    </section>
+    <section class="s5 back-gray text-align-center center text-gray">
+        <div class="col2">
+            <div>
+                <h3 class="text-red">{t('filosofie.s5.e1.title1')}</h3>
+                <Image src={bewustzijn_rond} alt="Tekening van bewustzijn" height={500} width={500}/>
+                <h4 class="text-red">{t('filosofie.s5.e1.title2')}</h4>
+                <ul class="text-align-justify infinity-list">
+                    <li>{t('filosofie.s5.e1.list1')}</li>
+                    <li>{t('filosofie.s5.e1.list2')}</li>
+                    <li>{t('filosofie.s5.e1.list3')}</li>
+                    <li>{t('filosofie.s5.e1.list4')}</li>
+                    <li>{t('filosofie.s5.e1.list5')}</li>
+                </ul>
+            </div>
+    
+            <div>
+                <h3 class="text-red">{t('filosofie.s5.e2.title1')}</h3>
+                <Image src={adem_rond} alt="Tekening van adem" height={500} width={500}/>
+                <h4 class="text-red">{t('filosofie.s5.e2.title2')}</h4>
+                <ul class="text-align-justify infinity-list">
+                    <li>{t('filosofie.s5.e2.list1')}</li>
+                    <li>{t('filosofie.s5.e2.list2')}</li>
+                    <li>{t('filosofie.s5.e2.list3')}</li>
+                    <li>{t('filosofie.s5.e2.list4')}</li>
+                </ul>
+            </div>
+    
+            <div>
+                <h3 class="text-red">{t('filosofie.s5.e3.title1')}</h3>
+                <Image src={hart_rond} alt="Tekening van hart" height={500} width={500}/>
+                <h4 class="text-red">{t('filosofie.s5.e3.title2')}</h4>
+                <ul class="text-align-justify infinity-list">
+                    <li>{t('filosofie.s5.e3.list1')}</li>
+                    <li>{t('filosofie.s5.e3.list2')}</li>
+                    <li>{t('filosofie.s5.e3.list3')}</li>
+                </ul>
+            </div>
+    
+            <div>
+                <h3 class="text-red">{t('filosofie.s5.e4.title1')}</h3>
+                <Image src={lichaam_rond} alt="Tekening van lichaam" height={500} width={500}/>
+                <h4 class="text-red">{t('filosofie.s5.e4.title2')}</h4>
+                <ul class="text-align-justify infinity-list">
+                    <li>{t('filosofie.s5.e4.list1')}</li>
+                    <li>{t('filosofie.s5.e4.list2')}</li>
+                    <li>{t('filosofie.s5.e4.list3')}</li>
+                    <li set:html={t('filosofie.s5.e4.list4')}/>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="s6 back-red text-white text-align-center">
+		<h3 set:html={t("aanbod.s6.text")}/>
+	</section>
+    <section class="s8 back-white text-black text-align-center">
+		<h3 set:html={t("aanbod.s8.text")}/>
+	</section>
     <section class="s1 back-gray text-align-center">
         <h1 class="text-red">{t('filosofie.s1.title')}</h1>
         <p class="text-gray" set:html={t('filosofie.s1.text')}/>
@@ -89,73 +151,17 @@ const t = useTranslations(lang);
             </div>
         </div>
     </section>
-    <section class="s4 back-red text-align-center text-white">
-        <h1 set:html={t('filosofie.s4.title')}/>
-        <p set:html={t("filosofie.s4.text1")}/>
-        <p class="bold" set:html={t("filosofie.s4.text2")}/>
-    </section>
-    <section class="s5 back-gray text-align-center center text-gray">
-		<div class="col2">
-			<div>
-                <h3 class="text-red">{t('filosofie.s5.e1.title1')}</h3>
-				<Image src={bewustzijn_rond} alt="Tekening van bewustzijn" height={500} width={500}/>
-				<h4 class="text-red">{t('filosofie.s5.e1.title2')}</h4>
-                <ul class="text-align-justify infinity-list">
-                    <li>{t('filosofie.s5.e1.list1')}</li>
-                    <li>{t('filosofie.s5.e1.list2')}</li>
-                    <li>{t('filosofie.s5.e1.list3')}</li>
-                    <li>{t('filosofie.s5.e1.list4')}</li>
-                    <li>{t('filosofie.s5.e1.list5')}</li>
-                </ul>
-			</div>
-	
-			<div>
-                <h3 class="text-red">{t('filosofie.s5.e2.title1')}</h3>
-				<Image src={adem_rond} alt="Tekening van adem" height={500} width={500}/>
-				<h4 class="text-red">{t('filosofie.s5.e2.title2')}</h4>
-                <ul class="text-align-justify infinity-list">
-                    <li>{t('filosofie.s5.e2.list1')}</li>
-                    <li>{t('filosofie.s5.e2.list2')}</li>
-                    <li>{t('filosofie.s5.e2.list3')}</li>
-                    <li>{t('filosofie.s5.e2.list4')}</li>
-                </ul>
-			</div>
-	
-			<div>
-                <h3 class="text-red">{t('filosofie.s5.e3.title1')}</h3>
-				<Image src={hart_rond} alt="Tekening van hart" height={500} width={500}/>
-				<h4 class="text-red">{t('filosofie.s5.e3.title2')}</h4>
-                <ul class="text-align-justify infinity-list">
-                    <li>{t('filosofie.s5.e3.list1')}</li>
-                    <li>{t('filosofie.s5.e3.list2')}</li>
-                    <li>{t('filosofie.s5.e3.list3')}</li>
-                </ul>
-			</div>
-	
-			<div>
-                <h3 class="text-red">{t('filosofie.s5.e4.title1')}</h3>
-				<Image src={lichaam_rond} alt="Tekening van lichaam" height={500} width={500}/>
-				<h4 class="text-red">{t('filosofie.s5.e4.title2')}</h4>
-                <ul class="text-align-justify infinity-list">
-                    <li>{t('filosofie.s5.e4.list1')}</li>
-                    <li>{t('filosofie.s5.e4.list2')}</li>
-                    <li>{t('filosofie.s5.e4.list3')}</li>
-                    <li set:html={t('filosofie.s5.e4.list4')}/>
-                </ul>
-			</div>
-		</div>
-	</section>
     <section class="s6 back-red text-align-center center">
         <div class="col3">
-            <p class="text-white" set:html={t('filosofie.s6.text1')} />
-            <p class="text-black" set:html={t('filosofie.s6.text2')} />
-            <p class="text-white" set:html={t('filosofie.s6.text3')} />
-            <p class="text-black" set:html={t('filosofie.s6.text4')} />
-            <p class="text-white" set:html={t('filosofie.s6.text5')} />
-            <p class="text-black" set:html={t('filosofie.s6.text6')} />
-            <p class="text-white" set:html={t('filosofie.s6.text7')} />
-            <p class="text-black" set:html={t('filosofie.s6.text8')} />
-            <p class="text-white" set:html={t('filosofie.s6.text9')} />
+            <p class="text-white" set:html={t('quotes.text1')} />
+            <p class="text-black" set:html={t('quotes.text2')} />
+            <p class="text-white" set:html={t('quotes.text3')} />
+            <p class="text-black" set:html={t('quotes.text4')} />
+            <p class="text-white" set:html={t('quotes.text5')} />
+            <p class="text-black" set:html={t('quotes.text6')} />
+            <p class="text-white" set:html={t('quotes.text7')} />
+            <p class="text-black" set:html={t('quotes.text8')} />
+            <p class="text-white" set:html={t('quotes.text9')} />
         </div>
     </section>
     <ContactSection/>
