@@ -288,17 +288,27 @@ export const ui = {
     "Prices.e1.title1": "Individuele begeleidingen (fysiek of online)",
     "Prices.e1.li1": "Een sessie van 60min is 75 euro (incl BTW)",
     "Prices.e1.li2": "Een sessie van 90min is 100 euro (incl BTW)",
-    "Prices.e1.title2": "Reconstructive (2 daagse)",
-    "Prices.e1.text1":
-      "Re-constructive is een lichamelijke groepsbeleving waarin je voorbij je patronen beweegt en ruimte maakt voor intuïtie.",
-    "Prices.e1.text2":
-      "Als individu kan je je hiervoor inschrijven. Meer uitleg volgt later.",
-    "Prices.e2.title1": "Begeleiding van teamleden (fysiek of online)",
+    "Prices.e1.details.text1":
+      "Ik begeleid mensen die voelen dat het tijd is om opnieuw in beweging te komen. Mensen die bewust willen kiezen — of opnieuw willen kiezen — voor het leven, voor verbinding en voor het volledig belichamen van hun potentieel. Of je nu op zoek bent naar heling, helderheid, groei of een nieuwe richting: bij Mooyo vind je een plek waar je gezien en gedragen wordt. Voor wie worstelt met verslavingsproblematieken bied ik een veilige ruimte om te onderzoeken wat er onder de patronen schuilgaat, en om stap voor stap terug te keren naar innerlijke vrijheid en zelfsturing. Als (uitzonderlijk) hoogbewuste of hoogbegaafde kan je rekenen op herkenning, spiegeling en begeleiding die aansluit bij jouw gevoeligheid, intensiteit en diepte. Mooyo is er voor iedereen die voelt dat het leven meer vraagt — en meer te bieden heeft — wanneer je durft te bewegen vanuit je hart.",
+    "Prices.e1.details.title":
+      "Adolescenten (korting voor adulescenten die zelf instaan voor de kosten)",
+    "Prices.e1.details.text2":
+      "Ook adolescenten zijn meer dan welkom. Zij zijn de toekomst en brengen talenten, verlangens en eigenschappen mee die misschien niet altijd lijken aan te sluiten bij de huidige maatschappij. Via mijn hartgedragen begeleiding ontdekken zij hoe ze in hun eigen kracht kunnen gaan staan. Met heldere inzichten, zelfvertrouwen en nieuwe perspectieven kunnen zij met volle energie én plezier bijdragen aan een samenleving die blijft groeien en vernieuwen.",
+    "Prices.e2.title1": "Begeleiding van Koppels (fysiek of online)",
     "Prices.e2.li1": "Een sessie van 60min is 100 euro (excl BTW)",
     "Prices.e2.li2": "Een sessie van 90min is 150 euro (excl BTW)",
-    "Prices.e2.title2": "Begeleiding van teams",
-    "Prices.e2.li3": "Een sessie van halve dag is 500 euro (excl BTW)",
-    "Prices.e2.li4": " Een sessie van één dag is 800 euro (excl BTW)",
+    "Prices.e2.details":
+      "Ook koppels die verlangen naar meer verbinding, begrip en gezamenlijke groei zijn hier welkom. Koppels die bereid zijn om met openheid en moed naar hun eigen innerlijke delen te kijken — de stukken die geraakt worden, die zich terugtrekken, die verlangen, die beschermen. In hartgedragen begeleiding creëren we een veilige bedding waarin beide partners kunnen thuiskomen bij zichzelf én bij elkaar. Vanuit zachtheid, eerlijkheid en aanwezigheid onderzoeken we wat er onder de oppervlakte leeft, zodat liefde, helderheid en echte ontmoeting opnieuw ruimte krijgen.",
+    "Prices.e3.title": "Begeleiding van organisaties",
+    "Prices.e3.li1": "Een sessie van halve dag is 500 euro (excl BTW)",
+    "Prices.e3.li2": " Een sessie van één dag is 800 euro (excl BTW)",
+    "Prices.e3.details":
+      "Organisaties die bereid zijn om het hart mee te laten spreken kunnen rekenen op begeleiding die verder gaat dan methodes en modellen. In (zelfsturende) teams blijkt regelmatig dat er nog een essentieel element ontbreekt om optimaal te functioneren: de innerlijke afstemming die nodig is zodat elk teamlid in zijn hartgedragen kracht kan stappen. Wanneer dat ontbrekende stuk wordt ingevuld, ontstaat er een team dat niet alleen zelfsturend is, maar ook werkelijk zelfbewust, verbonden en veerkrachtig. Zo ontstaat er een duurzaam fundament voor effectieve samenwerking, eigenaarschap en resultaatgerichtheid.",
+    "Prices.e4.title": "Reconstructive (2 daagse)",
+    "Prices.e4.text1":
+      "Re-constructive is een lichamelijke groepsbeleving waarin je voorbij je patronen beweegt en ruimte maakt voor intuïtie.",
+    "Prices.e4.text2":
+      "Als individu kan je je hiervoor inschrijven. Meer uitleg volgt later.",
   },
   en: {
     // Global
