@@ -19,47 +19,66 @@ const sectionClasses = color === "red"
 <section class=`center ${sectionClasses}`>
     <h2>{t('Prices.title')}</h2>
 	<p class="online-p text-align-center">{t('Prices.text')}</p>
-	<div class="col3">
+	<div class="flex">
 		<div class="card expanding">
-			<h4 class="bold text-red">{t('Prices.e1.title1')}</h4>
-			<ul class="infinity-list text-black">
-				<li>{t('Prices.e1.li1')}</li>
-				<li>{t('Prices.e1.li2')}</li>
-			</ul>
-			<p class="seeMore">Zie meer...</p>
+			<div class="main">
+				<h4 class="bold text-red">{t('Prices.e1.title1')}</h4>
+				<ul class="infinity-list text-black">
+					<li>{t('Prices.e1.li1')}</li>
+					<li>{t('Prices.e1.li2')}</li>
+				</ul>
+				<p class="seeMore">{t('Prices.seeMore')}</p>
+			</div>
 			<div class="details">
-				<p>{t('Prices.e1.details.text1')}</p>
 				<div>
-					<h4>{t('Prices.e1.details.title')}</h4>
-					<p>{t('Prices.e1.details.text2')}</p>
+					<p>{t('Prices.e1.details')}</p>
 				</div>
 			</div>
 		</div>
 		<div class="card expanding">
-			<h4 class="bold text-red">{t('Prices.e2.title1')}</h4>
-			<ul class="infinity-list text-black">
-				<li>{t('Prices.e2.li1')}</li>
-				<li>{t('Prices.e2.li2')}</li>
-			</ul>
-			<p class="seeMore">Zie meer...</p>
+			<div class="main">
+				<h4 class="bold text-red">{t('Prices.e5.title')}</h4>
+				<ul class="infinity-list text-black">
+					<li>{t('Prices.e5.li1')}</li>
+					<li>{t('Prices.e5.li2')}</li>
+				</ul>
+				<p class="seeMore">{t('Prices.seeMore')}</p>
+			</div>
+			<div class="details">
+				<p>{t('Prices.e5.details')}</p>
+			</div>
+		</div>
+	</div>
+	<div class="flex">
+		<div class="card expanding">
+			<div class="main">
+				<h4 class="bold text-red">{t('Prices.e2.title1')}</h4>
+				<ul class="infinity-list text-black">
+					<li>{t('Prices.e2.li1')}</li>
+					<li>{t('Prices.e2.li2')}</li>
+				</ul>
+				<p class="seeMore">{t('Prices.seeMore')}</p>
+			</div>
 			<div class="details">
 				<p>{t('Prices.e2.details')}</p>
 			</div>
 		</div>
 		<div class="card expanding">
-			<h4 class="bold text-red">{t('Prices.e3.title')}</h4>
-			<ul class="infinity-list text-black">
-				<li>{t('Prices.e3.li1')}</li>
-				<li>{t('Prices.e3.li2')}</li>
-			</ul>
-			<p class="seeMore">Zie meer...</p>
+			<div class="main">
+				<h4 class="bold text-red">{t('Prices.e3.title')}</h4>
+				<ul class="infinity-list text-black">
+					<li>{t('Prices.e3.li1')}</li>
+					<li>{t('Prices.e3.li2')}</li>
+				</ul>
+				<p class="seeMore">{t('Prices.seeMore')}</p>
+			</div>
 			<div class="details">
 				<p>{t('Prices.e3.details')}</p>
 			</div>
 		</div>
 	</div>
 	{reconstructive && 
-		<div class="text-align-center card">
+		<div class="reconstructive text-align-center card">
 	    	<h4 class="bold text-red">{t('Prices.e4.title')}</h4>
 			<p class="text-black">{t('Prices.e4.text1')}</p>
 			<p class="text-black">{t('Prices.e4.text2')}</p>
@@ -74,9 +93,10 @@ const sectionClasses = color === "red"
 
     .online-p {
         width: 75%;
+		margin-bottom: 3rem;
     }
 
-   .col3 {
+   .flex {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -95,17 +115,26 @@ const sectionClasses = color === "red"
         color: black;
         box-sizing: border-box;
     }
+
+	.reconstructive {
+		margin-top: 2rem;
+	}
     
     .expanding {
         flex: 1;
         overflow: hidden;
 		min-width: 0;
-        transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1); 
+        transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+		min-height: 400px 
     }
     
     .expanding:hover {
         flex: 2;
     }
+
+	.main {
+		margin-left: 2rem;
+	}
 
     .details {
         opacity: 0;
@@ -132,7 +161,7 @@ const sectionClasses = color === "red"
         margin-top: 1rem;
         margin-bottom: 0;
         font-weight: bold;
-        transition: opacity 0.3s ease;
+        transition: opacity 1s ease;
     }
 
     .expanding:hover .seeMore {
@@ -145,17 +174,15 @@ const sectionClasses = color === "red"
 
 
     @media (max-width: 1200px){
-		.col2 {
-			display: flex;
+		.flex {
 			flex-direction: column;
-			width: 70vw;
-			max-width: 500px;
 		}
 
-		section {
-			display: flex;
-			align-items: center;
-			justify-content: center;
+		.card {
+			width: 80%;
+			margin: auto;
+			margin-top: 2rem;
+			margin-bottom: 2rem;
 		}
 	}
 </style>

@@ -15,6 +15,7 @@ body {
   background-color: rgb(250, 246, 246);
   font-family: "papyrus", "sans-serif";
   font-style: normal;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -149,6 +150,7 @@ button {
   padding: 0.5rem 2rem;
   border-radius: 1rem;
   border: none;
+  cursor: pointer;
 }
 
 .red-btn {
@@ -161,7 +163,8 @@ button {
   color: var(--mooyo-black);
 }
 
-.red-btn:hover {
+.red-btn:hover,
+.white-btn:hover {
   opacity: 0.8;
 }
 

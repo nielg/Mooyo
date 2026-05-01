@@ -284,17 +284,13 @@ export const ui = {
     "Prices.text":
       "Begeleidingen kunnen ook online doorgaan. Verandering gebeurt in het lichaam — en dat lichaam reist altijd met je mee. Daarom werkt online begeleiding net zo diep, net zo transformerend en net zo effectief. Het gaat erom dat er een interne beweging plaats vindt en dat onafhankelijk van fysieke afstand. Belangrijk is dat je je er comfortabel bij voelt.",
     "Prices.e1.title1": "Individuele begeleidingen (fysiek of online)",
-    "Prices.e1.li1": "Een sessie van 60min is 75 euro (incl BTW)",
-    "Prices.e1.li2": "Een sessie van 90min is 100 euro (incl BTW)",
-    "Prices.e1.details.text1":
+    "Prices.e1.li1": "Een sessie van 60 min is 65 euro (incl BTW)",
+    "Prices.e1.li2": "Een sessie van 90 min is 95 euro (incl BTW)",
+    "Prices.e1.details":
       "Ik begeleid mensen die voelen dat het tijd is om opnieuw in beweging te komen. Mensen die bewust willen kiezen — of opnieuw willen kiezen — voor het leven, voor verbinding en voor het volledig belichamen van hun potentieel. Of je nu op zoek bent naar heling, helderheid, groei of een nieuwe richting: bij Mooyo vind je een plek waar je gezien en gedragen wordt. Voor wie worstelt met verslavingsproblematieken bied ik een veilige ruimte om te onderzoeken wat er onder de patronen schuilgaat, en om stap voor stap terug te keren naar innerlijke vrijheid en zelfsturing. Als (uitzonderlijk) hoogbewuste of hoogbegaafde kan je rekenen op herkenning, spiegeling en begeleiding die aansluit bij jouw gevoeligheid, intensiteit en diepte. Mooyo is er voor iedereen die voelt dat het leven meer vraagt — en meer te bieden heeft — wanneer je durft te bewegen vanuit je hart.",
-    "Prices.e1.details.title":
-      "Adolescenten (korting voor adulescenten die zelf instaan voor de kosten)",
-    "Prices.e1.details.text2":
-      "Ook adolescenten zijn meer dan welkom. Zij zijn de toekomst en brengen talenten, verlangens en eigenschappen mee die misschien niet altijd lijken aan te sluiten bij de huidige maatschappij. Via mijn hartgedragen begeleiding ontdekken zij hoe ze in hun eigen kracht kunnen gaan staan. Met heldere inzichten, zelfvertrouwen en nieuwe perspectieven kunnen zij met volle energie én plezier bijdragen aan een samenleving die blijft groeien en vernieuwen.",
     "Prices.e2.title1": "Begeleiding van Koppels (fysiek of online)",
-    "Prices.e2.li1": "Een sessie van 60min is 100 euro (excl BTW)",
-    "Prices.e2.li2": "Een sessie van 90min is 150 euro (excl BTW)",
+    "Prices.e2.li1": "Een sessie van 60 min is 70 euro (excl BTW)",
+    "Prices.e2.li2": "Een sessie van 90 min is 110 euro (excl BTW)",
     "Prices.e2.details":
       "Ook koppels die verlangen naar meer verbinding, begrip en gezamenlijke groei zijn hier welkom. Koppels die bereid zijn om met openheid en moed naar hun eigen innerlijke delen te kijken — de stukken die geraakt worden, die zich terugtrekken, die verlangen, die beschermen. In hartgedragen begeleiding creëren we een veilige bedding waarin beide partners kunnen thuiskomen bij zichzelf én bij elkaar. Vanuit zachtheid, eerlijkheid en aanwezigheid onderzoeken we wat er onder de oppervlakte leeft, zodat liefde, helderheid en echte ontmoeting opnieuw ruimte krijgen.",
     "Prices.e3.title": "Begeleiding van organisaties",
@@ -307,6 +303,13 @@ export const ui = {
       "Re-constructive is een lichamelijke groepsbeleving waarin je voorbij je patronen beweegt en ruimte maakt voor intuïtie.",
     "Prices.e4.text2":
       "Als individu kan je je hiervoor inschrijven. Meer uitleg volgt later.",
+    "Prices.e5.title":
+      "Adolescenten (korting voor adulescenten die zelf instaan voor de kosten)",
+    "Prices.e5.li1": "Een sessie van 60 min 50 euro (incl BTW)",
+    "Prices.e5.li2": "Een sessie van 90 min 75 euro (incl BTW",
+    "Prices.e5.details":
+      "Ook adolescenten zijn meer dan welkom. Zij zijn de toekomst en brengen talenten, verlangens en eigenschappen mee die misschien niet altijd lijken aan te sluiten bij de huidige maatschappij. Via mijn hartgedragen begeleiding ontdekken zij hoe ze in hun eigen kracht kunnen gaan staan. Met heldere inzichten, zelfvertrouwen en nieuwe perspectieven kunnen zij met volle energie én plezier bijdragen aan een samenleving die blijft groeien en vernieuwen.",
+    "Prices.seeMore": "Zie meer...",
   },
   en: {
     // Global
@@ -334,6 +337,7 @@ export const ui = {
 
     // Index
     "index.title": "Home",
+
     // Index section 1
     "index.intro.text1": "Heart, life, soul, spirit.",
     "index.intro.text2":
@@ -385,38 +389,21 @@ export const ui = {
     // Aanbod section 1
     "aanbod.forwho.title": "For whom?",
     "aanbod.forwho.text":
-      "I guide people who feel they want to embrace change. <br>People who want to choose actively, or choose for life again and want to live their full potential. <br>If you are looking for healing, clarity, growth, or a new direction, then Mooyo is for you. <br>As an (exceptionally) high-conscious/gifted person, you can also count on mirroring and recognition here. <br>Organizations that are willing to let the heart speak as well.",
+      "Guidance at Mooyo always goes to the core of who we are and what we carry within us. We look at the layers beneath behavior, beneath patterns, beneath what is visible. Real movement begins when we dare to feel what lives inside us — and when we no longer have to carry it alone. We heal in relationship: in relationship with ourselves, with others, and with life. That is why every guidance process is both universal and completely tailored. Universal because we all long for connection, clarity, direction, and inner peace. Tailored because every person, every couple, and every life story is unique. Whether you come as an individual, as a couple wanting to reconnect, or as someone struggling with persistent patterns or addiction-related challenges: you are welcomed into a safe, open space where you may land exactly as you are. Through heart-centered presence, we explore what wants to be seen, so you can reconnect with your own strength, freedom of choice, and life energy. Mooyo is here for everyone who feels it is time to return to themselves — and from there embrace life again.",
 
     // Aanbod section 2
-    "methodieken.text1":
+    "methodieken.title":
       "My guidance is based on the philosophy and methodologies below:",
-    "methodieken.text2": "Truth first, then form.",
-    "methodieken.text3":
-      "All approaches and methodologies allow you to physically experience how change can feel. <br>These methodologies also take into account that people are relational beings. Consequently, we also look at the system you are part of. Behavior arises in interaction with others.",
-
-    // Aanbod section 4
-    "aanbod.s4.e1.title1": "Individual guidance (physical or online)",
-    "aanbod.s4.e1.li1": "A session of 60min is 75euro (incl VAT)",
-    "aanbod.s4.e1.li2": "A session of 90min is 100euro (incl VAT)",
-    "aanbod.s4.e1.title2": "Reconstructive (2 days)",
-    "aanbod.s4.e1.text1":
-      "Reconstructive is a physical group experience in which you move past your patterns and make room for intuition.",
-    "aanbod.s4.e1.text2":
-      "As an individual, you can register for this. More explanation will follow later.",
-    "aanbod.s4.e2.title1": "Guidance for team members (physical or online)",
-    "aanbod.s4.e2.li1": "A session of 60min is 100euro (excl VAT)",
-    "aanbod.s4.e2.li2": "A session of 90min is 150euro (excl VAT)",
-    "aanbod.s4.e2.title2": "Guidance for teams",
-    "aanbod.s4.e2.li3": "A half-day session is 500euro (excl VAT)",
-    "aanbod.s4.e2.li4": "A full-day session is 800euro (excl VAT)",
+    "methodieken.text":
+      "All approaches and methodologies allow you to physically experience how change can feel. These methodologies also take into account that people are relational beings. Consequently, we also look at the system you are part of. Behavior and problems arise in interaction with others and are never purely individual. The different relationships we have with ourselves are also given a place within the guidance process.",
 
     // Aanbod section 5
     "openHartCirkels.title": "Open heart circles",
-    "openHartCirkels.text": "For more information see (expected early May):",
+    "openHartCirkels.text": "For more information see (expected early June):",
 
     // Aanbod section 6
     "aanbod.s6.text":
-      "The child brings the life force. The adult brings the bedding. <br>Together they form a whole human being.",
+      "The child brings the life force. The adult brings the foundation. <br>Together they form a whole human being.",
 
     // Aanbod section 7
     "aanbod.s7.text":
@@ -444,150 +431,38 @@ export const ui = {
     "filosofie.s2.col1.text2": "That is what is needed to soften conditioning.",
     "filosofie.s2.col1.text3":
       "It is not about brute willpower, but about a gentle, sustained honesty.",
-    "filosofie.s2.col2.title":
-      "2. Conditioning stops when you consciously see the pattern",
-    "filosofie.s2.col2.text1":
-      "Patterns persist as long as they run automatically.",
-    "filosofie.s2.col2.text2": "They begin to shift when you:",
-    "filosofie.s2.col2.list1": "notice the pattern at the moment it happens",
-    "filosofie.s2.col2.list2": "feel the physical sensations accompanying it",
-    "filosofie.s2.col2.list3": "don't react immediately as you always did",
-    "filosofie.s2.col2.text3":
-      "That moment of awareness is already a break in the conditioning",
-    "filosofie.s2.col3.title":
-      "3. Reversal happens through small repeated choices",
-    "filosofie.s2.col3.text1":
-      "Great transformations rarely arise from one single great act",
-    "filosofie.s2.col3.text2": "They arise by:",
-    "filosofie.s2.col3.list1": "choosing a different reaction time and again",
-    "filosofie.s2.col3.list2": "remaining kind to yourself when it fails",
-    "filosofie.s2.col3.list3":
-      'allowing yourself to grow instead of "fixing" yourself',
-    "filosofie.s2.col3.text3":
-      "The heart helps because it motivates you to keep going, even when it is difficult.",
 
-    //  Filosofie Section 3
-    "filosofie.s3.col1.title": "4. The body plays a key role",
-    "filosofie.s3.col1.text1":
-      "Conditioning is not just in thoughts, but also in:",
-    "filosofie.s3.col1.list1": "muscle tension",
-    "filosofie.s3.col1.list2": "breathing",
-    "filosofie.s3.col1.list3": "reflexive reactions",
-    "filosofie.s3.col1.text2":
-      "Practices such as breathwork, meditation, somatic exercises, or mindful movement can help to soften those automatic patterns.",
-    "filosofie.s3.col2.title":
-      "5. The necessary strength is not hard but persistent",
-    "filosofie.s3.col2.text1":
-      'Many people think they need to become "stronger."',
-    "filosofie.s3.col2.text2": "In reality, it is about:",
-    "filosofie.s3.col2.list1": "softness",
-    "filosofie.s3.col2.list2": "presence",
-    "filosofie.s3.col2.list3": "willingness to feel",
-    "filosofie.s3.col2.list4": "staying true to your deeper values",
-    "filosofie.s3.col2.text3":
-      "That is a different kind of strength, but a very powerful one.",
-    "filosofie.s3.col3.title": "6. Community",
-    "filosofie.s3.col3.text1":
-      "Community often plays a much larger role in healing than people realize.",
-    "filosofie.s3.col3.text2":
-      "Healing — whether emotional, psychological, spiritual, or even physical — rarely happens fully in isolation.",
-    "filosofie.s3.col3.text3": "People heal in relation to others.",
+    // Components
+    "Prices.title": "Offerings ∞ Pricing",
+    "Prices.text":
+      "Guidance sessions can also take place online. Change happens in the body — and that body always travels with you. That is why online guidance can be just as deep, transformative, and effective. What matters is that an inner movement takes place, independent of physical distance. The most important thing is that you feel comfortable with it.",
 
-    // Filosofie section 4
-    "intro-pillars.title":
-      "The guidance is based on 4 basic pillars that are constantly <br> in dialogue with each other.",
-    "intro-pillars.text1":
-      "Sufficient attention is given to these 4 pillars, and depending on the moment, one or the other will be more prominent. <br> The pillars are always in communication and balance with each other.",
-    "intro-pillars.text2":
-      "Mooyo brings people closer to their essence so that they make heart-centered choices in their lives.",
+    "Prices.e1.title1": "Individual guidance (in person or online)",
+    "Prices.e1.li1": "A 60-minute session costs 65 euros (incl. VAT)",
+    "Prices.e1.li2": "A 90-minute session costs 95 euros (incl. VAT)",
+    "Prices.e1.details":
+      "I guide people who feel it is time to move again. People who consciously want to choose — or choose again — for life, for connection, and for fully embodying their potential. Whether you are seeking healing, clarity, growth, or a new direction: at Mooyo you will find a place where you are seen and supported. For those struggling with addiction-related patterns, I offer a safe space to explore what lies beneath those patterns and to gradually return to inner freedom and self-direction. As an exceptionally conscious or gifted person, you can count on recognition, reflection, and guidance attuned to your sensitivity, intensity, and depth. Mooyo is here for everyone who feels that life asks for more — and has more to offer — when you dare to move from the heart.",
 
-    // Filosofie section 5
-    "pillars.e1.title1": "Awareness - The Whole",
-    "pillars.e1.title2": "The power of your roots",
-    "pillars.e1.list1":
-      "Truth-telling: honestly looking at your past, your patterns.",
-    "pillars.e1.list2":
-      "Psycho-education is also an important part of healing, transformation.",
-    "pillars.e1.list3": "Families are the messengers of our culture.",
-    "pillars.e1.list4":
-      "Understanding what perception, conditioning, and programming from 0 to 6 years entail and how they affect your life.",
-    "pillars.e1.list5":
-      "Recognizing your place with your parents and in the family system to understand your learning processes and behaviors.",
-    "pillars.e2.title1": "Breath - The Now",
-    "pillars.e2.title2": "The power of the breath",
-    "pillars.e2.list1":
-      "Accepting life as it is now, not as you would want it to be.",
-    "pillars.e2.list2": "Seeing its impermanence. Without resistance.",
-    "pillars.e2.list3":
-      "Breathing is the gateway between the conscious and unconscious: we can direct the breath consciously, while it also functions autonomously.",
-    "pillars.e2.list4":
-      "Breathing plays an important role in our daily lives and can be used as regulation during painful experiences that deserve to be felt.",
-    "pillars.e3.title1": "The Heart - The Future",
-    "pillars.e3.title2": "The power of heart coherence",
-    "pillars.e3.list1":
-      "Heart coherence is a way to practice self-regulation and an invitation to build resilience. It is also a gateway to your higher self.",
-    "pillars.e3.list2":
-      "The courage to take (back) your place with everything that belongs to it.",
-    "pillars.e3.list3":
-      "Recognizing habits and belief systems with compassion and developing the courage to break them.",
-    "pillars.e4.title1": "Body - The Past",
-    "pillars.e4.title2": "The power of growing up",
-    "pillars.e4.list1":
-      "The meeting between the child in you and the adult in you.",
-    "pillars.e4.list2":
-      "In many people, the child part becomes covered by expectations, roles, responsibilities, traumas. The child does not disappear — it becomes quiet.",
-    "pillars.e4.list3":
-      "Without the child, the adult becomes dry, functional, cut off. Without the adult, the child becomes unsafe, ungrounded, unprotected.",
-    "pillars.e4.list4":
-      "When the child and the adult find each other, there arises: <br> safety without rigidity, playfulness without chaos, strength without hardness, softness without fragility",
+    "Prices.e2.title1": "Couples guidance (in person or online)",
+    "Prices.e2.li1": "A 60-minute session costs 70 euros (excl. VAT)",
+    "Prices.e2.li2": "A 90-minute session costs 110 euros (excl. VAT)",
+    "Prices.e2.details":
+      "Couples who long for greater connection, understanding, and shared growth are also welcome here. Couples willing to look with openness and courage at their own inner parts — the pieces that are triggered, withdraw, long, or protect. In heart-centered guidance, we create a safe foundation in which both partners can come home to themselves and to each other.",
 
-    // Filosofie section 6
-    "quotes.text1":
-      "No longer choose out of fear, but out of alignment. <br>What does your fear say: “What if…?” <br>What does your heart say: “What feels right now?”",
-    "quotes.text2":
-      "Speak more honestly and gently. <br>Check your intention: Do you want to convince? Or do you stay true to what you feel?",
-    "quotes.text3":
-      "Choose truth over comfort. <br>Sometimes that is exciting, but it does bring peace.",
-    "quotes.text4":
-      "Slow down when something doesn't feel right. <br>Check first: What am I actually feeling? What is right for me?",
-    "quotes.text5":
-      "Choose more simply! <br>The head makes things complicated. <br>The heart feels: yes, no, or not yet.",
-    "quotes.text6":
-      "Be kind to yourself. <br>The heart seeks clarity, not struggle.",
-    "quotes.text7":
-      "Choose what nourishes you, not what depletes you. <br>Both in relationships, work, rhythm, environment.",
-    "quotes.text8":
-      "Set boundaries without becoming hard. <br>Choose connection instead of defense.",
-    "quotes.text9":
-      "Choose direction instead of control. <br>The heart points the path, <br>the head plans the steps.",
+    "Prices.e3.title": "Guidance for organizations",
+    "Prices.e3.li1": "A half-day session costs 500 euros (excl. VAT)",
+    "Prices.e3.li2": "A full-day session costs 800 euros (excl. VAT)",
 
-    // About
-    "about.title": "About me",
+    "Prices.e4.title": "Reconstructive (2-day program)",
+    "Prices.e4.text1":
+      "Reconstructive is a body-oriented group experience in which you move beyond patterns and create space for intuition.",
+    "Prices.e4.text2":
+      "You can register for this as an individual. More information will follow later.",
 
-    // About section 1
-    "about.s1.title": "The story of Mooyo",
-    "about.s1.text":
-      "Discover the journey that led to the founding of Mooyo and the passion behind my guidance. This is my personal story and the core of what makes Mooyo unique.",
-
-    // About section 2
-    "about.s2.e1.title": "My personal journey",
-    "about.s2.e1.text1":
-      "I was born under the African sun, in Chipata, Zambia and lived in Africa for the first 11 years. Besides Zambia, I also lived in Rwanda.",
-    "about.s2.e1.text2": "I currently live in Kessel-Lo. I have four children.",
-    "about.s2.e1.text3":
-      "The events in my life are the building blocks that brought me to this point. By consciously looking at the pains and challenges of my own life over the last 10 years and persisting, I have developed a deep well of insights and experiences. My process is still ongoing.",
-    "about.s2.e1.text4":
-      "Carl Jung says: “The privilege of a lifetime is to become who you truly are.” ",
-    "about.s2.e1.text5":
-      "The sooner we realize this, the richer our lives become.",
-    "about.s2.e1.text6":
-      "I am grateful for everything that has been; it has shaped me and brought much good. I look forward to the future with hope. From that gratitude, Mooyo was born — my inspiration and my dedication to guiding others on their own unique journey.",
-    "about.s2.e1.text7":
-      "I currently work part-time as a team coach at Adem vzw.",
-    "about.s2.e2.title": "Why choose Mooyo?",
-    "about.s2.e2.text1":
-      "My guidance style is characterized by a deep quality of presence and a calm peace. This allows me to create a safe and supportive environment in which you can fully open up and grow.",
-    "about.s2.e2.text2":
-      "Three years ago, I came into contact with Buddhism and meditation. Since then, Buddhist thought and daily meditation have become a steady part of my life. It helps me to stand in life with more clarity, peace, and presence — qualities that I also bring into my work with others.",
+    "Prices.e5.title":
+      "Adolescents (discount for adolescents covering their own costs)",
+    "Prices.e5.li1": "A 60-minute session costs 50 euros (incl. VAT)",
+    "Prices.e5.li2": "A 90-minute session costs 75 euros (incl. VAT)",
+    "Prices.seeMore": "See more...",
   },
 } as const;
