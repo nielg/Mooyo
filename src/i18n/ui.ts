@@ -289,8 +289,8 @@ export const ui = {
     "Prices.e1.details":
       "Ik begeleid mensen die voelen dat het tijd is om opnieuw in beweging te komen. Mensen die bewust willen kiezen — of opnieuw willen kiezen — voor het leven, voor verbinding en voor het volledig belichamen van hun potentieel. Of je nu op zoek bent naar heling, helderheid, groei of een nieuwe richting: bij Mooyo vind je een plek waar je gezien en gedragen wordt. Voor wie worstelt met verslavingsproblematieken bied ik een veilige ruimte om te onderzoeken wat er onder de patronen schuilgaat, en om stap voor stap terug te keren naar innerlijke vrijheid en zelfsturing. Als (uitzonderlijk) hoogbewuste of hoogbegaafde kan je rekenen op herkenning, spiegeling en begeleiding die aansluit bij jouw gevoeligheid, intensiteit en diepte. Mooyo is er voor iedereen die voelt dat het leven meer vraagt — en meer te bieden heeft — wanneer je durft te bewegen vanuit je hart.",
     "Prices.e2.title1": "Begeleiding van Koppels (fysiek of online)",
-    "Prices.e2.li1": "Een sessie van 60 min is 70 euro (excl BTW)",
-    "Prices.e2.li2": "Een sessie van 90 min is 110 euro (excl BTW)",
+    "Prices.e2.li1": "Een sessie van 60 min is 70 euro (incl BTW)",
+    "Prices.e2.li2": "Een sessie van 90 min is 110 euro (incl BTW)",
     "Prices.e2.details":
       "Ook koppels die verlangen naar meer verbinding, begrip en gezamenlijke groei zijn hier welkom. Koppels die bereid zijn om met openheid en moed naar hun eigen innerlijke delen te kijken — de stukken die geraakt worden, die zich terugtrekken, die verlangen, die beschermen. In hartgedragen begeleiding creëren we een veilige bedding waarin beide partners kunnen thuiskomen bij zichzelf én bij elkaar. Vanuit zachtheid, eerlijkheid en aanwezigheid onderzoeken we wat er onder de oppervlakte leeft, zodat liefde, helderheid en echte ontmoeting opnieuw ruimte krijgen.",
     "Prices.e3.title": "Begeleiding van organisaties",
@@ -444,8 +444,8 @@ export const ui = {
       "I guide people who feel it is time to move again. People who consciously want to choose — or choose again — for life, for connection, and for fully embodying their potential. Whether you are seeking healing, clarity, growth, or a new direction: at Mooyo you will find a place where you are seen and supported. For those struggling with addiction-related patterns, I offer a safe space to explore what lies beneath those patterns and to gradually return to inner freedom and self-direction. As an exceptionally conscious or gifted person, you can count on recognition, reflection, and guidance attuned to your sensitivity, intensity, and depth. Mooyo is here for everyone who feels that life asks for more — and has more to offer — when you dare to move from the heart.",
 
     "Prices.e2.title1": "Couples guidance (in person or online)",
-    "Prices.e2.li1": "A 60-minute session costs 70 euros (excl. VAT)",
-    "Prices.e2.li2": "A 90-minute session costs 110 euros (excl. VAT)",
+    "Prices.e2.li1": "A 60-minute session costs 70 euros (incl. VAT)",
+    "Prices.e2.li2": "A 90-minute session costs 110 euros (incl. VAT)",
     "Prices.e2.details":
       "Couples who long for greater connection, understanding, and shared growth are also welcome here. Couples willing to look with openness and courage at their own inner parts — the pieces that are triggered, withdraw, long, or protect. In heart-centered guidance, we create a safe foundation in which both partners can come home to themselves and to each other.",
 
