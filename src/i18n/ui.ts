@@ -192,6 +192,10 @@ export const ui = {
 
     // Filosofie section 5
     "pillars.e1.title1": "Bewustzijn - Het geheel",
+    "pillars.e1.img.text1":
+      "Een cirkel die niet volledig gesloten is met bovenaan een opening. Daarboven een zwevend punt alsof de cirkel een gedachte loslaat - bewustzijn.",
+    "pillars.e1.img.text2":
+      "Betekenis: de mentale ruimte waar waarneming, interpretatie en betekenis ontstaan.",
     "pillars.e1.title2": "De kracht van je wortels",
     "pillars.e1.list1":
       "Truth-telling: eerlijk kijken naar je verleden, je patronen.",
@@ -202,7 +206,11 @@ export const ui = {
     "pillars.e1.list4":
       "Elke conditionering heeft zowel een energetisch aspect als een bewustzijnsdeel.",
     "pillars.e2.title1": "Adem - Het nu",
-    "pillars.e2.title2": "De kracht van de adem",
+    "pillars.e2.img.text1":
+      "De twee golflijnen staan voor verbinding: de in- en uitademing. De streep stelt het middenrif voor, de ondersteuning",
+    "pillars.e2.img.text2":
+      "Betekenis: Adem als brug tussen lichaam en geest, beïnvloedt emoties, zenuwstelsel en mentale helderheid.",
+    "pillars.e2.title2": "De kracht van het moment",
     "pillars.e2.list1":
       "Het leven aanvaarden zoals het nu is, niet zoals je het zou willen dat het is.",
     "pillars.e2.list2": "De tijdelijkheid ervan inzien. Zonder weerstand. ",
@@ -211,7 +219,11 @@ export const ui = {
     "pillars.e2.list4":
       "Ademhaling speelt een belangrijke rol in ons dagelijks leven en kan ingezet worden als regulatie tijdens pijnlijke ervaringen die gevoeld mogen worden.",
     "pillars.e3.title1": "Het Hart - De Toekomst",
-    "pillars.e3.title2": "De kracht van hartcoherentie",
+    "pillars.e3.img.text1":
+      "De spiraal continue gevoed door warmte en menselijkheid.",
+    "pillars.e3.img.text2":
+      "Betekenis: De kracht van oprechte (zelf)compassie en het centrum van moed om ongemak toe te laten.",
+    "pillars.e3.title2": "De kracht van moed",
     "pillars.e3.list1":
       "Hartcoherentie is een manier om aan zelfregulering te doen. en een uitnodiging om veerkracht op te bouwen. Eveneens is het een toegangspoort tot je hoger zelf. ",
     "pillars.e3.list2":
@@ -219,6 +231,10 @@ export const ui = {
     "pillars.e3.list3":
       "Herkennen van gewoonten, overtuigingssystemen met compassie en de moed ontwikkelen om dit te doorbreken.",
     "pillars.e4.title1": "Lichaam - Het Verleden",
+    "pillars.e4.img.text1":
+      "De segmenten zijn verschillend en niet perfect uitgelijnd - een verwijzing naar herinneringen, littekens, geschiedenis.",
+    "pillars.e4.img.text2":
+      "Betekenis: Het lichaam als drager van alles wat is geweest",
     "pillars.e4.title2": "De kracht van opgroeien",
     "pillars.e4.list1":
       "De ontmoeting tussen het kind in jou en de volwassene in jou.",
@@ -431,6 +447,164 @@ export const ui = {
     "filosofie.s2.col1.text2": "That is what is needed to soften conditioning.",
     "filosofie.s2.col1.text3":
       "It is not about brute willpower, but about a gentle, sustained honesty.",
+    "filosofie.s2.col2.title":
+      "2. Conditioning stops when you consciously see the pattern",
+    "filosofie.s2.col2.text1":
+      "Patterns persist as long as they run automatically.",
+    "filosofie.s2.col2.text2": "They begin to shift when you:",
+    "filosofie.s2.col2.list1": "notice the pattern at the moment it happens",
+    "filosofie.s2.col2.list2": "feel the physical sensations associated with it",
+    "filosofie.s2.col2.list3": "do not immediately react as you always did",
+    "filosofie.s2.col2.text3":
+      "That moment of awareness is already a break in the conditioning",
+    "filosofie.s2.col3.title":
+      "3. Reversing happens through small, repeated choices",
+    "filosofie.s2.col3.text1":
+      "Major transformations rarely arise from one big act",
+    "filosofie.s2.col3.text2": "They arise from:",
+    "filosofie.s2.col3.list1": "choosing a different reaction time and again",
+    "filosofie.s2.col3.list2": "remaining gentle when it doesn't work out",
+    "filosofie.s2.col3.list3": "allowing yourself to grow instead of \"fix\"",
+    "filosofie.s2.col3.text3":
+      "The heart helps because it motivates you to keep going, even when it is difficult.",
+
+    // Filosofie section 3
+    "filosofie.s3.col1.title": "4. The body plays a key role",
+    "filosofie.s3.col1.text1":
+      "Conditioning is not just in thoughts, but also in:",
+    "filosofie.s3.col1.list1": "muscle tension",
+    "filosofie.s3.col1.list2": "breathing",
+    "filosofie.s3.col1.list3": "reflexive reactions",
+    "filosofie.s3.col1.text2":
+      "Practices such as breathwork, meditation, somatic exercises, or mindful movement can help soften those automatic patterns.",
+    "filosofie.s3.col2.title":
+      "5. The strength needed is not hard but persistent",
+    "filosofie.s3.col2.text1":
+      "Many people think that they need to become \"stronger\".",
+    "filosofie.s3.col2.text2": "In reality, it is about:",
+    "filosofie.s3.col2.list1": "gentleness",
+    "filosofie.s3.col2.list2": "presence",
+    "filosofie.s3.col2.list3": "willingness to feel",
+    "filosofie.s3.col2.list4": "staying true to your deeper values",
+    "filosofie.s3.col2.text3":
+      "That is a different kind of strength, but a very powerful one.",
+    "filosofie.s3.col3.title": "6. Community",
+    "filosofie.s3.col3.text1":
+      "Community often plays a much larger role in healing than people realize.",
+    "filosofie.s3.col3.text2":
+      "Healing -- whether it is emotional, psychological, spiritual, or even physical -- rarely happens completely in isolation.",
+    "filosofie.s3.col3.text3": "People heal in relationship to others.",
+
+    // Filosofie section 4
+    "intro-pillars.title":
+      "The guidance is based on 4 core pillars that are constantly <br> in dialogue with each other.",
+    "intro-pillars.text1":
+      "These 4 pillars are given sufficient attention, and depending on the moment, one or the other will be more in the foreground. <br>The pillars must always be in communication with each other and in balance.",
+    "intro-pillars.text2":
+      "Mooyo brings people closer to their essence so they can make heart-centered choices in their lives.",
+
+    // Filosofie section 5
+    "pillars.e1.title1": "Awareness - The Whole",
+    "pillars.e1.img.text1":
+      "A circle that is not fully closed with an opening at the top. Above it, a floating dot as if the circle is letting go of a thought - awareness.",
+    "pillars.e1.img.text2":
+      "Meaning: the mental space where perception, interpretation, and meaning arise.",
+    "pillars.e1.title2": "The Power of Your Roots",
+    "pillars.e1.list1":
+      "Truth-telling: looking honestly at your past, your patterns.",
+    "pillars.e1.list2":
+      "Understanding what perception and conditioning from 0 to 6 years old entails and how it affects your life.",
+    "pillars.e1.list3":
+      "Conditioning often arises before language development, is therefore emotional in nature, and cannot be reached through the intellect.",
+    "pillars.e1.list4":
+      "Every conditioning has both an energetic aspect and an awareness part.",
+    "pillars.e2.title1": "Breath - The Now",
+    "pillars.e2.img.text1":
+      "The two wavy lines represent connection: the inhalation and exhalation. The line represents the diaphragm, the support.",
+    "pillars.e2.img.text2":
+      "Meaning: Breath as a bridge between body and mind, influencing emotions, the nervous system, and mental clarity.",
+    "pillars.e2.title2": "The Power of the Moment",
+    "pillars.e2.list1":
+      "Accepting life as it is now, not as you would like it to be.",
+    "pillars.e2.list2": "Recognizing its impermanence. Without resistance.",
+    "pillars.e2.list3":
+      "Breathing is the gate between the conscious and unconscious: we can consciously guide the breath, while it also works autonomously.",
+    "pillars.e2.list4":
+      "Breathing plays an important role in our daily lives and can be used as regulation during painful experiences that are allowed to be felt.",
+    "pillars.e3.title1": "The Heart - The Future",
+    "pillars.e3.img.text1":
+      "The spiral continuously nourished by warmth and humanity.",
+    "pillars.e3.img.text2":
+      "Meaning: The power of sincere (self)compassion and the center of courage to allow discomfort.",
+    "pillars.e3.title2": "The Power of Courage",
+    "pillars.e3.list1":
+      "Heart coherence is a way to practice self-regulation and an invitation to build resilience. It is also a gateway to your higher self.",
+    "pillars.e3.list2":
+      "The courage to take (back) your place with everything that comes with it.",
+    "pillars.e3.list3":
+      "Recognizing habits and belief systems with compassion and developing the courage to break through them.",
+    "pillars.e4.title1": "Body - The Past",
+    "pillars.e4.img.text1":
+      "The segments are different and not perfectly aligned - a reference to memories, scars, history.",
+    "pillars.e4.img.text2":
+      "Meaning: The body as the bearer of all that has been.",
+    "pillars.e4.title2": "The Power of Growing Up",
+    "pillars.e4.list1":
+      "The meeting between the child within you and the adult within you.",
+    "pillars.e4.list2":
+      "In many people, the child part becomes covered by expectations, roles, responsibilities, traumas. The child doesn't disappear — it becomes quiet.",
+    "pillars.e4.list3":
+      "Without the child, the adult becomes dry, functional, cut off. Without the adult, the child becomes unsafe, ungrounded, unprotected.",
+    "pillars.e4.list4":
+      "When the child and the adult find each other, there arises: <br> safety without rigidity, playfulness without chaos, strength without hardness, gentleness without fragility.",
+
+    // Filosofie section 6
+    "quotes.text1":
+      "No longer choose out of fear, but out of alignment. <br>What does your fear say: \"What if...?\" <br>What does your heart say: \"What feels right now?\"",
+    "quotes.text2":
+      "Speak more honestly and gently. <br>Check your intention: Do you want to convince? Or do you stay true to what you feel?",
+    "quotes.text3":
+      "Choose truth over comfort. <br>Sometimes that is exciting, but it does bring peace.",
+    "quotes.text4":
+      "Slow down when something does not feel right. <br>Check first: What am I actually feeling? What feels right for me?",
+    "quotes.text5":
+      "Choose simpler! <br>The mind makes things complicated. <br>The heart feels: yes, no, or not yet.",
+    "quotes.text6": "Be gentle with yourself. <br>The heart seeks clarity, not conflict.",
+    "quotes.text7":
+      "Choose what nourishes you, not what drains you. <br>In relationships, work, rhythm, environment.",
+    "quotes.text8":
+      "Set boundaries without becoming hard. <br>Choose connection instead of defense.",
+    "quotes.text9":
+      "Choose direction instead of control. <br>The heart points the way, <br>the head plans the steps.",
+
+    // About
+    "about.title": "About me",
+
+    // About section 1
+    "about.s1.title": "The story of Mooyo",
+    "about.s1.text":
+      "Discover the journey that led to the founding of Mooyo and the passion behind my guidance. This is my personal story and the core of what makes Mooyo unique.",
+
+    // About section 2
+    "about.s2.e1.title": "My personal journey",
+    "about.s2.e1.text1":
+      "I was born under the African sun, in Chipata, Zambia, and lived in Africa for the first 11 years. Besides Zambia, I also lived in Rwanda.",
+    "about.s2.e1.text2": "Currently, I live in Kessel-Lo. I have four children.",
+    "about.s2.e1.text3":
+      "The events in my life are the building blocks that have brought me to this point. By consciously looking at the pains and challenges of my own life over the last 10 years and moving through them, I have developed a deep well of insights and experiences. My process is still ongoing.",
+    "about.s2.e1.text4":
+      "Carl Jung says: \"The privilege of a lifetime is to become who you truly are.\"",
+    "about.s2.e1.text5":
+      "The sooner we realize this, the richer our lives become.",
+    "about.s2.e1.text6":
+      "I am grateful for everything that has been; it has shaped me and brought much good. I look forward to the future with hope. Out of that gratitude, Mooyo was born — my inspiration and my commitment to guide others on their own unique journey.",
+    "about.s2.e1.text7":
+      "Currently, I work part-time at Adem vzw as a team coach.",
+    "about.s2.e2.title": "Why choose Mooyo?",
+    "about.s2.e2.text1":
+      "My guidance style is characterized by a deep quality of presence and a calm stillness. This allows me to create a safe and supportive environment in which you can fully open up and grow.",
+    "about.s2.e2.text2":
+      "Three years ago, I came into contact with Buddhism and meditation. Since then, Buddhist philosophy and daily meditation have become a fixed part of my life. It helps me stand in life with more clarity, peace, and presence — qualities that I also bring into my work with others.",
 
     // Components
     "Prices.title": "Offerings ∞ Pricing",
@@ -447,11 +621,13 @@ export const ui = {
     "Prices.e2.li1": "A 60-minute session costs 70 euros (incl. VAT)",
     "Prices.e2.li2": "A 90-minute session costs 110 euros (incl. VAT)",
     "Prices.e2.details":
-      "Couples who long for greater connection, understanding, and shared growth are also welcome here. Couples willing to look with openness and courage at their own inner parts — the pieces that are triggered, withdraw, long, or protect. In heart-centered guidance, we create a safe foundation in which both partners can come home to themselves and to each other.",
+      "Couples who long for greater connection, understanding, and shared growth are also welcome here. Couples willing to look with openness and courage at their own inner parts — the pieces that are triggered, withdraw, long, or protect. In heart-centered guidance, we create a safe foundation in which both partners can come home to themselves and to each other. Through gentleness, honesty, and presence, we explore what lives beneath the surface, so that love, clarity, and true encounter can find space again.",
 
     "Prices.e3.title": "Guidance for organizations",
     "Prices.e3.li1": "A half-day session costs 500 euros (excl. VAT)",
     "Prices.e3.li2": "A full-day session costs 800 euros (excl. VAT)",
+    "Prices.e3.details":
+      "Organizations willing to let the heart speak can count on guidance that goes beyond methods and models. In (self-steering) teams, it regularly appears that an essential element is still missing for optimal functioning: the inner alignment needed so that each team member can step into their heart-centered power. When that missing piece is filled in, a team arises that is not only self-steering, but also truly self-aware, connected, and resilient. This creates a sustainable foundation for effective collaboration, ownership, and result-orientedness.",
 
     "Prices.e4.title": "Reconstructive (2-day program)",
     "Prices.e4.text1":
@@ -463,6 +639,8 @@ export const ui = {
       "Adolescents (discount for adolescents covering their own costs)",
     "Prices.e5.li1": "A 60-minute session costs 50 euros (incl. VAT)",
     "Prices.e5.li2": "A 90-minute session costs 75 euros (incl. VAT)",
+    "Prices.e5.details":
+      "Adolescents are also more than welcome. They are the future and bring talents, desires, and qualities that may not always seem to align with current society. Through my heart-centered guidance, they discover how to stand in their own power. With clear insights, self-confidence, and new perspectives, they can contribute with full energy and joy to a society that continues to grow and renew itself.",
     "Prices.seeMore": "See more...",
   },
 } as const;
