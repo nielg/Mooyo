@@ -250,11 +250,11 @@ export const ui = {
     "filosofie.essentie.text1":
       "Mooyo werkt als een zachte maar diepe sleutel. Het raakt lagen die vaak jarenlang gesloten bleven. Door deze opening ontstaat er ruimte, beweging, helderheid.",
     "filosofie.essentie.li1":
-      "Kernwerk — We gaan naar de essentie, voorbij de ruis.",
+      "<span class='bold'>Kernwerk</span> — We gaan naar de essentie, voorbij de ruis.",
     "filosofie.essentie.li2":
-      "Opening creëren — Mooyo maakt iets los dat niet met woorden te bereiken is.",
+      "<span class='bold'>Opening creëren</span> — Mooyo maakt iets los dat niet met woorden te bereiken is.",
     "filosofie.essentie.li3":
-      "Begeleiding die pakt — Wanneer de kern geraakt is, wordt elke volgende stap betekenisvoller.",
+      "<span class='bold'>Begeleiding die pakt</span> — Wanneer de kern geraakt is, wordt elke volgende stap betekenisvoller.",
     "filosofie.essentie.text2":
       "Mooyo is geen eindpunt, maar een startpunt. Een deur die opengaat, zodat het proces dat volgt niet langer een zoektocht is, maar een ontvouwing.",
 

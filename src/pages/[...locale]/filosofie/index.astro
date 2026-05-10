@@ -95,9 +95,9 @@ const t = useTranslations(lang);
     <section class="essentie back-red text-white">
 		<h3 class="text-align-center" set:html={t("filosofie.essentie.text1")}/>
         <ul>
-            <li>{t('filosofie.essentie.li1')}</li>
-            <li>{t('filosofie.essentie.li2')}</li>
-            <li>{t('filosofie.essentie.li3')}</li>
+            <li set:html={t('filosofie.essentie.li1')}/>
+            <li set:html={t('filosofie.essentie.li2')}/>
+            <li set:html={t('filosofie.essentie.li3')}/>
         </ul>
         <p class="text-align-center">{t('filosofie.essentie.text2')}</p>
 	</section>
@@ -245,6 +245,10 @@ const t = useTranslations(lang);
     .essentie ul{
         margin: auto;
         width: fit-content;
+        background-color: var(--mooyo-gray);
+        color: var(--mooyo-red);
+        padding: 2rem 4rem;
+        border-radius: 0.5rem;
     }
 
     /* Responsive */
