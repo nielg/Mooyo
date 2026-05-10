@@ -41,8 +41,8 @@ const { title, description = "Standaard omschrijving voor Mooyo" } = Astro.props
 					<h1><span class="big-text">Mooyo -</span> {t('layout.header.subtitle')}</h1>
 				</div>
 			</a>
-			<Nav pathname={pathname}/>
 		</header>
+		<Nav pathname={pathname}/>
 		<main>
 			<slot />
 		</main>

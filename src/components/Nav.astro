@@ -27,7 +27,15 @@ const isActive = (path: string) => {
     nav {
         display: flex;
         align-items: center;
+        justify-content: center;
         gap: 3rem;
+        position: sticky;
+        top: 0;
+        background-color: var(--mooyo-white);
+        z-index: 1000;
+        padding: 1.5rem 0;
+        width: 100%;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     }
     a {
         padding: 0 0.7rem 0.5rem 0.7rem;
@@ -46,6 +54,7 @@ const isActive = (path: string) => {
         nav {
             flex-direction: column;
             gap: 2rem;
+            position: relative;
         }
     }
 </style>
