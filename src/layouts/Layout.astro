@@ -6,6 +6,7 @@ import Nav from '../components/Nav.astro';
 import LanguagePicker from '../components/LanguagePicker.astro';
 import { getLangFromUrl, useTranslatedPath, useTranslations } from '../i18n/utils';
 import Footer from '@components/Footer.astro';
+import BaseHead from '@components/BaseHead.astro';
 
 interface Props {
 	title: string;
@@ -24,12 +25,10 @@ const { title, description = "Standaard omschrijving voor Mooyo" } = Astro.props
 <!doctype html>
 <html lang={lang}>
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<meta name="description" content={description}>
-		<meta name="keywords" content="Astro, coaching">
-		<title>{title} | Mooyo</title>
+		<BaseHead/>
+		<title>Mooyo | {title}</title>
 		<link rel="icon" type="image/png" href={`${baseUrl}/favicon.png`} />
 		<link rel="canonical" href={canonicalURL} />
 	</head>
