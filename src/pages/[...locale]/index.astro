@@ -6,6 +6,7 @@ import zon from '../../assets/zon.jpg'
 import profiel from '../../assets/profiel-square.png'
 import { getLangFromUrl, useTranslations, getStaticPaths } from '../../i18n/utils';
 import Prices from '@components/Prices.astro';
+import ContactSection from '@components/Contact-section.astro';
 export { getStaticPaths };
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -14,7 +15,9 @@ const t = useTranslations(lang);
 <Layout title='Home'>
 	<section class="intro back-gray text-align-center text-gray center">
 		<div class="container">
-			<Image src={hart_rond} class="img" alt="Mooyo logo" width={550} height={550} loading="eager"/>
+			<div class="img-container">
+				<Image src={hart_rond} class="img hart" alt="Mooyo logo" width={450} height={450} loading="eager"/>
+			</div>
 			<div class="text">
 				<h1 class="text-red">Mooyo</h1>
 				<p>{t("index.intro.text1")}</p>
@@ -28,7 +31,7 @@ const t = useTranslations(lang);
 	</section>
 	<section class="welcome back-red text-white center">
 		<div class="container">
-			<Image src={zon} alt="tekening" class="img" width={500} height={500}/>
+				<Image src={zon} alt="tekening" class="img" width={450} height={450}/>
 			<div>
 				<h1 class="text-align-center">{t("index.welcome.title")}</h1>
 				<p set:html={t("index.welcome.text")}></p>
@@ -66,15 +69,15 @@ const t = useTranslations(lang);
 		</div>
 		<div class="text">
 			<h1 class="text-red">Bram Geysen</h1>
-			<p class="text-gray">Rondestraat 38 <br> 3000 Leuven, Belgium</p>
+			<p class="text-gray">Rondestraat 38 <br> 3000 Leuven, Belgium <br> {t('index.distance.station')}</p>
 			<p class="text-gray title">Contact</p>
 			<p class="text-red">[+32 473 52 30 94]</p>
 			<p class="text-red"><a href="mailto:bramgeysen@gmail.com" class="text-red">[bramgeysen@gmail.com]</a></p>
-			<p class="text-gray title">Socials</p>
 		</div>
 	</section>
 	<Prices color='red' reconstructive={false} />
-	<section class="s6 back-gray text-red text-align-center bold">
+	<ContactSection color='gray'/>
+	<section class="s6 back-red text-white text-align-center bold">
 		<p>{t('index.s6.text1')}</p>
 		<p>{t('index.s6.text2')}</p>
 		<p>{t('index.s6.text3')}</p>
@@ -87,11 +90,25 @@ const t = useTranslations(lang);
 		padding: 2rem;
 	}
 	.intro .container,
-	 .welcome .container {
+		 .welcome .container {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		max-width: 70rem;
 		column-gap: 2rem;
+	}
+
+	.intro .img-container {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.intro .img-container .img{
+		width: 100%;
+		height: auto;
+		max-width: 450px;
+		max-height: 450px;
 	}
 	
 	.welcome .img {

@@ -14,6 +14,7 @@ export { getStaticPaths };
 	<section class="forWho text-align-center back-red text-white">
 		<h1 set:html={t('aanbod.forwho.title')} />
 		<p set:html={t('aanbod.forwho.text')} />
+		<p class="bold">{t('aanbod.forwho.text2')}<p/>
 	</section>
 	<Prices color='white'/>
 	<section class="quotes back-red text-align-center center">
@@ -82,7 +83,7 @@ export { getStaticPaths };
 	}
 
 	.forWho p {
-		margin: 0 20%;
+		margin: 1rem 5rem;
 	}
 
 	.methodieken .container{

@@ -15,8 +15,7 @@ const t = useTranslations(lang);
 
 <Layout title={t("filosofie.title")}>
     <section class="intro-pillars back-red text-align-center text-white">
-        <h1 set:html={t('intro-pillars.title')}/>
-        <p set:html={t("intro-pillars.text1")}/>
+        <p class="p2" set:html={t("intro-pillars.text1")}/>
         <p class="bold" set:html={t("intro-pillars.text2")}/>
     </section>
     <section class="pillars back-gray text-align-center center text-gray">
@@ -93,15 +92,18 @@ const t = useTranslations(lang);
             </div>
         </div>
     </section>
-    <section class="s6 back-red text-white text-align-center">
-		<h3 set:html={t("aanbod.s6.text")}/>
+    <section class="essentie back-red text-white">
+		<h3 class="text-align-center" set:html={t("filosofie.essentie.text1")}/>
+        <ul>
+            <li>{t('filosofie.essentie.li1')}</li>
+            <li>{t('filosofie.essentie.li2')}</li>
+            <li>{t('filosofie.essentie.li3')}</li>
+        </ul>
+        <p class="text-align-center">{t('filosofie.essentie.text2')}</p>
 	</section>
-    <section class="s8 back-white text-black text-align-center">
-		<h3 set:html={t("aanbod.s8.text")}/>
-	</section>
-    <section class="s1 back-gray text-align-center">
-        <h1 class="text-red">{t('filosofie.s1.title')}</h1>
-        <p class="text-gray" set:html={t('filosofie.s1.text')}/>
+    <section class="open-hart back-gray text-align-center">
+        <h1 class="text-red">{t('filosofie.open-hart.title')}</h1>
+        <p class="text-gray" set:html={t('filosofie.open-hart.text')}/>
     </section>
     <section class="s2 back-red text-white center">
         <div class="grid col3">
@@ -238,6 +240,11 @@ const t = useTranslations(lang);
 
     .img-container:hover .img-text {
         opacity: 1;
+    }
+
+    .essentie ul{
+        margin: auto;
+        width: fit-content;
     }
 
     /* Responsive */

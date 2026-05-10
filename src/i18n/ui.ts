@@ -35,8 +35,10 @@ export const ui = {
     // Index
 
     "index.title": "Home",
+    "index.distance.station":
+      "(op 3min wandelafstand van treinstation Leuven).",
     // Index section 1
-    "index.intro.text1": "Hart, leven, ziel, geest.",
+    "index.intro.text1": " Hart, Leven, Energie",
     "index.intro.text2":
       "In verschillende Afrikaanse talen verwijst Mooyo zowel naar het fysieke hart als naar de innerlijke essentie of levensenergie.",
     "index.intro.text3":
@@ -72,7 +74,7 @@ export const ui = {
 
     // Index section 4
     "index.s4.text":
-      "Ben je bereid om in beweging te komen en naar je hart te luisteren?",
+      "Mooyo nodigt uit om bij de oorsprong te beginnen: bij het stille midden waar jouw waarheid, jouw pijn én jouw potentieel samenkomen. Wanneer we naar die kern gaan, opent er iets. Niet door te duwen of te analyseren, maar door te voelen, te zakken, te erkennen. Zolang de kern niet wordt aangeraakt, blijft het voelen alsof je onderweg bent zonder richting. Het proces begint pas echt als je de kern aanraakt — niet als een nieuwe zoektocht buiten jezelf, maar als een thuiskomen in jezelf. Ben je bereid om in beweging te komen en naar je hart te luisteren? ",
 
     // Index section 6
     "index.s6.text1": "Eerst voelen, dan denken.",
@@ -87,13 +89,14 @@ export const ui = {
     // Aanbod section 1
     "aanbod.forwho.title": "Voor wie?",
     "aanbod.forwho.text":
-      "De begeleiding bij Mooyo gaat altijd naar de kern van wie we zijn en wat we meedragen. We kijken naar de lagen onder gedrag, onder patronen, onder wat zichtbaar is. Want echte beweging ontstaat wanneer we durven voelen wat er in ons leeft — en wanneer we dat niet alleen hoeven te dragen. We helen in relatie: in relatie met onszelf, met de ander, met het leven. Daarom is elke begeleiding tegelijk universeel én volledig op maat. Universeel, omdat we allemaal verlangen naar verbinding, helderheid, richting en innerlijke rust. Op maat, omdat ieder mens, elk koppel en elke levensgeschiedenis uniek is. Of je nu komt als individu, als koppel dat opnieuw wil verbinden, of als iemand die worstelt met hardnekkige patronen of verslavingsproblematieken: je wordt ontvangen in een veilige, open ruimte waar je mag landen zoals je bent. Vanuit hartgedragen aanwezigheid onderzoeken we wat gezien wil worden, zodat je opnieuw toegang krijgt tot je eigen kracht, keuzevrijheid en levensstroom. Mooyo is er voor iedereen die voelt dat het tijd is om terug te keren naar zichzelf — en van daaruit het leven opnieuw te omarmen.",
-
+      "Ik begeleid mensen die voelen dat het tijd is om opnieuw in beweging te komen — naar leven, verbinding en het volledig belichamen van hun potentieel. Bij Mooyo vind je een plek waar je gezien en gedragen wordt, of je nu zoekt naar heling, helderheid, groei of richting. Voor wie vastzit in (hardnekkige) patronen bied ik een veilige ruimte om te onderzoeken wat eronder ligt en om stap voor stap terug te keren naar innerlijke vrijheid en zelfsturing. Als hoogbewuste of hoogbegaafde vind je hier herkenning, diepgang en begeleiding die aansluit bij jouw gevoeligheid en intensiteit.",
+    "aanbod.forwho.text2":
+      "Mooyo is er voor iedereen die voelt dat het tijd is om terug te keren naar zichzelf — en van daaruit het leven te omarmen.",
     // Aanbod section 2
     "methodieken.title":
       "Mijn begeleiding is gebaseerd op onderstaande filosofie, methodieken:",
     "methodieken.text":
-      "Alle benaderingen en methodieken laten je lichamelijk ervaren hoe verandering kan aanvoelen. Ook houden deze methodieken rekening met het feit dat mensen relationele wezens zijn. We kijken bijgevolg ook naar het systeem  waar je deel van uitmaken. Gedrag en problemen ontstaat in wisselwerking met anderen en is nooit alleen van het individueel. Ook de verschillende relaties die we met onszelf hebben, krijgen een plek in de begeleiding",
+      "Alle benaderingen en methodieken laten je lichamelijk ervaren hoe verandering kan aanvoelen. Ook houden deze methodieken rekening met het feit dat mensen relationele wezens zijn. We kijken bijgevolg ook naar het systeem  waar je deel van uitmaken. Gedrag en problemen ontstaan in wisselwerking met anderen en is nooit alleen van het individueel. Ook de verschillende relaties die we met onszelf hebben, krijgen een plek in de begeleiding",
 
     // Aanbod section 5
     "openHartCirkels.title": "Open hartcirkels",
@@ -116,8 +119,8 @@ export const ui = {
     "filosofie.title": "Filosofie",
 
     // Filosofie section 1
-    "filosofie.s1.title": "Hoe open je je hart?",
-    "filosofie.s1.text":
+    "filosofie.open-hart.title": "Hoe open je je hart?",
+    "filosofie.open-hart.text":
       "Er zijn zes richtingaanwijzers die je op weg helpen om je jarenlange conditionering te doorbreken en het proces om te keren. <br>Dit vraagt om een uitzonderlijke innerlijke kracht. <br>Alleen de kracht van het hart kan dit proces zachtjes openen en je stap voor stap naar verandering leiden.",
 
     // Filosofie section 2
@@ -183,17 +186,15 @@ export const ui = {
     "filosofie.s3.col3.text3": "Mensen helen in relatie tot anderen.",
 
     // Filosofie section 4
-    "intro-pillars.title":
-      "De begeleiding is gebaseerd op 4 basispeilers die steeds <br> in dialoog zijn met elkaar.",
     "intro-pillars.text1":
-      "Bij deze 4 peilers wordt voldoende stilgestaan en afhankelijk van het moment zal de ene of de andere meer op de voorgrond zijn. <br>De peilers dienen steeds in communicatie met elkaar te zijn en in balans. ",
+      "Mooyo werkt met vier basispeilers die in balans moeten zijn, in voortdurende dialoog met elkaar. Wanneer één peiler uit evenwicht raakt, beïnvloedt dat het geheel — en precies daarom is het zo belangrijk om op alle niveaus beweging te brengen.",
     "intro-pillars.text2":
       "Mooyo brengt mensen dichter bij hun essentie zodat ze hartgedragen keuzes in hun leven maken.",
 
     // Filosofie section 5
     "pillars.e1.title1": "Bewustzijn - Het geheel",
     "pillars.e1.img.text1":
-      "Een cirkel die niet volledig gesloten is met bovenaan een opening. Daarboven een zwevend punt alsof de cirkel een gedachte loslaat - bewustzijn.",
+      "Een cirkel met een opening en een zwevend punt erboven stelt het bewustzijn voor.",
     "pillars.e1.img.text2":
       "Betekenis: de mentale ruimte waar waarneming, interpretatie en betekenis ontstaan.",
     "pillars.e1.title2": "De kracht van je wortels",
@@ -245,6 +246,18 @@ export const ui = {
     "pillars.e4.list4":
       "Wanneer het kind en de volwassene elkaar vinden, ontstaat: <br> veiligheid zonder verstarring, speelsheid zonder chaos, kracht zonder hardheid, zachtheid zonder breekbaarheid",
 
+    // Filosofie essentie
+    "filosofie.essentie.text1":
+      "Mooyo werkt als een zachte maar diepe sleutel. Het raakt lagen die vaak jarenlang gesloten bleven. Door deze opening ontstaat er ruimte, beweging, helderheid.",
+    "filosofie.essentie.li1":
+      "Kernwerk — We gaan naar de essentie, voorbij de ruis.",
+    "filosofie.essentie.li2":
+      "Opening creëren — Mooyo maakt iets los dat niet met woorden te bereiken is.",
+    "filosofie.essentie.li3":
+      "Begeleiding die pakt — Wanneer de kern geraakt is, wordt elke volgende stap betekenisvoller.",
+    "filosofie.essentie.text2":
+      "Mooyo is geen eindpunt, maar een startpunt. Een deur die opengaat, zodat het proces dat volgt niet langer een zoektocht is, maar een ontvouwing.",
+
     // Filosofie section 6
     "quotes.text1":
       "Kies niet langer uit angst, maar uit afstemming. <br>Wat zegt je angst: “Wat als…?” <br>Wat zegt je hart: “Wat klopt nu?”",
@@ -283,12 +296,10 @@ export const ui = {
       "De gebeurtenissen in mijn leven zijn de bouwstenen die mij tot dit punt hebben gebracht. Door de laatste 10 jaren bewust naar de pijnen en uitdagingen van mijn eigen leven te kijken en er door te gaan, heb ik een diepe bron aan inzichten en ervaringen ontwikkeld. Mijn proces is nog steeds bezig.",
     "about.s2.e1.text4":
       "Carl Jung zegt: “The privilege of a lifetime is to become who you truly are.” ",
-    "about.s2.e1.text5":
-      "Hoe eerder we dit beseffen, hoe rijker ons leven wordt.",
     "about.s2.e1.text6":
       "Ik ben dankbaar voor alles wat geweest is; het heeft me gevormd en veel goeds gebracht. Ik kijk hoopvol uit naar de toekomst. Vanuit die dankbaarheid is Mooyo ontstaan — mijn inspiratie én mijn toewijding om anderen te begeleiden op hun eigen unieke reis.",
     "about.s2.e1.text7":
-      "Momenteel werk ik halftijds bij Adem vzw als teamcoach. ",
+      " Momenteel werk ik halftijd bij Adem vzw als Teamcoach en halftijds als zelfstandige.",
     "about.s2.e2.title": "Waarom kiezen voor Mooyo?",
     "about.s2.e2.text1":
       "Mijn begeleidingsstijl wordt gekenmerkt door een diepe kwaliteit van aanwezigheid en een kalme rust. Dit stelt mij in staat om een veilige en ondersteunende omgeving te creëren waarin jij je volledig kunt openstellen en groeien.",
@@ -298,12 +309,12 @@ export const ui = {
 
     "Prices.title": "Aanbod ∞ Tarieven",
     "Prices.text":
-      "Begeleidingen kunnen ook online doorgaan. Verandering gebeurt in het lichaam — en dat lichaam reist altijd met je mee. Daarom werkt online begeleiding net zo diep, net zo transformerend en net zo effectief. Het gaat erom dat er een interne beweging plaats vindt en dat onafhankelijk van fysieke afstand. Belangrijk is dat je je er comfortabel bij voelt.",
+      "Begeleidingen kunnen ook online plaatsvinden. Verandering gebeurt immers in het lichaam en in het bewustzijn — en dat kan ook wanneer er fysieke afstand tussen ons is. Online begeleiding werkt net zo diep, net zo transformerend. Het gaat om de interne beweging die ontstaat bij jou, niet om de fysieke ruimte waarin je zit. Wat telt, is dat jij je comfortabel voelt. Wanneer dat aanwezig is, kan het proces zich net zo krachtig ontvouwen.",
     "Prices.e1.title1": "Individuele begeleidingen (fysiek of online)",
     "Prices.e1.li1": "Een sessie van 60 min is 65 euro (incl BTW)",
     "Prices.e1.li2": "Een sessie van 90 min is 95 euro (incl BTW)",
     "Prices.e1.details":
-      "Ik begeleid mensen die voelen dat het tijd is om opnieuw in beweging te komen. Mensen die bewust willen kiezen — of opnieuw willen kiezen — voor het leven, voor verbinding en voor het volledig belichamen van hun potentieel. Of je nu op zoek bent naar heling, helderheid, groei of een nieuwe richting: bij Mooyo vind je een plek waar je gezien en gedragen wordt. Voor wie worstelt met verslavingsproblematieken bied ik een veilige ruimte om te onderzoeken wat er onder de patronen schuilgaat, en om stap voor stap terug te keren naar innerlijke vrijheid en zelfsturing. Als (uitzonderlijk) hoogbewuste of hoogbegaafde kan je rekenen op herkenning, spiegeling en begeleiding die aansluit bij jouw gevoeligheid, intensiteit en diepte. Mooyo is er voor iedereen die voelt dat het leven meer vraagt — en meer te bieden heeft — wanneer je durft te bewegen vanuit je hart.",
+      "Ik begeleid mensen die voelen dat het tijd is om opnieuw in beweging te komen. Mensen die bewust willen kiezen — of opnieuw willen kiezen — voor het leven, voor verbinding en voor het volledig belichamen van hun potentieel. Of je nu op zoek bent naar heling, helderheid, groei of een nieuwe richting: bij Mooyo vind je een plek waar je gezien en gedragen wordt. Mooyo is er voor iedereen die voelt dat het leven meer vraagt — en meer te bieden heeft — wanneer je durft te bewegen vanuit je hart.",
     "Prices.e2.title1": "Begeleiding van Koppels (fysiek of online)",
     "Prices.e2.li1": "Een sessie van 60 min is 70 euro (incl BTW)",
     "Prices.e2.li2": "Een sessie van 90 min is 110 euro (incl BTW)",
@@ -316,7 +327,7 @@ export const ui = {
       "Organisaties die bereid zijn om het hart mee te laten spreken kunnen rekenen op begeleiding die verder gaat dan methodes en modellen. In (zelfsturende) teams blijkt regelmatig dat er nog een essentieel element ontbreekt om optimaal te functioneren: de innerlijke afstemming die nodig is zodat elk teamlid in zijn hartgedragen kracht kan stappen. Wanneer dat ontbrekende stuk wordt ingevuld, ontstaat er een team dat niet alleen zelfsturend is, maar ook werkelijk zelfbewust, verbonden en veerkrachtig. Zo ontstaat er een duurzaam fundament voor effectieve samenwerking, eigenaarschap en resultaatgerichtheid.",
     "Prices.e4.title": "Reconstructive (2 daagse)",
     "Prices.e4.text1":
-      "Re-constructive is een lichamelijke groepsbeleving waarin je voorbij je patronen beweegt en ruimte maakt voor intuïtie.",
+      "Reconstructive biedt een unieke weg naar leven vanuit je kern, je authenticiteit en je intuïtie. Het nodigt je uit om de constructies die je, vaak onbewust, hebt opgebouwd vanuit vroege indrukken in vraag te stellen, zodat de vrijheid die daarachter schuilgaat zichtbaar kan worden. Deze reis brengt je van overleven naar werkelijk leven—een proces van volwassenwording en heling. Je ontdekt hoe je verborgen krachten kunt aanboren en leert de kracht van je volwassen zelf belichamen.",
     "Prices.e4.text2":
       "Als individu kan je je hiervoor inschrijven. Meer uitleg volgt later.",
     "Prices.e5.title":
@@ -324,7 +335,7 @@ export const ui = {
     "Prices.e5.li1": "Een sessie van 60 min 50 euro (incl BTW)",
     "Prices.e5.li2": "Een sessie van 90 min 75 euro (incl BTW",
     "Prices.e5.details":
-      "Ook adolescenten zijn meer dan welkom. Zij zijn de toekomst en brengen talenten, verlangens en eigenschappen mee die misschien niet altijd lijken aan te sluiten bij de huidige maatschappij. Via mijn hartgedragen begeleiding ontdekken zij hoe ze in hun eigen kracht kunnen gaan staan. Met heldere inzichten, zelfvertrouwen en nieuwe perspectieven kunnen zij met volle energie én plezier bijdragen aan een samenleving die blijft groeien en vernieuwen.",
+      "Ook adolescenten zijn meer dan welkom. Zij dragen nieuwe talenten, gevoeligheden en verlangens in zich die niet altijd lijken te passen binnen de huidige maatschappij — maar wél essentieel zijn voor een samenleving in transformatie. Via mijn hartgedragen begeleiding ontdekken jongeren hoe ze in hun eigen kracht kunnen staan. Met heldere inzichten, zelfvertrouwen en nieuwe perspectieven leren ze hun energie te richten op wat klopt voor hen. Zo kunnen zij vanuit veerkracht en met plezier bijdragen aan een wereld die blijft groeien en zichzelf vernieuwen.",
     "Prices.seeMore": "Zie meer...",
   },
   en: {
@@ -433,8 +444,8 @@ export const ui = {
     "filosofie.title": "Philosophy",
 
     // Filosofie section 1
-    "filosofie.s1.title": "How do you open your heart?",
-    "filosofie.s1.text":
+    "filosofie.open-hart.title": "How do you open your heart?",
+    "filosofie.open-hart.text":
       "There are six signposts that help you on your way to break through your years of conditioning and reverse the process. <br>This requires an exceptional inner strength. <br>Only the power of the heart can gently open this process and lead you step by step toward change.",
 
     // Filosofie section 2
@@ -453,7 +464,8 @@ export const ui = {
       "Patterns persist as long as they run automatically.",
     "filosofie.s2.col2.text2": "They begin to shift when you:",
     "filosofie.s2.col2.list1": "notice the pattern at the moment it happens",
-    "filosofie.s2.col2.list2": "feel the physical sensations associated with it",
+    "filosofie.s2.col2.list2":
+      "feel the physical sensations associated with it",
     "filosofie.s2.col2.list3": "do not immediately react as you always did",
     "filosofie.s2.col2.text3":
       "That moment of awareness is already a break in the conditioning",
@@ -464,7 +476,7 @@ export const ui = {
     "filosofie.s2.col3.text2": "They arise from:",
     "filosofie.s2.col3.list1": "choosing a different reaction time and again",
     "filosofie.s2.col3.list2": "remaining gentle when it doesn't work out",
-    "filosofie.s2.col3.list3": "allowing yourself to grow instead of \"fix\"",
+    "filosofie.s2.col3.list3": 'allowing yourself to grow instead of "fix"',
     "filosofie.s2.col3.text3":
       "The heart helps because it motivates you to keep going, even when it is difficult.",
 
@@ -480,7 +492,7 @@ export const ui = {
     "filosofie.s3.col2.title":
       "5. The strength needed is not hard but persistent",
     "filosofie.s3.col2.text1":
-      "Many people think that they need to become \"stronger\".",
+      'Many people think that they need to become "stronger".',
     "filosofie.s3.col2.text2": "In reality, it is about:",
     "filosofie.s3.col2.list1": "gentleness",
     "filosofie.s3.col2.list2": "presence",
@@ -560,7 +572,7 @@ export const ui = {
 
     // Filosofie section 6
     "quotes.text1":
-      "No longer choose out of fear, but out of alignment. <br>What does your fear say: \"What if...?\" <br>What does your heart say: \"What feels right now?\"",
+      'No longer choose out of fear, but out of alignment. <br>What does your fear say: "What if...?" <br>What does your heart say: "What feels right now?"',
     "quotes.text2":
       "Speak more honestly and gently. <br>Check your intention: Do you want to convince? Or do you stay true to what you feel?",
     "quotes.text3":
@@ -569,7 +581,8 @@ export const ui = {
       "Slow down when something does not feel right. <br>Check first: What am I actually feeling? What feels right for me?",
     "quotes.text5":
       "Choose simpler! <br>The mind makes things complicated. <br>The heart feels: yes, no, or not yet.",
-    "quotes.text6": "Be gentle with yourself. <br>The heart seeks clarity, not conflict.",
+    "quotes.text6":
+      "Be gentle with yourself. <br>The heart seeks clarity, not conflict.",
     "quotes.text7":
       "Choose what nourishes you, not what drains you. <br>In relationships, work, rhythm, environment.",
     "quotes.text8":
@@ -589,11 +602,12 @@ export const ui = {
     "about.s2.e1.title": "My personal journey",
     "about.s2.e1.text1":
       "I was born under the African sun, in Chipata, Zambia, and lived in Africa for the first 11 years. Besides Zambia, I also lived in Rwanda.",
-    "about.s2.e1.text2": "Currently, I live in Kessel-Lo. I have four children.",
+    "about.s2.e1.text2":
+      "Currently, I live in Kessel-Lo. I have four children.",
     "about.s2.e1.text3":
       "The events in my life are the building blocks that have brought me to this point. By consciously looking at the pains and challenges of my own life over the last 10 years and moving through them, I have developed a deep well of insights and experiences. My process is still ongoing.",
     "about.s2.e1.text4":
-      "Carl Jung says: \"The privilege of a lifetime is to become who you truly are.\"",
+      'Carl Jung says: "The privilege of a lifetime is to become who you truly are."',
     "about.s2.e1.text5":
       "The sooner we realize this, the richer our lives become.",
     "about.s2.e1.text6":
