@@ -73,9 +73,10 @@ export const ui = {
       "Herontdek jouw plaats en missie in de wereld. Hier zijn alle delen welkom, hier voel je de kracht van oude wortels omhoog komen om je voeten te ontmoeten, en fluistert de aarde:  jij hoort erbij. Hier wordt niets van je gevraagd behalve je aanwezigheid. ",
 
     // Index section 4
-    "index.s4.text":
-      "Mooyo nodigt uit om bij de oorsprong te beginnen: bij het stille midden waar jouw waarheid, jouw pijn én jouw potentieel samenkomen. Wanneer we naar die kern gaan, opent er iets. Niet door te duwen of te analyseren, maar door te voelen, te zakken, te erkennen. Zolang de kern niet wordt aangeraakt, blijft het voelen alsof je onderweg bent zonder richting. Het proces begint pas echt als je de kern aanraakt — niet als een nieuwe zoektocht buiten jezelf, maar als een thuiskomen in jezelf. Ben je bereid om in beweging te komen en naar je hart te luisteren? ",
-
+    "index.s4.text1":
+      "Mooyo nodigt uit om bij de oorsprong te beginnen: bij het stille midden waar jouw waarheid, jouw pijn én jouw potentieel samenkomen. Wanneer we naar die kern gaan, opent er iets. Niet door te duwen of te analyseren, maar door te voelen, te zakken, te erkennen. Zolang de kern niet wordt aangeraakt, blijft het voelen alsof je onderweg bent zonder richting. Het proces begint pas echt als je de kern aanraakt — niet als een nieuwe zoektocht buiten jezelf, maar als een thuiskomen in jezelf.",
+    "index.s4.text2":
+      "Ben je bereid om in beweging te komen en naar je hart te luisteren?",
     // Index section 6
     "index.s6.text1": "Eerst voelen, dan denken.",
     "index.s6.text2": "Eerst waarheid, dan vorm.",
