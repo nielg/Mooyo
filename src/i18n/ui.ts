@@ -326,13 +326,13 @@ export const ui = {
     "Prices.e3.li2": " Een sessie van één dag is 800 euro (excl BTW)",
     "Prices.e3.details":
       "Organisaties die bereid zijn om het hart mee te laten spreken kunnen rekenen op begeleiding die verder gaat dan methodes en modellen. In (zelfsturende) teams blijkt regelmatig dat er nog een essentieel element ontbreekt om optimaal te functioneren: de innerlijke afstemming die nodig is zodat elk teamlid in zijn hartgedragen kracht kan stappen. Wanneer dat ontbrekende stuk wordt ingevuld, ontstaat er een team dat niet alleen zelfsturend is, maar ook werkelijk zelfbewust, verbonden en veerkrachtig. Zo ontstaat er een duurzaam fundament voor effectieve samenwerking, eigenaarschap en resultaatgerichtheid.",
-    "Prices.e4.title": "Reconstructive (2 daagse)",
+    "Prices.e4.title": "Voorbij je patronen",
     "Prices.e4.text1":
-      "Reconstructive biedt een unieke weg naar leven vanuit je kern, je authenticiteit en je intuïtie. Het nodigt je uit om de constructies die je, vaak onbewust, hebt opgebouwd vanuit vroege indrukken in vraag te stellen, zodat de vrijheid die daarachter schuilgaat zichtbaar kan worden. Deze reis brengt je van overleven naar werkelijk leven—een proces van volwassenwording en heling. Je ontdekt hoe je verborgen krachten kunt aanboren en leert de kracht van je volwassen zelf belichamen.",
-    "Prices.e4.text2":
-      "Als individu kan je je hiervoor inschrijven. Meer uitleg volgt later.",
-    "Prices.e4.text3":
-      "Deze workshop wordt samen met Elke Busshots van Comiz georganiseerd:",
+      "Een eerst ontmoeting met je essentie en eerste kennismaking met reconstructive methode.  Voor wie wil proeven van wat er leeft voorbij de patronen.",
+    "Prices.e4.li1": "1 dag voor individuen in Leuven",
+    "Prices.e4.li2": "Max aantal deelnemers",
+    "Prices.e4.text3": "Voor info en aanmelden, mail bramgeysen@gmail.be",
+    "Prices.e4.text4": "In samenwerking met Elke Busschots van",
     "Prices.e5.title":
       "Adolescenten (korting voor adulescenten die zelf instaan voor de kosten)",
     "Prices.e5.li1": "Een sessie van 60 min 50 euro (incl BTW)",
