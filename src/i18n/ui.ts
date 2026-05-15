@@ -326,13 +326,56 @@ export const ui = {
     "Prices.e3.li2": " Een sessie van één dag is 800 euro (excl BTW)",
     "Prices.e3.details":
       "Organisaties die bereid zijn om het hart mee te laten spreken kunnen rekenen op begeleiding die verder gaat dan methodes en modellen. In (zelfsturende) teams blijkt regelmatig dat er nog een essentieel element ontbreekt om optimaal te functioneren: de innerlijke afstemming die nodig is zodat elk teamlid in zijn hartgedragen kracht kan stappen. Wanneer dat ontbrekende stuk wordt ingevuld, ontstaat er een team dat niet alleen zelfsturend is, maar ook werkelijk zelfbewust, verbonden en veerkrachtig. Zo ontstaat er een duurzaam fundament voor effectieve samenwerking, eigenaarschap en resultaatgerichtheid.",
-    "Prices.e4.title": "Voorbij je patronen",
-    "Prices.e4.text1":
-      "Een eerst ontmoeting met je essentie en eerste kennismaking met reconstructive methode.  Voor wie wil proeven van wat er leeft voorbij de patronen.",
-    "Prices.e4.li1": "1 dag voor individuen in Leuven",
-    "Prices.e4.li2": "Max aantal deelnemers",
-    "Prices.e4.text3": "Voor info en aanmelden, mail bramgeysen@gmail.be",
-    "Prices.e4.text4": "In samenwerking met Elke Busschots van",
+    "Prices.patronen.title": "Voorbij je patronen",
+    "Prices.patronen.text":
+      "Een eerste ontmoeting met je essentie en eerste kennismaking met reconstructive methode. Voor wie wilt proeven van wat er leeft voorbij je patronen",
+    "Prices.patronen.format": "1ddag",
+    "Prices.patronen.for": "individu",
+    "Prices.patronen.location": "Leuven",
+    "Prices.patronen.max": "12",
+    "Prices.patronen.data": "najaar 2026",
+    "Prices.patronen.price": "175€ excl btw",
+    "Prices.patronen.lunch": "Met koffie, thee en lunch inbegrepen",
+    "Prices.patronen.body1":
+      'Merk jij ook dat sommigen vrijer leven dan jij? Dat als jij iets wil veranderen, er meteen een stem in jouw hoofd zegt, "ja maar, dat kan niet want..." Heb je door dat jouw kader er anders uitziet en wil jij wel eens verkennen wat er mogelijk is als jij je kader verruimt?',
+    "Prices.patronen.body2":
+      "Tijdens deze initiatiedag stap je een dag lang uit je vertrouwde kaders. We gaan in de voormiddag naar buiten en we werken gericht met de natuur om je heen en terwijl je wandelt, merk je hoe je blik ruimer wordt. Via belevingsoefeningen en de wijsheid van de natuur word je uitgenodigd om even buiten je construct te stappen. Het is alsof je een raam opent dat lang dicht zat. Er komt licht binnen. Ruimte. Nieuwsgierigheid.",
+    "Prices.patronen.body3":
+      "De natuur vindt altijd een weg ook in complexe omstandigheden. En precies dat herinnert jou eraan dat ook jij kunt bewegen, verschuiven, openen.",
+    "Prices.patronen.li1": "Ruimer perspectief op je eigen patronen",
+    "Prices.patronen.li2": "Een eerste ervaring van ruimte en vrijheid",
+    "Prices.patronen.li3": "Meer bewustzijn over wat jou stuurt",
+    "Prices.patronen.li4": "Nieuwsgierigheid als startpunt voor groei",
+    "Prices.reconstructive.title": "Reconstructive",
+    "Prices.reconstructive.text":
+      "Voor wie al wat innerlijk werk gedaan heeft en voelt dat er via het lichaam iets verder mag bewegen. <br> De <a href=\"https://www.cominz.be/opleidingen\">initiatiedag 'Voorbij je construct' </a>is een mooie starter als je nieuw bent in dit werk.",
+    "Prices.reconstructive.format": "1ddag",
+    "Prices.reconstructive.for": "individu",
+    "Prices.reconstructive.location": "Leuven",
+    "Prices.reconstructive.max": "8",
+    "Prices.reconstructive.data": "najaar 2026",
+    "Prices.reconstructive.price": "450€ excl btw",
+    "Prices.reconstructive.lunch": "Met koffie, thee en lunch inbegrepen",
+    "Prices.reconstructive.body1":
+      "Je hebt al een weg naar binnen afgelegd. En toch voel je: er is nog iets. Iets wat niet via het hoofd loskomt, maar via het lichaam. Reconstructive is voor jou.",
+    "Prices.reconstructive.body2":
+      "Het is een krachtige lichaamsgerichte methode waarbij intuïtie, vrijheid en helderheid meer kunnen stromen. Het denken wordt even opzijgezet. Wat overblijft is het lichaam en wat het je te vertellen heeft.",
+    "Prices.reconstructive.body3":
+      "In de tweedaagse vertraagt de tijd. Je krijgt ruimte om dieper te zakken, voorbij de oppervlakte. Je ontmoet twee delen in jezelf die vaak meer invloed hebben dan je denkt: je kinddeel en je volwassen deel. Wanneer deze twee elkaar ontmoeten, ontstaat er iets krachtigs: een beweging die je niet kunt bedenken, maar wel kunt voelen.",
+    "Prices.reconstructive.body4":
+      "De groep vormt daarbij een spiegelend veld. Wat je bij anderen ziet, raakt iets in jou. Wat jij laat zien, opent iets bij hen. Sommige inzichten komen niet via het hoofd. Ze komen via het lichaam als je het de ruimte geeft.",
+    "Prices.reconstructive.li1": "Ruimer perspectief op je eigen patronen",
+    "Prices.reconstructive.li2": "Meer vrijheid",
+    "Prices.reconstructive.li3": "Nieuwe inzichten",
+    "Prices.reconstructive.li4":
+      "Doorbraak in patronen die tot nu toe bleven vastzitten",
+    "Prices.reconstructive.li5": "Een ervaring die een blijvende indruk nalaat",
+    "Prices.label.format": "Format",
+    "Prices.label.for": "Voor",
+    "Prices.label.location": "Locatie",
+    "Prices.label.max": "Max aantal deelnemers",
+    "Prices.label.data": "Data",
+    "Prices.label.price": "Prijs",
     "Prices.e5.title":
       "Adolescenten (korting voor adulescenten die zelf instaan voor de kosten)",
     "Prices.e5.li1": "Een sessie van 60 min 50 euro (incl BTW)",
@@ -340,6 +383,8 @@ export const ui = {
     "Prices.e5.details":
       "Ook adolescenten zijn meer dan welkom. Zij dragen nieuwe talenten, gevoeligheden en verlangens in zich die niet altijd lijken te passen binnen de huidige maatschappij — maar wél essentieel zijn voor een samenleving in transformatie. Via mijn hartgedragen begeleiding ontdekken jongeren hoe ze in hun eigen kracht kunnen staan. Met heldere inzichten, zelfvertrouwen en nieuwe perspectieven leren ze hun energie te richten op wat klopt voor hen. Zo kunnen zij vanuit veerkracht en met plezier bijdragen aan een wereld die blijft groeien en zichzelf vernieuwen.",
     "Prices.seeMore": "Zie meer...",
+    "Prices.collab": "In samenwerking met Elke Busschots van",
+    "Prices.info": "Voor info en aanmelden, mail",
   },
   en: {
     // Global
@@ -645,13 +690,65 @@ export const ui = {
     "Prices.e3.li2": "A full-day session costs 800 euros (excl. VAT)",
     "Prices.e3.details":
       "Organizations willing to let the heart speak can count on guidance that goes beyond methods and models. In (self-steering) teams, it regularly appears that an essential element is still missing for optimal functioning: the inner alignment needed so that each team member can step into their heart-centered power. When that missing piece is filled in, a team arises that is not only self-steering, but also truly self-aware, connected, and resilient. This creates a sustainable foundation for effective collaboration, ownership, and result-orientedness.",
-
-    "Prices.e4.title": "Reconstructive (2-day program)",
-    "Prices.e4.text1":
-      "Reconstructive is a body-oriented group experience in which you move beyond patterns and create space for intuition.",
-    "Prices.e4.text2":
-      "You can register for this as an individual. More information will follow later.",
-
+    "Prices.patronen.title": "Beyond your patterns",
+    "Prices.patronen.text":
+      "A first encounter with your essence and a first introduction to the Reconstructive method. For those who want to taste what lives beyond your patterns.",
+    "Prices.patronen.info":
+      'For info and registration, mail <a href="mailto:bramgeysen@gmail.be">bramgeysen@gmail.be</a>',
+    "Prices.patronen.format": "1 day",
+    "Prices.patronen.for": "individual",
+    "Prices.patronen.location": "Leuven",
+    "Prices.patronen.max": "12",
+    "Prices.patronen.data": "Fall 2026",
+    "Prices.patronen.price": "175€ excl. VAT",
+    "Prices.patronen.lunch": "Coffee, tea, and lunch included",
+    "Prices.patronen.body1":
+      'Do you also notice that some live more freely than you? That when you want to change something, a voice in your head immediately says, "yes but, that\'s not possible because..." Do you realize that your frame looks different and do you want to explore what is possible if you broaden your frame?',
+    "Prices.patronen.body2":
+      "During this initiation day, you step out of your familiar frames for a whole day. In the morning, we go outside and work specifically with nature around you, and as you walk, you notice how your perspective broadens. Through experiential exercises and the wisdom of nature, you are invited to step outside your construct for a moment. It's as if you're opening a window that has been closed for a long time. Light comes in. Space. Curiosity.",
+    "Prices.patronen.body3":
+      "Nature always finds a way, even in complex circumstances. And that is exactly what reminds you that you too can move, shift, open.",
+    "Prices.patronen.li1": "Broader perspective on your own patterns",
+    "Prices.patronen.li2": "A first experience of space and freedom",
+    "Prices.patronen.li3": "More awareness of what drives you",
+    "Prices.patronen.li4": "Curiosity as a starting point for growth",
+    "Prices.patronen.collab":
+      'In collaboration with Elke Busschots from <a href="www.Cominz.be">www.Cominz.be</a>',
+    "Prices.reconstructive.title": "Reconstructive",
+    "Prices.reconstructive.text":
+      "For those who have already done some inner work and feel that something can move further through the body. <br> The <a href=\"https://www.cominz.be/opleidingen\">initiation day 'Beyond your construct'</a> is a great starter if you are new to this work.",
+    "Prices.reconstructive.info":
+      'For info and registration, mail <a href="mailto:bramgeysen@gmail.be">bramgeysen@gmail.be</a>',
+    "Prices.reconstructive.format": "1 day",
+    "Prices.reconstructive.for": "individual",
+    "Prices.reconstructive.location": "Leuven",
+    "Prices.reconstructive.max": "8",
+    "Prices.reconstructive.data": "Fall 2026",
+    "Prices.reconstructive.price": "450€ excl. VAT",
+    "Prices.reconstructive.lunch": "Coffee, tea, and lunch included",
+    "Prices.reconstructive.body1":
+      "You have already traveled a path inward. And yet you feel: there is something more. Something that doesn't release through the head, but through the body. Reconstructive is for you.",
+    "Prices.reconstructive.body2":
+      "It is a powerful body-oriented method where intuition, freedom, and clarity can flow more freely. Thinking is set aside for a moment. What remains is the body and what it has to tell you.",
+    "Prices.reconstructive.body3":
+      "In the two-day session, time slows down. You get space to sink deeper, beyond the surface. You meet two parts within yourself that often have more influence than you think: your child part and your adult part. When these two meet, something powerful arises: a movement you cannot think up, but you can feel.",
+    "Prices.reconstructive.body4":
+      "The group forms a mirroring field. What you see in others touches something in you. What you show opens something in them. Some insights do not come through the head. They come through the body when you give it space.",
+    "Prices.reconstructive.li1": "Broader perspective on your own patterns",
+    "Prices.reconstructive.li2": "More freedom",
+    "Prices.reconstructive.li3": "New insights",
+    "Prices.reconstructive.li4":
+      "Breakthrough in patterns that remained stuck until now",
+    "Prices.reconstructive.li5":
+      "An experience that leaves a lasting impression",
+    "Prices.reconstructive.collab":
+      'In collaboration with Elke Busschots from <a href="www.Cominz.be">www.Cominz.be</a>',
+    "Prices.label.format": "Format",
+    "Prices.label.for": "For",
+    "Prices.label.location": "Location",
+    "Prices.label.max": "Max participants",
+    "Prices.label.data": "Dates",
+    "Prices.label.price": "Price",
     "Prices.e5.title":
       "Adolescents (discount for adolescents covering their own costs)",
     "Prices.e5.li1": "A 60-minute session costs 50 euros (incl. VAT)",
