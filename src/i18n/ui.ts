@@ -56,7 +56,7 @@ export const ui = {
     "index.s3.col1.text1":
       "Het maakt niet uit, hoe groot of hoe klein je desoriëntatie is. Je bent welkom.",
     "index.s3.col1.text2":
-      "Gevoelens gaande van ‘ik zit vast’, ’ik weet niet wat doen’, ‘kan niets’ tot gevoelens die samengaan met vragen zoals: ‘Is het dit?’, ‘Wil ik dit echt?’, ‘Waarom ben ik dit aan het doen?’, ‘Word ik hier blij van?’",
+      "Gevoelens gaande van ‘ik zit vast’, ’ik weet niet wat te doen’, ‘ik kan niets’ tot gevoelens die samengaan met vragen zoals: ‘Is het dit?’, ‘Wil ik dit echt?’, ‘Waarom ben ik dit aan het doen?’, ‘Word ik hier blij van?’",
     "index.s3.col1.text3":
       "Deze vragen zijn richtingaanwijzers en kunnen, met de juiste aandacht en zachtheid, leiden tot nieuwe inzichten en tot een vrijer en voller leven.",
     "index.s3.col2.title": "Tederheid",
@@ -65,7 +65,7 @@ export const ui = {
     "index.s3.col2.text2":
       "Met tederheid ontstaat veiligheid en kan je de intimiteit met jezelf en met het leven herstellen.",
     "index.s3.col2.text3":
-      "Leer eerst jezelf kennen op diep niveau, in je eigen hart, zodat je vandaar uit verbinding kunt maken met de wereld.",
+      "Leer eerst jezelf kennen op diep niveau, in je eigen hart, zodat je van daaruit verbinding kunt maken met de wereld.",
     "index.s3.col3.title": "Verlangen naar iets ouds en geworteld",
     "index.s3.col3.text1":
       "Er zit kracht in het terugkeren naar je kern, gemeenschap, tradities en aarde. ",
@@ -97,7 +97,7 @@ export const ui = {
     "methodieken.title":
       "Mijn begeleiding is gebaseerd op onderstaande filosofie, methodieken:",
     "methodieken.text":
-      "Alle benaderingen en methodieken laten je lichamelijk ervaren hoe verandering kan aanvoelen. Ook houden deze methodieken rekening met het feit dat mensen relationele wezens zijn. We kijken bijgevolg ook naar het systeem  waar je deel van uitmaken. Gedrag en problemen ontstaan in wisselwerking met anderen en is nooit alleen van het individueel. Ook de verschillende relaties die we met onszelf hebben, krijgen een plek in de begeleiding",
+      "Alle benaderingen en methodieken laten je lichamelijk ervaren hoe verandering kan aanvoelen. Ook houden deze methodieken rekening met het feit dat mensen relationele wezens zijn. We kijken bijgevolg ook naar het systemen waar je deel van uitmaakt. Gedrag en problemen ontstaan in wisselwerking met anderen en is nooit alleen van het individueel. Ook de verschillende relaties die we met onszelf hebben, krijgen een plek in de begeleiding.",
 
     // Aanbod section 5
     "openHartCirkels.title": "Open hartcirkels",
@@ -125,112 +125,116 @@ export const ui = {
       "Er zijn zes richtingaanwijzers die je op weg helpen om je jarenlange conditionering te doorbreken en het proces om te keren. <br>Dit vraagt om een uitzonderlijke innerlijke kracht. <br>Alleen de kracht van het hart kan dit proces zachtjes openen en je stap voor stap naar verandering leiden.",
 
     // Filosofie section 2
-    "filosofie.s2.col1.title":
+    "filosofie.open-hart.s1.col1.title":
       "1. Het hart als bron van motivatie en eerlijkheid",
-    "filosofie.s2.col1.text1": "De kracht van het hart omvat:",
-    "filosofie.s2.col1.list1": "oprechte zelfcompassie",
-    "filosofie.s2.col1.list2": "de moed om ongemak toe te laten",
-    "filosofie.s2.col1.list3":
+    "filosofie.open-hart.s1.col1.text1": "De kracht van het hart omvat:",
+    "filosofie.open-hart.s1.col1.list1": "oprechte zelfcompassie",
+    "filosofie.open-hart.s1.col1.list2": "de moed om ongemak toe te laten",
+    "filosofie.open-hart.s1.col1.list3":
       "een verlangen naar waarheid in plaats van herhaling",
-    "filosofie.s2.col1.text2":
+    "filosofie.open-hart.s1.col1.text2":
       "Dat is wat nodig is om conditionering te verzachten.",
-    "filosofie.s2.col1.text3":
+    "filosofie.open-hart.s1.col1.text3":
       "Het gaat niet om brute wilskracht, maar om een zachte, volgehouden eerlijkheid.",
-    "filosofie.s2.col2.title":
+    "filosofie.open-hart.s1.col2.title":
       "2. Conditionering stopt wanneer je het patroon bewust ziet",
-    "filosofie.s2.col2.text1":
+    "filosofie.open-hart.s1.col2.text1":
       "Patronen blijven bestaan zolang ze automatisch verlopen.",
-    "filosofie.s2.col2.text2": "Ze beginnen te verschuiven wanneer je:",
-    "filosofie.s2.col2.list1":
-      "het patroon opgemerkt op het moment dat het gebeurt",
-    "filosofie.s2.col2.list2": "de lichamelijke sensaties erbij voelt",
-    "filosofie.s2.col2.list3": "niet meteen reageert zoals je altijd deed",
-    "filosofie.s2.col2.text3":
-      "Dat moment van bewustzijn is al een breuk in de conditionering",
-    "filosofie.s2.col3.title":
+    "filosofie.open-hart.s1.col2.text2":
+      "Ze beginnen te verschuiven wanneer je:",
+    "filosofie.open-hart.s1.col2.list1":
+      "het patroon opmerkt op het moment dat het gebeurt",
+    "filosofie.open-hart.s1.col2.list2":
+      "de lichamelijke sensaties erbij voelt",
+    "filosofie.open-hart.s1.col2.list3":
+      "niet meteen reageert zoals je altijd deed",
+    "filosofie.open-hart.s1.col2.text3":
+      "Dat moment van bewustzijn is al een breuk in de conditionering.",
+    "filosofie.open-hart.s1.col3.title":
       "3. Omkeren gebeurt door kleine herhaalde keuzes",
-    "filosofie.s2.col3.text1":
-      "Grote transformaties ontstaan zelden door één grote daad",
-    "filosofie.s2.col3.text2": "Ze ontstaan door:",
-    "filosofie.s2.col3.list1": "telkens opnieuw kiezen voor een andere reactie",
-    "filosofie.s2.col3.list2": "mild blijven wanneer het niet lukt",
-    "filosofie.s2.col3.list3":
+    "filosofie.open-hart.s1.col3.text1":
+      "Grote transformaties ontstaan zelden door één enkele grote daad",
+    "filosofie.open-hart.s1.col3.text2": "Ze ontstaan door:",
+    "filosofie.open-hart.s1.col3.list1":
+      "telkens opnieuw kiezen voor een andere reactie",
+    "filosofie.open-hart.s1.col3.list2": "mild blijven wanneer het niet lukt",
+    "filosofie.open-hart.s1.col3.list3":
       'jezelf toestaan om te groeien in plaats van te "fixen"',
-    "filosofie.s2.col3.text3":
+    "filosofie.open-hart.s1.col3.text3":
       "Het hart helpt omdat het je motiveert om door te gaan, zelfs wanneer het moeilijk is.",
 
     //  Filosofie Section 3
-    "filosofie.s3.col1.title": "4. Het lichaam speelt een sleutelrol",
-    "filosofie.s3.col1.text1":
+    "filosofie.open-hart.s2.col1.title": "4. Het lichaam speelt een sleutelrol",
+    "filosofie.open-hart.s2.col1.text1":
       "Conditionering zit niet alleen in gedachten, maar ook in:",
-    "filosofie.s3.col1.list1": "spierspanning",
-    "filosofie.s3.col1.list2": "ademhaling",
-    "filosofie.s3.col1.list3": "reflexmatige reacties",
-    "filosofie.s3.col1.text2":
+    "filosofie.open-hart.s2.col1.list1": "spierspanning",
+    "filosofie.open-hart.s2.col1.list2": "ademhaling",
+    "filosofie.open-hart.s2.col1.list3": "reflexmatige reacties",
+    "filosofie.open-hart.s2.col1.text2":
       "Praktijken zoals ademwerk, meditatie, somatische oefeningen of mindful bewegen kunnen helpen om die automatische patronen te verzachten.",
-    "filosofie.s3.col2.title":
+    "filosofie.open-hart.s2.col2.title":
       "5. De kracht die nodig is, is niet hard maar volhardend",
-    "filosofie.s3.col2.text1":
+    "filosofie.open-hart.s2.col2.text1":
       'Veel mensen denken dat ze "sterker" moeten worden.',
-    "filosofie.s3.col2.text2": "In werkelijkheid gaat het om:",
-    "filosofie.s3.col2.list1": "zachtheid",
-    "filosofie.s3.col2.list2": "aanwezigheid",
-    "filosofie.s3.col2.list3": "bereidheid om te voelen",
-    "filosofie.s3.col2.list4": "trouw blijven aan je diepere waarden",
-    "filosofie.s3.col2.text3":
+    "filosofie.open-hart.s2.col2.text2": "In werkelijkheid gaat het om:",
+    "filosofie.open-hart.s2.col2.list1": "zachtheid",
+    "filosofie.open-hart.s2.col2.list2": "aanwezigheid",
+    "filosofie.open-hart.s2.col2.list3": "bereidheid om te voelen",
+    "filosofie.open-hart.s2.col2.list4": "trouw blijven aan je diepere waarden",
+    "filosofie.open-hart.s2.col2.text3":
       "Dat is een andere soort kracht, maar wel een hele krachtige.",
-    "filosofie.s3.col3.title": "6. Community",
-    "filosofie.s3.col3.text1":
+    "filosofie.open-hart.s2.col3.title": "6. Community",
+    "filosofie.open-hart.s2.col3.text1":
       "Community speelt vaak een veel grotere rol in heling dan mensen beseffen.",
-    "filosofie.s3.col3.text2":
-      "Genezing -- of het nu emotioneel, psychologisch, spiritueel of zelfs lichamelijk is -- gebeurt zelden volledig in isolatie.",
-    "filosofie.s3.col3.text3": "Mensen helen in relatie tot anderen.",
+    "filosofie.open-hart.s2.col3.text2":
+      "Genezing - of het nu emotioneel, psychologisch, spiritueel of zelfs lichamelijk is - gebeurt zelden volledig in isolatie.",
+    "filosofie.open-hart.s2.col3.text3": "Mensen helen in relatie tot anderen.",
 
     // Filosofie section 4
     "intro-pillars.text1":
-      "Mooyo werkt met vier basispeilers die in balans moeten zijn, in voortdurende dialoog met elkaar. Wanneer één peiler uit evenwicht raakt, beïnvloedt dat het geheel — en precies daarom is het zo belangrijk om op alle niveaus beweging te brengen.",
+      "Mooyo werkt met vier basispijlers die in balans moeten zijn, in voortdurende dialoog met elkaar. Wanneer één pijler uit evenwicht raakt, beïnvloedt dat het geheel — en precies daarom is het zo belangrijk om op alle niveaus beweging te brengen.",
     "intro-pillars.text2":
-      "Mooyo brengt mensen dichter bij hun essentie zodat ze hartgedragen keuzes in hun leven maken.",
+      "Mooyo brengt mensen dichter bij hun essentie zodat ze hartgedragen keuzes in hun leven kunnen maken.",
 
     // Filosofie section 5
-    "pillars.e1.title1": "Bewustzijn - Het geheel",
-    "pillars.e1.img.text1":
+    "pillars.bewustzijn.title1": "Bewustzijn - Het geheel",
+    "pillars.bewustzijn.img.text1":
       "Een cirkel met een opening en een zwevend punt erboven stelt het bewustzijn voor.",
-    "pillars.e1.img.text2":
+    "pillars.bewustzijn.img.text2":
       "Betekenis: de mentale ruimte waar waarneming, interpretatie en betekenis ontstaan.",
-    "pillars.e1.title2": "De kracht van je wortels",
-    "pillars.e1.list1":
+    "pillars.bewustzijn.title2": "De kracht van je wortels",
+    "pillars.bewustzijn.list1":
       "Truth-telling: eerlijk kijken naar je verleden, je patronen.",
-    "pillars.e1.list2":
-      "Begrijpen wat perceptie en conditionering van 0 tot 6 jaar inhoudt en hoe het je leven beïnvloedt.",
-    "pillars.e1.list3":
-      "Conditioneringen ontstaan vaak vóór taalontwikkeling, zijn daardoor emotioneel van aard en niet via het verstand te bereiken.",
-    "pillars.e1.list4":
+    "pillars.bewustzijn.list2":
+      "Begrijpen wat perceptie en conditionering van 0 tot 6 jaar betekent en hoe het je leven beïnvloedt.",
+    "pillars.bewustzijn.list3":
+      "Conditioneringen ontstaan vaak vóór de taalontwikkeling, zijn daardoor emotioneel van aard en niet via het verstand te bereiken.",
+    "pillars.bewustzijn.list4":
       "Elke conditionering heeft zowel een energetisch aspect als een bewustzijnsdeel.",
-    "pillars.e2.title1": "Adem - Het nu",
-    "pillars.e2.img.text1":
-      "De twee golflijnen staan voor verbinding: de in- en uitademing. De streep stelt het middenrif voor, de ondersteuning",
-    "pillars.e2.img.text2":
+    "pillars.adem.title1": "Adem - Het nu",
+    "pillars.adem.img.text1":
+      "De twee golflijnen staan voor verbinding: de in- en uitademing. De streep stelt het middenrif voor en staat voor ondersteuning",
+    "pillars.adem.img.text2":
       "Betekenis: Adem als brug tussen lichaam en geest, beïnvloedt emoties, zenuwstelsel en mentale helderheid.",
-    "pillars.e2.title2": "De kracht van het moment",
-    "pillars.e2.list1":
+    "pillars.adem.title2": "De kracht van het moment",
+    "pillars.adem.list1":
       "Het leven aanvaarden zoals het nu is, niet zoals je het zou willen dat het is.",
-    "pillars.e2.list2": "De tijdelijkheid ervan inzien. Zonder weerstand. ",
-    "pillars.e2.list3":
+    "pillars.adem.list2": "De tijdelijkheid ervan inzien, zonder weerstand. ",
+    "pillars.adem.list3":
       " Ademhaling is de poort tussen het bewuste en onbewuste: we kunnen de ademhaling bewust sturen en tegelijk werkt de ademhaling autonoom.",
-    "pillars.e2.list4":
+    "pillars.adem.list4":
       "Ademhaling speelt een belangrijke rol in ons dagelijks leven en kan ingezet worden als regulatie tijdens pijnlijke ervaringen die gevoeld mogen worden.",
-    "pillars.e3.title1": "Het Hart - De Toekomst",
-    "pillars.e3.img.text1":
-      "De spiraal continue gevoed door warmte en menselijkheid.",
-    "pillars.e3.img.text2":
+    "pillars.hart.title1": "Het Hart - De Toekomst",
+    "pillars.hart.img.text1":
+      "De spiraal continu gevoed door warmte en menselijkheid.",
+    "pillars.hart.img.text2":
       "Betekenis: De kracht van oprechte (zelf)compassie en het centrum van moed om ongemak toe te laten.",
-    "pillars.e3.title2": "De kracht van moed",
-    "pillars.e3.list1":
-      "Hartcoherentie is een manier om aan zelfregulering te doen. en een uitnodiging om veerkracht op te bouwen. Eveneens is het een toegangspoort tot je hoger zelf. ",
-    "pillars.e3.list2":
-      "De moed om je plek (terug) in te nemen met alles wat daar bijhoort.",
-    "pillars.e3.list3":
+    "pillars.hart.title2": "De kracht van moed",
+    "pillars.hart.list1":
+      "Hartcoherentie is een manier om aan zelfregulering te doen en een uitnodiging om veerkracht op te bouwen. Eveneens is het een toegangspoort tot je hoger zelf. ",
+    "pillars.hart.list2":
+      "De moed om je plek (terug) in te nemen met alles wat daarbij hoort.",
+    "pillars.hart.list3":
       "Herkennen van gewoonten, overtuigingssystemen met compassie en de moed ontwikkelen om dit te doorbreken.",
     "pillars.e4.title1": "Lichaam - Het Verleden",
     "pillars.e4.img.text1":
@@ -306,30 +310,31 @@ export const ui = {
       "Mijn begeleidingsstijl wordt gekenmerkt door een diepe kwaliteit van aanwezigheid en een kalme rust. Dit stelt mij in staat om een veilige en ondersteunende omgeving te creëren waarin jij je volledig kunt openstellen en groeien.",
     "about.s2.e2.text2":
       "Drie jaar geleden kwam ik in aanraking met het boeddhisme en meditatie. Sindsdien is het boeddhistisch gedachten goed en dagelijkse meditatie een vast onderdeel van mijn leven geworden. Het helpt me om met meer helderheid, rust en aanwezigheid in het leven te staan — kwaliteiten die ik ook meeneem in mijn werk met anderen.",
+
     // Components
 
     "Prices.title": "Aanbod ∞ Tarieven",
     "Prices.text":
-      "Begeleidingen kunnen ook online plaatsvinden. Verandering gebeurt immers in het lichaam en in het bewustzijn — en dat kan ook wanneer er fysieke afstand tussen ons is. Online begeleiding werkt net zo diep, net zo transformerend. Het gaat om de interne beweging die ontstaat bij jou, niet om de fysieke ruimte waarin je zit. Wat telt, is dat jij je comfortabel voelt. Wanneer dat aanwezig is, kan het proces zich net zo krachtig ontvouwen.",
-    "Prices.e1.title1": "Individuele begeleidingen (fysiek of online)",
+      "Begeleidingen kunnen ook online plaatsvinden. Verandering gebeurt immers in het lichaam en in het bewustzijn — en dat kan ook wanneer er fysieke afstand tussen ons is. Online begeleiding werkt even diep, even transformerend. Het gaat om de interne beweging die ontstaat bij jou, niet om de fysieke ruimte waarin je zit. Wat telt, is dat jij je comfortabel voelt. Wanneer dat aanwezig is, kan het proces zich net zo krachtig ontvouwen.",
+    "Prices.e1.title1": "Individuele begeleidingen",
     "Prices.e1.li1": "Een sessie van 60 min is 65 euro (incl BTW)",
     "Prices.e1.li2": "Een sessie van 90 min is 95 euro (incl BTW)",
     "Prices.e1.details":
       "Ik begeleid mensen die voelen dat het tijd is om opnieuw in beweging te komen. Mensen die bewust willen kiezen — of opnieuw willen kiezen — voor het leven, voor verbinding en voor het volledig belichamen van hun potentieel. Of je nu op zoek bent naar heling, helderheid, groei of een nieuwe richting: bij Mooyo vind je een plek waar je gezien en gedragen wordt. Mooyo is er voor iedereen die voelt dat het leven meer vraagt — en meer te bieden heeft — wanneer je durft te bewegen vanuit je hart.",
-    "Prices.e2.title1": "Begeleiding van Koppels (fysiek of online)",
+    "Prices.e2.title1": "Begeleiding van koppels",
     "Prices.e2.li1": "Een sessie van 60 min is 70 euro (incl BTW)",
     "Prices.e2.li2": "Een sessie van 90 min is 110 euro (incl BTW)",
     "Prices.e2.details":
       "Ook koppels die verlangen naar meer verbinding, begrip en gezamenlijke groei zijn hier welkom. Koppels die bereid zijn om met openheid en moed naar hun eigen innerlijke delen te kijken — de stukken die geraakt worden, die zich terugtrekken, die verlangen, die beschermen. In hartgedragen begeleiding creëren we een veilige bedding waarin beide partners kunnen thuiskomen bij zichzelf én bij elkaar. Vanuit zachtheid, eerlijkheid en aanwezigheid onderzoeken we wat er onder de oppervlakte leeft, zodat liefde, helderheid en echte ontmoeting opnieuw ruimte krijgen.",
     "Prices.e3.title": "Begeleiding van organisaties",
-    "Prices.e3.li1": "Een sessie van halve dag is 500 euro (excl BTW)",
+    "Prices.e3.li1": "Een sessie van één halve dag is 500 euro (excl BTW)",
     "Prices.e3.li2": " Een sessie van één dag is 800 euro (excl BTW)",
     "Prices.e3.details":
       "Organisaties die bereid zijn om het hart mee te laten spreken kunnen rekenen op begeleiding die verder gaat dan methodes en modellen. In (zelfsturende) teams blijkt regelmatig dat er nog een essentieel element ontbreekt om optimaal te functioneren: de innerlijke afstemming die nodig is zodat elk teamlid in zijn hartgedragen kracht kan stappen. Wanneer dat ontbrekende stuk wordt ingevuld, ontstaat er een team dat niet alleen zelfsturend is, maar ook werkelijk zelfbewust, verbonden en veerkrachtig. Zo ontstaat er een duurzaam fundament voor effectieve samenwerking, eigenaarschap en resultaatgerichtheid.",
     "Prices.patronen.title": "Voorbij je patronen",
     "Prices.patronen.text":
       "Een eerste ontmoeting met je essentie en eerste kennismaking met reconstructive methode. Voor wie wilt proeven van wat er leeft voorbij je patronen",
-    "Prices.patronen.format": "1ddag",
+    "Prices.patronen.format": "1dag",
     "Prices.patronen.for": "individu",
     "Prices.patronen.location": "Leuven",
     "Prices.patronen.max": "12",
@@ -376,11 +381,11 @@ export const ui = {
     "Prices.label.max": "Max aantal deelnemers",
     "Prices.label.data": "Data",
     "Prices.label.price": "Prijs",
-    "Prices.e5.title":
-      "Adolescenten (korting voor adulescenten die zelf instaan voor de kosten)",
-    "Prices.e5.li1": "Een sessie van 60 min 50 euro (incl BTW)",
-    "Prices.e5.li2": "Een sessie van 90 min 75 euro (incl BTW",
-    "Prices.e5.details":
+    "Prices.adolescenten.title":
+      "Adolescenten (korting voor adolescenten die zelf instaan voor de kosten)",
+    "Prices.adolescenten.li1": "Een sessie van 60 min is 50 euro (incl BTW)",
+    "Prices.adolescenten.li2": "Een sessie van 90 min 75 is euro (incl BTW)",
+    "Prices.adolescenten.details":
       "Ook adolescenten zijn meer dan welkom. Zij dragen nieuwe talenten, gevoeligheden en verlangens in zich die niet altijd lijken te passen binnen de huidige maatschappij — maar wél essentieel zijn voor een samenleving in transformatie. Via mijn hartgedragen begeleiding ontdekken jongeren hoe ze in hun eigen kracht kunnen staan. Met heldere inzichten, zelfvertrouwen en nieuwe perspectieven leren ze hun energie te richten op wat klopt voor hen. Zo kunnen zij vanuit veerkracht en met plezier bijdragen aan een wereld die blijft groeien en zichzelf vernieuwen.",
     "Prices.seeMore": "Zie meer...",
     "Prices.collab": "In samenwerking met Elke Busschots van",
@@ -497,63 +502,71 @@ export const ui = {
       "There are six signposts that help you on your way to break through your years of conditioning and reverse the process. <br>This requires an exceptional inner strength. <br>Only the power of the heart can gently open this process and lead you step by step toward change.",
 
     // Filosofie section 2
-    "filosofie.s2.col1.title":
+    "filosofie.open-hart.s1.col1.title":
       "1. The heart as a source of motivation and honesty",
-    "filosofie.s2.col1.text1": "The power of the heart includes:",
-    "filosofie.s2.col1.list1": "sincere self-compassion",
-    "filosofie.s2.col1.list2": "the courage to allow discomfort",
-    "filosofie.s2.col1.list3": "a desire for truth instead of repetition",
-    "filosofie.s2.col1.text2": "That is what is needed to soften conditioning.",
-    "filosofie.s2.col1.text3":
+    "filosofie.open-hart.s1.col1.text1": "The power of the heart includes:",
+    "filosofie.open-hart.s1.col1.list1": "sincere self-compassion",
+    "filosofie.open-hart.s1.col1.list2": "the courage to allow discomfort",
+    "filosofie.open-hart.s1.col1.list3":
+      "a desire for truth instead of repetition",
+    "filosofie.open-hart.s1.col1.text2":
+      "That is what is needed to soften conditioning.",
+    "filosofie.open-hart.s1.col1.text3":
       "It is not about brute willpower, but about a gentle, sustained honesty.",
-    "filosofie.s2.col2.title":
+    "filosofie.open-hart.s1.col2.title":
       "2. Conditioning stops when you consciously see the pattern",
-    "filosofie.s2.col2.text1":
+    "filosofie.open-hart.s1.col2.text1":
       "Patterns persist as long as they run automatically.",
-    "filosofie.s2.col2.text2": "They begin to shift when you:",
-    "filosofie.s2.col2.list1": "notice the pattern at the moment it happens",
-    "filosofie.s2.col2.list2":
+    "filosofie.open-hart.s1.col2.text2": "They begin to shift when you:",
+    "filosofie.open-hart.s1.col2.list1":
+      "notice the pattern at the moment it happens",
+    "filosofie.open-hart.s1.col2.list2":
       "feel the physical sensations associated with it",
-    "filosofie.s2.col2.list3": "do not immediately react as you always did",
-    "filosofie.s2.col2.text3":
+    "filosofie.open-hart.s1.col2.list3":
+      "do not immediately react as you always did",
+    "filosofie.open-hart.s1.col2.text3":
       "That moment of awareness is already a break in the conditioning",
-    "filosofie.s2.col3.title":
+    "filosofie.open-hart.s1.col3.title":
       "3. Reversing happens through small, repeated choices",
-    "filosofie.s2.col3.text1":
+    "filosofie.open-hart.s1.col3.text1":
       "Major transformations rarely arise from one big act",
-    "filosofie.s2.col3.text2": "They arise from:",
-    "filosofie.s2.col3.list1": "choosing a different reaction time and again",
-    "filosofie.s2.col3.list2": "remaining gentle when it doesn't work out",
-    "filosofie.s2.col3.list3": 'allowing yourself to grow instead of "fix"',
-    "filosofie.s2.col3.text3":
+    "filosofie.open-hart.s1.col3.text2": "They arise from:",
+    "filosofie.open-hart.s1.col3.list1":
+      "choosing a different reaction time and again",
+    "filosofie.open-hart.s1.col3.list2":
+      "remaining gentle when it doesn't work out",
+    "filosofie.open-hart.s1.col3.list3":
+      'allowing yourself to grow instead of "fix"',
+    "filosofie.open-hart.s1.col3.text3":
       "The heart helps because it motivates you to keep going, even when it is difficult.",
 
     // Filosofie section 3
-    "filosofie.s3.col1.title": "4. The body plays a key role",
-    "filosofie.s3.col1.text1":
+    "filosofie.open-hart.s2.col1.title": "4. The body plays a key role",
+    "filosofie.open-hart.s2.col1.text1":
       "Conditioning is not just in thoughts, but also in:",
-    "filosofie.s3.col1.list1": "muscle tension",
-    "filosofie.s3.col1.list2": "breathing",
-    "filosofie.s3.col1.list3": "reflexive reactions",
-    "filosofie.s3.col1.text2":
+    "filosofie.open-hart.s2.col1.list1": "muscle tension",
+    "filosofie.open-hart.s2.col1.list2": "breathing",
+    "filosofie.open-hart.s2.col1.list3": "reflexive reactions",
+    "filosofie.open-hart.s2.col1.text2":
       "Practices such as breathwork, meditation, somatic exercises, or mindful movement can help soften those automatic patterns.",
-    "filosofie.s3.col2.title":
+    "filosofie.open-hart.s2.col2.title":
       "5. The strength needed is not hard but persistent",
-    "filosofie.s3.col2.text1":
+    "filosofie.open-hart.s2.col2.text1":
       'Many people think that they need to become "stronger".',
-    "filosofie.s3.col2.text2": "In reality, it is about:",
-    "filosofie.s3.col2.list1": "gentleness",
-    "filosofie.s3.col2.list2": "presence",
-    "filosofie.s3.col2.list3": "willingness to feel",
-    "filosofie.s3.col2.list4": "staying true to your deeper values",
-    "filosofie.s3.col2.text3":
+    "filosofie.open-hart.s2.col2.text2": "In reality, it is about:",
+    "filosofie.open-hart.s2.col2.list1": "gentleness",
+    "filosofie.open-hart.s2.col2.list2": "presence",
+    "filosofie.open-hart.s2.col2.list3": "willingness to feel",
+    "filosofie.open-hart.s2.col2.list4": "staying true to your deeper values",
+    "filosofie.open-hart.s2.col2.text3":
       "That is a different kind of strength, but a very powerful one.",
-    "filosofie.s3.col3.title": "6. Community",
-    "filosofie.s3.col3.text1":
+    "filosofie.open-hart.s2.col3.title": "6. Community",
+    "filosofie.open-hart.s2.col3.text1":
       "Community often plays a much larger role in healing than people realize.",
-    "filosofie.s3.col3.text2":
+    "filosofie.open-hart.s2.col3.text2":
       "Healing -- whether it is emotional, psychological, spiritual, or even physical -- rarely happens completely in isolation.",
-    "filosofie.s3.col3.text3": "People heal in relationship to others.",
+    "filosofie.open-hart.s2.col3.text3":
+      "People heal in relationship to others.",
 
     // Filosofie section 4
     "intro-pillars.title":
@@ -564,44 +577,44 @@ export const ui = {
       "Mooyo brings people closer to their essence so they can make heart-centered choices in their lives.",
 
     // Filosofie section 5
-    "pillars.e1.title1": "Awareness - The Whole",
-    "pillars.e1.img.text1":
+    "pillars.bewustzijn.title1": "Awareness - The Whole",
+    "pillars.bewustzijn.img.text1":
       "A circle that is not fully closed with an opening at the top. Above it, a floating dot as if the circle is letting go of a thought - awareness.",
-    "pillars.e1.img.text2":
+    "pillars.bewustzijn.img.text2":
       "Meaning: the mental space where perception, interpretation, and meaning arise.",
-    "pillars.e1.title2": "The Power of Your Roots",
-    "pillars.e1.list1":
+    "pillars.bewustzijn.title2": "The Power of Your Roots",
+    "pillars.bewustzijn.list1":
       "Truth-telling: looking honestly at your past, your patterns.",
-    "pillars.e1.list2":
+    "pillars.bewustzijn.list2":
       "Understanding what perception and conditioning from 0 to 6 years old entails and how it affects your life.",
-    "pillars.e1.list3":
+    "pillars.bewustzijn.list3":
       "Conditioning often arises before language development, is therefore emotional in nature, and cannot be reached through the intellect.",
-    "pillars.e1.list4":
+    "pillars.bewustzijn.list4":
       "Every conditioning has both an energetic aspect and an awareness part.",
-    "pillars.e2.title1": "Breath - The Now",
-    "pillars.e2.img.text1":
+    "pillars.adem.title1": "Breath - The Now",
+    "pillars.adem.img.text1":
       "The two wavy lines represent connection: the inhalation and exhalation. The line represents the diaphragm, the support.",
-    "pillars.e2.img.text2":
+    "pillars.adem.img.text2":
       "Meaning: Breath as a bridge between body and mind, influencing emotions, the nervous system, and mental clarity.",
-    "pillars.e2.title2": "The Power of the Moment",
-    "pillars.e2.list1":
+    "pillars.adem.title2": "The Power of the Moment",
+    "pillars.adem.list1":
       "Accepting life as it is now, not as you would like it to be.",
-    "pillars.e2.list2": "Recognizing its impermanence. Without resistance.",
-    "pillars.e2.list3":
+    "pillars.adem.list2": "Recognizing its impermanence. Without resistance.",
+    "pillars.adem.list3":
       "Breathing is the gate between the conscious and unconscious: we can consciously guide the breath, while it also works autonomously.",
-    "pillars.e2.list4":
+    "pillars.adem.list4":
       "Breathing plays an important role in our daily lives and can be used as regulation during painful experiences that are allowed to be felt.",
-    "pillars.e3.title1": "The Heart - The Future",
-    "pillars.e3.img.text1":
+    "pillars.hart.title1": "The Heart - The Future",
+    "pillars.hart.img.text1":
       "The spiral continuously nourished by warmth and humanity.",
-    "pillars.e3.img.text2":
+    "pillars.hart.img.text2":
       "Meaning: The power of sincere (self)compassion and the center of courage to allow discomfort.",
-    "pillars.e3.title2": "The Power of Courage",
-    "pillars.e3.list1":
+    "pillars.hart.title2": "The Power of Courage",
+    "pillars.hart.list1":
       "Heart coherence is a way to practice self-regulation and an invitation to build resilience. It is also a gateway to your higher self.",
-    "pillars.e3.list2":
+    "pillars.hart.list2":
       "The courage to take (back) your place with everything that comes with it.",
-    "pillars.e3.list3":
+    "pillars.hart.list3":
       "Recognizing habits and belief systems with compassion and developing the courage to break through them.",
     "pillars.e4.title1": "Body - The Past",
     "pillars.e4.img.text1":
@@ -749,11 +762,11 @@ export const ui = {
     "Prices.label.max": "Max participants",
     "Prices.label.data": "Dates",
     "Prices.label.price": "Price",
-    "Prices.e5.title":
+    "Prices.adolescenten.title":
       "Adolescents (discount for adolescents covering their own costs)",
-    "Prices.e5.li1": "A 60-minute session costs 50 euros (incl. VAT)",
-    "Prices.e5.li2": "A 90-minute session costs 75 euros (incl. VAT)",
-    "Prices.e5.details":
+    "Prices.adolescenten.li1": "A 60-minute session costs 50 euros (incl. VAT)",
+    "Prices.adolescenten.li2": "A 90-minute session costs 75 euros (incl. VAT)",
+    "Prices.adolescenten.details":
       "Adolescents are also more than welcome. They are the future and bring talents, desires, and qualities that may not always seem to align with current society. Through my heart-centered guidance, they discover how to stand in their own power. With clear insights, self-confidence, and new perspectives, they can contribute with full energy and joy to a society that continues to grow and renew itself.",
     "Prices.seeMore": "See more...",
   },
