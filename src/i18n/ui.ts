@@ -333,7 +333,7 @@ export const ui = {
     "Prices.e3.li2": " Een sessie van één dag is 800 euro (excl BTW)",
     "Prices.e3.details":
       "Organisaties die bereid zijn om het hart mee te laten spreken kunnen rekenen op begeleiding die verder gaat dan methodes en modellen. In (zelfsturende) teams blijkt regelmatig dat er nog een essentieel element ontbreekt om optimaal te functioneren: de innerlijke afstemming die nodig is zodat elk teamlid in zijn hartgedragen kracht kan stappen. Wanneer dat ontbrekende stuk wordt ingevuld, ontstaat er een team dat niet alleen zelfsturend is, maar ook werkelijk zelfbewust, verbonden en veerkrachtig. Zo ontstaat er een duurzaam fundament voor effectieve samenwerking, eigenaarschap en resultaatgerichtheid.",
-    "Prices.patronen.title": "Voorbij je patronen",
+    "Prices.patronen.title": "Voorbij je construct",
     "Prices.patronen.text":
       "Een eerste ontmoeting met je essentie en eerste kennismaking met reconstructive methode. Voor wie wilt proeven van wat er leeft voorbij je patronen",
     "Prices.patronen.format": "1dag",
@@ -355,8 +355,8 @@ export const ui = {
     "Prices.patronen.li4": "Nieuwsgierigheid als startpunt voor groei",
     "Prices.reconstructive.title": "Reconstructive",
     "Prices.reconstructive.text":
-      "Voor wie al wat innerlijk werk gedaan heeft en voelt dat er via het lichaam iets verder mag bewegen. <br> De <a href=\"https://www.cominz.be/opleidingen\">initiatiedag 'Voorbij je construct' </a>is een mooie starter als je nieuw bent in dit werk.",
-    "Prices.reconstructive.format": "1ddag",
+      "Voor wie al wat innerlijk werk gedaan heeft en voelt dat er via het lichaam iets verder mag bewegen.",
+    "Prices.reconstructive.format": "1dag",
     "Prices.reconstructive.for": "individu",
     "Prices.reconstructive.location": "Leuven",
     "Prices.reconstructive.max": "8",
