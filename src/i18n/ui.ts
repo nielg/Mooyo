@@ -1,3 +1,5 @@
+// Bram Geysen
+
 export const languages = {
   nl: "nl",
   en: "en",
