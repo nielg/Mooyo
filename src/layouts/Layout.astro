@@ -2,16 +2,16 @@
 import { Image } from "astro:assets";
 import hart_rond from "../assets/rondevormen/hart_rond.png";
 import "../styles/global.css";
-import Nav from "../components/Nav.astro";
-import LanguagePicker from "../components/LanguagePicker.astro";
+import Nav from "../components/layout/Nav.astro";
+import LanguagePicker from "../components/layout/LanguagePicker.astro";
 import {
   getLangFromUrl,
   useTranslatedPath,
   useTranslations,
 } from "../i18n/utils";
-import Footer from "@components/Footer.astro";
+import Footer from "@components/layout/Footer.astro";
 import Head from "@components/head/Head.astro";
-import ScrollToTop from "../components/ScrollToTop.astro";
+import ScrollToTop from "@components/layout/ScrollToTop.astro";
 import GoogleTMBody from "@components/head/GoogleTMBody.astro";
 
 interface Props {
@@ -66,10 +66,11 @@ const { title, description = "Standaard omschrijving voor Mooyo" } =
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding: 1rem;
+    margin-bottom: 0;
     gap: 4rem;
     color: var(--mooyo-text-red);
     background-color: var(--mooyo-white);
-    padding: 3rem;
   }
 
   header div {
@@ -95,8 +96,7 @@ const { title, description = "Standaard omschrijving voor Mooyo" } =
       gap: 3rem;
     }
   }
-
-  @media (max-width: 500px) {
+  @media (max-width: 1000px) {
     header div {
       flex-direction: column;
       gap: 1rem;

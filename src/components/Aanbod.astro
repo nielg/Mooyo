@@ -9,13 +9,18 @@ interface Props {
 }
 const { color } = Astro.props;
 
-const sectionClasses: string = color == 'red' ? "back-red text-white" : "back-gray text-black"
+const sectionClasses: string =
+  color == "red" ? "back-red text-white" : "back-gray text-black";
 ---
 
-<section class=`prices ${sectionClasses} regular-font`>
-  <h2 class="papyrus-font">{t('Prices.title')}</h2>
+<section class=`prices ${sectionClasses} regular-font` id="aanbod">
+  <h2 class="papyrus-font">{t("Prices.title")}</h2>
   <!-- Section 1: Individuele begeleidingen -->
-  <DropDownContainer title={t("Prices.title.individual")} color={color}>
+  <DropDownContainer
+    title={t("Prices.title.individual")}
+    color={color}
+    id="individual"
+  >
     <div class="flex">
       <!-- Card 1: E1 -->
       <div class="card expanding">
@@ -46,7 +51,15 @@ const sectionClasses: string = color == 'red' ? "back-red text-white" : "back-gr
           </ul>
           <p class="seeMore">{t("Prices.seeMore")}</p>
           <div class="details">
-            <p>{t("Prices.footprints.details")}</p>
+            <p>{t("Prices.footprints.details.text1")}</p>
+            <ul class="dashed-list">
+              <li>{t("Prices.footprints.details.li1")}</li>
+              <li>{t("Prices.footprints.details.li2")}</li>
+              <li>{t("Prices.footprints.details.li3")}</li>
+              <li>{t("Prices.footprints.details.li4")}</li>
+              <li>{t("Prices.footprints.details.li5")}</li>
+            </ul>
+            <p>{t("Prices.footprints.details.text2")}</p>
           </div>
         </div>
       </div>
@@ -55,7 +68,9 @@ const sectionClasses: string = color == 'red' ? "back-red text-white" : "back-gr
       <!-- Card 3: Hartcoherentie -->
       <div class="card expanding">
         <div class="main">
-          <h4 class="bold text-red papyrus-font">{t("Prices.burnout.title")}</h4>
+          <h4 class="bold text-red papyrus-font">
+            {t("Prices.burnout.title")}
+          </h4>
           <ul class="infinity-list text-black">
             <li>{t("Prices.e1.li1")}</li>
             <li>{t("Prices.e1.li2")}</li>
@@ -65,15 +80,21 @@ const sectionClasses: string = color == 'red' ? "back-red text-white" : "back-gr
             <p>{t("Prices.burnout.description")}</p>
             <ul>
               <li>
-                <span class="text-red bold">{t("Prices.burnout.stress.title")}</span>
+                <span class="text-red bold"
+                  >{t("Prices.burnout.stress.title")}</span
+                >
                 {t("Prices.burnout.stress.text")}
               </li>
               <li>
-                <span class="text-red bold">{t("Prices.burnout.emotions.title")}</span>
+                <span class="text-red bold"
+                  >{t("Prices.burnout.emotions.title")}</span
+                >
                 {t("Prices.burnout.emotions.text")}
               </li>
               <li>
-                <span class="text-red bold">{t("Prices.burnout.connection.title")}</span>
+                <span class="text-red bold"
+                  >{t("Prices.burnout.connection.title")}</span
+                >
                 {t("Prices.burnout.connection.text")}
               </li>
             </ul>
@@ -101,7 +122,11 @@ const sectionClasses: string = color == 'red' ? "back-red text-white" : "back-gr
   </DropDownContainer>
 
   <!-- Section 2: Workshops -->
-  <DropDownContainer title={t("Prices.title.workshops")} color={color}>
+  <DropDownContainer
+    title={t("Prices.title.workshops")}
+    color={color}
+    id="workshops"
+  >
     <div class="flex">
       <!-- Workshop Card 1: Voorbij je construct -->
       <div class="card expanding text-align-justify">
@@ -154,12 +179,20 @@ const sectionClasses: string = color == 'red' ? "back-red text-white" : "back-gr
               <li>{t("Prices.construct.li3")}</li>
               <li>{t("Prices.construct.li4")}</li>
             </ul>
-            <p class="text-gray text-align-start">
-              {t("Prices.collab")}
+            <p>
+              {t("Prices.moreInfo")}
               <a
                 href="https://www.reconstructive.be"
                 target="_blank"
                 rel="noopener noreferrer">www.reconstructive.be</a
+              >
+            </p>
+            <p class="text-gray text-align-start">
+              {t("Prices.collab")}
+              <a
+                href="https://www.cominz.be"
+                target="_blank"
+                rel="noopener noreferrer">www.cominz.be</a
               >
             </p>
           </div>
@@ -199,7 +232,14 @@ const sectionClasses: string = color == 'red' ? "back-red text-white" : "back-gr
                 </li>
                 <li>
                   <span class="bold">{t("Prices.label.data")}:</span>
-                  {t("Prices.reconstructive.data")}
+                  <ul>
+                    <li>
+                      {t("Prices.reconstructive.data.li1")}
+                    </li>
+                    <li>
+                      {t("Prices.reconstructive.data.li2")}
+                    </li>
+                  </ul>
                 </li>
                 <li>
                   <span class="bold">{t("Prices.label.price")}:</span>
@@ -219,12 +259,20 @@ const sectionClasses: string = color == 'red' ? "back-red text-white" : "back-gr
               <li>{t("Prices.reconstructive.li4")}</li>
               <li>{t("Prices.reconstructive.li5")}</li>
             </ul>
-            <p class="text-gray text-align-start">
-              {t("Prices.collab")}
+            <p>
+              {t("Prices.moreInfo")}
               <a
                 href="https://www.reconstructive.be"
                 target="_blank"
                 rel="noopener noreferrer">www.reconstructive.be</a
+              >
+            </p>
+            <p class="text-gray text-align-start">
+              {t("Prices.collab")}
+              <a
+                href="https://www.cominz.be"
+                target="_blank"
+                rel="noopener noreferrer">www.cominz.be</a
               >
             </p>
           </div>
@@ -248,7 +296,7 @@ const sectionClasses: string = color == 'red' ? "back-red text-white" : "back-gr
               <ul>
                 <li>
                   <span class="bold">{t("Prices.label.format")}:</span>
-                  {t("Prices.reconstructive.format")}
+                  {t("Prices.gold.format")}
                 </li>
                 <li>
                   <span class="bold">{t("Prices.label.for")}:</span>
@@ -281,13 +329,31 @@ const sectionClasses: string = color == 'red' ? "back-red text-white" : "back-gr
               <li>{t("Prices.gold.li4")}</li>
             </ul>
             <p>{t("Prices.gold.footer")}</p>
+            <p>
+              {t("Prices.moreInfo")}
+              <a
+                href="https://www.reconstructive.be"
+                target="_blank"
+                rel="noopener noreferrer">www.reconstructive.be</a
+              >
+            </p>
+            <p class="text-gray text-align-start">
+              {t("Prices.collab")}
+              <a
+                href="https://www.cominz.be"
+                target="_blank"
+                rel="noopener noreferrer">www.cominz.be</a
+              >
+            </p>
           </div>
         </div>
       </div>
       <!-- Deep time walk workshop -->
       <div class="card expanding">
         <div class="main">
-          <h4 class="bold text-red papyrus-font">{t("Prices.deeptimewalk.title")}</h4>
+          <h4 class="bold text-red papyrus-font">
+            {t("Prices.deeptimewalk.title")}
+          </h4>
           <p>{t("Prices.deeptimewalk.description")}</p>
           <p>
             {t("Prices.info")}
@@ -303,15 +369,21 @@ const sectionClasses: string = color == 'red' ? "back-red text-white" : "back-gr
             <p>{t("Prices.deeptimewalk.reflection.title")}</p>
             <ul>
               <li>
-                <span class="text-red bold">{t("Prices.deeptimewalk.body.title")}</span>
+                <span class="text-red bold"
+                  >{t("Prices.deeptimewalk.body.title")}</span
+                >
                 - {t("Prices.deeptimewalk.body.text")}
               </li>
               <li>
-                <span class="text-red bold">{t("Prices.deeptimewalk.heart.title")}</span>
+                <span class="text-red bold"
+                  >{t("Prices.deeptimewalk.heart.title")}</span
+                >
                 - {t("Prices.deeptimewalk.heart.text")}
               </li>
               <li>
-                <span class="text-red bold">{t("Prices.deeptimewalk.head.title")}</span>
+                <span class="text-red bold"
+                  >{t("Prices.deeptimewalk.head.title")}</span
+                >
                 - {t("Prices.deeptimewalk.head.text")}
               </li>
             </ul>
@@ -326,12 +398,16 @@ const sectionClasses: string = color == 'red' ? "back-red text-white" : "back-gr
   </DropDownContainer>
 
   <!-- Section 3: Organisaties en Teams -->
-  <DropDownContainer title={t("Prices.title.organizations")} color={color}>
+  <DropDownContainer
+    title={t("Prices.title.organizations")}
+    color={color}
+    id="organizations"
+  >
     <div class="flex">
       <!-- Begeleiding -->
       <div class="card expanding">
         <div class="main">
-          <h4 class="bold text-red">{t("Prices.e3.title")}</h4>
+          <h4 class="bold text-red papyrus-font">{t("Prices.e3.title")}</h4>
           <ul class="infinity-list text-black">
             <li>{t("Prices.e3.li1")}</li>
             <li>{t("Prices.e3.li2")}</li>
@@ -345,7 +421,9 @@ const sectionClasses: string = color == 'red' ? "back-red text-white" : "back-gr
       <!-- Deep time walk -->
       <div class="card expanding">
         <div class="main">
-          <h4 class="bold text-red papyrus-font">{t("Prices.deeptimewalk.title")}</h4>
+          <h4 class="bold text-red papyrus-font">
+            {t("Prices.deeptimewalk.title")}
+          </h4>
           <ul class="infinity-list">
             <li>{t("Prices.deeptimewalk.price.text")}</li>
           </ul>
@@ -363,15 +441,21 @@ const sectionClasses: string = color == 'red' ? "back-red text-white" : "back-gr
             <h5>{t("Prices.deeptimewalk.reflection.title")}</h5>
             <ul class="infinity-list">
               <li>
-                <span class="text-red bold">{t("Prices.deeptimewalk.body.title")}</span>
+                <span class="text-red bold"
+                  >{t("Prices.deeptimewalk.body.title")}</span
+                >
                 - {t("Prices.deeptimewalk.body.text")}
               </li>
               <li>
-                <span class="text-red bold">{t("Prices.deeptimewalk.heart.title")}</span>
+                <span class="text-red bold"
+                  >{t("Prices.deeptimewalk.heart.title")}</span
+                >
                 - {t("Prices.deeptimewalk.heart.text")}
               </li>
               <li>
-                <span class="text-red bold">{t("Prices.deeptimewalk.head.title")}</span>
+                <span class="text-red bold"
+                  >{t("Prices.deeptimewalk.head.title")}</span
+                >
                 - {t("Prices.deeptimewalk.head.text")}
               </li>
             </ul>
@@ -487,15 +571,19 @@ const sectionClasses: string = color == 'red' ? "back-red text-white" : "back-gr
   }
 </style>
 <script>
-  const cards = document.querySelectorAll('.expanding');
+  function initAanbodCards() {
+    const cards = document.querySelectorAll(".expanding");
 
-  cards.forEach((card) => {
-    card.addEventListener('click', () => {
-      cards.forEach((anyCard) => {
-        anyCard.classList.remove('is-active');
+    cards.forEach((card) => {
+      card.addEventListener("click", () => {
+        cards.forEach((anyCard) => {
+          anyCard.classList.remove("is-active");
+        });
+
+        card.classList.add("is-active");
       });
-
-      card.classList.add('is-active');
     });
-  });
+  }
+
+  document.addEventListener("astro:page-load", initAanbodCards);
 </script>

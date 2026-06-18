@@ -17,37 +17,22 @@ export { getStaticPaths };
 <Layout title={t("aanbod.title")}>
   <section class="forWho text-align-center back-red text-white regular-font">
     <div class="text-margin">
-      <h1 class="papyrus-font" set:html={t("aanbod.forwho.title")} />
+      <h1>{t("aanbod.forwho.title")}</h1>
       <p set:html={t("aanbod.forwho.text")} />
-      <p class="papyrus-font">{t("aanbod.forwho.text2")}</p>
+      <p class="papyrus-font">
+        Mooyo is een uitnodiging om volledig aanwezig te zijn met alles wat je
+        meedraagt, precies zoals je bent.
+      </p>
     </div>
   </section>
 
   <Aanbod />
-
-  <section class="quotes back-red text-align-center center">
-    <div class="col3">
-      <p class="text-white" set:html={t("quotes.text1")} />
-      <p class="text-black" set:html={t("quotes.text2")} />
-      <p class="text-white" set:html={t("quotes.text3")} />
-      <p class="text-black" set:html={t("quotes.text4")} />
-      <p class="text-white" set:html={t("quotes.text5")} />
-      <p class="text-black" set:html={t("quotes.text6")} />
-      <p class="text-white" set:html={t("quotes.text7")} />
-      <p class="text-black" set:html={t("quotes.text8")} />
-      <p class="text-white" set:html={t("quotes.text9")} />
-    </div>
-  </section>
 
   <section class="methodieken back-gray text-black center regular-font">
     <div class="text-margin">
       <h3 class="text-align-center text-red papyrus-font">
         {t("methodieken.title")}
       </h3>
-      <p
-        class="text-align-justify border-bottom"
-        set:html={t("methodieken.text")}
-      />
       <div class="col2">
         <div>
           <ul class="infinity-list">
@@ -95,14 +80,6 @@ export { getStaticPaths };
 
   <section class="s6 back-red text-white text-align-center">
     <h3 set:html={t("aanbod.s6.text")} />
-  </section>
-
-  <section class="s7 back-white text-red text-align-center">
-    <h3 set:html={t("aanbod.s7.text")} />
-  </section>
-
-  <section class="s8 back-red text-white text-align-center">
-    <h3 set:html={t("aanbod.s8.text")} />
   </section>
 </Layout>
 

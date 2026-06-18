@@ -1,6 +1,8 @@
+13/06/2026
+- Aanbod bij home → 3 titles veranderen in een kaarten met aparte text linkt naar aanbop pagina zie www.reconstructive.be (papa moet er nog over nadenken)
+- Facebook link en linkind link toevoegen aan index
+
 Voor productie
-- Sitemap toevoegen aan de google search console
-- Add social media optimazation SMO SocialSharePreview.com
 - Beschrijving per pagina toevoegen
 - Keywoords per pagina
 - Bij kleiner schermen kleiner lettertype and minder margin

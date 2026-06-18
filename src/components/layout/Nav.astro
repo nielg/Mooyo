@@ -3,7 +3,7 @@ import {
   getLangFromUrl,
   useTranslations,
   useTranslatedPath,
-} from "../i18n/utils";
+} from "@src/i18n/utils";
 const lang = getLangFromUrl(Astro.url);
 const translatePath = useTranslatedPath(lang);
 const t = useTranslations(lang);
@@ -23,6 +23,11 @@ const isActive = (path: string) => {
   <a
     href={translatePath("/")}
     class={isActive(translatePath("")) ? "text-red bold" : ""}>HOME</a
+  >
+  <a
+    href={translatePath("/welcome")}
+    class={isActive(translatePath("/welcome")) ? "text-red bold" : ""}
+    >{t("nav.welcome")}</a
   >
   <a
     href={translatePath("/filosofie")}

@@ -1,5 +1,5 @@
 ---
-import arrowUp from "../assets/arrowUp.svg?raw";
+import arrowUp from "@src/assets/icons/arrowUp.svg?raw";
 ---
 
 <button id="scroll-to-top" aria-label="Scroll to top" class="hidden">
@@ -32,9 +32,7 @@ import arrowUp from "../assets/arrowUp.svg?raw";
     }
   }
 
-  initScrollToTop();
-
-  document.addEventListener("astro:after-swap", initScrollToTop);
+  document.addEventListener("astro:page-load", initScrollToTop);
 </script>
 
 <style>
@@ -49,8 +47,8 @@ import arrowUp from "../assets/arrowUp.svg?raw";
     background-color: var(--mooyo-gray);
     color: black;
     border-radius: 50%;
-    width: 4rem;
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -63,11 +61,14 @@ import arrowUp from "../assets/arrowUp.svg?raw";
       background-color 0.2s ease;
   }
 
-  /* Ensure the imported SVG fills the button and inherits color */
   #scroll-to-top :global(svg) {
     width: 2rem;
     height: 2rem;
-    fill: currentColor;
+  }
+
+  #scroll-to-top :global(svg path) {
+    stroke: currentColor;
+    transition: stroke 0.2s ease;
   }
 
   #scroll-to-top.hidden {

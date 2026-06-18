@@ -1,0 +1,385 @@
+---
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+
+interface Props {
+  color: "red" | "gray";
+}
+const { color } = Astro.props;
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const btnClasses = color == "red" ? "gray-btn" : "red-btn";
+---
+
+<section color-variant={color} class="regular-font mail-form-section">
+  <h2 class="text-align-center papyrus-font">{t("mailForm.title")}</h2>
+
+  <div class="status-message hidden"></div>
+
+  <form
+    class="mail-form"
+    action="https://formsubmit.co/ajax/nielgeysen@gmail.com"
+    method="POST"
+    data-success-msg={t("mailForm.success")}
+    data-error-msg={t("mailForm.error")}
+  >
+    <div class="input-container">
+      <label for={`name-${color}`}>{t("mailForm.name")}:</label>
+      <input
+        type="text"
+        id={`name-${color}`}
+        name="name"
+        required
+        placeholder={t("mailForm.name")}
+      />
+    </div>
+
+    <div class="input-container">
+      <label for={`email-${color}`}>{t("mailForm.email")}:</label>
+      <input
+        type="email"
+        id={`email-${color}`}
+        name="email"
+        required
+        placeholder="example@email.com"
+      />
+    </div>
+
+    <div class="input-container">
+      <label for={`service-${color}`}>
+        {t("mailForm.interest")}
+        <span class="optional">({t("mailForm.optional")})</span>
+      </label>
+      <select id={`service-${color}`} name="service">
+        <option value="other">{t("mailForm.service.other")}</option>
+        <option value="individual">{t("mailForm.service.individual")}</option>
+        <option value="workshops">{t("mailForm.service.workshops")}</option>
+        <option value="organizations"
+          >{t("mailForm.service.organizations")}</option
+        >
+      </select>
+    </div>
+
+    <div class="input-container">
+      <label for={`phone-${color}`}>
+        {t("mailForm.phone")}:
+        <span class="optional">({t("mailForm.optional")})</span>
+      </label>
+      <input
+        type="tel"
+        id={`phone-${color}`}
+        name="phone"
+        placeholder="+32 ..."
+      />
+    </div>
+
+    <div class="input-container textarea span-2">
+      <label for={`message-${color}`}>{t("mailForm.message")}:</label>
+      <textarea
+        id={`message-${color}`}
+        name="message"
+        class="form-textarea"
+        rows="8"
+        maxlength="750"
+        required></textarea>
+      <div class="char-counter"><span class="char-count">0</span>/750</div>
+    </div>
+
+    <button type="submit" class={`submit-btn span-2 ${btnClasses}`}>
+      <span class="btn-text">{t("mailForm.send")}</span>
+      <span class="loader hidden"></span>
+    </button>
+  </form>
+</section>
+
+<script>
+  function setupMailForms() {
+    // We look for all form sections to handle multiple instances on the same page
+    const sections = document.querySelectorAll(".mail-form-section");
+
+    sections.forEach((section) => {
+      // If this section is already initialized, skip it
+      if (section.getAttribute("data-initialized") === "true") return;
+
+      const form = section.querySelector(".mail-form") as HTMLFormElement;
+      const textarea = section.querySelector(
+        ".form-textarea",
+      ) as HTMLTextAreaElement;
+      const charCount = section.querySelector(".char-count");
+      const statusMessage = section.querySelector(".status-message");
+      const submitBtn = section.querySelector(
+        ".submit-btn",
+      ) as HTMLButtonElement;
+
+      if (!form || !submitBtn || !statusMessage) return;
+
+      // Mark as initialized
+      section.setAttribute("data-initialized", "true");
+
+      // Character counter logic
+      if (textarea && charCount) {
+        textarea.addEventListener("input", () => {
+          const length = textarea.value.length;
+          charCount.textContent = length.toString();
+        });
+      }
+
+      // Submission logic
+      const btnText = submitBtn.querySelector(".btn-text");
+      const loader = submitBtn.querySelector(".loader");
+      const successMsg = form.dataset.successMsg || "";
+      const errorMsg = form.dataset.errorMsg || "";
+
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+
+        // UI State: Loading
+        submitBtn.disabled = true;
+        btnText?.classList.add("hidden");
+        loader?.classList.remove("hidden");
+        statusMessage.classList.add("hidden");
+
+        const formData = new FormData(form);
+        const data = Object.fromEntries(formData.entries());
+
+        try {
+          const response = await fetch(form.action, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              Accept: "application/json",
+            },
+            body: JSON.stringify(data),
+          });
+
+          if (response.ok) {
+            form.reset();
+            if (charCount) charCount.textContent = "0";
+            statusMessage.textContent = successMsg;
+            statusMessage.className = "status-message success";
+          } else {
+            throw new Error();
+          }
+        } catch (error) {
+          statusMessage.textContent = errorMsg;
+          statusMessage.className = "status-message error";
+        } finally {
+          submitBtn.disabled = false;
+          btnText?.classList.remove("hidden");
+          loader?.classList.add("hidden");
+          statusMessage.classList.remove("hidden");
+
+          // Scroll to status message
+          statusMessage.scrollIntoView({
+            behavior: "smooth",
+            block: "nearest",
+          });
+        }
+      });
+    });
+  }
+
+  setupMailForms();
+
+  document.addEventListener("astro:page-load", setupMailForms);
+</script>
+
+<style>
+  section {
+    padding: 4rem 2rem;
+  }
+
+  h2 {
+    margin-bottom: 3rem;
+  }
+
+  form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    row-gap: 1.5rem;
+    max-width: 900px;
+    margin: auto;
+  }
+
+  @media (max-width: 768px) {
+    form {
+      grid-template-columns: 1fr;
+    }
+    .span-2 {
+      grid-column: span 1;
+    }
+    section {
+      padding: 2rem 1rem;
+    }
+  }
+
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  label {
+    font-weight: 600;
+    font-size: 0.95rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  input,
+  textarea,
+  select {
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    padding: 0.85rem;
+    font-family: inherit;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.2s ease;
+    background-color: var(--mooyo-white);
+  }
+
+  input:hover,
+  textarea:hover,
+  select:hover {
+    border-color: #9ca3af;
+  }
+
+  input:focus,
+  textarea:focus,
+  select:focus {
+    border-color: var(--mooyo-red);
+    box-shadow: 0 0 0 3px rgba(165, 101, 95, 0.1);
+  }
+
+  .textarea {
+    margin-top: 0.5rem;
+  }
+
+  textarea {
+    resize: vertical;
+    max-height: 600px;
+    min-height: 150px;
+  }
+
+  button {
+    padding: 1.25rem;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 4rem;
+  }
+
+  .optional {
+    font-size: 0.8rem;
+    font-weight: normal;
+    opacity: 0.7;
+  }
+
+  .span-2 {
+    grid-column: span 2;
+  }
+
+  .char-counter {
+    text-align: right;
+    font-size: 0.85rem;
+    margin-top: 6px;
+    color: #6b7280;
+  }
+
+  /* Status Messages */
+  .status-message {
+    max-width: 900px;
+    margin: 0 auto 2rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 600;
+    font-family: inherit;
+    border: 2px solid transparent;
+  }
+
+  /* Blending with brand colors */
+  section[color-variant="red"] .status-message.success {
+    background-color: var(--mooyo-white);
+    color: var(--mooyo-red);
+  }
+
+  section[color-variant="red"] .status-message.error {
+    background-color: var(--mooyo-black);
+    color: var(--mooyo-white);
+  }
+
+  section[color-variant="gray"] .status-message.success {
+    background-color: var(--mooyo-white);
+    color: var(--mooyo-red);
+    border-color: var(--mooyo-red);
+  }
+
+  section[color-variant="gray"] .status-message.error {
+    background-color: var(--mooyo-red);
+    color: var(--mooyo-white);
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  /* Loader */
+  .loader {
+    width: 24px;
+    height: 24px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: #fff;
+    animation: spin 1s ease-in-out infinite;
+  }
+
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  /* Color Variants */
+  section[color-variant="red"] {
+    background-color: var(--mooyo-red);
+    color: var(--mooyo-white);
+  }
+
+  section[color-variant="red"] h2 {
+    color: var(--mooyo-white);
+  }
+
+  section[color-variant="red"] input,
+  section[color-variant="red"] textarea,
+  section[color-variant="red"] select {
+    background-color: var(--mooyo-gray);
+    border-color: transparent;
+  }
+
+  section[color-variant="red"] input:focus,
+  section[color-variant="red"] textarea:focus,
+  section[color-variant="red"] select:focus {
+    background-color: var(--mooyo-white);
+    border-color: var(--mooyo-white);
+  }
+
+  section[color-variant="red"] .char-counter {
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  section[color-variant="gray"] {
+    background-color: var(--mooyo-gray);
+  }
+
+  section[color-variant="gray"] h2 {
+    color: var(--mooyo-red);
+  }
+</style>

@@ -80,7 +80,7 @@ li,
   color: var(--mooyo-text-red);
 }
 .text-white {
-  color: white;
+  color: rgb(241, 234, 234);
 }
 .text-black {
   color: black;
@@ -116,6 +116,10 @@ h4 {
   font-weight: 700;
 }
 
+.margin-0 {
+  margin: 0;
+}
+
 .col3 {
   display: grid;
   grid-template-columns: 350px 350px 350px;
@@ -144,6 +148,7 @@ h4 {
 
 ul.star-list,
 ul.none-list,
+ul.dashed-list,
 ul.infinity-list {
   list-style: none;
   padding-left: 1.5rem;
@@ -163,12 +168,20 @@ ul.infinity-list li::before {
   margin-left: -1.5em;
 }
 
+ul.dashed-list li::before {
+  content: "-";
+  display: inline-block;
+  width: 1.5em;
+  margin-left: -1.5em;
+}
+
 button {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   padding: 0.5rem 2rem;
   border-radius: 1rem;
   border: none;
   cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
 .red-btn {
@@ -181,9 +194,24 @@ button {
   color: var(--mooyo-black);
 }
 
-.red-btn:hover,
-.white-btn:hover {
+button:hover {
+  transform: translatey(-4px);
   opacity: 0.8;
+}
+
+.btn-reset {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+
+  color: inherit;
+  font: inherit;
+  box-shadow: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Responsive */
