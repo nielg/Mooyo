@@ -195,7 +195,7 @@ export const ui = {
 
     // Filosofie section 4
     "intro-pillars.text1":
-      "Mooyo werkt met vier basispijlers die in voortdurende dialoog zijn met elkaar. Wanneer één pijler uit evenwicht raakt, beïnvloedt dat het geheel — en precies daarom is het zo belangrijk om op alle niveaus beweging te brengen zodat ze in balans zijn.",
+      "Mooyo werkt met vier basispijlers die in voortdurende dialoog zijn met elkaar. Wanneer één pijler uit evenwicht is, beïnvloedt dat het geheel. Daarom is het belangrijk om naar alle niveaus te kijken zodat er terug balans kan ontstaan.",
     "intro-pillars.text2":
       "Mooyo brengt mensen dichter bij hun essentie zodat ze hartgedragen keuzes in hun leven kunnen maken.",
 
@@ -342,7 +342,7 @@ export const ui = {
       "is het hoogste niveau: vanuit rust en emotionele helderheid kun je authentiek contact maken — met jezelf én met anderen. Dit is waar hartcoherentie uitmondt in echte aanwezigheid, empathie en samenwerking.",
     "Prices.deeptimewalk.title": "Deep Time Walk",
     "Prices.deeptimewalk.description":
-      "Een DeepTimeWalk is een transformatieve, begeleide wandeling door 4,6 miljard jaar geschiedenis van de Aarde. Het is een uitnodiging om onze relatie met Planeet Aarde te bevragen, onze plek binnen haar ecosystemen te verkennen, en onze kijk op de wereld te veranderen.",
+      "Een DeepTimeWalk is een transformatieve, begeleide wandeling door 4,6 miljard jaar geschiedenis van de Aarde. Het is een uitnodiging om onze relatie met Planeet Aarde te bevragen, onze plek binnen haar ecosystemen te verkennen, en onze kijk op de wereld en onszelf te veranderen.",
     "Prices.deeptimewalk.price.label": "Prijs",
     "Prices.deeptimewalk.price.text": "Een halve dag voor 500 euro (excl BTW).",
     "Prices.deeptimewalk.experience.title": "Unieke beleving",
@@ -350,7 +350,7 @@ export const ui = {
       "Een ervaring van de enorme uitgestrektheid van 4,6 miljard jaar op menselijke schaal, waarbij elke meter staat voor 1 miljoen jaar. We staan stil bij de grote aardse revoluties: van het ontstaan van onze maan tot de opkomst van foto-synthese, hoe complex leven zich vormde en tenslotte tot de recente verschijning van de moderne mens (in slechts de laatste 30 cm van de wandeling!).",
     "Prices.deeptimewalk.perspective.title": "Perspectief verschuiving",
     "Prices.deeptimewalk.perspective.text":
-      "Veel deelnemers beschrijven een verandering in hoe zij hun relatie met onze planeet zien. Welke verandering merk jij?",
+      "Veel deelnemers beschrijven een verandering in hoe zij hun relatie met onze planeet ervaren. Welke verandering merk jij?",
     "Prices.deeptimewalk.reflection.title": "Persoonlijke reflectie",
     "Prices.deeptimewalk.body.title": "Lichaam",
     "Prices.deeptimewalk.body.text":
@@ -394,7 +394,7 @@ export const ui = {
     "Prices.construct.li4": "Nieuwsgierigheid als startpunt voor groei",
     "Prices.reconstructive.title": "Reconstructive",
     "Prices.reconstructive.text":
-      "Voor wie al wat innerlijk werk gedaan heeft en voelt dat er via het lichaam iets verder mag bewegen.",
+      "Ervaar de transformerende kracht van Reconstructive en kom dichter bij je intuïtie, je vrijheid en je kern.",
     "Prices.reconstructive.format": "2 dagen",
     "Prices.reconstructive.for": "individu",
     "Prices.reconstructive.location": "Leuven",
@@ -424,8 +424,8 @@ export const ui = {
     "Prices.label.data": "Data",
     "Prices.label.price": "Prijs",
     "Prices.footprints.title": "Footprints",
-    "Prices.footprints.li1": "Een sessie van 60 min is 55 euro (incl BTW)",
-    "Prices.footprints.li2": "Een sessie van 90 min is 75 euro (incl BTW)",
+    "Prices.footprints.li1": "Een sessie van 60 min is 70 euro (incl BTW)",
+    "Prices.footprints.li2": "Een sessie van 90 min is 90 euro (incl BTW)",
     "Prices.footprints.details":
       "Footprints-methode is een individuele begeleiding van 4 sessies die een essentiële sleutel vormt naar een vrije leven. Wanneer je één van volgende patronen bij jezelf herkent kan Footprints hierop verandering brengen: pleasen, zorgen voor, constact bezig zijn, controleren, nog harder je best doen. Footprints is een ontmoeting met je eigen innerlijke wereld en opent de deur naar emotionele volwassenhied waarbij jouw plek in het systeem geëerd worden waardoor er helderheid ontstaat. Na de eertse sessie voel je je al lichter, de volgende sessies verdiepen dit gevoel waardoor integratie in het dagelijks leven voelbaar en blijvend wordt.",
     "Prices.seeMore": "Zie meer...",
@@ -434,7 +434,7 @@ export const ui = {
     "Prices.info": "Voor info en aanmelden, mail",
     "Prices.gold.title": "Find your gold",
     "Prices.gold.text":
-      "Een thuiskomen bij jezelf. Tijdens deze innerlijke tocht komen we laag na laag dichterbij jouw blauwdruk, zodat zichtbaar wordt wie je altijd al was.",
+      "Ga op een diepgaande reis door natuur en lichaam, en keer terug naar de essentie van wie jij werkelijk bent.",
     "Prices.gold.for": "individu",
     "Prices.gold.location":
       "Zuid Noorwegen in een rustige, natuurlijke omgeving",
