@@ -1,5 +1,3 @@
-// Coment
-
 export const languages = {
   nl: "nl",
   en: "en",
@@ -413,11 +411,11 @@ export const ui = {
       "(within 3 min walking distance from Leuven train station).",
 
     // Index section 1
-    "index.intro.text1": "Heart, life, soul, spirit, energy.",
+    "index.intro.text1": " Heart, Life, Soul, Spirit",
     "index.intro.text2":
       "In various African languages, Mooyo refers to both the physical heart and the inner essence or life energy.",
     "index.intro.text3":
-      "Mooyo is an invitation to be fully present with everything you carry, exactly as you are.",
+      "Are you willing to listen to your heart and discover how you can approach every situation from the strength of your heart?",
 
     // Index section 2
     "index.welcome.title": "Welcome",
@@ -450,13 +448,6 @@ export const ui = {
       "Mooyo invites you to start at the origin: at the silent center where your truth, your pain, and your potential converge. When we go to that core, something opens. Not by pushing or analyzing, but by feeling, sinking, acknowledging. As long as the core is not touched, it continues to feel as if you are on a journey without direction. The process only truly begins when you touch the core, not as a new search outside yourself, but as a homecoming within yourself.",
     "index.s4.text2": "Are you prepared to move and listen to your heart?",
 
-    // Index section 6
-    "index.s6.text1": "Feel first, think later.",
-    "index.s6.text2": "Truth first, then form.",
-    "index.s6.text3": "Inner alignment first, then action.",
-    "index.s6.text4":
-      "Mooyo is an invitation to live from within, not from habit or expectation.",
-
     // Aanbod
     "aanbod.title": "Offerings",
 
@@ -471,7 +462,7 @@ export const ui = {
 
     // Aanbod section 5
     "openHartCirkels.title": "Open heart circles",
-    "openHartCirkels.text": "For more information see (expected late June):",
+    "openHartCirkels.text": "For more information see (expected late September):",
 
     // Aanbod section 6
     "aanbod.s6.text":
@@ -482,17 +473,18 @@ export const ui = {
 
     // Filosofie section 4
     "intro-pillars.text1":
-      "Mooyo works with four core pillars that are in constant dialogue with each other. When one pillar becomes unbalanced, it affects the whole — and that is precisely why it is so important to bring movement to all levels so they are in balance.",
+      "Mooyo works with four core pillars that are in constant dialogue with each other. When one pillar becomes unbalanced, it affects the whole. Therefore, it is important to look at all levels so that balance can be restored.",
     "intro-pillars.text2":
       "Mooyo brings people closer to their essence so they can make heart-centered choices in their lives.",
 
     // Filosofie section 5
-    "pillars.bewustzijn.title1": "Awareness - The Whole",
+    "pillars.bewustzijn.title": "The Whole",
+    "pillars.bewustzijn.subtitle1": "Awareness",
+    "pillars.bewustzijn.subtitle2": "The Power of Your Roots",
     "pillars.bewustzijn.img.text1":
       "A circle with an opening and a floating dot above it represents awareness.",
     "pillars.bewustzijn.img.text2":
       "Meaning: the mental space where perception, interpretation, and meaning arise.",
-    "pillars.bewustzijn.title2": "The Power of Your Roots",
     "pillars.bewustzijn.list1":
       "Truth-telling: looking honestly at your past, your patterns.",
     "pillars.bewustzijn.list2":
@@ -501,12 +493,13 @@ export const ui = {
       "Every conditioning has both an energetic aspect and an awareness part.",
     "pillars.bewustzijn.list4":
       "Because conditionings often arise before language development, they are emotional in nature and cannot be reached through the intellect.",
-    "pillars.adem.title1": "Breath - The Now",
+    "pillars.adem.title": "The Now",
+    "pillars.adem.subtitle1": "Breath",
+    "pillars.adem.subtitle2": "The Power of the Moment",
     "pillars.adem.img.text1":
       "The two wavy lines represent connection: the inhalation and exhalation. The line represents the diaphragm and stands for support.",
     "pillars.adem.img.text2":
       "Meaning: Breath as a bridge between body and mind, influencing emotions, nervous systems, and mental clarity.",
-    "pillars.adem.title2": "The Power of the Moment",
     "pillars.adem.list1":
       "Accepting life as it is now, not as you would like it to be.",
     "pillars.adem.list2":
@@ -515,24 +508,26 @@ export const ui = {
       "Breathing is the gate between the conscious and unconscious: we can consciously guide the breath while it also works autonomously.",
     "pillars.adem.list4":
       "Breathing plays an important role in our daily lives and can be used as regulation during stress or discomfort.",
-    "pillars.hart.title1": "The Heart - The Future",
+    "pillars.hart.title": "The Future",
+    "pillars.hart.subtitle1": "The Heart",
+    "pillars.hart.subtitle2": "The Power of Courage",
     "pillars.hart.img.text1":
       "The spiral continuously nourished by warmth and humanity.",
     "pillars.hart.img.text2":
       "Meaning: The power of sincere (self)compassion and the center of courage to allow discomfort.",
-    "pillars.hart.title2": "The Power of Courage",
     "pillars.hart.list1":
       "Heart coherence is a way to practice self-regulation and an invitation to build resilience. It is also a gateway to our higher self.",
     "pillars.hart.list2":
       "The courage to take (back) our place with everything that belongs to it.",
     "pillars.hart.list3":
       "Recognizing habits and belief systems with compassion and developing the courage to break through them.",
-    "pillars.bewust.title1": "Body - The Past",
+    "pillars.bewust.title": "The Past",
+    "pillars.bewust.subtitle1": "Body",
+    "pillars.bewust.subtitle2": "The Power of Growing Up",
     "pillars.bewust.img.text1":
       "The segments are different - a reference to memories, scars, history.",
     "pillars.bewust.img.text2":
       "Meaning: The body as the bearer of all that has been.",
-    "pillars.bewust.title2": "The Power of Growing Up",
     "pillars.bewust.list1":
       "The meeting between the child part and the adult part.",
     "pillars.bewust.list2":
@@ -574,7 +569,7 @@ export const ui = {
     "about.s2.e1.text6":
       "I am grateful for everything that has been; it has shaped me and brought much good. I look forward to the future with hope. Out of that gratitude, Mooyo was born — my inspiration and my commitment to guide others on their own unique journey.",
     "about.s2.e1.text7":
-      "Currently, I work part-time at Adem vzw as a Team Coach and part-time as a freelancer.",
+      "Currently, I work part-time at Adem vzw as a Team Coach and half-time as a freelancer.",
     "about.s2.e2.title": "Why choose Mooyo?",
     "about.s2.e2.text1":
       "My guidance style is characterized by a deep quality of presence and a calm stillness. This allows me to create a safe and supportive environment in which you can fully open up and grow.",
@@ -591,7 +586,7 @@ export const ui = {
     "Prices.e1.details":
       "I guide people who feel it is time to move again. People who consciously (re)choose for life, for connection, and for fully embodying their potential. Whether you are looking for clarity, direction, growth, or healing: at Mooyo you find a place where you are seen and supported. Experience that life has more to offer when you dare to move from your heart.",
     "Prices.title.individual": "Individual guidance",
-    "Prices.title.workshops": "Workshops - Transformation experience",
+    "Prices.title.workshops": "Transformative experiences",
     "Prices.title.organizations": "Organizations and Teams",
     "Prices.burnout.title": "Heart coherence - burn-out",
     "Prices.burnout.description":
@@ -607,7 +602,7 @@ export const ui = {
       "is the highest level: from peace and emotional clarity, you can make authentic contact — with yourself and with others. This is where heart coherence culminates in true presence, empathy, and collaboration.",
     "Prices.deeptimewalk.title": "Deep Time Walk",
     "Prices.deeptimewalk.description":
-      "A DeepTimeWalk is a transformative, guided walk through 4.6 billion years of Earth's history. It is an invitation to question our relationship with Planet Earth, explore our place within its ecosystems, and change our view of the world.",
+      "A DeepTimeWalk is a transformative, guided walk through 4.6 billion years of Earth's history. It is an invitation to question our relationship with Planet Earth, explore our place within its ecosystems, and change our view of the world and ourselves.",
     "Prices.deeptimewalk.price.label": "Price",
     "Prices.deeptimewalk.price.text": "500 euros (excl. VAT) for a half day.",
     "Prices.deeptimewalk.experience.title": "Unique experience",
@@ -659,7 +654,7 @@ export const ui = {
     "Prices.construct.li4": "Curiosity as a starting point for growth",
     "Prices.reconstructive.title": "Reconstructive",
     "Prices.reconstructive.text":
-      "For those who have already done some inner work and feel that something can move further through the body.",
+      "Experience the transforming power of Reconstructive and come closer to your intuition, your freedom and your core.",
     "Prices.reconstructive.format": "2 days",
     "Prices.reconstructive.for": "individual",
     "Prices.reconstructive.location": "Leuven",
@@ -700,13 +695,13 @@ export const ui = {
     "Prices.footprints.details.li4": "controlling",
     "Prices.footprints.details.li5": "trying even harder",
     "Prices.footprints.details.text2":
-      "      pleasing, caring for, being constantly busy, controlling, trying even harder. Footprints is an encounter with your own inner world and opens the door to emotional maturity where your place in the system is honored, creating clarity. After the first session you already feel lighter; the following sessions deepen this feeling, making integration into daily life tangible and lasting.",
+      "Footprints is an encounter with your own inner world and opens the door to emotional maturity where your place in the system is honored, creating clarity. After the first session you already feel lighter; the following sessions deepen this feeling, making integration into daily life tangible and lasting.",
     "Prices.seeMore": "See more...",
-    "Prices.collab": "In collaboration with Elke Busschots",
+    "Prices.collab": "In collaboration with Elke Busschots, ",
     "Prices.info": "For info and registration, email",
     "Prices.gold.title": "Find your gold",
     "Prices.gold.text":
-      "A homecoming to yourself. During this inner journey, we come layer by layer closer to your blueprint, so that who you have always been becomes visible.",
+      "Go on a deep journey through nature and body, and return to the essence of who you truly are.",
     "Prices.gold.format": "6 days",
     "Prices.gold.for": "individual",
     "Prices.gold.location": "South Norway in a quiet, natural environment",
@@ -726,11 +721,11 @@ export const ui = {
 
     // Aanbod card
     "aanbodCard.individual.text":
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, id. Nobis facilis excepturi dolor repudiandae dolores aperiam ab, doloremque distinctio, mollitia ex sint. Est quod molestiae non exercitationem assumenda beatae.",
+      "Whether you are looking for clarity, direction, growth, or healing: at Mooyo you find a place where you are seen and supported. Experience that life has more to offer when you dare to move from your heart.",
     "aanbodCard.workshops.text":
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, id. Nobis facilis excepturi dolor repudiandae dolores aperiam ab, doloremque distinctio, mollitia ex sint. Est quod molestiae non exercitationem assumenda beatae.",
+      "Experience activities that open your awareness and invite you to look at yourself, your life and the world from a new perspective. During these moments, fresh insights, different ways of perceiving and innovative feelings are offered.",
     "aanbodCard.organizations.text":
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, id. Nobis facilis excepturi dolor repudiandae dolores aperiam ab, doloremque distinctio, mollitia ex sint. Est quod molestiae non exercitationem assumenda beatae.",
+      "Organizations willing to let the heart speak can count on guidance that goes beyond methods and models. Mooyo also offers a team-building activity.",
     "aanbodCard.seeMore": "read more →",
 
     // MailForm
@@ -743,10 +738,10 @@ export const ui = {
     "mailForm.service.workshops": "Workshops / Experiences",
     "mailForm.service.organizations": "Organizations and Teams",
     "mailForm.service.other": "Something else",
-    "mailForm.phone": "Phone number",
-    "mailForm.message": "Message",
-    "mailForm.send": "Send message",
-    "mailForm.success": "Thank you! Your message has been sent.",
-    "mailForm.error": "Something went wrong. Please try again later.",
+    "phone": "Phone number",
+    "message": "Message",
+    "send": "Send message",
+    "success": "Thank you! Your message has been sent.",
+    "error": "Something went wrong. Please try again later.",
   },
 } as const;
