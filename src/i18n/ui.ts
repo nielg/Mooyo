@@ -216,7 +216,7 @@ export const ui = {
       "Begeleidingen kunnen ook online plaatsvinden.  Dit werkt even diep, even transformerend. Het gaat om de interne beweging die ontstaat bij jou. Verandering gebeurt immers in het lichaam en in het bewustzijn en dat kan ook wanneer er fysieke afstand is. Wat telt, is dat jij je er comfortabel bij voelt. Wanneer dat aanwezig is, kan het proces zich net zo krachtig ontvouwen.",
     "Prices.e1.title1": "Individuele begeleidingen",
     "Prices.e1.li1": "Een sessie van 60 min is 70 euro (incl BTW)",
-    "Prices.e1.li2": "Een sessie van 90 min is 90 euro (incl BTW)",
+    "Prices.e1.li2": "Een sessie van 90 min is 100 euro (incl BTW)",
     "Prices.e1.details":
       "Ik begeleid mensen die voelen dat het tijd is om opnieuw in beweging te komen. Mensen die bewust (opnieuw) willen voor het leven, voor verbinding en voor het volledig belichamen van hun potentieel. Of je nu op zoek bent naar helderheid, richting, groei of heling: bij Mooyo vind je een plek waar je gezien en gedragen wordt. Ervaar dat het leven meer te bieden heeft wanneer je vanuit je hart durft te bewegen",
     "Prices.title.individual": "Individuele begeleidingen",
@@ -258,7 +258,7 @@ export const ui = {
       "Voor vriendengroepen, verenigingen en families, wil je meer weten over de workshop en de prijs. Stuur een mail naar",
     "Prices.koppels.title": "Begeleiding van koppels",
     "Prices.koppels.li1": "Een sessie van 60 min is 100 euro (incl BTW)",
-    "Prices.koppels.li2": "Een sessie van 90 min is 120 euro (incl BTW)",
+    "Prices.koppels.li2": "Een sessie van 90 min is 130 euro (incl BTW)",
     "Prices.koppels.details":
       "Ook koppels die verlangen naar meer verbinding, begrip en gezamenlijke groei zijn hier welkom. Koppels die bereid zijn om met openheid en moed naar hun eigen innerlijke delen te kijken zoals delen die geraakt worden, die zich terugtrekken, die verlangen, die beschermen. In hartgedragen begeleiding creëren we een veilige bedding waarin beide partners kunnen thuiskomen bij zichzelf én bij elkaar. Vanuit zachtheid, eerlijkheid en aanwezigheid onderzoeken we wat er onder de oppervlakte leeft, zodat liefde, helderheid en echte ontmoeting opnieuw ruimte krijgen.",
     "Prices.e3.title": "Begeleiding van organisaties",
@@ -318,8 +318,8 @@ export const ui = {
     "Prices.label.data": "Data",
     "Prices.label.price": "Prijs",
     "Prices.footprints.title": "Footprints",
-    "Prices.footprints.li1": "Een sessie van 60 min is 55 euro (incl BTW)",
-    "Prices.footprints.li2": "Een sessie van 90 min is 75 euro (incl BTW)",
+    "Prices.footprints.li1": "Een sessie van 60 min is 70 euro (incl BTW)",
+    "Prices.footprints.li2": "Een sessie van 90 min is 100 euro (incl BTW)",
     "Prices.footprints.details.text1":
       "Footprints-methode is een individuele begeleiding van 4 sessies die een essentiële sleutel vormt naar een vrije leven. Wanneer je één van volgende patronen bij jezelf herkent kan Footprints hierop verandering brengen:",
     "Prices.footprints.details.li1": "pleasen",
