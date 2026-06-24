@@ -16,9 +16,10 @@ const translatePath = useTranslatedPath(lang);
 const POSTS_QUERY = `*[
   _type == "post"
   && defined(slug.current)
-]|order(publishedAt desc)[0...12]{_id, title, slug, publishedAt}`;
+  && language == $lang
+]|order(publishedAt desc)[0...12]{_id, title, slug, publishedAt, description, language}`;
 
-const posts = await sanityClient.fetch<SanityDocument[]>(POSTS_QUERY);
+const posts = await sanityClient.fetch<SanityDocument[]>(POSTS_QUERY, { lang });
 ---
 
 <Layout title="posts">
@@ -54,12 +55,13 @@ const posts = await sanityClient.fetch<SanityDocument[]>(POSTS_QUERY);
 
             <div class="post-footer">
               <a href={translatePath(`/posts/${post.slug.current}`)}>
-                <button class="red-btn">Lees meer</button>
+                <button class="red-btn">{t("post.readMore")}</button>
               </a>
             </div>
           </article>
         ))
       }
+      {posts.length === 0 && <p>{t("posts.noPosts")}</p>}
     </div>
   </section>
 </Layout>

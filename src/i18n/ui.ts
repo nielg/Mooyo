@@ -3,6 +3,8 @@ export const languages = {
   en: "en",
 };
 
+export const supportedLanguages = Object.values(languages);
+
 export const showDefaultLang = false;
 
 export const defaultLang = "nl";
@@ -214,6 +216,13 @@ export const ui = {
       "Mijn begeleidingsstijl wordt gekenmerkt door een diepe kwaliteit van aanwezigheid en een kalme rust. Dit stelt mij in staat om een veilige en ondersteunende omgeving te creëren waarin jij je volledig kunt openstellen en groeien.",
     "about.s2.e2.text2":
       "Drie jaar geleden kwam ik in aanraking met het boeddhisme en meditatie. Sindsdien is het boeddhistisch gedachten goed en dagelijkse meditatie een vast onderdeel van mijn leven geworden. Het helpt me om met meer helderheid, rust en aanwezigheid in het leven te staan — kwaliteiten die ik ook meeneem in mijn werk met anderen.",
+
+    // Posts
+
+    "posts.noPosts": "Er zijn momenteel geen berichten beschikbaar",
+    "post.readMore": "lees meer",
+    "post.back": "Terug naar posts",
+    "post.published": "gepubliceerd",
 
     // Components
 
@@ -587,6 +596,12 @@ export const ui = {
       "My guidance style is characterized by a deep quality of presence and a calm stillness. This allows me to create a safe and supportive environment in which you can fully open up and grow.",
     "about.s2.e2.text2":
       "Three years ago, I came into contact with Buddhism and meditation. Since then, Buddhist philosophy and daily meditation have become a fixed part of my life. It helps me stand in life with more clarity, peace, and presence — qualities that I also bring into my work with others.",
+
+    // Posts
+    "posts.noPosts": "There are currently no posts available",
+    "post.readMore": "read more",
+    "post.back": "Back to posts",
+    "post.published": "published",
 
     // Components
     "Prices.title": "Offerings ∞ Rates",
