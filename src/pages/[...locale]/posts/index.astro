@@ -1,0 +1,130 @@
+---
+import type { SanityDocument } from "@sanity/client";
+import { sanityClient } from "sanity:client";
+import Layout from "../../../layouts/Layout.astro";
+import {
+  getLangFromUrl,
+  useTranslations,
+  getStaticPaths,
+  useTranslatedPath,
+} from "../../../i18n/utils";
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+export { getStaticPaths };
+const translatePath = useTranslatedPath(lang);
+
+const POSTS_QUERY = `*[
+  _type == "post"
+  && defined(slug.current)
+]|order(publishedAt desc)[0...12]{_id, title, slug, publishedAt}`;
+
+const posts = await sanityClient.fetch<SanityDocument[]>(POSTS_QUERY);
+---
+
+<Layout title="posts">
+  <section class="back-red text-white">
+    <h1 class="text-align-center text-white">Posts</h1>
+    <div class="text-margin">
+      <p class="text-align-center">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos repellat
+        tenetur fuga praesentium cupiditate minus distinctio molestias veritatis
+        qui. Aperiam sint magni sequi hic veritatis? Libero alias dicta hic
+        vitae.
+      </p>
+    </div>
+    <div class="container">
+      {
+        posts.map((post) => (
+          <article class="post-card back-white text-black">
+            <div class="post-content">
+              <div class="post-meta">
+                <time datetime={post.publishedAt}>
+                  {new Date(post.publishedAt).toLocaleDateString("nl-NL", {
+                    year: "numeric",
+                    month: "long",
+                    day: "numeric",
+                  })}
+                </time>
+              </div>
+
+              <h2 class="post-title-link">{post.title}</h2>
+
+              <p class="post-excerpt">{post.description}</p>
+            </div>
+
+            <div class="post-footer">
+              <a href={translatePath(`/posts/${post.slug.current}`)}>
+                <button class="red-btn">Lees meer</button>
+              </a>
+            </div>
+          </article>
+        ))
+      }
+    </div>
+  </section>
+</Layout>
+
+<style>
+  section {
+    padding: 2rem;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+  }
+  /* --- POST CARD --- */
+  .post-card {
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow:
+      0 4px 6px -1px rgba(0, 0, 0, 0.05),
+      0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(28, 61, 39, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition:
+      transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+      box-shadow 0.3s ease;
+    width: 80vw;
+  }
+
+  .post-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 20px -3px rgba(0, 0, 0, 0.08);
+  }
+  .post-meta {
+    text-transform: uppercase;
+    color: var(--text-gray);
+  }
+
+  .post-title-link {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+  }
+
+  .post-excerpt {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+
+  /* --- BUTTON / FOOTER --- */
+  .post-footer {
+    margin-top: auto;
+    padding-top: 1rem;
+  }
+</style>
