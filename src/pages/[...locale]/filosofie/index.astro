@@ -28,10 +28,13 @@ const t = useTranslations(lang);
   </section>
   <section class="pillars back-gray text-align-center center text-black">
     <div class="container">
-      <h2 class="text-red margin-0">{t("pillars.bewustzijn.title")}</h2>
+      <div class="header">
+        <h3 class="text-red">{t("pillars.bewustzijn.subtitle1")}</h3>
+        <h2 class="text-red margin-0">{t("pillars.bewustzijn.title")}</h2>
+        <h3 class="text-red">{t("pillars.bewustzijn.subtitle2")}</h3>
+      </div>
       <div class="col2">
         <div>
-          <h3 class="text-red">{t("pillars.bewustzijn.subtitle1")}</h3>
           <div class="img-container bold">
             <Image
               src={bewustzijn_rond}
@@ -50,7 +53,6 @@ const t = useTranslations(lang);
           </div>
         </div>
         <div>
-          <h3 class="text-red">{t("pillars.bewustzijn.subtitle2")}</h3>
           <ul class="text-align-justify infinity-list regular-font">
             <li>{t("pillars.bewustzijn.list1")}</li>
             <li>{t("pillars.bewustzijn.list2")}</li>
@@ -61,10 +63,13 @@ const t = useTranslations(lang);
       </div>
     </div>
     <div class="container">
-      <h2 class="text-red margin-0">{t("pillars.adem.title")}</h2>
+      <div class="header">
+        <h3 class="text-red">{t("pillars.adem.subtitle1")}</h3>
+        <h2 class="text-red margin-0">{t("pillars.adem.title")}</h2>
+        <h3 class="text-red">{t("pillars.adem.subtitle2")}</h3>
+      </div>
       <div class="col2">
         <div>
-          <h3 class="text-red">{t("pillars.adem.subtitle1")}</h3>
           <div class="img-container bold">
             <Image
               src={adem_rond}
@@ -82,7 +87,6 @@ const t = useTranslations(lang);
           </div>
         </div>
         <div class="text-container">
-          <h3 class="text-red">{t("pillars.adem.subtitle2")}</h3>
           <ul class="text-align-justify infinity-list regular-font">
             <li>{t("pillars.adem.list1")}</li>
             <li>{t("pillars.adem.list2")}</li>
@@ -93,10 +97,13 @@ const t = useTranslations(lang);
       </div>
     </div>
     <div class="container">
-      <h2 class="text-red margin-0">{t("pillars.hart.title")}</h2>
+      <div class="header">
+        <h3 class="text-red">{t("pillars.hart.subtitle1")}</h3>
+        <h2 class="text-red margin-0">{t("pillars.hart.title")}</h2>
+        <h3 class="text-red">{t("pillars.hart.subtitle2")}</h3>
+      </div>
       <div class="col2">
         <div>
-          <h3 class="text-red">{t("pillars.hart.subtitle1")}</h3>
           <div class="img-container bold">
             <Image
               src={hart_rond}
@@ -114,7 +121,6 @@ const t = useTranslations(lang);
           </div>
         </div>
         <div>
-          <h3 class="text-red">{t("pillars.hart.subtitle2")}</h3>
           <ul class="text-align-justify infinity-list regular-font">
             <li>{t("pillars.hart.list1")}</li>
             <li>{t("pillars.hart.list2")}</li>
@@ -124,10 +130,13 @@ const t = useTranslations(lang);
       </div>
     </div>
     <div class="container">
-      <h2 class="text-red margin-0">{t("pillars.bewust.title")}</h2>
+      <div class="header">
+        <h3 class="text-red">{t("pillars.bewust.subtitle1")}</h3>
+        <h2 class="text-red margin-0">{t("pillars.bewust.title")}</h2>
+        <h3 class="text-red">{t("pillars.bewust.subtitle2")}</h3>
+      </div>
       <div class="col2">
         <div>
-          <h3 class="text-red">{t("pillars.bewust.subtitle1")}</h3>
           <div class="img-container bold">
             <Image
               src={lichaam_rond}
@@ -145,7 +154,6 @@ const t = useTranslations(lang);
           </div>
         </div>
         <div>
-          <h3 class="text-red">{t("pillars.bewust.subtitle2")}</h3>
           <ul class="text-align-justify infinity-list regular-font">
             <li>{t("pillars.bewust.list1")}</li>
             <li>{t("pillars.bewust.list2")}</li>
@@ -197,6 +205,14 @@ const t = useTranslations(lang);
 
     .pillars .container:last-of-type {
       border-bottom: none;
+    }
+
+    .pillars .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-direction: row;
+      margin: 2rem;
     }
 
     .img-container {

@@ -331,7 +331,7 @@ export const ui = {
       "Footprints is een ontmoeting met je eigen innerlijke wereld en opent de deur naar emotionele volwassenhied waarbij jouw plek in het systeem geëerd worden waardoor er helderheid ontstaat. Na de eertse sessie voel je je al lichter, de volgende sessies verdiepen dit gevoel waardoor integratie in het dagelijks leven voelbaar en blijvend wordt.",
     "Prices.seeMore": "Zie meer...",
     "Prices.collab": "In samenwerking met Elke Busschots, ",
-    "Prices.info": "Voor info en aanmelden, mail",
+    "Prices.info": "Voor info en aanmelden, mail ",
     "Prices.gold.title": "Find your gold",
     "Prices.gold.text":
       "Ga op een diepgaande reis door natuur en lichaam, en keer terug naar de essentie van wie jij werkelijk bent.",
@@ -462,7 +462,8 @@ export const ui = {
 
     // Aanbod section 5
     "openHartCirkels.title": "Open heart circles",
-    "openHartCirkels.text": "For more information see (expected late September):",
+    "openHartCirkels.text":
+      "For more information see (expected late September):",
 
     // Aanbod section 6
     "aanbod.s6.text":
@@ -738,10 +739,10 @@ export const ui = {
     "mailForm.service.workshops": "Workshops / Experiences",
     "mailForm.service.organizations": "Organizations and Teams",
     "mailForm.service.other": "Something else",
-    "phone": "Phone number",
-    "message": "Message",
-    "send": "Send message",
-    "success": "Thank you! Your message has been sent.",
-    "error": "Something went wrong. Please try again later.",
+    phone: "Phone number",
+    message: "Message",
+    send: "Send message",
+    success: "Thank you! Your message has been sent.",
+    error: "Something went wrong. Please try again later.",
   },
 } as const;
