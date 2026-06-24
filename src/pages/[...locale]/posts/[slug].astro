@@ -30,7 +30,7 @@ export async function getStaticPaths() {
   return supportedLanguages.flatMap((l) => {
     return posts.map((post) => ({
       params: {
-        lang: l === "nl" ? undefined : l,
+        locale: l === "nl" ? undefined : l,
         slug: post.slug,
       },
     }));
