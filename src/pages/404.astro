@@ -1,0 +1,74 @@
+---
+import Layout from "@layouts/Layout.astro";
+---
+
+<Layout title="404 - Pagina niet gevonden">
+  <main class="error-container back-red text-white">
+    <section class="error-content">
+      <div class="error-code">404</div>
+
+      <h1>Oeps! Pagina niet gevonden</h1>
+      <p class="error-message">
+        Het ziet er naar uit dat deze pagina niet meer bestaat of is verhuisd.
+      </p>
+
+      <div class="action-wrapper">
+        <a href="/reconstructive" class="white-btn btn"> Terug naar home </a>
+      </div>
+    </section>
+  </main>
+</Layout>
+
+<style>
+  .error-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 200px);
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .error-content {
+    max-width: 500px;
+    animation: fadeIn 0.6s ease-out;
+  }
+
+  .error-code {
+    font-size: 6rem;
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: 1rem;
+    opacity: 0.15;
+    letter-spacing: -0.05em;
+  }
+
+  h1 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  .error-message {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
+    color: #e2e8f0;
+  }
+
+  .white-btn {
+    background-color: #ffffff;
+    color: var(--color-green, #1b4332);
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
