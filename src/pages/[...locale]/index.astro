@@ -3,13 +3,8 @@ import { Image } from "astro:assets";
 import Layout from "../../layouts/Layout.astro";
 import hart_rond from "../../assets/rondevormen/hart_rond.png";
 import profiel from "../../assets/profiel-square.png";
-import img1 from "@src/assets/aanbodCard/aanbod_1.jpg";
-import img2 from "@src/assets/aanbodCard/aanbod_2.jpg";
-import img3 from "@src/assets/aanbodCard/aanbod_3.jpg";
-
 import linkedin from "../../assets/icons/linkedin.svg?raw";
 import facebook from "../../assets/icons/facebook.svg?raw";
-
 import ContactSection from "@components/Contact-section.astro";
 import {
   getStaticPaths,
@@ -17,8 +12,7 @@ import {
   useTranslations,
   useTranslatedPath,
 } from "@src/i18n/utils";
-import AanbodCard from "@components/AanbodCard.astro";
-import MailForm from "@components/MailForm.astro";
+import AanbodCardContainer from "@components/AanbodCardContainer.astro";
 export { getStaticPaths };
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -90,144 +84,107 @@ const translatePath = useTranslatedPath(lang);
     </div>
   </section>
 
-  <section class="aanbod-link back-red">
-    <div class="container">
-      <AanbodCard
-        title={t("Prices.title.individual")}
-        text={t("aanbodCard.individual.text")}
-        img={img1}
-        link="individual"
-      />
-      <AanbodCard
-        title={t("Prices.title.workshops")}
-        text={t("aanbodCard.workshops.text")}
-        img={img2}
-        link="workshops"
-      />
-      <AanbodCard
-        title={t("Prices.title.organizations")}
-        text={t("aanbodCard.organizations.text")}
-        img={img3}
-        link="organizations"
-      />
-    </div>
-  </section>
+  <AanbodCardContainer />
   <ContactSection color="gray" />
-</Layout>
 
-<style>
-  section {
-    padding: 2rem;
-  }
-
-  .intro .container {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    gap: 2rem;
-  }
-
-  .s4 {
-    font-size: 2rem;
-  }
-
-  .s4 {
-    font-size: 2rem;
-  }
-  .intro .img-container .img {
-    width: 100%;
-    height: auto;
-    max-width: 450px;
-    max-height: 450px;
-  }
-
-  .profile {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0;
-  }
-  .profile .img {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: bottom;
-  }
-
-  .profile .text {
-    padding: 2rem;
-  }
-
-  .profile .title {
-    font-weight: 700;
-  }
-
-  .profile .about-link {
-    border-bottom: 1px solid var(--mooyo-red);
-    width: fit-content;
-    padding: 0 0 0.3rem 0;
-  }
-
-  .profile .socials-container {
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    gap: 2rem;
-  }
-  .about-link {
-    margin-top: 3rem;
-  }
-  .content-end {
-    text-align: end;
-  }
-
-  .aanbod-link .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 4rem;
-    margin: auto;
-    max-width: 1700px;
-  }
-
-  /* Responsive */
-  @media (max-width: 1900px) {
-    .profile .img {
-      top: 0;
-    }
-  }
-
-  @media (max-width: 1200px) {
-    .s3 .col3 {
-      display: grid; /* Added ensuring col3 recognizes grid settings */
-      grid-template-columns: auto;
-    }
-  }
-
-  @media (max-width: 1100px) {
-    .aanbod-link .container {
-      grid-template-columns: 1fr;
-    }
-  }
-  @media (max-width: 900px) {
-    .intro .container,
-    .welcome .container,
-    .profile {
-      grid-template-columns: auto;
-    }
-    .intro .img {
-      display: none;
+  <style>
+    section {
+      padding: 2rem;
     }
 
-    .welcome .img,
-    .profile .img {
-      grid-row: 2;
-      min-width: unset; /* Fixed 'none' syntax error */
+    .intro .container {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      gap: 2rem;
+    }
+
+    .s4 {
+      font-size: 2rem;
+    }
+
+    .s4 {
+      font-size: 2rem;
+    }
+    .intro .img-container .img {
+      width: 100%;
+      height: auto;
+      max-width: 450px;
+      max-height: 450px;
     }
 
     .profile {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
       padding: 0;
     }
     .profile .img {
+      position: relative;
       width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: bottom;
     }
-  }
-</style>
+
+    .profile .text {
+      padding: 2rem;
+    }
+
+    .profile .title {
+      font-weight: 700;
+    }
+
+    .profile .about-link {
+      border-bottom: 1px solid var(--mooyo-red);
+      width: fit-content;
+      padding: 0 0 0.3rem 0;
+    }
+
+    .profile .socials-container {
+      display: flex;
+      flex-direction: row;
+      align-items: stretch;
+      gap: 2rem;
+    }
+    .content-end {
+      text-align: end;
+    }
+
+    /* Responsive */
+    @media (max-width: 1900px) {
+      .profile .img {
+        top: 0;
+      }
+    }
+
+    @media (max-width: 1200px) {
+      .s3 .col3 {
+        display: grid; /* Added ensuring col3 recognizes grid settings */
+        grid-template-columns: auto;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .intro .container,
+      .welcome .container,
+      .profile {
+        grid-template-columns: auto;
+      }
+      .intro .img {
+        display: none;
+      }
+
+      .welcome .img,
+      .profile .img {
+        grid-row: 2;
+        min-width: unset; /* Fixed 'none' syntax error */
+      }
+
+      .profile {
+        padding: 0;
+      }
+      .profile .img {
+        width: 100%;
+      }
+    }
+  </style>
+</Layout>
