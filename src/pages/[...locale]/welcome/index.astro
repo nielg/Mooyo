@@ -6,12 +6,13 @@ import zon from "../../../assets/zon-transparant.png";
 import {
   getLangFromUrl,
   getStaticPaths,
+  useTranslatedPath,
   useTranslations,
 } from "@src/i18n/utils";
-import ContactSection from "@components/Contact-section.astro";
-import MailForm from "@components/MailForm.astro";
+import AanbodCardContainer from "@components/AanbodCardContainer.astro";
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
 export { getStaticPaths };
 ---
 
@@ -67,9 +68,27 @@ export { getStaticPaths };
       </div>
     </div>
   </section>
+  <section class="bg-gray text-gray center">
+    <p class="p2">
+      Mooyo is een uitnodiging om volledig aanwezig te zijn met alles wat je
+      meedraagt, precies zoals je bent.
+    </p>
+    <div class="btn-container">
+      <a href={translatePath("/filosofie")} class="btn red-btn"
+        >Meer weten over de filosofie</a
+      >
+      <a href={translatePath("/aanbod")} class="btn red-btn"
+        >Meer weten over ons aanbod</a
+      >
+    </div>
+  </section>
+  <AanbodCardContainer />
 </Layout>
 
 <style>
+  section {
+    padding: 2rem;
+  }
   .welcome .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -86,5 +105,14 @@ export { getStaticPaths };
 
   .s3 {
     padding: 2rem;
+  }
+
+  .btn-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 40vw;
+    gap: 2rem;
   }
 </style>
