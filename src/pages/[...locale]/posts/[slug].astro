@@ -54,7 +54,7 @@ const postImageUrl = post.image
     }
     <h1 class="text-align-center">{post.title}</h1>
 
-    <div class="container back-white text-gray">
+    <div class="container back-white text-gray regular-font">
       {Array.isArray(post.body) && <PortableText value={post.body} />}
       <p class="date">
         Published: {new Date(post.publishedAt).toLocaleDateString()}

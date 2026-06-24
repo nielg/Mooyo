@@ -4,24 +4,28 @@ import {
   getStaticPaths,
   getLangFromUrl,
   useTranslatedPath,
+  useTranslations,
 } from "@src/i18n/utils";
 export { getStaticPaths };
 const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 const translatePath = useTranslatedPath(lang);
 ---
 
-<Layout title="404 - Pagina niet gevonden">
+<Layout title={`404 - ${t("404.title")}`}>
   <main class="error-container back-red text-white">
     <section class="error-content">
       <div class="error-code">404</div>
 
-      <h1>Oeps! Pagina niet gevonden</h1>
+      <h1>{t("404.title")}</h1>
       <p class="error-message">
-        Het ziet er naar uit dat deze pagina niet meer bestaat of is verhuisd.
+        {t("404.text")}
       </p>
 
       <div class="action-wrapper">
-        <a href={translatePath("/")} class="white-btn btn"> Terug naar home </a>
+        <a href={translatePath("/")} class="white-btn btn">
+          {t("404.btn")}
+        </a>
       </div>
     </section>
   </main>
@@ -67,6 +71,7 @@ const translatePath = useTranslatedPath(lang);
   .white-btn {
     background-color: #ffffff;
     color: var(--color-green, #1b4332);
+    text-decoration: none;
   }
 
   @keyframes fadeIn {

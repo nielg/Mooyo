@@ -35,6 +35,12 @@ export const ui = {
     "layout.contact":
       "Je bent welkom voor een vrijblijvend gesprek waarin we jouw vragen, je gevoel verkennen en samen bekijken welke volgende stap goed voelt.",
 
+    // 404
+    "404.title": "Oeps! Pagina niet gevonden",
+    "404.text":
+      "Het ziet er naar uit dat deze pagina niet meer bestaat of is verhuisd.",
+    "404.btn": "Terug naar home",
+
     // Index
 
     "index.title": "Home",
@@ -404,6 +410,11 @@ export const ui = {
     "layout.header.subtitle": "heart-centered guidance",
     "layout.contact":
       "You are welcome for a no-obligation conversation in which we explore your questions and together see what next step feels right.",
+
+    // 404
+    "404.title": "Oops! Page not found",
+    "404.text": "It looks like this page no longer exists or has been moved.",
+    "404.btn": "Back to home",
 
     // Index
     "index.title": "Home",

@@ -35,7 +35,7 @@ const posts = await sanityClient.fetch<SanityDocument[]>(POSTS_QUERY);
     <div class="container">
       {
         posts.map((post) => (
-          <article class="post-card back-white text-black">
+          <article class="post-card back-white text-black regular-font">
             <div class="post-content">
               <div class="post-meta">
                 <time datetime={post.publishedAt}>
