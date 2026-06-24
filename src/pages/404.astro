@@ -1,5 +1,13 @@
 ---
 import Layout from "@layouts/Layout.astro";
+import {
+  getStaticPaths,
+  getLangFromUrl,
+  useTranslatedPath,
+} from "@src/i18n/utils";
+export { getStaticPaths };
+const lang = getLangFromUrl(Astro.url);
+const translatePath = useTranslatedPath(lang);
 ---
 
 <Layout title="404 - Pagina niet gevonden">
@@ -13,7 +21,7 @@ import Layout from "@layouts/Layout.astro";
       </p>
 
       <div class="action-wrapper">
-        <a href="/reconstructive" class="white-btn btn"> Terug naar home </a>
+        <a href={translatePath("/")} class="white-btn btn"> Terug naar home </a>
       </div>
     </section>
   </main>
