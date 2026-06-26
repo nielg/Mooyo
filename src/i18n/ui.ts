@@ -123,8 +123,8 @@ export const ui = {
       "Mooyo brengt mensen dichter bij hun essentie zodat ze hartgedragen keuzes in hun leven kunnen maken.",
 
     // Filosofie section 5
-    "pillars.bewustzijn.title": "Het geheel",
-    "pillars.bewustzijn.subtitle1": "Bewustzijn",
+    "pillars.bewustzijn.title": "Bewustzijn",
+    "pillars.bewustzijn.subtitle1": "Het geheel",
     "pillars.bewustzijn.subtitle2": "De kracht van je wortels",
     "pillars.bewustzijn.img.text1":
       "Een cirkel met een opening en een zwevend punt erboven stelt het bewustzijn voor.",
@@ -138,8 +138,8 @@ export const ui = {
       "Elke conditionering heeft zowel een energetisch aspect als een bewustzijnsdeel.",
     "pillars.bewustzijn.list4":
       "Omdat conditioneringen vaak ontstaan vóór de taalontwikkeling, zijn ze emotioneel van aard en niet via het verstand te bereiken.",
-    "pillars.adem.title": "Het nu",
-    "pillars.adem.subtitle1": "Adem",
+    "pillars.adem.title": "Adem",
+    "pillars.adem.subtitle1": "Het nu",
     "pillars.adem.subtitle2": "De kracht van het moment",
     "pillars.adem.img.text1":
       "De twee golflijnen staan voor verbinding: de in- en uitademing. De streep stelt het middenrif voor en staat voor ondersteuning",
@@ -153,8 +153,8 @@ export const ui = {
       " Ademhaling is de poort tussen het bewuste en onbewuste: we kunnen de ademhaling bewust sturen en tegelijk werkt de ademhaling autonoom.",
     "pillars.adem.list4":
       "Ademhaling speelt een belangrijke rol in ons dagelijks leven en kan ingezet worden als regulatie bij stress, bij ongemak.",
-    "pillars.hart.title": "De Toekomst",
-    "pillars.hart.subtitle1": "Het Hart",
+    "pillars.hart.title": "Het Hart",
+    "pillars.hart.subtitle1": "De Toekomst",
     "pillars.hart.subtitle2": "De kracht van moed",
     "pillars.hart.img.text1":
       "De spiraal continu gevoed door warmte en menselijkheid.",
@@ -166,8 +166,8 @@ export const ui = {
       "De moed om onze plek (terug) in te nemen met alles wat daarbij hoort.",
     "pillars.hart.list3":
       "Herkennen van gewoonten, overtuigingssystemen met compassie en de moed ontwikkelen om dit te doorbreken.",
-    "pillars.bewust.title": "Het Verleden",
-    "pillars.bewust.subtitle1": "Lichaam",
+    "pillars.bewust.title": "Lichaam",
+    "pillars.bewust.subtitle1": "Het Verleden",
     "pillars.bewust.subtitle2": "De kracht van opgroeien",
     "pillars.bewust.img.text1":
       "De segmenten zijn verschillend - een verwijzing naar herinneringen, littekens, geschiedenis.",
