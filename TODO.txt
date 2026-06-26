@@ -1,6 +1,3 @@
-- Blog link op home zoals reconstructive
-- Filosopie iphone ready maken
-
 Voor productie
 - Beschrijving per pagina toevoegen
 - Keywoords per pagina
