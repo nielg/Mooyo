@@ -101,6 +101,10 @@ export { getStaticPaths };
     height: auto;
   }
 
+  .col3 {
+    row-gap: 2rem;
+  }
+
   .s3 {
     padding: 2rem;
   }
@@ -118,5 +122,11 @@ export { getStaticPaths };
     background-color: var(--mooyo-white);
     padding: 2rem;
     border-radius: 10px;
+  }
+
+  @media (max-width: 800px) {
+    .welcome .container {
+      grid-template-columns: 1fr;
+    }
   }
 </style>
