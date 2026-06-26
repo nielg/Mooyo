@@ -25,14 +25,7 @@ const posts = await sanityClient.fetch<SanityDocument[]>(POSTS_QUERY, { lang });
 <Layout title="posts">
   <section class="back-red text-white">
     <h1 class="text-align-center text-white">Posts</h1>
-    <div class="text-margin">
-      <p class="text-align-center">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos repellat
-        tenetur fuga praesentium cupiditate minus distinctio molestias veritatis
-        qui. Aperiam sint magni sequi hic veritatis? Libero alias dicta hic
-        vitae.
-      </p>
-    </div>
+    <div class="text-margin"></div>
     <div class="container">
       {
         posts.map((post) => (
