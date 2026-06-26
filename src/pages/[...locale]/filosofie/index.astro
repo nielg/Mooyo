@@ -186,10 +186,9 @@ const t = useTranslations(lang);
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 2rem;
-      width: 100%;
+      width: 80%;
       max-width: 1200px;
-      padding: 5rem;
-      padding-top: 0;
+      margin: auto;
     }
 
     .pillars .container {
@@ -312,8 +311,11 @@ const t = useTranslations(lang);
 
     @media (max-width: 925px) {
       .col2 {
-        grid-template-columns: 1fr;
-        gap: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
       }
       .pillars img {
         max-width: 100%;
