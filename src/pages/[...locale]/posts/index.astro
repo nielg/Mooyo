@@ -17,7 +17,7 @@ const POSTS_QUERY = `*[
   _type == "post"
   && defined(slug.current)
   && language == $lang
-]|order(publishedAt desc)[0...12]{_id, title, slug, publishedAt, description, language}`;
+]|order(publishedAt desc)[0...2]{_id, title, slug, publishedAt, description, language}`;
 
 const posts = await sanityClient.fetch<SanityDocument[]>(POSTS_QUERY, { lang });
 ---
