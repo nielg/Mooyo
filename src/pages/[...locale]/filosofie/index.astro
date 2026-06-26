@@ -28,7 +28,9 @@ const t = useTranslations(lang);
   </section>
   <section class="pillars back-gray text-align-center center text-black">
     <div class="container">
-      <h2 class="text-red margin-0">{t("pillars.bewustzijn.title")}</h2>
+      <div class="header">
+        <h2 class="text-red margin-0">{t("pillars.bewustzijn.title")}</h2>
+      </div>
       <div class="col2">
         <div>
           <h3 class="text-red">{t("pillars.bewustzijn.subtitle1")}</h3>
@@ -184,10 +186,9 @@ const t = useTranslations(lang);
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 2rem;
-      width: 100%;
+      width: 80%;
       max-width: 1200px;
-      padding: 5rem;
-      padding-top: 0;
+      margin: auto;
     }
 
     .pillars .container {
@@ -195,10 +196,13 @@ const t = useTranslations(lang);
       margin: 2rem 0;
     }
 
-    .pillars .container:last-of-type {
-      border-bottom: none;
+    .pillars h3 {
+      margin-top: 0.5rem;
     }
 
+    .pillars .col2:last-of-type {
+      border-bottom: none;
+    }
     .img-container {
       display: flex;
       align-items: center;
@@ -307,8 +311,11 @@ const t = useTranslations(lang);
 
     @media (max-width: 925px) {
       .col2 {
-        grid-template-columns: 1fr;
-        gap: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
       }
       .pillars img {
         max-width: 100%;

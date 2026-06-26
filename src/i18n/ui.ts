@@ -3,6 +3,8 @@ export const languages = {
   en: "en",
 };
 
+export const supportedLanguages = Object.values(languages);
+
 export const showDefaultLang = false;
 
 export const defaultLang = "nl";
@@ -34,6 +36,12 @@ export const ui = {
     "layout.header.subtitle": "hartgedragen begeleiding",
     "layout.contact":
       "Je bent welkom voor een vrijblijvend gesprek waarin we jouw vragen, je gevoel verkennen en samen bekijken welke volgende stap goed voelt.",
+
+    // 404
+    "404.title": "Oeps! Pagina niet gevonden",
+    "404.text":
+      "Het ziet er naar uit dat deze pagina niet meer bestaat of is verhuisd.",
+    "404.btn": "Terug naar home",
 
     // Index
 
@@ -79,6 +87,11 @@ export const ui = {
     "index.s4.text2":
       "Ben je bereid om in beweging te komen en naar je hart te luisteren?",
 
+    // index blog
+
+    "index.blog.title": "Blog",
+    "index.blog.noPosts": "Er zijn momenteel geen berichten beschikbaar.",
+
     // Aanbod
     "aanbod.title": "Aanbod",
 
@@ -110,8 +123,8 @@ export const ui = {
       "Mooyo brengt mensen dichter bij hun essentie zodat ze hartgedragen keuzes in hun leven kunnen maken.",
 
     // Filosofie section 5
-    "pillars.bewustzijn.title": "Het geheel",
-    "pillars.bewustzijn.subtitle1": "Bewustzijn",
+    "pillars.bewustzijn.title": "Bewustzijn",
+    "pillars.bewustzijn.subtitle1": "Het geheel",
     "pillars.bewustzijn.subtitle2": "De kracht van je wortels",
     "pillars.bewustzijn.img.text1":
       "Een cirkel met een opening en een zwevend punt erboven stelt het bewustzijn voor.",
@@ -125,8 +138,8 @@ export const ui = {
       "Elke conditionering heeft zowel een energetisch aspect als een bewustzijnsdeel.",
     "pillars.bewustzijn.list4":
       "Omdat conditioneringen vaak ontstaan vóór de taalontwikkeling, zijn ze emotioneel van aard en niet via het verstand te bereiken.",
-    "pillars.adem.title": "Het nu",
-    "pillars.adem.subtitle1": "Adem",
+    "pillars.adem.title": "Adem",
+    "pillars.adem.subtitle1": "Het nu",
     "pillars.adem.subtitle2": "De kracht van het moment",
     "pillars.adem.img.text1":
       "De twee golflijnen staan voor verbinding: de in- en uitademing. De streep stelt het middenrif voor en staat voor ondersteuning",
@@ -140,8 +153,8 @@ export const ui = {
       " Ademhaling is de poort tussen het bewuste en onbewuste: we kunnen de ademhaling bewust sturen en tegelijk werkt de ademhaling autonoom.",
     "pillars.adem.list4":
       "Ademhaling speelt een belangrijke rol in ons dagelijks leven en kan ingezet worden als regulatie bij stress, bij ongemak.",
-    "pillars.hart.title": "De Toekomst",
-    "pillars.hart.subtitle1": "Het Hart",
+    "pillars.hart.title": "Het Hart",
+    "pillars.hart.subtitle1": "De Toekomst",
     "pillars.hart.subtitle2": "De kracht van moed",
     "pillars.hart.img.text1":
       "De spiraal continu gevoed door warmte en menselijkheid.",
@@ -153,8 +166,8 @@ export const ui = {
       "De moed om onze plek (terug) in te nemen met alles wat daarbij hoort.",
     "pillars.hart.list3":
       "Herkennen van gewoonten, overtuigingssystemen met compassie en de moed ontwikkelen om dit te doorbreken.",
-    "pillars.bewust.title": "Het Verleden",
-    "pillars.bewust.subtitle1": "Lichaam",
+    "pillars.bewust.title": "Lichaam",
+    "pillars.bewust.subtitle1": "Het Verleden",
     "pillars.bewust.subtitle2": "De kracht van opgroeien",
     "pillars.bewust.img.text1":
       "De segmenten zijn verschillend - een verwijzing naar herinneringen, littekens, geschiedenis.",
@@ -208,6 +221,13 @@ export const ui = {
       "Mijn begeleidingsstijl wordt gekenmerkt door een diepe kwaliteit van aanwezigheid en een kalme rust. Dit stelt mij in staat om een veilige en ondersteunende omgeving te creëren waarin jij je volledig kunt openstellen en groeien.",
     "about.s2.e2.text2":
       "Drie jaar geleden kwam ik in aanraking met het boeddhisme en meditatie. Sindsdien is het boeddhistisch gedachten goed en dagelijkse meditatie een vast onderdeel van mijn leven geworden. Het helpt me om met meer helderheid, rust en aanwezigheid in het leven te staan — kwaliteiten die ik ook meeneem in mijn werk met anderen.",
+
+    // Posts
+
+    "posts.noPosts": "Er zijn momenteel geen berichten beschikbaar",
+    "post.readMore": "lees meer",
+    "post.back": "Terug naar posts",
+    "post.published": "gepubliceerd",
 
     // Components
 
@@ -331,7 +351,7 @@ export const ui = {
       "Footprints is een ontmoeting met je eigen innerlijke wereld en opent de deur naar emotionele volwassenhied waarbij jouw plek in het systeem geëerd worden waardoor er helderheid ontstaat. Na de eertse sessie voel je je al lichter, de volgende sessies verdiepen dit gevoel waardoor integratie in het dagelijks leven voelbaar en blijvend wordt.",
     "Prices.seeMore": "Zie meer...",
     "Prices.collab": "In samenwerking met Elke Busschots, ",
-    "Prices.info": "Voor info en aanmelden, mail",
+    "Prices.info": "Voor info en aanmelden, mail ",
     "Prices.gold.title": "Find your gold",
     "Prices.gold.text":
       "Ga op een diepgaande reis door natuur en lichaam, en keer terug naar de essentie van wie jij werkelijk bent.",
@@ -405,6 +425,11 @@ export const ui = {
     "layout.contact":
       "You are welcome for a no-obligation conversation in which we explore your questions and together see what next step feels right.",
 
+    // 404
+    "404.title": "Oops! Page not found",
+    "404.text": "It looks like this page no longer exists or has been moved.",
+    "404.btn": "Back to home",
+
     // Index
     "index.title": "Home",
     "index.distance.station":
@@ -462,7 +487,8 @@ export const ui = {
 
     // Aanbod section 5
     "openHartCirkels.title": "Open heart circles",
-    "openHartCirkels.text": "For more information see (expected late September):",
+    "openHartCirkels.text":
+      "For more information see (expected late September):",
 
     // Aanbod section 6
     "aanbod.s6.text":
@@ -575,6 +601,12 @@ export const ui = {
       "My guidance style is characterized by a deep quality of presence and a calm stillness. This allows me to create a safe and supportive environment in which you can fully open up and grow.",
     "about.s2.e2.text2":
       "Three years ago, I came into contact with Buddhism and meditation. Since then, Buddhist philosophy and daily meditation have become a fixed part of my life. It helps me stand in life with more clarity, peace, and presence — qualities that I also bring into my work with others.",
+
+    // Posts
+    "posts.noPosts": "There are currently no posts available",
+    "post.readMore": "read more",
+    "post.back": "Back to posts",
+    "post.published": "published",
 
     // Components
     "Prices.title": "Offerings ∞ Rates",
@@ -738,10 +770,10 @@ export const ui = {
     "mailForm.service.workshops": "Workshops / Experiences",
     "mailForm.service.organizations": "Organizations and Teams",
     "mailForm.service.other": "Something else",
-    "phone": "Phone number",
-    "message": "Message",
-    "send": "Send message",
-    "success": "Thank you! Your message has been sent.",
-    "error": "Something went wrong. Please try again later.",
+    phone: "Phone number",
+    message: "Message",
+    send: "Send message",
+    success: "Thank you! Your message has been sent.",
+    error: "Something went wrong. Please try again later.",
   },
 } as const;

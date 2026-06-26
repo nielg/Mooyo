@@ -1,6 +1,5 @@
-13/06/2026
-- Aanbod bij home → 3 titles veranderen in een kaarten met aparte text linkt naar aanbop pagina zie www.reconstructive.be (papa moet er nog over nadenken)
-- Facebook link en linkind link toevoegen aan index
+- Blog link op home zoals reconstructive
+- Filosopie iphone ready maken
 
 Voor productie
 - Beschrijving per pagina toevoegen

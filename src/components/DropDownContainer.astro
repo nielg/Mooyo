@@ -9,7 +9,7 @@ interface Props {
 const { color, title, id } = Astro.props;
 
 const articleClasses =
-  color == "red" ? "back-white text-black" : "back-black text-white";
+  color == "red" ? "back-white text-black" : "back-red text-white";
 ---
 
 <article class=`dropdown-container ${articleClasses}` id={id}>
