@@ -1,6 +1,10 @@
 13/06/2026
-- Aanbod bij home → 3 titles veranderen in een kaarten met aparte text linkt naar aanbop pagina zie www.reconstructive.be (papa moet er nog over nadenken)
-- Facebook link en linkind link toevoegen aan index
+- Filosopie pillars main title boven sub titles
+- Aanbod card text allemaal op zerlfde hoogte
+- Welkom  3 colommen with achtergrond zoals AanbodCard
+- Blog link op home zoals reconstructive
+- Welkom iphone ready maken
+- Filosopie iphone ready maken
 
 Voor productie
 - Beschrijving per pagina toevoegen
