@@ -1,5 +1,7 @@
 ---
 import { Image } from "astro:assets";
+import { sanityClient } from "sanity:client";
+import type { SanityDocument } from "@sanity/client";
 import Layout from "../../layouts/Layout.astro";
 import hart_rond from "../../assets/rondevormen/hart_rond.png";
 import profiel from "../../assets/profiel-square.png";
@@ -17,6 +19,20 @@ export { getStaticPaths };
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 const translatePath = useTranslatedPath(lang);
+
+const posts_query = `*[
+  _type == "post" 
+  && defined(slug.current)
+  && language == $lang
+] | order(publishedAt desc)[0...2] {
+  _id, 
+  title, 
+  slug, 
+  description,
+  language
+}`;
+
+const posts = await sanityClient.fetch<SanityDocument[]>(posts_query, { lang });
 ---
 
 <Layout title="Home">
@@ -86,7 +102,44 @@ const translatePath = useTranslatedPath(lang);
 
   <AanbodCardContainer />
   <ContactSection color="gray" />
-
+  <section class="bg-red text-gray blog">
+    <div class="small-text-margin center">
+      <h2 class="text-align-center text-red">{t("index.blog.title")}</h2>
+      <hr class="yellow-line" />
+      {
+        posts && posts.length === 0 && (
+          <div class="no-posts-container">
+            <p>{t("index.blog.noPosts")}</p>
+          </div>
+        )
+      }
+      <div class="col2">
+        {
+          posts && posts.length > 0 && (
+            <div class="col2">
+              {posts.map((post) => (
+                <a
+                  href={translatePath(`/posts/${post.slug.current}`)}
+                  class="center post-card-link"
+                >
+                  <div class="post-card-wrapper">
+                    <div>
+                      <h4 class="text-align-center">{post.title}</h4>
+                      <p class="text-align-center text-gray">
+                        {post.description}
+                      </p>
+                    </div>
+                    <span class="white-btn btn">{t("post.readMore")}</span>
+                  </div>
+                </a>
+              ))}
+            </div>
+          )
+        }
+      </div>
+      <hr class="yellow-line" />
+    </div>
+  </section>
   <style>
     section {
       padding: 2rem;

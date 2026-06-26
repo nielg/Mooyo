@@ -87,6 +87,11 @@ export const ui = {
     "index.s4.text2":
       "Ben je bereid om in beweging te komen en naar je hart te luisteren?",
 
+    // index blog
+
+    "index.blog.title": "Blog",
+    "index.blog.noPosts": "Er zijn momenteel geen berichten beschikbaar.",
+
     // Aanbod
     "aanbod.title": "Aanbod",
 
