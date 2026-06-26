@@ -3,6 +3,8 @@ export const languages = {
   en: "en",
 };
 
+export const supportedLanguages = Object.values(languages);
+
 export const showDefaultLang = false;
 
 export const defaultLang = "nl";
@@ -34,6 +36,12 @@ export const ui = {
     "layout.header.subtitle": "hartgedragen begeleiding",
     "layout.contact":
       "Je bent welkom voor een vrijblijvend gesprek waarin we jouw vragen, je gevoel verkennen en samen bekijken welke volgende stap goed voelt.",
+
+    // 404
+    "404.title": "Oeps! Pagina niet gevonden",
+    "404.text":
+      "Het ziet er naar uit dat deze pagina niet meer bestaat of is verhuisd.",
+    "404.btn": "Terug naar home",
 
     // Index
 
@@ -78,6 +86,11 @@ export const ui = {
       "Mooyo nodigt uit om bij de oorsprong te beginnen: bij het stille midden waar jouw waarheid, jouw pijn én jouw potentieel samenkomen. Wanneer we naar die kern gaan, opent er iets. Niet door te duwen of te analyseren, maar door te voelen, te zakken, te erkennen. Zolang de kern niet wordt aangeraakt, blijft het voelen alsof je onderweg bent zonder richting. Het proces begint pas echt als je de kern aanraakt, niet als een nieuwe zoektocht buiten jezelf, maar als een thuiskomen in jezelf.",
     "index.s4.text2":
       "Ben je bereid om in beweging te komen en naar je hart te luisteren?",
+
+    // index blog
+
+    "index.blog.title": "Blog",
+    "index.blog.noPosts": "Er zijn momenteel geen berichten beschikbaar.",
 
     // Aanbod
     "aanbod.title": "Aanbod",
@@ -209,6 +222,13 @@ export const ui = {
     "about.s2.e2.text2":
       "Drie jaar geleden kwam ik in aanraking met het boeddhisme en meditatie. Sindsdien is het boeddhistisch gedachten goed en dagelijkse meditatie een vast onderdeel van mijn leven geworden. Het helpt me om met meer helderheid, rust en aanwezigheid in het leven te staan — kwaliteiten die ik ook meeneem in mijn werk met anderen.",
 
+    // Posts
+
+    "posts.noPosts": "Er zijn momenteel geen berichten beschikbaar",
+    "post.readMore": "lees meer",
+    "post.back": "Terug naar posts",
+    "post.published": "gepubliceerd",
+
     // Components
 
     "Prices.title": "Aanbod ∞ Tarieven",
@@ -331,7 +351,7 @@ export const ui = {
       "Footprints is een ontmoeting met je eigen innerlijke wereld en opent de deur naar emotionele volwassenhied waarbij jouw plek in het systeem geëerd worden waardoor er helderheid ontstaat. Na de eertse sessie voel je je al lichter, de volgende sessies verdiepen dit gevoel waardoor integratie in het dagelijks leven voelbaar en blijvend wordt.",
     "Prices.seeMore": "Zie meer...",
     "Prices.collab": "In samenwerking met Elke Busschots, ",
-    "Prices.info": "Voor info en aanmelden, mail",
+    "Prices.info": "Voor info en aanmelden, mail ",
     "Prices.gold.title": "Find your gold",
     "Prices.gold.text":
       "Ga op een diepgaande reis door natuur en lichaam, en keer terug naar de essentie van wie jij werkelijk bent.",
@@ -405,6 +425,11 @@ export const ui = {
     "layout.contact":
       "You are welcome for a no-obligation conversation in which we explore your questions and together see what next step feels right.",
 
+    // 404
+    "404.title": "Oops! Page not found",
+    "404.text": "It looks like this page no longer exists or has been moved.",
+    "404.btn": "Back to home",
+
     // Index
     "index.title": "Home",
     "index.distance.station":
@@ -462,7 +487,8 @@ export const ui = {
 
     // Aanbod section 5
     "openHartCirkels.title": "Open heart circles",
-    "openHartCirkels.text": "For more information see (expected late September):",
+    "openHartCirkels.text":
+      "For more information see (expected late September):",
 
     // Aanbod section 6
     "aanbod.s6.text":
@@ -575,6 +601,12 @@ export const ui = {
       "My guidance style is characterized by a deep quality of presence and a calm stillness. This allows me to create a safe and supportive environment in which you can fully open up and grow.",
     "about.s2.e2.text2":
       "Three years ago, I came into contact with Buddhism and meditation. Since then, Buddhist philosophy and daily meditation have become a fixed part of my life. It helps me stand in life with more clarity, peace, and presence — qualities that I also bring into my work with others.",
+
+    // Posts
+    "posts.noPosts": "There are currently no posts available",
+    "post.readMore": "read more",
+    "post.back": "Back to posts",
+    "post.published": "published",
 
     // Components
     "Prices.title": "Offerings ∞ Rates",
@@ -738,10 +770,10 @@ export const ui = {
     "mailForm.service.workshops": "Workshops / Experiences",
     "mailForm.service.organizations": "Organizations and Teams",
     "mailForm.service.other": "Something else",
-    "phone": "Phone number",
-    "message": "Message",
-    "send": "Send message",
-    "success": "Thank you! Your message has been sent.",
-    "error": "Something went wrong. Please try again later.",
+    phone: "Phone number",
+    message: "Message",
+    send: "Send message",
+    success: "Thank you! Your message has been sent.",
+    error: "Something went wrong. Please try again later.",
   },
 } as const;

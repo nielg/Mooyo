@@ -27,6 +27,7 @@ const t = useTranslations(lang);
         </li>
         <li><a href={translatePath("/aanbod")}>{t("footer.aanbod")}</a></li>
         <li><a href={translatePath("/about")}>{t("footer.about")}</a></li>
+        <li><a href={translatePath("/posts")}>blog</a></li>
         <li>
           <a href="https://www.hartcirkels.be"
             >www.hartcirkels.be (under construction)</a
@@ -59,7 +60,7 @@ const t = useTranslations(lang);
 <style>
   footer {
     color: #b7aaaa;
-    padding: 2rem 0;
+    padding-bottom: 0.5rem;
   }
 
   .row {
@@ -78,9 +79,23 @@ const t = useTranslations(lang);
   .ul {
     list-style-type: none;
   }
-
   p {
     margin: 0.5rem;
+  }
+
+  p,
+  li,
+  .normal-font-size {
+    font-size: 0.8rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+    margin: 0.5rem 0;
   }
 
   @media (max-width: 750px) {

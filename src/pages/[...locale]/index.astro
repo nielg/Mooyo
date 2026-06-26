@@ -1,15 +1,12 @@
 ---
 import { Image } from "astro:assets";
+import { sanityClient } from "sanity:client";
+import type { SanityDocument } from "@sanity/client";
 import Layout from "../../layouts/Layout.astro";
 import hart_rond from "../../assets/rondevormen/hart_rond.png";
 import profiel from "../../assets/profiel-square.png";
-import img1 from "@src/assets/aanbodCard/aanbod_1.jpg";
-import img2 from "@src/assets/aanbodCard/aanbod_2.jpg";
-import img3 from "@src/assets/aanbodCard/aanbod_3.jpg";
-
 import linkedin from "../../assets/icons/linkedin.svg?raw";
 import facebook from "../../assets/icons/facebook.svg?raw";
-
 import ContactSection from "@components/Contact-section.astro";
 import {
   getStaticPaths,
@@ -17,12 +14,25 @@ import {
   useTranslations,
   useTranslatedPath,
 } from "@src/i18n/utils";
-import AanbodCard from "@components/AanbodCard.astro";
-import MailForm from "@components/MailForm.astro";
+import AanbodCardContainer from "@components/AanbodCardContainer.astro";
 export { getStaticPaths };
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 const translatePath = useTranslatedPath(lang);
+
+const posts_query = `*[
+  _type == "post" 
+  && defined(slug.current)
+  && language == $lang
+] | order(publishedAt desc)[0...2] {
+  _id, 
+  title, 
+  slug, 
+  description,
+  language
+}`;
+
+const posts = await sanityClient.fetch<SanityDocument[]>(posts_query, { lang });
 ---
 
 <Layout title="Home">
@@ -90,144 +100,144 @@ const translatePath = useTranslatedPath(lang);
     </div>
   </section>
 
-  <section class="aanbod-link back-red">
-    <div class="container">
-      <AanbodCard
-        title={t("Prices.title.individual")}
-        text={t("aanbodCard.individual.text")}
-        img={img1}
-        link="individual"
-      />
-      <AanbodCard
-        title={t("Prices.title.workshops")}
-        text={t("aanbodCard.workshops.text")}
-        img={img2}
-        link="workshops"
-      />
-      <AanbodCard
-        title={t("Prices.title.organizations")}
-        text={t("aanbodCard.organizations.text")}
-        img={img3}
-        link="organizations"
-      />
+  <AanbodCardContainer />
+  <ContactSection color="gray" />
+  <section class="back-red text-white blog">
+    <div class="small-text-margin center">
+      <h2 class="text-align-center">{t("index.blog.title")}</h2>
+      <hr class="white-line" />
+      {
+        posts && posts.length === 0 && (
+          <div class="no-posts-container">
+            <p>{t("index.blog.noPosts")}</p>
+          </div>
+        )
+      }
+      <div class="col2">
+        {
+          posts && posts.length > 0 && (
+            <div class="col2">
+              {posts.map((post) => (
+                <a
+                  href={translatePath(`/posts/${post.slug.current}`)}
+                  class="center post-card-link"
+                >
+                  <div class="post-card-wrapper">
+                    <div>
+                      <h4 class="text-align-center">{post.title}</h4>
+                      <p class="text-align-center text-gray">
+                        {post.description}
+                      </p>
+                    </div>
+                    <span class="white-btn btn">{t("post.readMore")}</span>
+                  </div>
+                </a>
+              ))}
+            </div>
+          )
+        }
+      </div>
+      <hr class="white-line" />
     </div>
   </section>
-  <ContactSection color="gray" />
-</Layout>
-
-<style>
-  section {
-    padding: 2rem;
-  }
-
-  .intro .container {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    gap: 2rem;
-  }
-
-  .s4 {
-    font-size: 2rem;
-  }
-
-  .s4 {
-    font-size: 2rem;
-  }
-  .intro .img-container .img {
-    width: 100%;
-    height: auto;
-    max-width: 450px;
-    max-height: 450px;
-  }
-
-  .profile {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0;
-  }
-  .profile .img {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: bottom;
-  }
-
-  .profile .text {
-    padding: 2rem;
-  }
-
-  .profile .title {
-    font-weight: 700;
-  }
-
-  .profile .about-link {
-    border-bottom: 1px solid var(--mooyo-red);
-    width: fit-content;
-    padding: 0 0 0.3rem 0;
-  }
-
-  .profile .socials-container {
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    gap: 2rem;
-  }
-  .about-link {
-    margin-top: 3rem;
-  }
-  .content-end {
-    text-align: end;
-  }
-
-  .aanbod-link .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 4rem;
-    margin: auto;
-    max-width: 1700px;
-  }
-
-  /* Responsive */
-  @media (max-width: 1900px) {
-    .profile .img {
-      top: 0;
-    }
-  }
-
-  @media (max-width: 1200px) {
-    .s3 .col3 {
-      display: grid; /* Added ensuring col3 recognizes grid settings */
-      grid-template-columns: auto;
-    }
-  }
-
-  @media (max-width: 1100px) {
-    .aanbod-link .container {
-      grid-template-columns: 1fr;
-    }
-  }
-  @media (max-width: 900px) {
-    .intro .container,
-    .welcome .container,
-    .profile {
-      grid-template-columns: auto;
-    }
-    .intro .img {
-      display: none;
+  <style>
+    section {
+      padding: 2rem;
     }
 
-    .welcome .img,
-    .profile .img {
-      grid-row: 2;
-      min-width: unset; /* Fixed 'none' syntax error */
+    .intro .container {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      gap: 2rem;
+    }
+
+    .s4 {
+      font-size: 2rem;
+    }
+
+    .s4 {
+      font-size: 2rem;
+    }
+    .intro .img-container .img {
+      width: 100%;
+      height: auto;
+      max-width: 450px;
+      max-height: 450px;
     }
 
     .profile {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
       padding: 0;
     }
     .profile .img {
+      position: relative;
       width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: bottom;
     }
-  }
-</style>
+
+    .profile .text {
+      padding: 2rem;
+    }
+
+    .profile .title {
+      font-weight: 700;
+    }
+
+    .profile .about-link {
+      border-bottom: 1px solid var(--mooyo-red);
+      width: fit-content;
+      padding: 0 0 0.3rem 0;
+    }
+
+    .profile .socials-container {
+      display: flex;
+      flex-direction: row;
+      align-items: stretch;
+      gap: 2rem;
+    }
+    .content-end {
+      text-align: end;
+    }
+
+    /* Responsive */
+    @media (max-width: 1900px) {
+      .profile .img {
+        top: 0;
+      }
+    }
+
+    @media (max-width: 1200px) {
+      .s3 .col3 {
+        display: grid; /* Added ensuring col3 recognizes grid settings */
+        grid-template-columns: auto;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .intro .container,
+      .welcome .container,
+      .profile {
+        grid-template-columns: auto;
+      }
+      .intro .img {
+        display: none;
+      }
+
+      .welcome .img,
+      .profile .img {
+        grid-row: 2;
+        min-width: unset; /* Fixed 'none' syntax error */
+      }
+
+      .profile {
+        padding: 0;
+      }
+      .profile .img {
+        width: 100%;
+      }
+    }
+  </style>
+</Layout>
