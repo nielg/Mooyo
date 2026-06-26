@@ -36,8 +36,8 @@ export { getStaticPaths };
   </section>
   <section class="s3 back-red text-align-center center">
     <div class="col3 text-black text-align-justify">
-      <div>
-        <p class="text-align-center text-white bold">
+      <div class="card">
+        <p class="text-align-center text-red bold">
           {t("index.s3.col1.title")}
         </p>
         <div class="regular-font">
@@ -46,8 +46,8 @@ export { getStaticPaths };
           <p>{t("index.s3.col1.text3")}</p>
         </div>
       </div>
-      <div>
-        <p class="text-white text-align-center bold">
+      <div class="card">
+        <p class="text-red text-align-center bold">
           {t("index.s3.col2.title")}
         </p>
         <div class="regular-font">
@@ -56,9 +56,8 @@ export { getStaticPaths };
           <p>{t("index.s3.col2.text3")}</p>
         </div>
       </div>
-
-      <div>
-        <p class="text-white text-align-center bold">
+      <div class="card">
+        <p class="text-red text-align-center bold">
           {t("index.s3.col3.title")}
         </p>
         <div class="regular-font">
@@ -113,5 +112,11 @@ export { getStaticPaths };
     justify-content: space-between;
     width: 40vw;
     gap: 2rem;
+  }
+
+  .card {
+    background-color: var(--mooyo-white);
+    padding: 2rem;
+    border-radius: 10px;
   }
 </style>
