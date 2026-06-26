@@ -102,10 +102,10 @@ const posts = await sanityClient.fetch<SanityDocument[]>(posts_query, { lang });
 
   <AanbodCardContainer />
   <ContactSection color="gray" />
-  <section class="bg-red text-gray blog">
+  <section class="back-red text-white blog">
     <div class="small-text-margin center">
-      <h2 class="text-align-center text-red">{t("index.blog.title")}</h2>
-      <hr class="yellow-line" />
+      <h2 class="text-align-center">{t("index.blog.title")}</h2>
+      <hr class="white-line" />
       {
         posts && posts.length === 0 && (
           <div class="no-posts-container">
@@ -137,7 +137,7 @@ const posts = await sanityClient.fetch<SanityDocument[]>(posts_query, { lang });
           )
         }
       </div>
-      <hr class="yellow-line" />
+      <hr class="white-line" />
     </div>
   </section>
   <style>

@@ -215,6 +215,11 @@ button:hover {
   justify-content: center;
 }
 
+.white-line {
+  color: var(--mooyo-white);
+  width: 100%;
+}
+
 /* Responsive */
 
 @media (max-width: 1200px) {

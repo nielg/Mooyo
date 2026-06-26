@@ -1,9 +1,4 @@
-13/06/2026
-- Filosopie pillars main title boven sub titles
-- Aanbod card text allemaal op zerlfde hoogte
-- Welkom  3 colommen with achtergrond zoals AanbodCard
 - Blog link op home zoals reconstructive
-- Welkom iphone ready maken
 - Filosopie iphone ready maken
 
 Voor productie
