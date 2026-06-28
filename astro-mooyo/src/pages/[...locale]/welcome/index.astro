@@ -34,7 +34,7 @@ export { getStaticPaths };
       </div>
     </div>
   </section>
-  <section class="s3 back-red text-align-center center">
+  <section class="s3 back-red center">
     <div class="col3 text-black text-align-justify">
       <div class="card">
         <p class="text-align-center text-red bold">
@@ -77,7 +77,7 @@ export { getStaticPaths };
         >Meer weten over de filosofie</a
       >
       <a href={translatePath("/aanbod")} class="btn red-btn"
-        >Meer weten over ons aanbod</a
+        >Meer weten over het aanbod</a
       >
     </div>
   </section>
@@ -102,13 +102,12 @@ export { getStaticPaths };
   }
 
   .col3 {
-    row-gap: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4rem;
+    margin: auto;
+    max-width: 1700px;
   }
-
-  .s3 {
-    padding: 2rem;
-  }
-
   .btn-container {
     display: flex;
     flex-direction: row;
@@ -124,9 +123,19 @@ export { getStaticPaths };
     border-radius: 10px;
   }
 
+  @media (max-width: 1100px) {
+    .col3 {
+      grid-template-columns: 1fr;
+    }
+  }
+
   @media (max-width: 800px) {
     .welcome .container {
       grid-template-columns: 1fr;
+    }
+
+    .btn-container {
+      flex-direction: column;
     }
   }
 </style>
