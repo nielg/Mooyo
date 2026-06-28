@@ -8,7 +8,7 @@ import {
   getStaticPaths,
   useTranslatedPath,
   useTranslations,
-} from "@src/i18n/utils";
+} from "../../../i18n/utils";
 import AanbodCardContainer from "@components/AanbodCardContainer.astro";
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
