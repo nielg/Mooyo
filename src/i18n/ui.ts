@@ -65,7 +65,7 @@ export const ui = {
     "index.s3.col1.text1":
       "Het maakt niet uit, hoe groot of hoe klein je desoriëntatie is. Je bent welkom.",
     "index.s3.col1.text2":
-      "Gevoelens gaande van ‘Is het dit?’, ‘Wil ik dit echt?’, ‘Waarom ben ik dit aan het doen?’, ‘Word ik hier blij van?’ tot gevoelens die samengaan met vragen zoals: ‘Ik zit vast’, ’Ik weet niet wat te doen’, ‘Ik kan niets.’",
+      "Soms voel je dat je iets anders wilt, maar in beweging komen lukt niet. Zit je met twijfels als ‘Is het dit?’, ‘Wil ik dit echt?’, ‘Waarom ben ik dit aan het doen?’, ‘Word ik hier blij van?’ tot vaststellingen zoals: ‘Ik zit vast’, ’Ik weet niet wat te doen’, ‘Ik kan niets.’",
     "index.s3.col1.text3":
       "Deze vragen zijn richtingaanwijzers en kunnen, met de juiste aandacht en zachtheid, leiden tot nieuwe inzichten en tot een vrijer en voller leven.",
     "index.s3.col2.title": "Tederheid",
@@ -236,7 +236,7 @@ export const ui = {
       "Begeleidingen kunnen ook online plaatsvinden.  Dit werkt even diep, even transformerend. Het gaat om de interne beweging die ontstaat bij jou. Verandering gebeurt immers in het lichaam en in het bewustzijn en dat kan ook wanneer er fysieke afstand is. Wat telt, is dat jij je er comfortabel bij voelt. Wanneer dat aanwezig is, kan het proces zich net zo krachtig ontvouwen.",
     "Prices.e1.title1": "Individuele begeleidingen",
     "Prices.e1.li1": "Een sessie van 60 min is 70 euro (incl BTW)",
-    "Prices.e1.li2": "Een sessie van 90 min is 90 euro (incl BTW)",
+    "Prices.e1.li2": "Een sessie van 90 min is 100 euro (incl BTW)",
     "Prices.e1.details":
       "Ik begeleid mensen die voelen dat het tijd is om opnieuw in beweging te komen. Mensen die bewust (opnieuw) willen voor het leven, voor verbinding en voor het volledig belichamen van hun potentieel. Of je nu op zoek bent naar helderheid, richting, groei of heling: bij Mooyo vind je een plek waar je gezien en gedragen wordt. Ervaar dat het leven meer te bieden heeft wanneer je vanuit je hart durft te bewegen",
     "Prices.title.individual": "Individuele begeleidingen",
@@ -278,7 +278,7 @@ export const ui = {
       "Voor vriendengroepen, verenigingen en families, wil je meer weten over de workshop en de prijs. Stuur een mail naar",
     "Prices.koppels.title": "Begeleiding van koppels",
     "Prices.koppels.li1": "Een sessie van 60 min is 100 euro (incl BTW)",
-    "Prices.koppels.li2": "Een sessie van 90 min is 120 euro (incl BTW)",
+    "Prices.koppels.li2": "Een sessie van 90 min is 130 euro (incl BTW)",
     "Prices.koppels.details":
       "Ook koppels die verlangen naar meer verbinding, begrip en gezamenlijke groei zijn hier welkom. Koppels die bereid zijn om met openheid en moed naar hun eigen innerlijke delen te kijken zoals delen die geraakt worden, die zich terugtrekken, die verlangen, die beschermen. In hartgedragen begeleiding creëren we een veilige bedding waarin beide partners kunnen thuiskomen bij zichzelf én bij elkaar. Vanuit zachtheid, eerlijkheid en aanwezigheid onderzoeken we wat er onder de oppervlakte leeft, zodat liefde, helderheid en echte ontmoeting opnieuw ruimte krijgen.",
     "Prices.e3.title": "Begeleiding van organisaties",
@@ -338,13 +338,13 @@ export const ui = {
     "Prices.label.data": "Data",
     "Prices.label.price": "Prijs",
     "Prices.footprints.title": "Footprints",
-    "Prices.footprints.li1": "Een sessie van 60 min is 55 euro (incl BTW)",
-    "Prices.footprints.li2": "Een sessie van 90 min is 75 euro (incl BTW)",
+    "Prices.footprints.li1": "Een sessie van 60 min is 70 euro (incl BTW)",
+    "Prices.footprints.li2": "Een sessie van 90 min is 100 euro (incl BTW)",
     "Prices.footprints.details.text1":
       "Footprints-methode is een individuele begeleiding van 4 sessies die een essentiële sleutel vormt naar een vrije leven. Wanneer je één van volgende patronen bij jezelf herkent kan Footprints hierop verandering brengen:",
     "Prices.footprints.details.li1": "pleasen",
     "Prices.footprints.details.li2": "zorgen voor",
-    "Prices.footprints.details.li3": "constact bezig zijn",
+    "Prices.footprints.details.li3": "constant bezig zijn",
     "Prices.footprints.details.li4": "controleren",
     "Prices.footprints.details.li5": "nog harder je best doen",
     "Prices.footprints.details.text2":
@@ -375,9 +375,9 @@ export const ui = {
 
     // Aanbod card
     "aanbodCard.individual.text":
-      "Of je nu op zoek bent naar helderheid, richting, groei of heling: bij Mooyo vind je een plek waar je gezien en gedragen wordt. Ervaar dat het leven meer te bieden heeft wanneer je vanuit je hart durft te bewegen",
+      "Of je nu op zoek bent naar helderheid, richting, groei of heling: bij Mooyo vind je een plek waar je gezien en gedragen wordt. Ervaar dat het leven meer te bieden heeft wanneer je vanuit je hart durft te bewegen.",
     "aanbodCard.workshops.text":
-      "Maak ervaringen mee die je bewustzijn openen en je uitnodigen om vanuit een nieuw perspectief naar jezelf, je leven en naar de wereld te kijken. Tijdens deze momenten worden frisse inzichten, andere manieren van waarnemen en vernieuwende gevoelens aangereikt.",
+      "Maak ervaringen mee die je bewustzijn openen en je uitnodigen om vanuit een nieuw perspectief naar jezelf, je leven en naar de wereld te kijken. Deze ervaringen brengen je frisse inzichten, boren nieuwe gevoelens aan en openen manieren van waarnemen die je perspectief vernieuwen.",
     "aanbodCard.organizations.text":
       "Organisaties die bereid zijn om het hart mee te laten spreken kunnen rekenen op begeleiding die verder gaat dan methodes en modellen. Mooyo biedt ook een teambuidingsactiviteit aan.",
     "aanbodCard.seeMore": "lees meer →",
