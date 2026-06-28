@@ -125,11 +125,11 @@ const posts = await sanityClient.fetch<SanityDocument[]>(posts_query, { lang });
                   <div class="post-card-wrapper">
                     <div>
                       <h4 class="text-align-center">{post.title}</h4>
-                      <p class="text-align-center text-gray">
-                        {post.description}
-                      </p>
+                      <p class="text-align-center">{post.description}</p>
                     </div>
-                    <span class="white-btn btn">{t("post.readMore")}</span>
+                    <span class="white-btn btn center">
+                      {t("post.readMore")}
+                    </span>
                   </div>
                 </a>
               ))}
