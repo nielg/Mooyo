@@ -65,7 +65,7 @@ export const ui = {
     "index.s3.col1.text1":
       "Het maakt niet uit, hoe groot of hoe klein je desoriëntatie is. Je bent welkom.",
     "index.s3.col1.text2":
-      "Gevoelens gaande van ‘Is het dit?’, ‘Wil ik dit echt?’, ‘Waarom ben ik dit aan het doen?’, ‘Word ik hier blij van?’ tot gevoelens die samengaan met vragen zoals: ‘Ik zit vast’, ’Ik weet niet wat te doen’, ‘Ik kan niets.’",
+      "Soms voel je dat je iets anders wilt, maar in beweging komen lukt niet. Zit je met twijfels als ‘Is het dit?’, ‘Wil ik dit echt?’, ‘Waarom ben ik dit aan het doen?’, ‘Word ik hier blij van?’ tot vaststellingen zoals: ‘Ik zit vast’, ’Ik weet niet wat te doen’, ‘Ik kan niets.’",
     "index.s3.col1.text3":
       "Deze vragen zijn richtingaanwijzers en kunnen, met de juiste aandacht en zachtheid, leiden tot nieuwe inzichten en tot een vrijer en voller leven.",
     "index.s3.col2.title": "Tederheid",
@@ -344,7 +344,7 @@ export const ui = {
       "Footprints-methode is een individuele begeleiding van 4 sessies die een essentiële sleutel vormt naar een vrije leven. Wanneer je één van volgende patronen bij jezelf herkent kan Footprints hierop verandering brengen:",
     "Prices.footprints.details.li1": "pleasen",
     "Prices.footprints.details.li2": "zorgen voor",
-    "Prices.footprints.details.li3": "constact bezig zijn",
+    "Prices.footprints.details.li3": "constant bezig zijn",
     "Prices.footprints.details.li4": "controleren",
     "Prices.footprints.details.li5": "nog harder je best doen",
     "Prices.footprints.details.text2":
@@ -375,9 +375,9 @@ export const ui = {
 
     // Aanbod card
     "aanbodCard.individual.text":
-      "Of je nu op zoek bent naar helderheid, richting, groei of heling: bij Mooyo vind je een plek waar je gezien en gedragen wordt. Ervaar dat het leven meer te bieden heeft wanneer je vanuit je hart durft te bewegen",
+      "Of je nu op zoek bent naar helderheid, richting, groei of heling: bij Mooyo vind je een plek waar je gezien en gedragen wordt. Ervaar dat het leven meer te bieden heeft wanneer je vanuit je hart durft te bewegen.",
     "aanbodCard.workshops.text":
-      "Maak ervaringen mee die je bewustzijn openen en je uitnodigen om vanuit een nieuw perspectief naar jezelf, je leven en naar de wereld te kijken. Tijdens deze momenten worden frisse inzichten, andere manieren van waarnemen en vernieuwende gevoelens aangereikt.",
+      "Maak ervaringen mee die je bewustzijn openen en je uitnodigen om vanuit een nieuw perspectief naar jezelf, je leven en naar de wereld te kijken. Deze ervaringen brengen je frisse inzichten, boren nieuwe gevoelens aan en openen manieren van waarnemen die je perspectief vernieuwen.",
     "aanbodCard.organizations.text":
       "Organisaties die bereid zijn om het hart mee te laten spreken kunnen rekenen op begeleiding die verder gaat dan methodes en modellen. Mooyo biedt ook een teambuidingsactiviteit aan.",
     "aanbodCard.seeMore": "lees meer →",
