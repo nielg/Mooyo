@@ -59,7 +59,7 @@ export const ui = {
     "index.s3.col1.text1":
       "Het maakt niet uit, hoe groot of hoe klein je desoriëntatie is. Je bent welkom.",
     "index.s3.col1.text2":
-      "Soms voel je dat je iets anders wilt, maar in beweging komen lukt niet. Zit je met twijfels als ‘Is het dit?’, ‘Wil ik dit echt?’, ‘Waarom ben ik dit aan het doen?’, ‘Word ik hier blij van?’ tot vaststellingen zoals: ‘Ik zit vast’, ’Ik weet niet wat te doen’, ‘Ik kan niets.’",
+      "Soms voel je dat je iets anders wilt, maar in beweging komen lukt niet. Of zit je met twijfels als ‘Is het dit?’, ‘Wil ik dit echt?’, ‘Waarom ben ik dit aan het doen?’, ‘Word ik hier blij van?’ of loop je rond met gedachten zoals: ‘Ik zit vast’, ’Ik weet niet wat te doen’, ‘Ik kan niets.’",
     "index.s3.col1.text3":
       "Deze vragen zijn richtingaanwijzers en kunnen, met de juiste aandacht en zachtheid, leiden tot nieuwe inzichten en tot een vrijer en voller leven.",
     "index.s3.col2.title": "Tederheid",
@@ -68,7 +68,7 @@ export const ui = {
     "index.s3.col2.text2":
       "Met tederheid ontstaat veiligheid en kan je de intimiteit met jezelf en met het leven herstellen.",
     "index.s3.col2.text3":
-      "Leer eerst jezelf kennen op diep niveau, in je eigen hart, zodat je van daaruit verbinding kunt maken met de wereld.",
+      "Leer eerst jezelf kennen op een diep niveau, in je eigen hart, zodat je van daaruit verbinding kunt maken met de wereld.",
     "index.s3.col3.title": "Verlangen naar iets ouds en geworteld",
     "index.s3.col3.text1":
       "Er zit kracht in het terugkeren naar je kern, gemeenschap, tradities en aarde.",
@@ -229,13 +229,13 @@ export const ui = {
       "Hartcoherentie is er voor mensen die merken dat hun zenuwstelsel snel overbelast raakt. Het helpt wie met lage veerkracht kampt, wie snel overspoeld raakt door emoties of prikkels, en wie te maken heeft met burn-outklachten zoals uitputting of prikkelgevoeligheid. Ook bij concentratieproblemen, mentale mist of moeite om focus vast te houden, biedt hartcoherentie een zachte en effectieve weg terug naar rust, helderheid en veerkracht.",
     "Prices.burnout.stress.title": "Stressmanagement",
     "Prices.burnout.stress.text":
-      "vormt de basis: je leert je zenuwstelsel tot rust brengen, je ademhaling te reguleren en je lichaam terug in balans te brengen. Dit niveau creëert de stabiliteit die nodig is om helder te denken en bewuste keuzes te maken.",
+      " Vormt de basis: je leert je zenuwstelsel tot rust brengen, je ademhaling te reguleren en je lichaam terug in balans te brengen. Dit niveau creëert de stabiliteit die nodig is om helder te denken en bewuste keuzes te maken.",
     "Prices.burnout.emotions.title": "Emotieregulatie",
     "Prices.burnout.emotions.text":
-      "verdiept het proces: je ontwikkelte veerkracht, leert emoties herkennen zonder erdoor overspoeld te worden en bouwt aan een innerlijke stevigheid. Hierdoor ontstaat meer ruimte, nuance en zelfvertrouwen.",
+      " Verdiept het proces: je ontwikkelt veerkracht, leert emoties herkennen zonder erdoor overspoeld te worden en bouwt aan een innerlijke stevigheid. Hierdoor ontstaat meer ruimte, nuance en zelfvertrouwen.",
     "Prices.burnout.connection.title": "Verbinding",
     "Prices.burnout.connection.text":
-      "is het hoogste niveau: vanuit rust en emotionele helderheid kun je authentiek contact maken — met jezelf én met anderen. Dit is waar hartcoherentie uitmondt in echte aanwezigheid, empathie en samenwerking.",
+      " Is het hoogste niveau: vanuit rust en emotionele helderheid kun je authentiek contact maken, met jezelf én met anderen. Dit is waar hartcoherentie uitmondt in echte aanwezigheid, empathie en samenwerking.",
     "Prices.deeptimewalk.title": "Deep Time Walk",
     "Prices.deeptimewalk.description":
       "Een DeepTimeWalk is een transformatieve, begeleide wandeling door 4,6 miljard jaar geschiedenis van de Aarde. Het is een uitnodiging om onze relatie met Planeet Aarde te bevragen, onze plek binnen haar ecosystemen te verkennen, en onze kijk op de wereld en onszelf te veranderen.",
@@ -323,14 +323,14 @@ export const ui = {
     "Prices.footprints.li1": "Een sessie van 60 min is 70 euro (incl BTW)",
     "Prices.footprints.li2": "Een sessie van 90 min is 100 euro (incl BTW)",
     "Prices.footprints.details.text1":
-      "Footprints-methode is een individuele begeleiding van 4 sessies die een essentiële sleutel vormt naar een vrije leven. Wanneer je één van volgende patronen bij jezelf herkent kan Footprints hierop verandering brengen:",
+      "Footprints-methode is een individuele begeleiding van 4 sessies die een essentiële sleutel vormt naar een vrijer leven. Wanneer je één van volgende patronen bij jezelf herkent kan Footprints hierop verandering brengen:",
     "Prices.footprints.details.li1": "pleasen",
     "Prices.footprints.details.li2": "zorgen voor",
     "Prices.footprints.details.li3": "constant bezig zijn",
     "Prices.footprints.details.li4": "controleren",
     "Prices.footprints.details.li5": "nog harder je best doen",
     "Prices.footprints.details.text2":
-      "Footprints is een ontmoeting met je eigen innerlijke wereld en opent de deur naar emotionele volwassenhied waarbij jouw plek in het systeem geëerd worden waardoor er helderheid ontstaat. Na de eertse sessie voel je je al lichter, de volgende sessies verdiepen dit gevoel waardoor integratie in het dagelijks leven voelbaar en blijvend wordt.",
+      "Footprints is een ontmoeting met je eigen innerlijke wereld en opent de deur naar emotionele volwassenhied waarbij jouw plek in het systeem geëerd wordt waardoor er helderheid ontstaat. Na de eerste sessie voel je je al lichter, de volgende sessies verdiepen dit gevoel waardoor integratie in het dagelijks leven voelbaar en blijvend wordt.",
     "Prices.seeMore": "Zie meer...",
     "Prices.collab": "In samenwerking met Elke Busschots, ",
     "Prices.info": "Voor info en aanmelden, mail",
