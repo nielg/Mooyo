@@ -5,8 +5,6 @@ import type { SanityDocument } from "@sanity/client";
 import Layout from "../../layouts/Layout.astro";
 import hart_rond from "../../assets/rondevormen/hart_rond.png";
 import profiel from "../../assets/profiel-square.png";
-import linkedin from "../../assets/icons/linkedin.svg?raw";
-import facebook from "../../assets/icons/facebook.svg?raw";
 import ContactSection from "@components/Contact-section.astro";
 import {
   getStaticPaths,
@@ -15,6 +13,7 @@ import {
   useTranslatedPath,
 } from "../../i18n/utils";
 import AanbodCardContainer from "@components/AanbodCardContainer.astro";
+import Socials from "@components/Socials.astro";
 export { getStaticPaths };
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -66,15 +65,15 @@ const posts = await sanityClient.fetch<SanityDocument[]>(posts_query, { lang });
     </div>
   </section>
 
-  <section class="profile back-white text-black">
+  <section class="profile back-white text-black regular-font">
     <Image src={profiel} class="img" alt="Profiel foto van Bram Geysen" />
     <div class="text">
-      <h2 class="text-red">Bram Geysen</h2>
+      <h2 class="text-red papyrus-font">Bram Geysen</h2>
       <p>
         Rondestraat 38 <br /> 3000 Leuven, Belgium <br />
         {t("index.distance.station")}
       </p>
-      <p class="title">Contact</p>
+      <h4 class="title papyrus-font">Contact</h4>
       <p class="text-red">
         <a href="tel:+32473523094">[+32 473 52 30 94]</a>
       </p>
@@ -83,17 +82,8 @@ const posts = await sanityClient.fetch<SanityDocument[]>(posts_query, { lang });
           >[bramgeysen@gmail.com]</a
         >
       </p>
-      <p class="title">Socials</p>
-      <div>
-        <div class="socials-container text-gray">
-          <button title="linkedin" class="btn-reset icon">
-            <Fragment set:html={linkedin} />
-          </button>
-          <button title="facebook" class="btn-reset icon">
-            <Fragment set:html={facebook} />
-          </button>
-        </div>
-      </div>
+      <h4 class="title papyrus-font">Socials</h4>
+      <Socials />
       <p class="about-link">
         <a href={translatePath("/about")}>Lees hier meer over mij</a>
       </p>
@@ -101,7 +91,9 @@ const posts = await sanityClient.fetch<SanityDocument[]>(posts_query, { lang });
   </section>
 
   <AanbodCardContainer />
+
   <ContactSection color="gray" />
+
   <section class="back-red text-white blog">
     <div class="small-text-margin center">
       <h2 class="text-align-center">{t("index.blog.title")}</h2>
@@ -140,104 +132,105 @@ const posts = await sanityClient.fetch<SanityDocument[]>(posts_query, { lang });
       <hr class="white-line" />
     </div>
   </section>
-  <style>
-    section {
-      padding: 2rem;
-    }
+</Layout>
 
-    .intro .container {
+<style>
+  section {
+    padding: 2rem;
+  }
+
+  .intro .container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 2rem;
+  }
+
+  .s4 {
+    font-size: 2rem;
+  }
+
+  .intro .img-container .img {
+    width: 100%;
+    height: auto;
+    max-width: 450px;
+    max-height: 450px;
+  }
+
+  .profile {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
+  }
+
+  .profile .img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+  }
+
+  .profile .text {
+    padding: 2rem;
+  }
+
+  .profile .title {
+    font-weight: 700;
+  }
+
+  .profile .about-link {
+    border-bottom: 1px solid var(--mooyo-red);
+    width: fit-content;
+    padding: 0 0 0.3rem 0;
+  }
+
+  .profile .socials-container {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 2rem;
+  }
+
+  .content-end {
+    text-align: end;
+  }
+
+  /* Responsive */
+  @media (max-width: 1900px) {
+    .profile .img {
+      top: 0;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .s3 .col3 {
       display: grid;
-      grid-template-columns: 50% 50%;
-      gap: 2rem;
+      grid-template-columns: auto;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .intro .container,
+    .welcome .container,
+    .profile {
+      grid-template-columns: auto;
+    }
+    .intro .img {
+      display: none;
     }
 
-    .s4 {
-      font-size: 2rem;
-    }
-
-    .s4 {
-      font-size: 2rem;
-    }
-    .intro .img-container .img {
-      width: 100%;
-      height: auto;
-      max-width: 450px;
-      max-height: 450px;
+    .welcome .img,
+    .profile .img {
+      grid-row: 2;
+      min-width: unset;
     }
 
     .profile {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
       padding: 0;
     }
+
     .profile .img {
-      position: relative;
       width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: bottom;
     }
-
-    .profile .text {
-      padding: 2rem;
-    }
-
-    .profile .title {
-      font-weight: 700;
-    }
-
-    .profile .about-link {
-      border-bottom: 1px solid var(--mooyo-red);
-      width: fit-content;
-      padding: 0 0 0.3rem 0;
-    }
-
-    .profile .socials-container {
-      display: flex;
-      flex-direction: row;
-      align-items: stretch;
-      gap: 2rem;
-    }
-    .content-end {
-      text-align: end;
-    }
-
-    /* Responsive */
-    @media (max-width: 1900px) {
-      .profile .img {
-        top: 0;
-      }
-    }
-
-    @media (max-width: 1200px) {
-      .s3 .col3 {
-        display: grid; /* Added ensuring col3 recognizes grid settings */
-        grid-template-columns: auto;
-      }
-    }
-
-    @media (max-width: 900px) {
-      .intro .container,
-      .welcome .container,
-      .profile {
-        grid-template-columns: auto;
-      }
-      .intro .img {
-        display: none;
-      }
-
-      .welcome .img,
-      .profile .img {
-        grid-row: 2;
-        min-width: unset; /* Fixed 'none' syntax error */
-      }
-
-      .profile {
-        padding: 0;
-      }
-      .profile .img {
-        width: 100%;
-      }
-    }
-  </style>
-</Layout>
+  }
+</style>
