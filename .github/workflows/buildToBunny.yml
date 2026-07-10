@@ -19,7 +19,7 @@ jobs:
           cache-dependency-path: "./astro-mooyo/package-lock.json"
 
       - name: Install dependencies
-        run: npm install
+        run: npm install --legacy-peer-deps
         working-directory: ./astro-mooyo
 
       - name: Build Astro site
