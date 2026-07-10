@@ -14,20 +14,24 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "22" # This ensures you use a supported version
+          node-version: "22"
           cache: "npm"
+          cache-dependency-path: "./astro-mooyo/package-lock.json"
 
       - name: Install dependencies
         run: npm install
+        working-directory: ./astro-mooyo
 
       - name: Build Astro site
         run: npm run build
+        working-directory: ./astro-mooyo
 
       - name: Deploy to Bunny.net
         uses: R-J-dev/bunny-deploy@a702dd418dcae6cc1737a20a2322873bf7640ee0 # main
         with:
           access-key: ${{ secrets.BUNNY_API_KEY }}
-          directory-to-upload: "./dist"
+          # Points Bunny to the nested build output folder
+          directory-to-upload: "./astro-mooyo/dist"
           storage-zone-name: "mooyo"
           storage-zone-password: ${{ secrets.BUNNY_STORAGE_PASSWORD }}
           storage-endpoint: "https://storage.bunnycdn.com"

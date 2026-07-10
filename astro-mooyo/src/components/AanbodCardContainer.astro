@@ -1,0 +1,54 @@
+---
+import AanbodCard from "./AanbodCard.astro";
+import img1 from "@src/assets/aanbodCard/aanbod_1.jpg";
+import img2 from "@src/assets/aanbodCard/aanbod_2.jpg";
+import img3 from "@src/assets/aanbodCard/aanbod_3.jpg";
+import { getStaticPaths, getLangFromUrl, useTranslations } from "../i18n/utils";
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<section class="aanbod-link back-red">
+  <div class="container">
+    <AanbodCard
+      title={t("Prices.title.individual")}
+      text={t("aanbodCard.individual.text")}
+      img={img1}
+      link="individual"
+    />
+    <AanbodCard
+      title={t("Prices.title.workshops")}
+      text={t("aanbodCard.workshops.text")}
+      img={img2}
+      link="workshops"
+    />
+    <AanbodCard
+      title={t("Prices.title.organizations")}
+      text={t("aanbodCard.organizations.text")}
+      img={img3}
+      link="organizations"
+    />
+  </div>
+</section>
+<style>
+  section {
+    padding: 2rem;
+  }
+  .about-link {
+    margin-top: 3rem;
+  }
+
+  .aanbod-link .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4rem;
+    margin: auto;
+    max-width: 1700px;
+  }
+
+  @media (max-width: 1100px) {
+    .aanbod-link .container {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

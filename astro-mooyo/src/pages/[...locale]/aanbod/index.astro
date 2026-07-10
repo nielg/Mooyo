@@ -1,0 +1,109 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import {
+  getLangFromUrl,
+  useTranslations,
+  getStaticPaths,
+} from "../../../i18n/utils";
+import ContactSection from "@components/Contact-section.astro";
+import Aanbod from "@components/Aanbod.astro";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+export { getStaticPaths };
+---
+
+<Layout title={t("aanbod.title")}>
+  <section class="forWho text-align-center back-red text-white regular-font">
+    <div class="text-margin">
+      <h1>{t("aanbod.forwho.title")}</h1>
+      <p set:html={t("aanbod.forwho.text")} />
+      <p class="papyrus-font">
+        Mooyo is een uitnodiging om volledig aanwezig te zijn met alles wat je
+        meedraagt, precies zoals je bent.
+      </p>
+    </div>
+  </section>
+
+  <Aanbod />
+
+  <section class="methodieken back-gray text-black center regular-font">
+    <div class="text-margin">
+      <h3 class="text-align-center text-red papyrus-font">
+        {t("methodieken.title")}
+      </h3>
+      ``
+      <div class="col2">
+        <div>
+          <ul class="infinity-list">
+            <li>Hartcoherentie - Heartmath</li>
+            <li>Footprints - RIIHS - Carola Castillo</li>
+            <li>Reconstructive - RIIHS - Carola Castillo</li>
+            <li>InterFamilySystems - IFS instituut</li>
+            <li>A Parts Approach to Preverbal Attachment Trauma - nicabem</li>
+            <li>Talentgedreven coachen - BlijMetMijAcademie</li>
+            <li>Familie Opstellingen - Stephan Hausser</li>
+          </ul>
+        </div>
+        <div>
+          <ul class="infinity-list">
+            <li>Mastering the Treatment of Trauma - nicabem</li>
+            <li>Advanced Mastering program on Treatment of Trauma - nicabem</li>
+            <li>
+              Working with Emerging Adults: Key Factors That Can Impact
+              Treatment - nicabem
+            </li>
+            <li>How to work with shame - nicabem</li>
+            <li>Radical Compassion - Tara Brach</li>
+            <li>Meditatie - Mindfulness</li>
+            <li>SAND - Indigenous wisdom and healing</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <ContactSection color="red" />
+
+  <section class="openHartcirkels back-white text-gray center">
+    <h3 class="text-red bold">{t("openHartCirkels.title")}</h3>
+    <p>
+      {t("openHartCirkels.text")}
+      <a href="#" class="text-red">www.hartcirkels.be</a>
+    </p>
+  </section>
+
+  <section class="s6 back-red text-white text-align-center">
+    <h3 set:html={t("aanbod.s6.text")} />
+  </section>
+</Layout>
+
+<style>
+  section {
+    padding: 2rem;
+  }
+
+  .methodieken .border-bottom {
+    border-bottom: 1px solid var(--mooyo-red);
+    padding: 2rem;
+  }
+
+  .methodieken .col2 {
+    display: grid; /* Fixed: Added grid display initialization */
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Responsive Queries */
+  @media (max-width: 1200px) {
+    .quotes {
+      display: none;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .methodieken .col2 {
+      grid-template-columns: auto;
+    }
+  }
+</style>

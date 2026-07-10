@@ -1,0 +1,94 @@
+---
+import { languages } from "../../i18n/ui";
+import {
+  getLangFromUrl,
+  getRouteFromUrl,
+  useTranslatedPath,
+} from "../../i18n/utils";
+
+const langFromUrl = getLangFromUrl(Astro.url);
+const route = getRouteFromUrl(Astro.url);
+const translatePath = useTranslatedPath(langFromUrl);
+const { place } = Astro.props;
+
+interface Props {
+  place: "header" | "footer";
+}
+---
+
+<div class="taal-switch" data-place={place}>
+  {
+    Object.entries(languages).map(([lang, label]) => (
+      <a
+        href={translatePath(`/${route || ""}`, lang)}
+        class={lang === langFromUrl ? "active" : ""}
+      >
+        {label}
+      </a>
+    ))
+  }
+</div>
+
+<style>
+  .taal-switch {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1rem;
+  }
+
+  .taal-switch[data-place="header"] {
+    position: absolute;
+    right: 2rem;
+    top: 1.5rem;
+  }
+
+  a {
+    border-radius: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    transition:
+      background-color 0.3s ease-in,
+      color 0.3s ease-in;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+
+  .taal-switch[data-place="header"] a {
+    border: 1px solid var(--mooyo-red);
+    color: black;
+  }
+
+  .taal-switch[data-place="footer"] a {
+    color: black;
+    border: 1px solid black;
+    background-color: var(--mooyo-gray);
+  }
+
+  .taal-switch[data-place="header"] a:hover {
+    background-color: rgb(128, 119, 119);
+    border-color: rgb(128, 119, 119);
+    color: white;
+  }
+
+  .taal-switch[data-place="header"] .active {
+    color: white;
+    background-color: var(--mooyo-red);
+  }
+
+  .taal-switch[data-place="footer"] .active {
+    color: white;
+    background-color: rgb(39, 32, 32);
+    border-color:;
+  }
+
+  @media (max-width: 500px) {
+    .taal-switch[data-place="header"] {
+      position: relative;
+      top: unset;
+      right: unset;
+
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+</style>

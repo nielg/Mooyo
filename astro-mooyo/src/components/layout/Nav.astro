@@ -1,0 +1,83 @@
+---
+import {
+  getLangFromUrl,
+  useTranslations,
+  useTranslatedPath,
+} from "../../i18n/utils";
+const lang = getLangFromUrl(Astro.url);
+const translatePath = useTranslatedPath(lang);
+const t = useTranslations(lang);
+
+interface Props {
+  pathname: string;
+}
+const { pathname } = Astro.props;
+
+const isActive = (path: string) => {
+  const normalize = (p: string) => p.replace(/\/+$/, "").replace(/^\/+/, "");
+  return normalize(pathname) === normalize(path);
+};
+---
+
+<nav class="text-black">
+  <a
+    href={translatePath("/")}
+    class={isActive(translatePath("")) ? "text-red bold" : ""}>HOME</a
+  >
+  <a
+    href={translatePath("/welcome")}
+    class={isActive(translatePath("/welcome")) ? "text-red bold" : ""}
+    >{t("nav.welcome")}</a
+  >
+  <a
+    href={translatePath("/filosofie")}
+    class={isActive(translatePath("/filosofie")) ? "text-red bold" : ""}
+    >{t("nav.filosofie")}</a
+  >
+  <a
+    href={translatePath("/aanbod")}
+    class={isActive(translatePath("/aanbod")) ? "text-red bold" : ""}
+    >{t("nav.aanbod")}</a
+  >
+  <a
+    href={translatePath("/about")}
+    class={isActive(translatePath("/about")) ? "text-red bold" : ""}
+    >{t("nav.about")}</a
+  >
+</nav>
+
+<style>
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    position: sticky;
+    top: 0;
+    background-color: var(--mooyo-white);
+    z-index: 1000;
+    padding: 1.5rem 0;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  a {
+    padding: 0 0.7rem 0.5rem 0.7rem;
+    display: inline-block;
+    border-bottom: 1px solid white;
+  }
+  a:hover {
+    transform: scale(1.2);
+    border-color: var(--mooyo-red);
+    transition: all 0.2s ease;
+  }
+
+  /* Responsive */
+
+  @media (max-width: 800px) {
+    nav {
+      flex-direction: column;
+      gap: 2rem;
+      position: relative;
+    }
+  }
+</style>

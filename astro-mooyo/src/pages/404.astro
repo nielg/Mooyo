@@ -1,0 +1,87 @@
+---
+import Layout from "@layouts/Layout.astro";
+import {
+  getStaticPaths,
+  getLangFromUrl,
+  useTranslatedPath,
+  useTranslations,
+} from "../i18n/utils";
+export { getStaticPaths };
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
+---
+
+<Layout title={`404 - ${t("404.title")}`}>
+  <main class="error-container back-red text-white">
+    <section class="error-content">
+      <div class="error-code">404</div>
+
+      <h1>{t("404.title")}</h1>
+      <p class="error-message">
+        {t("404.text")}
+      </p>
+
+      <div class="action-wrapper">
+        <a href={translatePath("/")} class="white-btn btn">
+          {t("404.btn")}
+        </a>
+      </div>
+    </section>
+  </main>
+</Layout>
+
+<style>
+  .error-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 200px);
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .error-content {
+    max-width: 500px;
+    animation: fadeIn 0.6s ease-out;
+  }
+
+  .error-code {
+    font-size: 6rem;
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: 1rem;
+    opacity: 0.15;
+    letter-spacing: -0.05em;
+  }
+
+  h1 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  .error-message {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
+    color: #e2e8f0;
+  }
+
+  .white-btn {
+    background-color: #ffffff;
+    color: var(--color-green, #1b4332);
+    text-decoration: none;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>

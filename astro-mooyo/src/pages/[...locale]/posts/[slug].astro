@@ -1,0 +1,104 @@
+---
+import type { SanityDocument } from "@sanity/client";
+import { sanityClient } from "sanity:client";
+import {
+  createImageUrlBuilder,
+  type SanityImageSource,
+} from "@sanity/image-url";
+import { PortableText } from "astro-portabletext";
+import Layout from "../../../layouts/Layout.astro";
+import {
+  getLangFromUrl,
+  useTranslatedPath,
+  useTranslations,
+} from "../../../i18n/utils";
+import { supportedLanguages } from "../../../i18n/ui";
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
+
+const POST_QUERY = `*[_type == "post" && slug.current == $slug][0]`;
+const post = await sanityClient.fetch<SanityDocument>(POST_QUERY, Astro.params);
+
+export async function getStaticPaths() {
+  const SLUGS_QUERY = `*[_type == "post" && defined(slug.current)]{
+    "slug": slug.current
+  }`;
+
+  const posts = await sanityClient.fetch<{ slug: string }[]>(SLUGS_QUERY);
+
+  return supportedLanguages.flatMap((l) => {
+    return posts.map((post) => ({
+      params: {
+        locale: l === "nl" ? undefined : l,
+        slug: post.slug,
+      },
+    }));
+  });
+}
+
+const { projectId, dataset } = sanityClient.config();
+const urlFor = (source: SanityImageSource) =>
+  projectId && dataset
+    ? createImageUrlBuilder({ projectId, dataset }).image(source)
+    : null;
+const postImageUrl = post.image
+  ? urlFor(post.image)?.width(550).height(310).url()
+  : null;
+---
+
+<Layout title={post?.title || "Post"}>
+  <section class="back-red text-white">
+    <a href={translatePath("/posts")}>
+      <button class="white-btn"> &larr; {t("post.back")} </button>
+    </a>
+    {
+      postImageUrl && (
+        <img
+          src={postImageUrl}
+          alt={post.title}
+          class="aspect-video rounded-xl"
+          width="550"
+          height="310"
+        />
+      )
+    }
+    <h1 class="text-align-center">{post.title}</h1>
+
+    <div class="container back-white text-gray regular-font">
+      {Array.isArray(post.body) && <PortableText value={post.body} />}
+      <p class="date">
+        {t("post.published")}: {new Date(post.publishedAt).toLocaleDateString()}
+      </p>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  section {
+    padding: 2rem;
+  }
+
+  .container {
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow:
+      0 4px 6px -1px rgba(0, 0, 0, 0.05),
+      0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(28, 61, 39, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition:
+      transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+      box-shadow 0.3s ease;
+    position: relative;
+  }
+
+  .date {
+    font-size: 0.8rem;
+    position: absolute;
+    bottom: -0.5rem;
+    right: 10px;
+  }
+</style>
