@@ -1,0 +1,50 @@
+---
+import linkedin from "@assets/icons/linkedin.svg?raw";
+import facebook from "@assets/icons/facebook.svg?raw";
+import instagram from "@assets/icons/instagram.svg?raw";
+import whatsapp from "@assets/icons/whatsapp.svg?raw";
+---
+
+<div class="socials-container text-gray">
+  <a
+    href="https://www.linkedin.com/in/bram-geysen-8096753a6/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <button title="linkedin" class="btn-reset icon">
+      <Fragment set:html={linkedin} />
+    </button>
+  </a>
+  <a
+    href="https://www.facebook.com/profile.php?id=61590629735678"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <button title="facebook" class="btn-reset icon">
+      <Fragment set:html={facebook} />
+    </button>
+  </a>
+  <a
+    href="https://www.instagram.com/bramgeysen/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <button title="instagram" class="btn-reset icon">
+      <Fragment set:html={instagram} />
+    </button>
+  </a>
+  <a href="https://wa.me/32473523094" target="_blank" rel="noopener noreferrer">
+    <button title="whatsapp" class="btn-reset icon">
+      <Fragment set:html={whatsapp} />
+    </button>
+  </a>
+</div>
+
+<style>
+  .socials-container {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 2rem;
+  }
+</style>
