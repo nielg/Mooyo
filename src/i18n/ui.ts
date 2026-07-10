@@ -74,12 +74,12 @@ export const ui = {
     "index.s3.col2.text2":
       "Met tederheid ontstaat veiligheid en kan je de intimiteit met jezelf en met het leven herstellen.",
     "index.s3.col2.text3":
-      "Leer eerst jezelf kennen op diep niveau, in je eigen hart, zodat je van daaruit verbinding kunt maken met de wereld.",
+      "Leer eerst jezelf kennen op een diep niveau, in je eigen hart, zodat je van daaruit verbinding kunt maken met de wereld.",
     "index.s3.col3.title": "Verlangen naar iets ouds en geworteld",
     "index.s3.col3.text1":
       "Er zit kracht in het terugkeren naar je kern, gemeenschap, tradities en aarde.",
     "index.s3.col3.text2":
-      "Herontdek jouw plaats en missie in de wereld. Hier zijn alle delen welkom, hier voel je de kracht van oude wortels omhoog komen om je voeten te ontmoeten, en fluistert de aarde:  jij hoort erbij. Hier wordt niets van je gevraagd behalve je aanwezigheid.",
+      "Herontdek jouw plaats en missie in de wereld. Hier zijn alle delen welkom, hier voel je de kracht van oude wortels omhoog komen om je voeten te ontmoeten, en fluistert de aarde: jij hoort erbij. Hier wordt niets van je gevraagd behalve je aanwezigheid.",
 
     // Index section 4
     "index.s4.text1":
@@ -148,9 +148,9 @@ export const ui = {
     "pillars.adem.list1":
       "Het leven aanvaarden zoals het nu is, niet zoals je het zou willen dat het is.",
     "pillars.adem.list2":
-      "De tijdelijkheid van het moment inzien, zonder weerstand, zonder vasthouden. ",
+      "De tijdelijkheid van het moment inzien, zonder weerstand, zonder vasthouden.",
     "pillars.adem.list3":
-      " Ademhaling is de poort tussen het bewuste en onbewuste: we kunnen de ademhaling bewust sturen en tegelijk werkt de ademhaling autonoom.",
+      "Ademhaling is de poort tussen het bewuste en onbewuste: we kunnen de ademhaling bewust sturen en tegelijk werkt de ademhaling autonoom.",
     "pillars.adem.list4":
       "Ademhaling speelt een belangrijke rol in ons dagelijks leven en kan ingezet worden als regulatie bij stress, bij ongemak.",
     "pillars.hart.title": "Het Hart",
@@ -180,7 +180,7 @@ export const ui = {
     "pillars.bewust.list3":
       "Zonder het kind wordt de volwassene functioneel, afgesneden. Zonder de volwassene wordt het kind onveilig, ongegrond, onbeschermd.",
     "pillars.bewust.list4":
-      "Wanneer het kind en de volwassene elkaar vinden, ontstaat: <br> veiligheid zonder verstarring, speelsheid zonder chaos, kracht zonder hardheid, zachtheid zonder breekbaarheid",
+      "Wanneer het kind en de volwassene elkaar vinden, ontstaat: veiligheid zonder verstarring, speelsheid zonder chaos, kracht zonder hardheid, zachtheid zonder breekbaarheid",
 
     // Filosofie essentie
     "filosofie.essentie.text1":
@@ -209,18 +209,18 @@ export const ui = {
     "about.s2.e1.text2":
       "Momenteel woon ik in Kessel-lo. Ik heb vier kinderen.",
     "about.s2.e1.text3":
-      "De gebeurtenissen in mijn leven zijn de bouwstenen die mij tot dit punt hebben gebracht. Door de laatste 10 jaren bewust naar de pijnen en uitdagingen van mijn eigen leven te kijken en er door te gaan, heb ik een diepe bron aan inzichten en ervaringen ontwikkeld. Mijn proces is nog steeds bezig.",
+      "De gebeurtenissen in mijn leven zijn de bouwstenen die mij tot dit punt hebben gebracht. Door de laatste 10 jaren bewust naar de pijnen en uitdagingen van mijn eigen leven te kijken en er door te gaan, heb ik een diepe bron aan inzichten en ervaringen ontwikkeld.",
     "about.s2.e1.text4":
       "Carl Jung zegt: “The privilege of a lifetime is to become who you truly are.” ",
     "about.s2.e1.text6":
       "Ik ben dankbaar voor alles wat geweest is; het heeft me gevormd en veel goeds gebracht. Ik kijk hoopvol uit naar de toekomst. Vanuit die dankbaarheid is Mooyo ontstaan — mijn inspiratie én mijn toewijding om anderen te begeleiden op hun eigen unieke reis.",
     "about.s2.e1.text7":
-      " Momenteel werk ik deeltijds bij Adem vzw als Teamcoach en halftijds als zelfstandige.",
+      "Naast mijn privépraktijk werk ik deeltijds als teamcoach bij Adem vzw, een Belgische non-profitorganisatie die mensen en kinderen met bijzondere zorgbehoeften ondersteunt via aangepaste woonvormen, dagprogramma’s, thuisbegeleiding en therapeutische activiteiten.",
     "about.s2.e2.title": "Waarom kiezen voor Mooyo?",
     "about.s2.e2.text1":
       "Mijn begeleidingsstijl wordt gekenmerkt door een diepe kwaliteit van aanwezigheid en een kalme rust. Dit stelt mij in staat om een veilige en ondersteunende omgeving te creëren waarin jij je volledig kunt openstellen en groeien.",
     "about.s2.e2.text2":
-      "Drie jaar geleden kwam ik in aanraking met het boeddhisme en meditatie. Sindsdien is het boeddhistisch gedachten goed en dagelijkse meditatie een vast onderdeel van mijn leven geworden. Het helpt me om met meer helderheid, rust en aanwezigheid in het leven te staan — kwaliteiten die ik ook meeneem in mijn werk met anderen.",
+      "Het boeddhisme en dagelijkse meditatie staan centraal in mijn leven. Ze bieden mij stabiliteit, reflectie en diepgang in mijn werk. Het helpt me om met meer helderheid, rust en aanwezigheid in het leven te staan — kwaliteiten die ik ook meeneem in mijn werk met anderen.",
 
     // Posts
 
@@ -247,13 +247,13 @@ export const ui = {
       "Hartcoherentie is er voor mensen die merken dat hun zenuwstelsel snel overbelast raakt. Het helpt wie met lage veerkracht kampt, wie snel overspoeld raakt door emoties of prikkels, en wie te maken heeft met burn-outklachten zoals uitputting of prikkelgevoeligheid. Ook bij concentratieproblemen, mentale mist of moeite om focus vast te houden, biedt hartcoherentie een zachte en effectieve weg terug naar rust, helderheid en veerkracht.",
     "Prices.burnout.stress.title": "Stressmanagement",
     "Prices.burnout.stress.text":
-      "vormt de basis: je leert je zenuwstelsel tot rust brengen, je ademhaling te reguleren en je lichaam terug in balans te brengen. Dit niveau creëert de stabiliteit die nodig is om helder te denken en bewuste keuzes te maken.",
+      "Vormt de basis: je leert je zenuwstelsel tot rust brengen, je ademhaling te reguleren en je lichaam terug in balans te brengen. Dit niveau creëert de stabiliteit die nodig is om helder te denken en bewuste keuzes te maken.",
     "Prices.burnout.emotions.title": "Emotieregulatie",
     "Prices.burnout.emotions.text":
-      "verdiept het proces: je ontwikkelte veerkracht, leert emoties herkennen zonder erdoor overspoeld te worden en bouwt aan een innerlijke stevigheid. Hierdoor ontstaat meer ruimte, nuance en zelfvertrouwen.",
+      "Verdiept het proces: je ontwikkelt veerkracht, leert emoties herkennen zonder erdoor overspoeld te worden en bouwt aan een innerlijke stevigheid. Hierdoor ontstaat meer ruimte, nuance en zelfvertrouwen.",
     "Prices.burnout.connection.title": "Verbinding",
     "Prices.burnout.connection.text":
-      "is het hoogste niveau: vanuit rust en emotionele helderheid kun je authentiek contact maken — met jezelf én met anderen. Dit is waar hartcoherentie uitmondt in echte aanwezigheid, empathie en samenwerking.",
+      "Is het hoogste niveau: vanuit rust en emotionele helderheid kun je authentiek contact maken, met jezelf én met anderen. Dit is waar hartcoherentie uitmondt in echte aanwezigheid, empathie en samenwerking.",
     "Prices.deeptimewalk.title": "Deep Time Walk",
     "Prices.deeptimewalk.description":
       "Een DeepTimeWalk is een transformatieve, begeleide wandeling door 4,6 miljard jaar geschiedenis van de Aarde. Het is een uitnodiging om onze relatie met Planeet Aarde te bevragen, onze plek binnen haar ecosystemen te verkennen, en onze kijk op de wereld en onszelf te veranderen.",
@@ -283,7 +283,7 @@ export const ui = {
       "Ook koppels die verlangen naar meer verbinding, begrip en gezamenlijke groei zijn hier welkom. Koppels die bereid zijn om met openheid en moed naar hun eigen innerlijke delen te kijken zoals delen die geraakt worden, die zich terugtrekken, die verlangen, die beschermen. In hartgedragen begeleiding creëren we een veilige bedding waarin beide partners kunnen thuiskomen bij zichzelf én bij elkaar. Vanuit zachtheid, eerlijkheid en aanwezigheid onderzoeken we wat er onder de oppervlakte leeft, zodat liefde, helderheid en echte ontmoeting opnieuw ruimte krijgen.",
     "Prices.e3.title": "Begeleiding van organisaties",
     "Prices.e3.li1": "Een sessie van één halve dag is 500 euro (excl BTW)",
-    "Prices.e3.li2": " Een sessie van één dag is 800 euro (excl BTW)",
+    "Prices.e3.li2": "Een sessie van één dag is 800 euro (excl BTW)",
     "Prices.e3.details":
       "Organisaties die bereid zijn om het hart mee te laten spreken kunnen rekenen op begeleiding die verder gaat dan methodes en modellen. In (zelfsturende) teams blijkt regelmatig dat er nog een essentieel element ontbreekt om optimaal te functioneren: de innerlijke afstemming die nodig is zodat elk teamlid in zijn hartgedragen kracht kan stappen. Wanneer dat ontbrekende stuk wordt ingevuld, ontstaat er een team dat niet alleen zelfsturend is, maar ook werkelijk zelfbewust, verbonden en veerkrachtig. Zo ontstaat er een duurzaam fundament voor effectieve samenwerking, eigenaarschap en resultaatgerichtheid.",
     "Prices.construct.title": "Voorbij je construct",
@@ -341,14 +341,14 @@ export const ui = {
     "Prices.footprints.li1": "Een sessie van 60 min is 70 euro (incl BTW)",
     "Prices.footprints.li2": "Een sessie van 90 min is 100 euro (incl BTW)",
     "Prices.footprints.details.text1":
-      "Footprints-methode is een individuele begeleiding van 4 sessies die een essentiële sleutel vormt naar een vrije leven. Wanneer je één van volgende patronen bij jezelf herkent kan Footprints hierop verandering brengen:",
+      "Footprints-methode is een individuele begeleiding van 4 sessies die een essentiële sleutel vormt naar een vrijer leven. Wanneer je één van volgende patronen bij jezelf herkent kan Footprints hierop verandering brengen:",
     "Prices.footprints.details.li1": "pleasen",
     "Prices.footprints.details.li2": "zorgen voor",
     "Prices.footprints.details.li3": "constant bezig zijn",
     "Prices.footprints.details.li4": "controleren",
     "Prices.footprints.details.li5": "nog harder je best doen",
     "Prices.footprints.details.text2":
-      "Footprints is een ontmoeting met je eigen innerlijke wereld en opent de deur naar emotionele volwassenhied waarbij jouw plek in het systeem geëerd worden waardoor er helderheid ontstaat. Na de eertse sessie voel je je al lichter, de volgende sessies verdiepen dit gevoel waardoor integratie in het dagelijks leven voelbaar en blijvend wordt.",
+      "Footprints is een ontmoeting met je eigen innerlijke wereld en opent de deur naar emotionele volwassenhied waarbij jouw plek in het systeem geëerd wordt waardoor er helderheid ontstaat. Na de eerste sessie voel je je al lichter, de volgende sessies verdiepen dit gevoel waardoor integratie in het dagelijks leven voelbaar en blijvend wordt.",
     "Prices.seeMore": "Zie meer...",
     "Prices.collab": "In samenwerking met Elke Busschots, ",
     "Prices.info": "Voor info en aanmelden, mail ",
