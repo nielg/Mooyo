@@ -107,7 +107,7 @@ export const ui = {
     // Aanbod section 5
     "openHartCirkels.title": "Open hartcirkels",
     "openHartCirkels.text":
-      "Voor meer informatie zie (verwachting eind septemeber):",
+      "Voor meer informatie zie (verwachting eind november):",
 
     // Aanbod section 6
     "aanbod.s6.text":
@@ -142,7 +142,7 @@ export const ui = {
     "pillars.adem.subtitle1": "Adem",
     "pillars.adem.subtitle2": "De kracht van het moment",
     "pillars.adem.img.text1":
-      "De twee golflijnen staan voor verbinding: de in- en uitademing. De streep stelt het middenrif voor en staat voor ondersteuning",
+      "De twee golflijnen staan voor verbinding: de in- en uitademing",
     "pillars.adem.img.text2":
       "Betekenis: Adem als brug tussen lichaam en geest, beïnvloedt emoties, zenuwstelsels en mentale helderheid.",
     "pillars.adem.list1":
@@ -172,7 +172,7 @@ export const ui = {
     "pillars.bewust.img.text1":
       "De segmenten zijn verschillend - een verwijzing naar herinneringen, littekens, geschiedenis.",
     "pillars.bewust.img.text2":
-      "Betekenis: Het lichaam als drager van alles wat is geweest",
+      "Betekenis: Het lichaam als drager van alles wat is geweest.",
     "pillars.bewust.list1":
       "De ontmoeting tussen het kinddeel en het volwassendeel.",
     "pillars.bewust.list2":
@@ -488,7 +488,7 @@ export const ui = {
     // Aanbod section 5
     "openHartCirkels.title": "Open heart circles",
     "openHartCirkels.text":
-      "For more information see (expected late September):",
+      "For more information see (expected late november):",
 
     // Aanbod section 6
     "aanbod.s6.text":
@@ -523,7 +523,7 @@ export const ui = {
     "pillars.adem.subtitle1": "Breath",
     "pillars.adem.subtitle2": "The Power of the Moment",
     "pillars.adem.img.text1":
-      "The two wavy lines represent connection: the inhalation and exhalation. The line represents the diaphragm and stands for support.",
+      "The two wavy lines represent connection: the inhalation and exhalation.",
     "pillars.adem.img.text2":
       "Meaning: Breath as a bridge between body and mind, influencing emotions, nervous systems, and mental clarity.",
     "pillars.adem.list1":
