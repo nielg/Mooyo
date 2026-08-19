@@ -1,0 +1,76 @@
+<div id="container">
+  <div class="tab">
+    <p>Individuele begeleidingen</p>
+  </div>
+  <div class="tab active">
+    <p>Transformatieve belevingen</p>
+  </div>
+  <div class="tab">
+    <p>Organisaties en Teams</p>
+  </div>
+</div>
+
+<style>
+  #container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+    z-index: 2;
+  }
+
+  .tab {
+    position: relative;
+    background-color: transparent;
+    border: 1px solid var(--mooyo-black);
+    padding: 0.2rem 2rem;
+    border-radius: 10px 10px 0 0;
+    border-bottom: none;
+    margin-bottom: -1px;
+  }
+
+  .tab.active {
+    background-color: var(--mooyo-white);
+    border: none; /* Let filter handle the border outline */
+    border-radius: 10px 10px 0 0;
+    z-index: 3;
+
+    /* Outlines the entire combined shape crisply */
+    filter: drop-shadow(0px -1px 0px var(--mooyo-black))
+      drop-shadow(-1px 0px 0px var(--mooyo-black))
+      drop-shadow(1px 0px 0px var(--mooyo-black));
+  }
+
+  .tab.active::before,
+  .tab.active::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 10px;
+    height: 10px;
+    background-color: var(--mooyo-white);
+  }
+
+  /* Left inverted corner cut-out */
+  .tab.active::before {
+    left: -10px;
+    -webkit-mask: radial-gradient(
+      circle at 0 0,
+      transparent 10px,
+      black 10.5px
+    );
+    mask: radial-gradient(circle at 0 0, transparent 10px, black 10.5px);
+  }
+
+  /* Right inverted corner cut-out */
+  .tab.active::after {
+    right: -10px;
+    -webkit-mask: radial-gradient(
+      circle at 100% 0,
+      transparent 10px,
+      black 10.5px
+    );
+    mask: radial-gradient(circle at 100% 0, transparent 10px, black 10.5px);
+  }
+</style>

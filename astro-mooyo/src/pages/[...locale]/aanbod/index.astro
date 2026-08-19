@@ -7,6 +7,7 @@ import {
 } from "../../../i18n/utils";
 import ContactSection from "@components/Contact-section.astro";
 import Aanbod from "@components/Aanbod.astro";
+import Aanbod2 from "@components/aanbod/Aanbod2.astro";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -85,6 +86,8 @@ export { getStaticPaths };
   <section class="s6 back-red text-white text-align-center">
     <h3 set:html={t("aanbod.s6.text")} />
   </section>
+
+  <Aanbod2 />
 </Layout>
 
 <style>

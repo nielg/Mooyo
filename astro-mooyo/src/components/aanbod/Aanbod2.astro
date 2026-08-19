@@ -1,0 +1,20 @@
+---
+import AanbodDetails from "./AanbodDetails.astro";
+import AanbodTab from "./AanbodTab.astro";
+// The idea is to exchange state to the aanbodTab en aanbod Details component with the libary or react componentzs
+export type Tabs =
+  | "individuele_begeleiding"
+  | "transformatieve_belevingen"
+  | "organisaties_teams";
+---
+
+<section class="back-red">
+  <AanbodTab />
+  <AanbodDetails activeTab="individuele_begeleiding" />
+</section>
+
+<style>
+  section {
+    padding: 2rem 10px;
+  }
+</style>
