@@ -9,9 +9,9 @@ const t = useTranslations(lang);
 <!-- Workshop Card 2: Reconstructive -->
 <div class:list={[s.card, s.expanding, "text-align-justify"]}>
   <div class={s.main}>
-    <p class="bold text-red papyrus-font">
+    <h3 class="bold text-red papyrus-font">
       {t("Prices.reconstructive.title")}
-    </p>
+    </h3>
     <div set:html={t("Prices.reconstructive.text")} />
     <p>
       {t("Prices.info")}
@@ -69,7 +69,7 @@ const t = useTranslations(lang);
         <li>{t("Prices.reconstructive.li5")}</li>
       </ul>
       <p>
-        {t("Prices.moreInfo")}
+        {t("Prices.moreInfo")}{" "}
         <a
           class={s.link}
           href="https://www.reconstructive.be"
@@ -93,7 +93,7 @@ const t = useTranslations(lang);
 <!-- Find your gold -->
 <div class:list={[s.card, s.expanding]}>
   <div class={s.main}>
-    <p class="bold text-red papyrus-font">{t("Prices.gold.title")}</p>
+    <h3 class="bold text-red papyrus-font">{t("Prices.gold.title")}</h3>
     <p>{t("Prices.gold.text")}</p>
     <p>
       {t("Prices.info")}
@@ -141,7 +141,7 @@ const t = useTranslations(lang);
       </ul>
       <p>{t("Prices.gold.footer")}</p>
       <p>
-        {t("Prices.moreInfo")}
+        {t("Prices.moreInfo")}{" "}
         <a
           class={s.link}
           href="https://www.reconstructive.be"
@@ -165,9 +165,9 @@ const t = useTranslations(lang);
 <!-- Deep time walk workshop -->
 <div class:list={[s.card, s.expanding]}>
   <div class={s.main}>
-    <p class="bold text-red papyrus-font">
+    <h3 class="bold text-red papyrus-font">
       {t("Prices.deeptimewalk.title")}
-    </p>
+    </h3>
     <p>{t("Prices.deeptimewalk.description")}</p>
     <p>
       {t("Prices.info")}
@@ -204,7 +204,7 @@ const t = useTranslations(lang);
         </li>
       </ul>
       <p>
-        {t("Prices.deeptimewalk.groups.footer")}
+        {t("Prices.deeptimewalk.groups.footer")}{" "}
         <a href="mailto:bramgeysen@gmail.com" class={s.link}
           >bramgeysen@gmail.com</a
         >
