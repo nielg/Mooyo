@@ -3,9 +3,12 @@
   padding: 2rem;
   border-radius: 0.5rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin: 2rem;
   color: black;
   box-sizing: border-box;
+  width: 90%;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .expanding {
@@ -76,9 +79,6 @@
   }
 
   .card {
-    width: 80%;
-    margin: auto;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    width: 95%;
   }
 }
