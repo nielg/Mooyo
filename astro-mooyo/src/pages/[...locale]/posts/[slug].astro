@@ -49,8 +49,8 @@ const postImageUrl = post.image
 
 <Layout title={post?.title || "Post"}>
   <section class="back-red text-white">
-    <a href={translatePath("/posts")}>
-      <button class="white-btn"> &larr; {t("post.back")} </button>
+    <a href={translatePath("/posts")} class="white-btn">
+      &larr; {t("post.back")}
     </a>
     {
       postImageUrl && (

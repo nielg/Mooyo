@@ -47,8 +47,11 @@ const posts = await sanityClient.fetch<SanityDocument[]>(POSTS_QUERY, { lang });
             </div>
 
             <div class="post-footer">
-              <a href={translatePath(`/posts/${post.slug.current}`)}>
-                <button class="red-btn">{t("post.readMore")}</button>
+              <a
+                href={translatePath(`/posts/${post.slug.current}`)}
+                class="red-btn"
+              >
+                {t("post.readMore")}
               </a>
             </div>
           </article>

@@ -3,7 +3,11 @@ import AanbodCard from "./AanbodCard.astro";
 import img1 from "@src/assets/aanbodCard/aanbod_1.jpg";
 import img2 from "@src/assets/aanbodCard/aanbod_2.jpg";
 import img3 from "@src/assets/aanbodCard/aanbod_3.jpg";
-import { getStaticPaths, getLangFromUrl, useTranslations } from "../i18n/utils";
+import {
+  getStaticPaths,
+  getLangFromUrl,
+  useTranslations,
+} from "@src/i18n/utils";
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
