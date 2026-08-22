@@ -1,4 +1,7 @@
 ---
+import { getLangFromUrl, useTranslations } from "@src/i18n/utils";
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 import IndividueleBegeleiding from "./aanbodDetails/IndividueleBegeleiding.astro";
 import Organisaties from "./aanbodDetails/Organisaties.astro";
 import TransformatieveBeleving from "./aanbodDetails/TransformatieveBeleving.astro";
@@ -10,6 +13,11 @@ export type Tabs =
 ---
 
 <section class="back-red">
+  <div id="header">
+    <h1 class="text-white text-align-center papyrus-font">
+      {t("Prices.title")}
+    </h1>
+  </div>
   <div id="tab-container">
     <div class="tab" data-tab="individuele_begeleiding">
       <p>Individuele begeleidingen</p>
@@ -89,6 +97,10 @@ export type Tabs =
   section {
     width: 100%;
   }
+
+  #header {
+    padding: 3rem;
+  }
   #tab-container {
     display: flex;
     justify-content: space-around;
@@ -153,7 +165,7 @@ export type Tabs =
   #details-container {
     background-color: var(--mooyo-white);
     padding: 2rem;
-    border: 1px solid var(--mooyo-black);
+    border-top: 1px solid var(--mooyo-black);
     z-index: 1;
   }
 </style>
