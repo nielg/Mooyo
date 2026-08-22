@@ -1,7 +1,8 @@
 ---
-import AanbodDetails from "./AanbodDetails.astro";
-import AanbodTab from "./AanbodTab.astro";
-// The idea is to exchange state to the aanbodTab en aanbod Details component with the libary or react componentzs
+import IndividueleBegeleiding from "./aanbodDetails/IndividueleBegeleiding.astro";
+import Organisaties from "./aanbodDetails/Organisaties.astro";
+import TransformatieveBeleving from "./aanbodDetails/TransformatieveBeleving.astro";
+
 export type Tabs =
   | "individuele_begeleiding"
   | "transformatieve_belevingen"
@@ -9,12 +10,132 @@ export type Tabs =
 ---
 
 <section class="back-red">
-  <AanbodTab />
-  <AanbodDetails activeTab="individuele_begeleiding" />
+  <div id="tab-container">
+    <div class="tab" data-tab="individuele_begeleiding">
+      <p>Individuele begeleidingen</p>
+    </div>
+    <div class="tab active" data-tab="transformatieve_belevingen">
+      <p>Transformatieve belevingen</p>
+    </div>
+    <div class="tab" data-tab="organisaties_teams">
+      <p>Organisaties en Teams</p>
+    </div>
+  </div>
+  <div id="details-container">
+    <div id="individuele_begeleiding" class="details" style="display: none;">
+      <IndividueleBegeleiding />
+    </div>
+    <div
+      id="transformatieve_belevingen"
+      class="details"
+      style="display: block;"
+    >
+      <TransformatieveBeleving />
+    </div>
+    <div id="organisaties_teams" class="details" style="display: none;">
+      <Organisaties />
+    </div>
+  </div>
 </section>
+
+<script>
+  const init = () => {
+    const tabs = document.querySelectorAll<HTMLElement>(".tab");
+    const details = document.querySelectorAll<HTMLElement>(".details");
+
+    const setActiveTab = (selectedId: string) => {
+      details.forEach((detail) => {
+        detail.style.display = detail.id === selectedId ? "block" : "none";
+      });
+
+      tabs.forEach((tab) => {
+        if (tab.dataset.tab === selectedId) {
+          tab.classList.add("active");
+        } else {
+          tab.classList.remove("active");
+        }
+      });
+    };
+
+    tabs.forEach((tab) => {
+      tab.addEventListener("click", () => {
+        const tabId = tab.dataset.tab;
+        if (tabId) setActiveTab(tabId);
+      });
+    });
+  };
+
+  document.addEventListener("astro:page-load", init);
+</script>
 
 <style>
   section {
-    padding: 2rem 10px;
+    width: 100%;
+  }
+  #tab-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    position: relative;
+    z-index: 2;
+  }
+
+  .tab {
+    position: relative;
+    background-color: transparent;
+    border: 1px solid var(--mooyo-black);
+    padding: 0.2rem 2rem;
+    border-radius: 10px 10px 0 0;
+    border-bottom: none;
+    margin-bottom: -1px;
+    cursor: pointer;
+  }
+
+  .tab.active {
+    background-color: var(--mooyo-white);
+    border: none;
+    border-radius: 10px 10px 0 0;
+    z-index: 3;
+
+    filter: drop-shadow(0px -1px 0px var(--mooyo-black))
+      drop-shadow(-1px 0px 0px var(--mooyo-black))
+      drop-shadow(1px 0px 0px var(--mooyo-black));
+  }
+
+  .tab.active::before,
+  .tab.active::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 10px;
+    height: 10px;
+    background-color: var(--mooyo-white);
+  }
+
+  .tab.active::before {
+    left: -10px;
+    -webkit-mask: radial-gradient(
+      circle at 0 0,
+      transparent 10px,
+      black 10.5px
+    );
+    mask: radial-gradient(circle at 0 0, transparent 10px, black 10.5px);
+  }
+
+  .tab.active::after {
+    right: -10px;
+    -webkit-mask: radial-gradient(
+      circle at 100% 0,
+      transparent 10px,
+      black 10.5px
+    );
+    mask: radial-gradient(circle at 100% 0, transparent 10px, black 10.5px);
+  }
+
+  #details-container {
+    background-color: var(--mooyo-white);
+    padding: 2rem;
+    border: 1px solid var(--mooyo-black);
+    z-index: 1;
   }
 </style>
