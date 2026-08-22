@@ -1,0 +1,383 @@
+{
+  "404": {
+    "title": "Oops! Page not found",
+    "text": "It looks like this page no longer exists or has been moved.",
+    "btn": "Back to home"
+  },
+  "global": {
+    "hartcirkels": "Heart Circles"
+  },
+  "nav": {
+    "filosofie": "PHILOSOPHY",
+    "welcome": "WELCOME",
+    "aanbod": "OFFERINGS",
+    "hartcirkels": "HEART CIRCLES",
+    "about": "ABOUT ME"
+  },
+  "footer": {
+    "home": "home",
+    "welcome": "welcome",
+    "filosofie": "philosophy",
+    "aanbod": "offerings",
+    "hartcirkels": "heart circles",
+    "about": "about me",
+    "artwork": "Artwork by Bea Haazen",
+    "zon": "African sun by Marcel Haazen",
+    "website": "This Website was made with Astro by:"
+  },
+  "layout": {
+    "header": {
+      "subtitle": "heart-centered guidance"
+    },
+    "contact": "You are welcome for a no-obligation conversation in which we explore your questions and together see what next step feels right."
+  },
+  "index": {
+    "title": "Home",
+    "distance": {
+      "station": "(within 3 min walking distance from Leuven train station)."
+    },
+    "intro": {
+      "text1": " Heart, Life, Soul, Spirit",
+      "text2": "In various African languages, Mooyo refers to both the physical heart and the inner essence or life energy.",
+      "text3": "Are you willing to listen to your heart and discover how you can approach every situation from the strength of your heart?"
+    },
+    "welcome": {
+      "title": "Welcome",
+      "text": "\"come with your disorientation, <br> come with your tenderness, <br> come with your longing for something old, rooted and real\""
+    },
+    "s3": {
+      "col1": {
+        "title": "Disorientation",
+        "text1": "It doesn't matter how big or small your disorientation is. You are welcome.",
+        "text2": "Feelings ranging from ‘Is it this?’, ‘Do I really want this?’, ‘Why am I doing this?’, ‘Does this make me happy?’ to feelings associated with questions like: ‘I am stuck’, ’I don't know what to do’, ‘I can't do anything.’",
+        "text3": "These questions are signposts and, with the right attention and softness, can lead to new insights and a freer, fuller life."
+      },
+      "col2": {
+        "title": "Tenderness",
+        "text1": "Tenderness is the softest, most honest way truth speaks.",
+        "text2": "With tenderness, safety arises and you can restore intimacy with yourself and with life.",
+        "text3": "Learn to know yourself first on a deep level, in your own heart, so that from there you can connect with the world."
+      },
+      "col3": {
+        "title": "Longing for something old and rooted",
+        "text1": "There is power in returning to your core, community, traditions, and earth.",
+        "text2": "Rediscover your place and mission in the world. Here all parts are welcome, here you feel the strength of old roots rising to meet your feet, and the earth whispers: you belong. Here nothing is asked of you except your presence."
+      }
+    },
+    "s4": {
+      "text1": "Mooyo invites you to start at the origin: at the silent center where your truth, your pain, and your potential converge. When we go to that core, something opens. Not by pushing or analyzing, but by feeling, sinking, acknowledging. As long as the core is not touched, it continues to feel as if you are on a journey without direction. The process only truly begins when you touch the core, not as a new search outside yourself, but as a homecoming within yourself.",
+      "text2": "Are you prepared to move and listen to your heart?"
+    },
+    "blog": {
+      "title": "Blog",
+      "noPosts": "There are currently no posts available."
+    }
+  },
+  "aanbod": {
+    "title": "Offerings",
+    "forwho": {
+      "title": "Guidance where you, your body, and your relationships are central.",
+      "text": "In my guidance, I invite you not only to talk about what is going on but also to feel it in your body. Often, your body tells you something that words cannot yet grasp. By pausing together at those signals, space is created for real, lasting change. I always look at you in relation to your environment. After all, we live and develop in connection with others. That is why I involve, when helpful, the systems you are part of. Behavior and patterns rarely arise in isolation; they are usually part of a larger whole. In addition, I explore with you the internal relationships you have with yourself: the parts that protect you, the parts that make you vulnerable, and the parts that sometimes clash. By getting to know these inner voices, more understanding, gentleness, and direction emerge. Together, we build a guidance process in which body, relationships, and inner dynamics reinforce each other and help you grow in an authentic way."
+    },
+    "s6": {
+      "text": "The child brings the life force. The adult brings the foundation. <br>Together they form a whole human being."
+    }
+  },
+  "methodieken": {
+    "title": "My guidance is based on the following (life) philosophy and methodologies:"
+  },
+  "openHartCirkels": {
+    "title": "Open heart circles",
+    "text": "For more information see (expected late november):"
+  },
+  "filosofie": {
+    "title": "Philosophy",
+    "essentie": {
+      "text1": "Mooyo works like a gentle but deep key. It touches layers that often remained closed for years. This opening creates space, movement, clarity.",
+      "li1": "<span class='bold'>Core work</span> — We go to the essence, beyond the noise.",
+      "li2": "<span class='bold'>Creating an opening</span> — Mooyo releases something that cannot be reached with words.",
+      "li3": "<span class='bold'>Impactful guidance</span> — Once the core is touched, every next step becomes more meaningful.",
+      "text2": "Mooyo is not an end point, but a starting point. A door that opens, so that the process that follows is no longer a search, but an unfolding."
+    }
+  },
+  "intro-pillars": {
+    "text1": "Mooyo works with four core pillars that are in constant dialogue with each other. When one pillar becomes unbalanced, it affects the whole. Therefore, it is important to look at all levels so that balance can be restored.",
+    "text2": "Mooyo brings people closer to their essence so they can make heart-centered choices in their lives."
+  },
+  "pillars": {
+    "bewustzijn": {
+      "title": "The Whole",
+      "subtitle1": "Awareness",
+      "subtitle2": "The Power of Your Roots",
+      "img": {
+        "text1": "A circle with an opening and a floating dot above it represents awareness.",
+        "text2": "Meaning: the mental space where perception, interpretation, and meaning arise."
+      },
+      "list1": "Truth-telling: looking honestly at your past, your patterns.",
+      "list2": "Understanding what perception and conditioning from 0 to 6 years old means and how it affects your life.",
+      "list3": "Every conditioning has both an energetic aspect and an awareness part.",
+      "list4": "Because conditionings often arise before language development, they are emotional in nature and cannot be reached through the intellect."
+    },
+    "adem": {
+      "title": "The Now",
+      "subtitle1": "Breath",
+      "subtitle2": "The Power of the Moment",
+      "img": {
+        "text1": "The two wavy lines represent connection: the inhalation and exhalation.",
+        "text2": "Meaning: Breath as a bridge between body and mind, influencing emotions, nervous systems, and mental clarity."
+      },
+      "list1": "Accepting life as it is now, not as you would like it to be.",
+      "list2": "Recognizing the impermanence of the moment, without resistance, without holding on.",
+      "list3": "Breathing is the gate between the conscious and unconscious: we can consciously guide the breath while it also works autonomously.",
+      "list4": "Breathing plays an important role in our daily lives and can be used as regulation during stress or discomfort."
+    },
+    "hart": {
+      "title": "The Future",
+      "subtitle1": "The Heart",
+      "subtitle2": "The Power of Courage",
+      "img": {
+        "text1": "The spiral continuously nourished by warmth and humanity.",
+        "text2": "Meaning: The power of sincere (self)compassion and the center of courage to allow discomfort."
+      },
+      "list1": "Heart coherence is a way to practice self-regulation and an invitation to build resilience. It is also a gateway to our higher self.",
+      "list2": "The courage to take (back) our place with everything that belongs to it.",
+      "list3": "Recognizing habits and belief systems with compassion and developing the courage to break through them."
+    },
+    "bewust": {
+      "title": "The Past",
+      "subtitle1": "Body",
+      "subtitle2": "The Power of Growing Up",
+      "img": {
+        "text1": "The segments are different - a reference to memories, scars, history.",
+        "text2": "Meaning: The body as the bearer of all that has been."
+      },
+      "list1": "The meeting between the child part and the adult part.",
+      "list2": "In many people, the child part becomes covered by expectations, roles, responsibilities, traumas. The child doesn't disappear — it becomes quiet.",
+      "list3": "Without the child, the adult becomes functional, cut off. Without the adult, the child becomes unsafe, ungrounded, unprotected.",
+      "list4": "When the child and the adult find each other, there arises: <br> safety without rigidity, playfulness without chaos, strength without hardness, gentleness without fragility"
+    }
+  },
+  "about": {
+    "title": "About me",
+    "s1": {
+      "title": "The story of Mooyo",
+      "text": "Discover the journey that led to the founding of Mooyo and the passion behind my guidance. This is my personal story and the core of what makes Mooyo unique."
+    },
+    "s2": {
+      "e1": {
+        "title": "My personal journey",
+        "text1": "I was born under the African sun, in Chipata, Zambia, and lived in Africa for the first 11 years. Besides Zambia, I also lived in Rwanda.",
+        "text2": "Currently I live in Kessel-lo. I have four children.",
+        "text3": "The events in my life are the building blocks that have brought me to this point. By consciously looking at the pains and challenges of my own life over the last 10 years and moving through them, I have developed a deep well of insights and experiences. My process is still ongoing.",
+        "text4": "Carl Jung says: “The privilege of a lifetime is to become who you truly are.” ",
+        "text6": "I am grateful for everything that has been; it has shaped me and brought much good. I look forward to the future with hope. Out of that gratitude, Mooyo was born — my inspiration and my commitment to guide others on their own unique journey.",
+        "text7": "Currently, I work part-time at Adem vzw as a Team Coach and half-time as a freelancer."
+      },
+      "e2": {
+        "title": "Why choose Mooyo?",
+        "text1": "My guidance style is characterized by a deep quality of presence and a calm stillness. This allows me to create a safe and supportive environment in which you can fully open up and grow.",
+        "text2": "Three years ago, I came into contact with Buddhism and meditation. Since then, Buddhist philosophy and daily meditation have become a fixed part of my life. It helps me stand in life with more clarity, peace, and presence — qualities that I also bring into my work with others."
+      }
+    }
+  },
+  "posts": {
+    "noPosts": "There are currently no posts available"
+  },
+  "post": {
+    "readMore": "read more",
+    "back": "Back to posts",
+    "published": "published"
+  },
+  "Prices": {
+    "title": {
+      "individual": "Individual guidance",
+      "transformatief": "Transformative experiences",
+      "organizations": "Organizations and Teams"
+    },
+    "text": "Guidance sessions can also take place online. This works just as deeply and transformatively. It is about the internal movement that occurs within you. Change happens in the body and in awareness, and that can also occur when there is physical distance. What matters is that you feel comfortable with it. When that is present, the process can unfold just as powerfully.",
+    "e1": {
+      "title1": "Individual guidance",
+      "li1": "A 60-minute session costs 70 euros (incl. VAT)",
+      "li2": "A 90-minute session costs 90 euros (incl. VAT)",
+      "details": "I guide people who feel it is time to move again. People who consciously (re)choose for life, for connection, and for fully embodying their potential. Whether you are looking for clarity, direction, growth, or healing: at Mooyo you find a place where you are seen and supported. Experience that life has more to offer when you dare to move from your heart."
+    },
+    "burnout": {
+      "title": "Heart coherence - burn-out",
+      "description": "Heart coherence is for people who notice that their nervous system quickly becomes overloaded. It helps those struggling with low resilience, those who are quickly overwhelmed by emotions or stimuli, and those dealing with burn-out symptoms such as exhaustion or sensitivity to stimuli. Also for concentration problems, mental fog, or difficulty maintaining focus, heart coherence offers a gentle and effective way back to peace, clarity, and resilience.",
+      "stress": {
+        "title": "Stress management",
+        "text": "forms the basis: you learn to calm your nervous system, regulate your breathing, and bring your body back into balance. This level creates the stability needed to think clearly and make conscious choices."
+      },
+      "emotions": {
+        "title": "Emotion regulation",
+        "text": "deepens the process: you develop resilience, learn to recognize emotions without being overwhelmed by them, and build an inner steadiness. This creates more space, nuance, and self-confidence."
+      },
+      "connection": {
+        "title": "Connection",
+        "text": "is the highest level: from peace and emotional clarity, you can make authentic contact — with yourself and with others. This is where heart coherence culminates in true presence, empathy, and collaboration."
+      }
+    },
+    "deeptimewalk": {
+      "title": "Deep Time Walk",
+      "description": "A DeepTimeWalk is a transformative, guided walk through 4.6 billion years of Earth's history. It is an invitation to question our relationship with Planet Earth, explore our place within its ecosystems, and change our view of the world and ourselves.",
+      "price": {
+        "label": "Price",
+        "text": "500 euros (excl. VAT) for a half day."
+      },
+      "experience": {
+        "title": "Unique experience",
+        "text": "An experience of the enormous vastness of 4.6 billion years on a human scale, where every meter represents 1 million years. We pause at the major earthly revolutions: from the creation of our moon to the rise of photosynthesis, how complex life formed, and finally to the recent appearance of modern humans (in only the last 30 cm of the walk!)."
+      },
+      "perspective": {
+        "title": "Perspective shift",
+        "text": "Many participants describe a change in how they see their relationship with our planet. What change do you notice?"
+      },
+      "reflection": {
+        "title": "Personal reflection"
+      },
+      "body": {
+        "title": "Body",
+        "text": "What do you feel in your body after the walk?"
+      },
+      "heart": {
+        "title": "Heart",
+        "text": "Which part touched you the most? What emotions came up for you during and at the end of the walk?"
+      },
+      "head": {
+        "title": "Head",
+        "text": "What did you learn?"
+      },
+      "groups": {
+        "footer": "For groups of friends, associations and families, would you like to know more about the workshop and the price. Send an email to"
+      }
+    },
+    "koppels": {
+      "title": "Couples guidance",
+      "li1": "A 60-minute session costs 100 euros (incl. VAT)",
+      "li2": "A 90-minute session costs 120 euros (incl. VAT)",
+      "details": "Couples longing for more connection, understanding, and joint growth are also welcome here. Couples willing to look with openness and courage at their own inner parts, such as parts that are touched, withdraw, long, or protect. In heart-centered guidance, we create a safe foundation in which both partners can come home to themselves and each other. From gentleness, honesty, and presence, we explore what lives beneath the surface, so that love, clarity, and true encounter find space again."
+    },
+    "e3": {
+      "title": "Guidance for organizations",
+      "li1": "A half-day session costs 500 euros (excl. VAT)",
+      "li2": "A full-day session costs 800 euros (excl. VAT)",
+      "details": "Organizations willing to let the heart speak can count on guidance that goes beyond methods and models. In (self-steering) teams, it regularly appears that an essential element is still missing for optimal functioning: the inner alignment needed so that each team member can step into their heart-centered power. When that missing piece is filled in, a team arises that is not only self-steering, but also truly self-aware, connected, and resilient. This creates a sustainable foundation for effective collaboration, ownership, and result-orientedness."
+    },
+    "construct": {
+      "title": "Beyond your construct",
+      "text": "A first meeting with your essence and first introduction to the reconstructive method. For those who want to taste what lives beyond your patterns.",
+      "format": "1 day",
+      "for": "individual",
+      "location": "Leuven",
+      "max": "12",
+      "data": "fall 2026",
+      "price": "125€ excl. VAT",
+      "lunch": "Coffee, tea, and lunch included",
+      "body1": "Do you also notice that some live more freely than you? That when you want to change something, a voice in your head immediately says, \"yes but, that's not possible because...\" Do you realize that your frame looks different and do you want to explore what is possible if you broaden your frame?",
+      "body2": "During this initiation day, you step out of your familiar frames for a whole day. In the morning, we go outside and work specifically with nature around you, and as you walk, you notice how your perspective broadens. Through experiential exercises and the wisdom of nature, you are invited to step outside your construct for a moment. It's as if you're opening a window that has been closed for a long time. Light comes in. Space. Curiosity.",
+      "body3": "Nature always finds a way, even in complex circumstances. And that is exactly what reminds you that you too can move, shift, open.",
+      "li1": "Broader perspective on your own patterns",
+      "li2": "A first experience of space and freedom",
+      "li3": "More awareness of what drives you",
+      "li4": "Curiosity as a starting point for growth"
+    },
+    "reconstructive": {
+      "title": "Reconstructive",
+      "text": "Experience the transforming power of Reconstructive and come closer to your intuition, your freedom and your core.",
+      "format": "2 days",
+      "for": "individual",
+      "location": "Leuven",
+      "max": "8",
+      "data": {
+        "li1": "July 25-26, 2026 (10 am - 5 pm)",
+        "li2": "October 17-18, 2026 (10 am - 5 pm)"
+      },
+      "price": "450€ excl. VAT",
+      "lunch": "Coffee, tea, and lunch included",
+      "body1": "Sometimes you feel that something is still in the way. Something that doesn't release through the mind, but wants to be seen through the body.",
+      "body2": "Often it is deep-rooted patterns, old stories, held-back emotions, and survival strategies that unconsciously prevent us from fully living our potential. By working with them in the body, movement, clarity, and direction emerge.",
+      "body3": "In the two-day session, time slows down. You get space to sink deeper, beyond the surface. You meet two parts within yourself that often have more influence than you think: your child part and your adult part. When these two meet, something powerful arises: a movement you cannot think up, but you can feel.",
+      "body4": "The group forms a mirroring field. What you see in others touches something in you. What you show opens something in them. Some insights do not come through the head. They come through the body when you give it space.",
+      "li1": "Broader perspective on your own patterns",
+      "li2": "More freedom",
+      "li3": "New insights",
+      "li4": "Breakthrough in patterns that remained stuck until now",
+      "li5": "An experience that leaves a lasting impression"
+    },
+    "label": {
+      "format": "Format",
+      "for": "For",
+      "location": "Location",
+      "max": "Max participants",
+      "data": "Dates",
+      "price": "Price"
+    },
+    "footprints": {
+      "title": "Footprints",
+      "li1": "A 60-minute session costs 55 euros (incl. VAT)",
+      "li2": "A 90-minute session costs 75 euros (incl. VAT)",
+      "details": {
+        "text1": "The Footprints method is an individual guidance of 4 sessions that forms an essential key to a free life. If you recognize any of the following patterns in yourself, Footprints can bring change:",
+        "li1": "pleasing",
+        "li2": "caring for",
+        "li3": "being constantly busy",
+        "li4": "controlling",
+        "li5": "trying even harder",
+        "text2": "Footprints is an encounter with your own inner world and opens the door to emotional maturity where your place in the system is honored, creating clarity. After the first session you already feel lighter; the following sessions deepen this feeling, making integration into daily life tangible and lasting."
+      }
+    },
+    "seeMore": "See more...",
+    "collab": "In collaboration with Elke Busschots, ",
+    "info": "For info and registration, email",
+    "gold": {
+      "title": "Find your gold",
+      "text": "Go on a deep journey through nature and body, and return to the essence of who you truly are.",
+      "format": "6 days",
+      "for": "individual",
+      "location": "South Norway in a quiet, natural environment",
+      "max": "Small group (max. 6)",
+      "data": "From September 5-12, 2026",
+      "price": "1750€ excl. VAT",
+      "body": "Every day we go into nature. It mirrors you without judgment: where you still hold on, where you may soften, where you may open. Nature shows what your body already knew, but what your head perhaps did not yet dare to acknowledge. Reconstructive makes visible what you encounter along the way: old patterns, protective layers, held-back emotions. By working with it in the body, movement, clarity, and direction emerge. You feel how you get closer to your blueprint – that quiet, deep knowing of who you are in essence. The group becomes a foundation. You don't have to do it alone, but you do make your own inner journey.",
+      "results": {
+        "title": "What does it deliver"
+      },
+      "li1": "More clarity",
+      "li2": "Embodiment",
+      "li3": "Peace",
+      "li4": "Strong contact with your core",
+      "footer": "For those who want a reset, want to let go of old layers and rediscover their blueprint"
+    },
+    "moreInfo": "For more information, see,"
+  },
+  "aanbodCard": {
+    "individual": {
+      "text": "Whether you are looking for clarity, direction, growth, or healing: at Mooyo you find a place where you are seen and supported. Experience that life has more to offer when you dare to move from your heart."
+    },
+    "transformatief": {
+      "text": "Experience activities that open your awareness and invite you to look at yourself, your life and the world from a new perspective. During these moments, fresh insights, different ways of perceiving and innovative feelings are offered."
+    },
+    "organizations": {
+      "text": "Organizations willing to let the heart speak can count on guidance that goes beyond methods and models. Mooyo also offers a team-building activity."
+    },
+    "seeMore": "read more →"
+  },
+  "mailForm": {
+    "title": "Send a message",
+    "name": "Name",
+    "email": "Email",
+    "interest": "What are you interested in",
+    "optional": "optional",
+    "service": {
+      "individual": "Individual guidance",
+      "transformatief": "transformatief / Experiences",
+      "organizations": "Organizations and Teams",
+      "other": "Something else"
+    },
+    "phone": "Phone number",
+    "message": "Message",
+    "send": "Send message",
+    "success": "Thank you! Your message has been sent.",
+    "error": "Something went wrong. Please try again later."
+  }
+}
