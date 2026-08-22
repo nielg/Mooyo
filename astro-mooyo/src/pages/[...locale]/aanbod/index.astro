@@ -6,8 +6,7 @@ import {
   getStaticPaths,
 } from "../../../i18n/utils";
 import ContactSection from "@components/Contact-section.astro";
-import Aanbod from "@components/Aanbod.astro";
-import Aanbod2 from "@components/aanbod/Aanbod2.astro";
+import Aanbod from "@components/aanbod/Aanbod.astro";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -26,8 +25,6 @@ export { getStaticPaths };
       </p>
     </div>
   </section>
-
-  <Aanbod />
 
   <section class="methodieken back-gray text-black center regular-font">
     <div class="text-margin">
@@ -87,7 +84,7 @@ export { getStaticPaths };
     <h3 set:html={t("aanbod.s6.text")} />
   </section>
 
-  <Aanbod2 />
+  <Aanbod />
 </Layout>
 
 <style>
