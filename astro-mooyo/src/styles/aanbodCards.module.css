@@ -1,0 +1,84 @@
+.card {
+  background-color: var(--mooyo-gray);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 2rem;
+  color: black;
+  box-sizing: border-box;
+}
+
+.expanding {
+  flex: 1 1 0%;
+  overflow: hidden;
+  min-width: 0;
+  transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+  min-height: 460px;
+}
+
+.expanding.is-active {
+  flex: 2;
+}
+
+.main {
+  margin-left: 2rem;
+}
+
+.card-aanbod {
+  border-bottom: 1px double gray;
+}
+
+.details {
+  opacity: 0;
+  max-height: 0;
+  transform: translateY(20px);
+  transition:
+    opacity 1s ease-out,
+    transform 0.4s ease-out;
+  visibility: hidden;
+}
+
+.flex-column .details {
+  transition: max-height 0.4s ease-in-out;
+}
+
+.expanding.is-active .details {
+  opacity: 1;
+  visibility: visible;
+  max-height: 2000px;
+  width: 100%;
+  transform: translateY(0);
+  transition: max-height 0.4s ease-in-out;
+}
+
+.seeMore {
+  margin-top: 1rem;
+  margin-bottom: 0;
+  font-weight: bold;
+  transition: opacity 1s ease;
+}
+
+.expanding.is-active .seeMore {
+  opacity: 0;
+  height: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+a {
+  border-bottom: 1px solid var(--mooyo-red);
+  color: var(--mooyo-red);
+}
+
+@media (max-width: 1200px) {
+  .flex {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 80%;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
