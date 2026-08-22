@@ -164,8 +164,19 @@ export type Tabs =
 
   #details-container {
     background-color: var(--mooyo-white);
-    padding: 2rem;
     border-top: 1px solid var(--mooyo-black);
     z-index: 1;
+  }
+
+  @media (max-width: 1000px) {
+    #tab-container {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+    .tab {
+      text-align: center;
+      width: 100%;
+    }
   }
 </style>
