@@ -240,7 +240,7 @@ export const ui = {
     "Prices.e1.details":
       "Ik begeleid mensen die voelen dat het tijd is om opnieuw in beweging te komen. Mensen die bewust (opnieuw) willen voor het leven, voor verbinding en voor het volledig belichamen van hun potentieel. Of je nu op zoek bent naar helderheid, richting, groei of heling: bij Mooyo vind je een plek waar je gezien en gedragen wordt. Ervaar dat het leven meer te bieden heeft wanneer je vanuit je hart durft te bewegen",
     "Prices.title.individual": "Individuele begeleidingen",
-    "Prices.title.workshops": "Transformatieve belevingen",
+    "Prices.title.transformatief": "Transformatieve belevingen",
     "Prices.title.organizations": "Organisaties en Teams",
     "Prices.burnout.title": "Hartcoherentie - burn-out",
     "Prices.burnout.description":
@@ -376,7 +376,7 @@ export const ui = {
     // Aanbod card
     "aanbodCard.individual.text":
       "Of je nu op zoek bent naar helderheid, richting, groei of heling: bij Mooyo vind je een plek waar je gezien en gedragen wordt. Ervaar dat het leven meer te bieden heeft wanneer je vanuit je hart durft te bewegen.",
-    "aanbodCard.workshops.text":
+    "aanbodCard.transformatief.text":
       "Maak ervaringen mee die je bewustzijn openen en je uitnodigen om vanuit een nieuw perspectief naar jezelf, je leven en naar de wereld te kijken. Deze ervaringen brengen je frisse inzichten, boren nieuwe gevoelens aan en openen manieren van waarnemen die je perspectief vernieuwen.",
     "aanbodCard.organizations.text":
       "Organisaties die bereid zijn om het hart mee te laten spreken kunnen rekenen op begeleiding die verder gaat dan methodes en modellen. Mooyo biedt ook een teambuidingsactiviteit aan.",
@@ -389,7 +389,7 @@ export const ui = {
     "mailForm.interest": "Waar ben je in geïnteresseerd",
     "mailForm.optional": "vrijblijvend",
     "mailForm.service.individual": "Individuele begeleiding",
-    "mailForm.service.workshops": "Workshops / Belevingen",
+    "mailForm.service.transformatief": "transformatief / Belevingen",
     "mailForm.service.organizations": "Organisaties en Teams",
     "mailForm.service.other": "Iets anders",
     "mailForm.phone": "GSM-nummer",
@@ -618,7 +618,7 @@ export const ui = {
     "Prices.e1.details":
       "I guide people who feel it is time to move again. People who consciously (re)choose for life, for connection, and for fully embodying their potential. Whether you are looking for clarity, direction, growth, or healing: at Mooyo you find a place where you are seen and supported. Experience that life has more to offer when you dare to move from your heart.",
     "Prices.title.individual": "Individual guidance",
-    "Prices.title.workshops": "Transformative experiences",
+    "Prices.title.transformatief": "Transformative experiences",
     "Prices.title.organizations": "Organizations and Teams",
     "Prices.burnout.title": "Heart coherence - burn-out",
     "Prices.burnout.description":
@@ -754,7 +754,7 @@ export const ui = {
     // Aanbod card
     "aanbodCard.individual.text":
       "Whether you are looking for clarity, direction, growth, or healing: at Mooyo you find a place where you are seen and supported. Experience that life has more to offer when you dare to move from your heart.",
-    "aanbodCard.workshops.text":
+    "aanbodCard.transformatief.text":
       "Experience activities that open your awareness and invite you to look at yourself, your life and the world from a new perspective. During these moments, fresh insights, different ways of perceiving and innovative feelings are offered.",
     "aanbodCard.organizations.text":
       "Organizations willing to let the heart speak can count on guidance that goes beyond methods and models. Mooyo also offers a team-building activity.",
@@ -767,7 +767,7 @@ export const ui = {
     "mailForm.interest": "What are you interested in",
     "mailForm.optional": "optional",
     "mailForm.service.individual": "Individual guidance",
-    "mailForm.service.workshops": "Workshops / Experiences",
+    "mailForm.service.transformatief": "transformatief / Experiences",
     "mailForm.service.organizations": "Organizations and Teams",
     "mailForm.service.other": "Something else",
     phone: "Phone number",

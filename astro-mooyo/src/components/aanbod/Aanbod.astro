@@ -12,7 +12,7 @@ export type Tabs =
   | "organisaties_teams";
 ---
 
-<section class="back-red">
+<section class="back-red regular-font">
   <div id="header">
     <h1 class="text-white text-align-center papyrus-font">
       {t("Prices.title")}
@@ -20,13 +20,13 @@ export type Tabs =
   </div>
   <div id="tab-container">
     <div class="tab" data-tab="individuele_begeleiding">
-      <p>Individuele begeleidingen</p>
+      <h4>{t("Prices.title.individual")}</h4>
     </div>
     <div class="tab active" data-tab="transformatieve_belevingen">
-      <p>Transformatieve belevingen</p>
+      <h4>{t("Prices.title.transformatief")}</h4>
     </div>
     <div class="tab" data-tab="organisaties_teams">
-      <p>Organisaties en Teams</p>
+      <h4>{t("Prices.title.organizations")}</h4>
     </div>
   </div>
   <div id="details-container">
