@@ -9,13 +9,15 @@ const t = useTranslations(lang);
 <!-- Workshop Card 2: Reconstructive -->
 <div class:list={[s.card, s.expanding, "text-align-justify"]}>
   <div class={s.main}>
-    <h4 class="bold text-red text-align-center papyrus-font">
+    <p class="bold text-red text-align-center papyrus-font">
       {t("Prices.reconstructive.title")}
-    </h4>
+    </p>
     <div set:html={t("Prices.reconstructive.text")} />
     <p>
       {t("Prices.info")}
-      <a href="mailto:bramgeysen@gmail.com">bramgeysen@gmail.com</a>
+      <a href="mailto:bramgeysen@gmail.com" class={s.link}
+        >bramgeysen@gmail.com</a
+      >
     </p>
     <p class={s.seeMore}>{t("Prices.seeMore")}</p>
     <div class={s.details}>
@@ -69,6 +71,7 @@ const t = useTranslations(lang);
       <p>
         {t("Prices.moreInfo")}
         <a
+          class={s.link}
           href="https://www.reconstructive.be"
           target="_blank"
           rel="noopener noreferrer">www.reconstructive.be</a
@@ -77,6 +80,7 @@ const t = useTranslations(lang);
       <p class="text-gray text-align-start">
         {t("Prices.collab")}
         <a
+          class={s.link}
           href="https://www.cominz.be"
           target="_blank"
           rel="noopener noreferrer">www.cominz.be</a
@@ -89,11 +93,13 @@ const t = useTranslations(lang);
 <!-- Find your gold -->
 <div class:list={[s.card, s.expanding]}>
   <div class={s.main}>
-    <h4 class="bold text-red papyrus-font">{t("Prices.gold.title")}</h4>
+    <p class="bold text-red papyrus-font">{t("Prices.gold.title")}</p>
     <p>{t("Prices.gold.text")}</p>
     <p>
       {t("Prices.info")}
-      <a href="mailto:bramgeysen@gmail.com">bramgeysen@gmail.com</a>
+      <a href="mailto:bramgeysen@gmail.com" class={s.link}
+        >bramgeysen@gmail.com</a
+      >
     </p>
     <p class={s.seeMore}>{t("Prices.seeMore")}</p>
     <div class={s.details}>
@@ -137,6 +143,7 @@ const t = useTranslations(lang);
       <p>
         {t("Prices.moreInfo")}
         <a
+          class={s.link}
           href="https://www.reconstructive.be"
           target="_blank"
           rel="noopener noreferrer">www.reconstructive.be</a
@@ -145,6 +152,7 @@ const t = useTranslations(lang);
       <p class="text-gray text-align-start">
         {t("Prices.collab")}
         <a
+          class={s.link}
           href="https://www.cominz.be"
           target="_blank"
           rel="noopener noreferrer">www.cominz.be</a
@@ -157,21 +165,23 @@ const t = useTranslations(lang);
 <!-- Deep time walk workshop -->
 <div class:list={[s.card, s.expanding]}>
   <div class={s.main}>
-    <h4 class="bold text-red papyrus-font">
+    <p class="bold text-red papyrus-font">
       {t("Prices.deeptimewalk.title")}
-    </h4>
+    </p>
     <p>{t("Prices.deeptimewalk.description")}</p>
     <p>
       {t("Prices.info")}
-      <a href="mailto:bramgeysen@gmail.com">bramgeysen@gmail.com</a>
+      <a href="mailto:bramgeysen@gmail.com" class={s.link}
+        >bramgeysen@gmail.com</a
+      >
     </p>
     <p class={s.seeMore}>{t("Prices.seeMore")}</p>
     <div class={s.details}>
-      <h5>{t("Prices.deeptimewalk.experience.title")}</h5>
+      <p>{t("Prices.deeptimewalk.experience.title")}</p>
       <p>{t("Prices.deeptimewalk.experience.text")}</p>
-      <h5>{t("Prices.deeptimewalk.perspective.title")}</h5>
+      <p>{t("Prices.deeptimewalk.perspective.title")}</p>
       <p>{t("Prices.deeptimewalk.perspective.text")}</p>
-      <h5>{t("Prices.deeptimewalk.reflection.title")}</h5>
+      <p>{t("Prices.deeptimewalk.reflection.title")}</p>
       <p>{t("Prices.deeptimewalk.reflection.title")}</p>
       <ul>
         <li>
@@ -195,7 +205,9 @@ const t = useTranslations(lang);
       </ul>
       <p>
         {t("Prices.deeptimewalk.groups.footer")}
-        <a href="mailto:bramgeysen@gmail.com">bramgeysen@gmail.com</a>
+        <a href="mailto:bramgeysen@gmail.com" class={s.link}
+          >bramgeysen@gmail.com</a
+        >
       </p>
     </div>
   </div>

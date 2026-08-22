@@ -65,7 +65,7 @@
   overflow: hidden;
 }
 
-a {
+.link {
   border-bottom: 1px solid var(--mooyo-red);
   color: var(--mooyo-red);
 }

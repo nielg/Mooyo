@@ -9,7 +9,7 @@ const t = useTranslations(lang);
 <!-- Begeleiding -->
 <div class:list={[s.card, s.expanding]}>
   <div class={s.main}>
-    <h4 class="bold text-red papyrus-font">{t("Prices.e3.title")}</h4>
+    <p class="bold text-red papyrus-font">{t("Prices.e3.title")}</p>
     <ul class="infinity-list text-black">
       <li><span>{t("Prices.e3.li1")}</span></li>
       <li><span>{t("Prices.e3.li2")}</span></li>
@@ -24,24 +24,26 @@ const t = useTranslations(lang);
 <!-- Deep time walk -->
 <div class:list={[s.card, s.expanding]}>
   <div class={s.main}>
-    <h4 class="bold text-red papyrus-font">
+    <p class="bold text-red papyrus-font">
       {t("Prices.deeptimewalk.title")}
-    </h4>
+    </p>
     <ul class="infinity-list">
       <li><span>{t("Prices.deeptimewalk.price.text")}</span></li>
     </ul>
     <p>{t("Prices.deeptimewalk.description")}</p>
     <p>
       {t("Prices.info")}
-      <a href="mailto:bramgeysen@gmail.com">bramgeysen@gmail.com</a>
+      <a href="mailto:bramgeysen@gmail.com" class={s.link}
+        >bramgeysen@gmail.com</a
+      >
     </p>
     <p class={s.seeMore}>{t("Prices.seeMore")}</p>
     <div class={s.details}>
-      <h5>{t("Prices.deeptimewalk.experience.title")}</h5>
+      <p>{t("Prices.deeptimewalk.experience.title")}</p>
       <p>{t("Prices.deeptimewalk.experience.text")}</p>
-      <h5>{t("Prices.deeptimewalk.perspective.title")}</h5>
+      <p>{t("Prices.deeptimewalk.perspective.title")}</p>
       <p>{t("Prices.deeptimewalk.perspective.text")}</p>
-      <h5>{t("Prices.deeptimewalk.reflection.title")}</h5>
+      <p>{t("Prices.deeptimewalk.reflection.title")}</p>
       <ul class="infinity-list">
         <li>
           <span>
