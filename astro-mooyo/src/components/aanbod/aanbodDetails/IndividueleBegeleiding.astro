@@ -63,18 +63,20 @@ const t = useTranslations(lang);
       <p>{t("Prices.burnout.description")}</p>
       <ul>
         <li>
-          <span class="text-red bold">{t("Prices.burnout.stress.title")}</span>
+          <span class="text-red bold">{t("Prices.burnout.stress.title")}</span>{
+            " "
+          }
           {t("Prices.burnout.stress.text")}
         </li>
         <li>
           <span class="text-red bold">{t("Prices.burnout.emotions.title")}</span
-          >
+          >{" "}
           {t("Prices.burnout.emotions.text")}
         </li>
         <li>
           <span class="text-red bold"
             >{t("Prices.burnout.connection.title")}</span
-          >
+          >{" "}
           {t("Prices.burnout.connection.text")}
         </li>
       </ul>
