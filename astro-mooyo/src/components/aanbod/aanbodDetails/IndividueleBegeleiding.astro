@@ -36,7 +36,7 @@ const t = useTranslations(lang);
     <p class={s.seeMore}>{t("Prices.seeMore")}</p>
     <div class={s.details}>
       <p>{t("Prices.footprints.details.text1")}</p>
-      <ul class="dashed-list">
+      <ul>
         <li>{t("Prices.footprints.details.li1")}</li>
         <li>{t("Prices.footprints.details.li2")}</li>
         <li>{t("Prices.footprints.details.li3")}</li>
@@ -61,11 +61,10 @@ const t = useTranslations(lang);
     <p class={s.seeMore}>{t("Prices.seeMore")}</p>
     <div class={s.details}>
       <p>{t("Prices.burnout.description")}</p>
-      <ul>
+      <ul class="none-list">
         <li>
-          <span class="text-red bold">{t("Prices.burnout.stress.title")}</span>{
-            " "
-          }
+          <span class="text-red bold">{t("Prices.burnout.stress.title")}</span>
+          {" "}
           {t("Prices.burnout.stress.text")}
         </li>
         <li>
