@@ -4,12 +4,11 @@
   "exclude": ["dist"],
   "compilerOptions": {
     "types": ["@sanity/astro/module"],
-    "baseUrl": ".",
     "paths": {
-      "@layouts/*": ["src/layouts/*"],
-      "@components/*": ["src/components/*"],
-      "@assets/*": ["src/assets/*"],
-      "@src/*": ["src/*"]
+      "@layouts/*": ["./src/layouts/*"],
+      "@components/*": ["./src/components/*"],
+      "@assets/*": ["./src/assets/*"],
+      "@src/*": ["./src/*"]
     }
   }
 }

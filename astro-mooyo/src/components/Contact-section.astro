@@ -20,10 +20,11 @@ const buttonClasses = color === "red" ? "white-btn" : "red-btn";
   <p>{t("layout.contact")}</p>
   <a href="tel:+32473523094"><p class="tel">+32 473 52 30 94</p></a>
 
-  <a href="mailto:bramgeysen@gmail.com" class="red-link-container">
-    <button class=`${buttonClasses}`>
-      <p>bramgeysen@gmail.com</p>
-    </button>
+  <a
+    href="mailto:bramgeysen@gmail.com"
+    class={`red-link-container ${buttonClasses}`}
+  >
+    bramgeysen@gmail.com
   </a>
 </section>
 

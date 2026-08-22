@@ -6,7 +6,7 @@ import {
   getStaticPaths,
 } from "../../../i18n/utils";
 import ContactSection from "@components/Contact-section.astro";
-import Aanbod from "@components/Aanbod.astro";
+import Aanbod from "@components/aanbod/Aanbod.astro";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -15,9 +15,9 @@ export { getStaticPaths };
 ---
 
 <Layout title={t("aanbod.title")}>
-  <section class="forWho text-align-center back-red text-white regular-font">
+  <section class="forWho text-align-center back-gray text-gray regular-font">
     <div class="text-margin">
-      <h1>{t("aanbod.forwho.title")}</h1>
+      <h1 class="text-red">{t("aanbod.forwho.title")}</h1>
       <p set:html={t("aanbod.forwho.text")} />
       <p class="papyrus-font">
         Mooyo is een uitnodiging om volledig aanwezig te zijn met alles wat je
@@ -25,12 +25,11 @@ export { getStaticPaths };
       </p>
     </div>
   </section>
-
   <Aanbod />
 
-  <section class="methodieken back-gray text-black center regular-font">
+  <section class="methodieken back-red text-white center regular-font">
     <div class="text-margin">
-      <h3 class="text-align-center text-red papyrus-font">
+      <h3 class="text-align-center papyrus-font">
         {t("methodieken.title")}
       </h3>
       <div class="col2">
@@ -72,8 +71,7 @@ export { getStaticPaths };
       </div>
     </div>
   </section>
-
-  <ContactSection color="red" />
+  <ContactSection color="gray" />
 
   <section class="openHartcirkels back-white text-gray center">
     <h3 class="text-red bold">{t("openHartCirkels.title")}</h3>

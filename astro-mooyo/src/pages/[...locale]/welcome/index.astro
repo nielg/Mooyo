@@ -35,11 +35,11 @@ export { getStaticPaths };
     </div>
   </section>
   <section class="s3 back-red center">
-    <div class="col3 text-black text-align-justify">
+    <div class="col3 text-black">
       <div class="card">
-        <p class="text-align-center text-red bold">
+        <h4 class="text-align-center text-red bold">
           {t("index.s3.col1.title")}
-        </p>
+        </h4>
         <div class="regular-font">
           <p>{t("index.s3.col1.text1")}</p>
           <p>{t("index.s3.col1.text2")}</p>
@@ -47,9 +47,9 @@ export { getStaticPaths };
         </div>
       </div>
       <div class="card">
-        <p class="text-red text-align-center bold">
+        <h4 class="text-red text-align-center bold">
           {t("index.s3.col2.title")}
-        </p>
+        </h4>
         <div class="regular-font">
           <p>{t("index.s3.col2.text1")}</p>
           <p>{t("index.s3.col2.text2")}</p>
@@ -57,9 +57,9 @@ export { getStaticPaths };
         </div>
       </div>
       <div class="card">
-        <p class="text-red text-align-center bold">
+        <h4 class="text-red text-align-center bold">
           {t("index.s3.col3.title")}
-        </p>
+        </h4>
         <div class="regular-font">
           <p>{t("index.s3.col3.text1")}</p>
           <p>{t("index.s3.col3.text2")}</p>
@@ -118,9 +118,20 @@ export { getStaticPaths };
   }
 
   .card {
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 2;
+    grid-gap: 0;
     background-color: var(--mooyo-white);
     padding: 2rem;
     border-radius: 10px;
+  }
+
+  .card h4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
   }
 
   @media (max-width: 1100px) {

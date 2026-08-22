@@ -147,52 +147,37 @@ h4 {
   flex-direction: column;
 }
 
+ul.infinity-list,
 ul.star-list,
 ul.none-list,
 ul.dashed-list {
   list-style: none;
-  padding-left: 1.5rem;
-}
-
-ul.infinity-list {
-  list-style: none;
   padding-left: 0;
 }
 
-ul.infinity-list li {
-  display: flex;
-}
-
-ul li {
-  display: flex;
+ul.star-list li::before,
+ul.infinity-list li::before,
+ul.dashed-list li::before {
+  width: 1.5em;
+  display: inline-block;
 }
 
 ul.star-list li::before {
   content: "✦";
-  display: inline-block;
-  width: 1.5em;
-  margin-left: -1.5em;
 }
 
 ul.infinity-list li::before {
   content: "∞";
-  width: 1.5rem;
-  flex-shrink: 0;
-}
-
-ul.infinity-list li span {
-  flex-grow: 1;
 }
 
 ul.dashed-list li::before {
   content: "-";
-  display: inline-block;
-  width: 1.5em;
-  margin-left: -1.5em;
 }
 
 button,
-.btn {
+.btn,
+.red-btn,
+.white-btn {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   padding: 0.5rem 2rem;
   border-radius: 1rem;

@@ -5,7 +5,7 @@ import {
   getLangFromUrl,
   useTranslations,
   useTranslatedPath,
-} from "../i18n/utils";
+} from "@src/i18n/utils";
 import type { ImageMetadata } from "astro";
 const lang = getLangFromUrl(Astro.url);
 const translatePath = useTranslatedPath(lang);

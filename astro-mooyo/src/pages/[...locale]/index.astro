@@ -1,16 +1,16 @@
 ---
 import { Image } from "astro:assets";
-import Layout from "../../layouts/Layout.astro";
-import hart_rond from "../../assets/rondevormen/hart_rond.png";
-import profiel from "../../assets/profiel-square.png";
+import Layout from "@layouts/Layout.astro";
+import hart_rond from "@assets/rondevormen/hart_rond.png";
+import profiel from "@assets/profiel-square.png";
 import ContactSection from "@components/Contact-section.astro";
 import {
   getStaticPaths,
   getLangFromUrl,
   useTranslations,
   useTranslatedPath,
-} from "../../i18n/utils";
-import AanbodCardContainer from "@components/AanbodCardContainer.astro";
+} from "@src/i18n/utils";
+import AanbodCardContainer from "@components/home/AanbodCardContainer.astro";
 import Socials from "@components/Socials.astro";
 import HomeBlog from "@components/HomeBlog.astro";
 export { getStaticPaths };

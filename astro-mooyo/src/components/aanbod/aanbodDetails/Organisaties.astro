@@ -1,0 +1,70 @@
+---
+import s from "../../../styles/aanbodCards.module.css";
+import { getLangFromUrl, useTranslations } from "../../../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<!-- Begeleiding -->
+<div class:list={[s.card, s.expanding]}>
+  <div class={s.main}>
+    <h3 class="bold text-red papyrus-font">{t("Prices.e3.title")}</h3>
+    <ul class="infinity-list text-black">
+      <li><span>{t("Prices.e3.li1")}</span></li>
+      <li><span>{t("Prices.e3.li2")}</span></li>
+    </ul>
+    <p class={s.seeMore}>{t("Prices.seeMore")}</p>
+    <div class={s.details}>
+      <p>{t("Prices.e3.details")}</p>
+    </div>
+  </div>
+</div>
+
+<!-- Deep time walk -->
+<div class:list={[s.card, s.expanding]}>
+  <div class={s.main}>
+    <h3 class="bold text-red papyrus-font">
+      {t("Prices.deeptimewalk.title")}
+    </h3>
+    <ul class="infinity-list">
+      <li><span>{t("Prices.deeptimewalk.price.text")}</span></li>
+    </ul>
+    <p>{t("Prices.deeptimewalk.description")}</p>
+    <p>
+      {t("Prices.info")}
+      <a href="mailto:bramgeysen@gmail.com" class={s.link}
+        >bramgeysen@gmail.com</a
+      >
+    </p>
+    <p class={s.seeMore}>{t("Prices.seeMore")}</p>
+    <div class={s.details}>
+      <p>{t("Prices.deeptimewalk.experience.title")}</p>
+      <p>{t("Prices.deeptimewalk.experience.text")}</p>
+      <p>{t("Prices.deeptimewalk.perspective.title")}</p>
+      <p>{t("Prices.deeptimewalk.perspective.text")}</p>
+      <p>{t("Prices.deeptimewalk.reflection.title")}</p>
+      <ul class="none-list">
+        <li>
+          <span class="text-red bold">
+            {t("Prices.deeptimewalk.body.title")}
+          </span>
+          {" "}- {t("Prices.deeptimewalk.body.text")}
+        </li>
+        <li>
+          <span class="text-red bold">
+            {t("Prices.deeptimewalk.heart.title")}
+          </span>
+          - {t("Prices.deeptimewalk.heart.text")}
+        </li>
+        <li>
+          <span class="text-red bold">
+            {t("Prices.deeptimewalk.head.title")}
+          </span>
+          {" "}- {t("Prices.deeptimewalk.head.text")}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<script src="../../../utils/aanbod.js"></script>
