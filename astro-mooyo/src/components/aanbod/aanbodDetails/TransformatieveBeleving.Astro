@@ -1,0 +1,202 @@
+---
+import s from "../../../styles/aanbodCards.module.css";
+import { getLangFromUrl, useTranslations } from "../../../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<!-- Workshop Card 2: Reconstructive -->
+<div class:list={[s.card, s.expanding, "text-align-justify"]}>
+  <div class={s.main}>
+    <h4 class="bold text-red text-align-center papyrus-font">
+      {t("Prices.reconstructive.title")}
+    </h4>
+    <div set:html={t("Prices.reconstructive.text")} />
+    <p>
+      {t("Prices.info")}
+      <a href="mailto:bramgeysen@gmail.com">bramgeysen@gmail.com</a>
+    </p>
+    <p class={s.seeMore}>{t("Prices.seeMore")}</p>
+    <div class={s.details}>
+      <div class={s.cardAanbod}>
+        <ul>
+          <li>
+            <span class="bold">{t("Prices.label.format")}:</span>
+            {t("Prices.reconstructive.format")}
+          </li>
+          <li>
+            <span class="bold">{t("Prices.label.for")}:</span>
+            {t("Prices.reconstructive.for")}
+          </li>
+          <li>
+            <span class="bold">{t("Prices.label.location")}:</span>
+            {t("Prices.reconstructive.location")}
+          </li>
+          <li>
+            <span class="bold">{t("Prices.label.max")}:</span>
+            {t("Prices.reconstructive.max")}
+          </li>
+          <li>
+            <span class="bold">{t("Prices.label.data")}:</span>
+            <ul>
+              <li>
+                {t("Prices.reconstructive.data.li1")}
+              </li>
+              <li>
+                {t("Prices.reconstructive.data.li2")}
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span class="bold">{t("Prices.label.price")}:</span>
+            {t("Prices.reconstructive.price")}
+          </li>
+        </ul>
+        <p>{t("Prices.reconstructive.lunch")}</p>
+      </div>
+      <p>{t("Prices.reconstructive.body1")}</p>
+      <p>{t("Prices.reconstructive.body2")}</p>
+      <p>{t("Prices.reconstructive.body3")}</p>
+      <p>{t("Prices.reconstructive.body4")}</p>
+      <ul>
+        <li>{t("Prices.reconstructive.li1")}</li>
+        <li>{t("Prices.reconstructive.li2")}</li>
+        <li>{t("Prices.reconstructive.li3")}</li>
+        <li>{t("Prices.reconstructive.li4")}</li>
+        <li>{t("Prices.reconstructive.li5")}</li>
+      </ul>
+      <p>
+        {t("Prices.moreInfo")}
+        <a
+          href="https://www.reconstructive.be"
+          target="_blank"
+          rel="noopener noreferrer">www.reconstructive.be</a
+        >
+      </p>
+      <p class="text-gray text-align-start">
+        {t("Prices.collab")}
+        <a
+          href="https://www.cominz.be"
+          target="_blank"
+          rel="noopener noreferrer">www.cominz.be</a
+        >
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Find your gold -->
+<div class:list={[s.card, s.expanding]}>
+  <div class={s.main}>
+    <h4 class="bold text-red papyrus-font">{t("Prices.gold.title")}</h4>
+    <p>{t("Prices.gold.text")}</p>
+    <p>
+      {t("Prices.info")}
+      <a href="mailto:bramgeysen@gmail.com">bramgeysen@gmail.com</a>
+    </p>
+    <p class={s.seeMore}>{t("Prices.seeMore")}</p>
+    <div class={s.details}>
+      <div class={s.cardAanbod}>
+        <ul>
+          <li>
+            <span class="bold">{t("Prices.label.format")}:</span>
+            {t("Prices.gold.format")}
+          </li>
+          <li>
+            <span class="bold">{t("Prices.label.for")}:</span>
+            {t("Prices.gold.for")}
+          </li>
+          <li>
+            <span class="bold">{t("Prices.label.location")}:</span>
+            {t("Prices.gold.location")}
+          </li>
+          <li>
+            <span class="bold">{t("Prices.label.max")}:</span>
+            {t("Prices.gold.max")}
+          </li>
+          <li>
+            <span class="bold">{t("Prices.label.data")}:</span>
+            {t("Prices.gold.data")}
+          </li>
+          <li>
+            <span class="bold">{t("Prices.label.price")}:</span>
+            {t("Prices.gold.price")}
+          </li>
+        </ul>
+      </div>
+      <p>{t("Prices.gold.body")}</p>
+      <p>{t("Prices.gold.results.title")}</p>
+      <ul>
+        <li>{t("Prices.gold.li1")}</li>
+        <li>{t("Prices.gold.li2")}</li>
+        <li>{t("Prices.gold.li3")}</li>
+        <li>{t("Prices.gold.li4")}</li>
+      </ul>
+      <p>{t("Prices.gold.footer")}</p>
+      <p>
+        {t("Prices.moreInfo")}
+        <a
+          href="https://www.reconstructive.be"
+          target="_blank"
+          rel="noopener noreferrer">www.reconstructive.be</a
+        >
+      </p>
+      <p class="text-gray text-align-start">
+        {t("Prices.collab")}
+        <a
+          href="https://www.cominz.be"
+          target="_blank"
+          rel="noopener noreferrer">www.cominz.be</a
+        >
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Deep time walk workshop -->
+<div class:list={[s.card, s.expanding]}>
+  <div class={s.main}>
+    <h4 class="bold text-red papyrus-font">
+      {t("Prices.deeptimewalk.title")}
+    </h4>
+    <p>{t("Prices.deeptimewalk.description")}</p>
+    <p>
+      {t("Prices.info")}
+      <a href="mailto:bramgeysen@gmail.com">bramgeysen@gmail.com</a>
+    </p>
+    <p class={s.seeMore}>{t("Prices.seeMore")}</p>
+    <div class={s.details}>
+      <h5>{t("Prices.deeptimewalk.experience.title")}</h5>
+      <p>{t("Prices.deeptimewalk.experience.text")}</p>
+      <h5>{t("Prices.deeptimewalk.perspective.title")}</h5>
+      <p>{t("Prices.deeptimewalk.perspective.text")}</p>
+      <h5>{t("Prices.deeptimewalk.reflection.title")}</h5>
+      <p>{t("Prices.deeptimewalk.reflection.title")}</p>
+      <ul>
+        <li>
+          <span class="text-red bold">
+            {t("Prices.deeptimewalk.body.title")}
+          </span>
+          - {t("Prices.deeptimewalk.body.text")}
+        </li>
+        <li>
+          <span class="text-red bold">
+            {t("Prices.deeptimewalk.heart.title")}
+          </span>
+          - {t("Prices.deeptimewalk.heart.text")}
+        </li>
+        <li>
+          <span class="text-red bold">
+            {t("Prices.deeptimewalk.head.title")}
+          </span>
+          - {t("Prices.deeptimewalk.head.text")}
+        </li>
+      </ul>
+      <p>
+        {t("Prices.deeptimewalk.groups.footer")}
+        <a href="mailto:bramgeysen@gmail.com">bramgeysen@gmail.com</a>
+      </p>
+    </div>
+  </div>
+</div>
