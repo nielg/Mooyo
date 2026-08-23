@@ -11,7 +11,6 @@ export const languages = {
 
 export const supportedLanguages = Object.values(languages);
 
-// Combined dictionary containing your JSON files
 export const ui = {
   nl: defaultLangJson,
   en: enLangJson,
