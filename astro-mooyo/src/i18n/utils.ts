@@ -1,4 +1,44 @@
-import { defaultLang, ui, showDefaultLang, languages } from "./ui";
+import defaultLangJson from "./nl.json";
+import enLangJson from "./en.json";
+
+export const defaultLang = "nl";
+export const showDefaultLang = false;
+
+export const languages = {
+  en: "en",
+  nl: "nl",
+} as const;
+
+export const supportedLanguages = Object.values(languages);
+
+export const ui = {
+  nl: defaultLangJson,
+  en: enLangJson,
+} as const;
+
+export type Lang = keyof typeof ui;
+
+// Type helper to extract dot-notation paths (e.g. "home.quote.author")
+type NestedKeys<T> = T extends object
+  ? {
+      [K in keyof T & string]: T[K] extends object
+        ? `${K}` | `${K}.${NestedKeys<T[K]>}`
+        : `${K}`;
+    }[keyof T & string]
+  : never;
+
+export type TranslationKey = NestedKeys<typeof defaultLangJson>;
+
+// Helper function to dynamically access nested keys safely
+function getNestedValue(
+  obj: Record<string, any>,
+  keyPath: string,
+): string | undefined {
+  const result = keyPath
+    .split(".")
+    .reduce<any>((acc, part) => acc && acc[part], obj);
+  return typeof result === "string" ? result : undefined;
+}
 
 export function getStaticPaths() {
   return Object.keys(languages).map((locale) => ({
@@ -6,24 +46,29 @@ export function getStaticPaths() {
   }));
 }
 
-export function getLangFromUrl(url: URL) {
+export function getLangFromUrl(url: URL): Lang {
   const base = import.meta.env.BASE_URL.replace(/\/$/, "");
   let pathname = url.pathname;
   if (base && pathname.startsWith(base)) {
     pathname = pathname.slice(base.length);
   }
   const [, lang] = pathname.split("/");
-  if (lang in ui) return lang as keyof typeof ui;
-  return defaultLang;
+  if (lang in ui) return lang as Lang;
+  return defaultLang as Lang;
 }
 
-export function useTranslations(lang: keyof typeof ui) {
-  return function t(key: keyof (typeof ui)[typeof defaultLang]) {
-    return ui[lang][key] || ui[defaultLang][key];
+export function useTranslations(lang: Lang) {
+  return function t(key: TranslationKey): string {
+    const translation = getNestedValue(ui[lang], key);
+    if (translation !== undefined) return translation;
+
+    // Fallback to default language if key isn't found in current language
+    const fallback = getNestedValue(ui[defaultLang], key);
+    return fallback ?? key;
   };
 }
 
-export function useTranslatedPath(lang: keyof typeof ui) {
+export function useTranslatedPath(lang: Lang) {
   return function translatePath(path: string, l: string = lang) {
     const base = import.meta.env.BASE_URL.replace(/\/$/, "");
 
@@ -33,12 +78,20 @@ export function useTranslatedPath(lang: keyof typeof ui) {
     let fullPath = `${base}${prefix}${cleanedPath}`;
     fullPath = fullPath.replace(/\/+/g, "/");
 
-    // Ensure it ends with a slash if it's the root of a locale
-    if (Object.keys(languages).some((l) => fullPath.endsWith(`/${l}`))) {
-      fullPath += "/";
+    // 1. Separate the URL path from any query parameters (?) or anchors (#)
+    const [pathPart, ...hashParts] = fullPath.split("#");
+    const hash = hashParts.length > 0 ? `#${hashParts.join("#")}` : "";
+
+    const [cleanPathOnly, ...queryParts] = pathPart.split("?");
+    const query = queryParts.length > 0 ? `?${queryParts.join("?")}` : "";
+
+    // 2. Apply trailing slash ONLY to the path portion
+    let finalPath = cleanPathOnly;
+    if (!finalPath.endsWith("/") && !/\.[a-z0-9]+$/i.test(finalPath)) {
+      finalPath += "/";
     }
 
-    return fullPath;
+    return `${finalPath}${query}${hash}`;
   };
 }
 

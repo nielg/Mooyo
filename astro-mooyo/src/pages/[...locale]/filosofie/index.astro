@@ -17,7 +17,7 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
 
-<Layout title={t("filosofie.title")}>
+<Layout title={t("filosofie.title")} description={t("filosofie.description")}>
   <section
     class="intro-pillars back-red text-align-center text-white regular-font"
   >

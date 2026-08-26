@@ -1,0 +1,395 @@
+{
+  "404": {
+    "title": "Oeps! Pagina niet gevonden",
+    "description": "Pagina niet gevonden. Keer terug naar de homepagina van Mooyo voor hartgerichte begeleiding en coaching.",
+    "text": "Het ziet er naar uit dat deze pagina niet meer bestaat of is verhuisd.",
+    "btn": "Terug naar home"
+  },
+  "global": {
+    "hartcirkels": "Hartcirkels"
+  },
+  "nav": {
+    "filosofie": "FILOSOFIE",
+    "welcome": "WELKOM",
+    "aanbod": "AANBOD",
+    "hartcirkels": "HARTCIRKELS",
+    "about": "OVER MIJ"
+  },
+  "footer": {
+    "home": "home",
+    "welcome": "welkom",
+    "filosofie": "filosofie",
+    "aanbod": "aanbod",
+    "hartcirkels": "hartcirkels",
+    "about": "over mij",
+    "artwork": "Artwork door Bea Haazen",
+    "zon": "Afrikaanse zon door Marcel Haazen",
+    "website": "De Website is gemaakt met Astro door:"
+  },
+  "layout": {
+    "header": {
+      "subtitle": "hartgedragen begeleiding"
+    },
+    "contact": "Je bent welkom voor een vrijblijvend gesprek waarin we jouw vragen, je gevoel verkennen en samen bekijken welke volgende stap goed voelt."
+  },
+  "index": {
+    "title": "Mooyo | Lichaamsgericht & Hartgericht Coachen bij Stress & Burn-out",
+    "description": "Ontdek hartgerichte en lichaamsgerichte coaching in Leuven bij stress, burn-out en vastlopen. Kom thuis bij jezelf en vind rust, veerkracht en richting.",
+    "distance": {
+      "station": "(op 3min wandelafstand van het treinstation van Leuven)."
+    },
+    "intro": {
+      "text1": " Hart, Leven, Ziel, Geest",
+      "text2": "In verschillende Afrikaanse talen verwijst Mooyo zowel naar het fysieke hart als naar de innerlijke essentie of levensenergie.",
+      "text3": "Ben je bereid om naar je hart te luisteren en te ontdekken hoe je elke situatie kunt benaderen vanuit de stevigheid van je hart?"
+    },
+    "welcome": {
+      "title": "Wees Welkom",
+      "text": "\"kom met je desoriëntatie, <br> kom met je tederheid, <br> kom met je verlangen naar iets ouds, geworteld en echts\""
+    },
+    "s3": {
+      "col1": {
+        "title": "Desoriëntatie",
+        "text1": "Het maakt niet uit, hoe groot of hoe klein je desoriëntatie is. Je bent welkom.",
+        "text2": "Soms voel je dat je iets anders wilt, maar in beweging komen lukt niet. Zit je met twijfels als ‘Is het dit?’, ‘Wil ik dit echt?’, ‘Waarom ben ik dit aan het doen?’, ‘Word ik hier blij van?’ tot vaststellingen zoals: ‘Ik zit vast’, ’Ik weet niet wat te doen’, ‘Ik kan niets.’",
+        "text3": "Deze vragen zijn richtingaanwijzers en kunnen, met de juiste aandacht en zachtheid, leiden tot nieuwe inzichten en tot een vrijer en voller leven."
+      },
+      "col2": {
+        "title": "Tederheid",
+        "text1": "Tederheid is de zachtste, eerlijkste manier waarop waarheid spreekt.",
+        "text2": "Met tederheid ontstaat veiligheid en kan je de intimiteit met jezelf en met het leven herstellen.",
+        "text3": "Leer eerst jezelf kennen op diep niveau, in je eigen hart, zodat je van daaruit verbinding kunt maken met de wereld."
+      },
+      "col3": {
+        "title": "Verlangen naar iets ouds en geworteld",
+        "text1": "Er zit kracht in het terugkeren naar je kern, gemeenschap, tradities en aarde.",
+        "text2": "Herontdek jouw plaats en missie in de wereld. Hier zijn alle delen welkom, hier voel je de kracht van oude wortels omhoog komen om je voeten te ontmoeten, en fluistert de aarde:  jij hoort erbij. Hier wordt niets van je gevraagd behalve je aanwezigheid."
+      }
+    },
+    "s4": {
+      "text1": "Mooyo nodigt uit om bij de oorsprong te beginnen: bij het stille midden waar jouw waarheid, jouw pijn én jouw potentieel samenkomen. Wanneer we naar die kern gaan, opent er iets. Niet door te duwen of te analyseren, maar door te voelen, te zakken, te erkennen. Zolang de kern niet wordt aangeraakt, blijft het voelen alsof je onderweg bent zonder richting. Het proces begint pas echt als je de kern aanraakt, niet als een nieuwe zoektocht buiten jezelf, maar als een thuiskomen in jezelf.",
+      "text2": "Ben je bereid om in beweging te komen en naar je hart te luisteren?"
+    },
+    "blog": {
+      "title": "Blog",
+      "noPosts": "Er zijn momenteel geen berichten beschikbaar."
+    }
+  },
+  "welcome": {
+    "title": "Welkom bij Mooyo | Coaching bij Stress, Vastlopen & Desoriëntatie",
+    "description": "Wees welkom bij Mooyo. Een veilige bedding voor wie kampt met desoriëntatie, stress of verlangt naar diepe verstilling, echtheid en innerlijke rust."
+  },
+  "aanbod": {
+    "title": "Aanbod | Coaching & Hartbegeleiding in Leuven | Mooyo",
+    "description": "Bekijk het aanbod van Mooyo: individuele begeleiding, hartcoherentie, Footprints, Deep Time Walk en Reconstructive workshops in Leuven.",
+    "forwho": {
+      "title": "Begeleiding waarin jij, je lichaam en je relaties centraal staan.",
+      "text": "In mijn begeleiding nodig ik je uit om niet alleen te praten over wat er speelt, maar het ook in je lichaam te voelen. Vaak vertelt je lichaam iets wat woorden nog niet kunnen vatten. Door samen stil te staan bij die signalen, ontstaat er ruimte voor echte, duurzame verandering. Ik kijk altijd naar jou in relatie tot je omgeving. We leven en ontwikkelen ons immers in verbinding met anderen. Daarom betrek ik, wanneer dat helpend is, de systemen waarvan jij deel uitmaakt. Gedrag en patronen ontstaan zelden in isolatie; ze zijn meestal onderdeel van een groter geheel. Daarnaast onderzoek ik met jou de interne relaties die je met jezelf hebt: de delen die je beschermen, de delen die je kwetsbaar maken, en de delen die soms botsen. Door deze innerlijke stemmen te leren kennen, ontstaat er meer begrip, mildheid en richting. Zo bouwen we samen aan een begeleidingstraject waarin lichaam, relaties en innerlijke dynamiek elkaar versterken en je helpen om op een authentieke manier te groeien."
+    },
+    "s6": {
+      "text": "Het kind brengt de levenskracht. De volwassene brengt de bedding. <br>Samen vormen ze een heel mens."
+    }
+  },
+  "methodieken": {
+    "title": "Mijn begeleiding is gebaseerd op onderstaande (levens)filosofie, methodieken:"
+  },
+  "openHartCirkels": {
+    "title": "Open hartcirkels",
+    "text": "Voor meer informatie zie (verwachting eind november):"
+  },
+  "filosofie": {
+    "title": "Filosofie van Mooyo | Hartgericht Coachen",
+    "description": "Ontdek de vier pijlers van Mooyo: Bewustzijn, Adem, Het Hart en Het Lichaam. Een holistische aanpak voor diepe transformatie en emotionele heelheid.",
+    "essentie": {
+      "text1": "Mooyo werkt als een zachte maar diepe sleutel. Het raakt lagen die vaak jarenlang gesloten bleven. Door deze opening ontstaat er ruimte, beweging, helderheid.",
+      "li1": "<span class='bold'>Kernwerk</span> — We gaan naar de essentie, voorbij de ruis.",
+      "li2": "<span class='bold'>Opening creëren</span> — Mooyo maakt iets los dat niet met woorden te bereiken is.",
+      "li3": "<span class='bold'>Begeleiding die pakt</span> — Wanneer de kern geraakt is, wordt elke volgende stap betekenisvoller.",
+      "text2": "Mooyo is geen eindpunt, maar een startpunt. Een deur die opengaat, zodat het proces dat volgt niet langer een zoektocht is, maar een ontvouwing."
+    }
+  },
+  "intro-pillars": {
+    "text1": "Mooyo werkt met vier basispijlers die in voortdurende dialoog zijn met elkaar. Wanneer één pijler uit evenwicht is, beïnvloedt dat het geheel. Daarom is het belangrijk om naar alle niveaus te kijken zodat er terug balans kan ontstaan.",
+    "text2": "Mooyo brengt mensen dichter bij hun essentie zodat ze hartgedragen keuzes in hun leven kunnen maken."
+  },
+  "pillars": {
+    "bewustzijn": {
+      "title": "Het geheel",
+      "subtitle1": "Bewustzijn",
+      "subtitle2": "De kracht van je wortels",
+      "img": {
+        "text1": "Een cirkel met een opening en een zwevend punt erboven stelt het bewustzijn voor.",
+        "text2": "Betekenis: de mentale ruimte waar waarneming, interpretatie en betekenis ontstaan."
+      },
+      "list1": "Truth-telling: eerlijk kijken naar je verleden, je patronen.",
+      "list2": "Begrijpen wat perceptie en conditionering van 0 tot 6 jaar betekent en hoe het je leven beïnvloedt.",
+      "list3": "Elke conditionering heeft zowel een energetisch aspect als een bewustzijnsdeel.",
+      "list4": "Omdat conditioneringen vaak ontstaan vóór de taalontwikkeling, zijn ze emotioneel van aard en niet via het verstand te bereiken."
+    },
+    "adem": {
+      "title": "Het Nu",
+      "subtitle1": "Adem",
+      "subtitle2": "De kracht van het moment",
+      "img": {
+        "text1": "De twee golflijnen staan voor verbinding: de in- en uitademing",
+        "text2": "Betekenis: Adem als brug tussen lichaam en geest, beïnvloedt emoties, zenuwstelsels en mentale helderheid."
+      },
+      "list1": "Het leven aanvaarden zoals het nu is, niet zoals je het zou willen dat het is.",
+      "list2": "De tijdelijkheid van het moment inzien, zonder weerstand, zonder vasthouden. ",
+      "list3": " Ademhaling is de poort tussen het bewuste en onbewuste: we kunnen de ademhaling bewust sturen en tegelijk werkt de ademhaling autonoom.",
+      "list4": "Ademhaling speelt een belangrijke rol in ons dagelijks leven en kan ingezet worden als regulatie bij stress, bij ongemak."
+    },
+    "hart": {
+      "title": "De Toekomst",
+      "subtitle1": "Het Hart",
+      "subtitle2": "De kracht van moed",
+      "img": {
+        "text1": "De spiraal continu gevoed door warmte en menselijkheid.",
+        "text2": "Betekenis: De kracht van oprechte (zelf)compassie en het centrum van moed om ongemak toe te laten."
+      },
+      "list1": "Hartcoherentie is een manier om aan zelfregulering te doen en een uitnodiging om veerkracht op te bouwen. Eveneens is het een toegangspoort tot ons hoger zelf. ",
+      "list2": "De moed om onze plek (terug) in te nemen met alles wat daarbij hoort.",
+      "list3": "Herkennen van gewoonten, overtuigingssystemen met compassie en de moed ontwikkelen om dit te doorbreken."
+    },
+    "bewust": {
+      "title": "Het Verleden",
+      "subtitle1": "Het Lichaam",
+      "subtitle2": "De kracht van opgroeien",
+      "img": {
+        "text1": "De segmenten zijn verschillend - een verwijzing naar herinneringen, littekens, geschiedenis.",
+        "text2": "Betekenis: Het lichaam als drager van alles wat is geweest."
+      },
+      "list1": "De ontmoeting tussen het kinddeel en het volwassendeel.",
+      "list2": "In veel mensen raakt het kinddeel bedekt door verwachtingen, rollen, verantwoordelijkheden, trauma’s. Het kind verdwijnt niet — het wordt stil.",
+      "list3": "Zonder het kind wordt de volwassene functioneel, afgesneden. Zonder de volwassene wordt het kind onveilig, ongegrond, onbeschermd.",
+      "list4": "Wanneer het kind en de volwassene elkaar vinden, ontstaat: <br> veiligheid zonder verstarring, speelsheid zonder chaos, kracht zonder hardheid, zachtheid zonder breekbaarheid"
+    }
+  },
+  "about": {
+    "title": "Over Bram Geysen | De Weg naar Hartgericht Coachen | Mooyo",
+    "description": "Maak kennis met Bram Geysen, coach bij Mooyo. Lees over zijn persoonlijke reis en toewijding aan hartgedragen, verbindende en lichaamsgerichte begeleiding.",
+    "s1": {
+      "title": "Het verhaal van Mooyo",
+      "text": "Ontdek de reis die heeft geleid tot de oprichting van Mooyo en de passie achter mijn begeleiding. Dit is mijn persoonlijke verhaal en de kern van wat Mooyo uniek maakt."
+    },
+    "s2": {
+      "e1": {
+        "title": "Mijn persoonlijke reis",
+        "text1": "Ik ben geboren onder de Afrikaanse zon, in Chipata, Zambia en heb de eerste 11jaar in Afrika geleefd. Naast Zambia, heb ik ook in Rwanda gewoond.",
+        "text2": "Momenteel woon ik in Kessel-lo. Ik heb vier kinderen.",
+        "text3": "De gebeurtenissen in mijn leven zijn de bouwstenen die mij tot dit punt hebben gebracht. Door de laatste 10 jaren bewust naar de pijnen en uitdagingen van mijn eigen leven te kijken en er door te gaan, heb ik een diepe bron aan inzichten en ervaringen ontwikkeld. Mijn proces is nog steeds bezig.",
+        "text4": "Carl Jung zegt: “The privilege of a lifetime is to become who you truly are.” ",
+        "text6": "Ik ben dankbaar voor alles wat geweest is; het heeft me gevormd en veel goeds gebracht. Ik kijk hoopvol uit naar de toekomst. Vanuit die dankbaarheid is Mooyo ontstaan — mijn inspiratie én mijn toewijding om anderen te begeleiden op hun eigen unieke reis.",
+        "text7": " Momenteel werk ik deeltijds bij Adem vzw als Teamcoach en halftijds als zelfstandige."
+      },
+      "e2": {
+        "title": "Waarom kiezen voor Mooyo?",
+        "text1": "Mijn begeleidingsstijl wordt gekenmerkt door een diepe kwaliteit van aanwezigheid en een kalme rust. Dit stelt mij in staat om een veilige en ondersteunende omgeving te creëren waarin jij je volledig kunt openstellen en groeien.",
+        "text2": "Drie jaar geleden kwam ik in aanraking met het boeddhisme en meditatie. Sindsdien is het boeddhistisch gedachten goed en dagelijkse meditatie een vast onderdeel van mijn leven geworden. Het helpt me om met meer helderheid, rust en aanwezigheid in het leven te staan — kwaliteiten die ik ook meeneem in mijn werk met anderen."
+      }
+    }
+  },
+  "posts": {
+    "title": "Blog & Inzichten | Hartgericht Coachen, Stress & Rust | Mooyo",
+    "description": "Lees artikels en inzichten over hartgericht coachen, het innerlijk kind, stresshantering en bewustzijn op de blog van Mooyo.",
+    "noPosts": "Er zijn momenteel geen berichten beschikbaar"
+  },
+  "post": {
+    "readMore": "lees meer",
+    "back": "Terug naar posts",
+    "published": "gepubliceerd"
+  },
+  "Prices": {
+    "header": "Aanbod ∞ Tarieven",
+    "title": {
+      "individual": "Individuele begeleidingen",
+      "transformatief": "Transformatieve belevingen",
+      "organizations": "Organisaties en Teams"
+    },
+    "text": "Begeleidingen kunnen ook online plaatsvinden.  Dit werkt even diep, even transformerend. Het gaat om de interne beweging die ontstaat bij jou. Verandering gebeurt immers in het lichaam en in het bewustzijn en dat kan ook wanneer er fysieke afstand is. Wat telt, is dat jij je er comfortabel bij voelt. Wanneer dat aanwezig is, kan het proces zich net zo krachtig ontvouwen.",
+    "e1": {
+      "title1": "Individuele begeleidingen",
+      "li1": "Een sessie van 60 min is 70 euro (incl BTW)",
+      "li2": "Een sessie van 90 min is 100 euro (incl BTW)",
+      "details": "Ik begeleid mensen die voelen dat het tijd is om opnieuw in beweging te komen. Mensen die bewust (opnieuw) willen voor het leven, voor verbinding en voor het volledig belichamen van hun potentieel. Of je nu op zoek bent naar helderheid, richting, groei of heling: bij Mooyo vind je een plek waar je gezien en gedragen wordt. Ervaar dat het leven meer te bieden heeft wanneer je vanuit je hart durft te bewegen"
+    },
+    "burnout": {
+      "title": "Hartcoherentie - burn-out",
+      "description": "Hartcoherentie is er voor mensen die merken dat hun zenuwstelsel snel overbelast raakt. Het helpt wie met lage veerkracht kampt, wie snel overspoeld raakt door emoties of prikkels, en wie te maken heeft met burn-outklachten zoals uitputting of prikkelgevoeligheid. Ook bij concentratieproblemen, mentale mist of moeite om focus vast te houden, biedt hartcoherentie een zachte en effectieve weg terug naar rust, helderheid en veerkracht.",
+      "stress": {
+        "title": "Stressmanagement",
+        "text": "vormt de basis: je leert je zenuwstelsel tot rust brengen, je ademhaling te reguleren en je lichaam terug in balans te brengen. Dit niveau creëert de stabiliteit die nodig is om helder te denken en bewuste keuzes te maken."
+      },
+      "emotions": {
+        "title": "Emotieregulatie",
+        "text": "verdiept het proces: je ontwikkelte veerkracht, leert emoties herkennen zonder erdoor overspoeld te worden en bouwt aan een innerlijke stevigheid. Hierdoor ontstaat meer ruimte, nuance en zelfvertrouwen."
+      },
+      "connection": {
+        "title": "Verbinding",
+        "text": "is het hoogste niveau: vanuit rust en emotionele helderheid kun je authentiek contact maken — met jezelf én met anderen. Dit is waar hartcoherentie uitmondt in echte aanwezigheid, empathie en samenwerking."
+      }
+    },
+    "deeptimewalk": {
+      "title": "Deep Time Walk",
+      "description": "Een DeepTimeWalk is een transformatieve, begeleide wandeling door 4,6 miljard jaar geschiedenis van de Aarde. Het is een uitnodiging om onze relatie met Planeet Aarde te bevragen, onze plek binnen haar ecosystemen te verkennen, en onze kijk op de wereld en onszelf te veranderen.",
+      "price": {
+        "label": "Prijs",
+        "text": "Een halve dag voor 500 euro (excl BTW)."
+      },
+      "experience": {
+        "title": "Unieke beleving",
+        "text": "Een ervaring van de enorme uitgestrektheid van 4,6 miljard jaar op menselijke schaal, waarbij elke meter staat voor 1 miljoen jaar. We staan stil bij de grote aardse revoluties: van het ontstaan van onze maan tot de opkomst van foto-synthese, hoe complex leven zich vormde en tenslotte tot de recente verschijning van de moderne mens (in slechts de laatste 30 cm van de wandeling!)."
+      },
+      "perspective": {
+        "title": "Perspectief verschuiving",
+        "text": "Veel deelnemers beschrijven een verandering in hoe zij hun relatie met onze planeet ervaren. Welke verandering merk jij?"
+      },
+      "reflection": {
+        "title": "Persoonlijke reflectie"
+      },
+      "body": {
+        "title": "Lichaam",
+        "text": "Wat voel je in je lichaam na de wandeling?"
+      },
+      "heart": {
+        "title": "Hart",
+        "text": "Welk deel heeft je het meest geraakt? Welke emoties kwamen bij je op tijdens en aan het einde van de wandeling?"
+      },
+      "head": {
+        "title": "Hoofd",
+        "text": "Wat heb je geleerd?"
+      },
+      "groups": {
+        "footer": "Voor vriendengroepen, verenigingen en families, wil je meer weten over de workshop en de prijs. Stuur een mail naar"
+      }
+    },
+    "koppels": {
+      "title": "Begeleiding van koppels",
+      "li1": "Een sessie van 60 min is 100 euro (incl BTW)",
+      "li2": "Een sessie van 90 min is 130 euro (incl BTW)",
+      "details": "Ook koppels die verlangen naar meer verbinding, begrip en gezamenlijke groei zijn hier welkom. Koppels die bereid zijn om met openheid en moed naar hun eigen innerlijke delen te kijken zoals delen die geraakt worden, die zich terugtrekken, die verlangen, die beschermen. In hartgedragen begeleiding creëren we een veilige bedding waarin beide partners kunnen thuiskomen bij zichzelf én bij elkaar. Vanuit zachtheid, eerlijkheid en aanwezigheid onderzoeken we wat er onder de oppervlakte leeft, zodat liefde, helderheid en echte ontmoeting opnieuw ruimte krijgen."
+    },
+    "e3": {
+      "title": "Begeleiding van organisaties",
+      "li1": "Een sessie van één halve dag is 500 euro (excl BTW)",
+      "li2": " Een sessie van één dag is 800 euro (excl BTW)",
+      "details": "Organisaties die bereid zijn om het hart mee te laten spreken kunnen rekenen op begeleiding die verder gaat dan methodes en modellen. In (zelfsturende) teams blijkt regelmatig dat er nog een essentieel element ontbreekt om optimaal te functioneren: de innerlijke afstemming die nodig is zodat elk teamlid in zijn hartgedragen kracht kan stappen. Wanneer dat ontbrekende stuk wordt ingevuld, ontstaat er een team dat niet alleen zelfsturend is, maar ook werkelijk zelfbewust, verbonden en veerkrachtig. Zo ontstaat er een duurzaam fundament voor effectieve samenwerking, eigenaarschap en resultaatgerichtheid."
+    },
+    "construct": {
+      "title": "Voorbij je construct",
+      "text": "Een eerste ontmoeting met je essentie en eerste kennismaking met reconstructive methode. Voor wie wilt proeven van wat er leeft voorbij je patronen",
+      "format": "1 dag",
+      "for": "individu",
+      "location": "Leuven",
+      "max": "12",
+      "data": "najaar 2026",
+      "price": "125€ excl btw",
+      "lunch": "Koffie, thee en lunch inbegrepen",
+      "body1": "Merk jij ook dat sommigen vrijer leven dan jij? Dat als jij iets wil veranderen, er meteen een stem in jouw hoofd zegt, \"ja maar, dat kan niet want...\" Heb je door dat jouw kader er anders uitziet en wil jij wel eens verkennen wat er mogelijk is als jij je kader verruimt?",
+      "body2": "Tijdens deze initiatiedag stap je een dag lang uit je vertrouwde kaders. We gaan in de voormiddag naar buiten en we werken gericht met de natuur om je heen en terwijl je wandelt, merk je hoe je blik ruimer wordt. Via belevingsoefeningen en de wijsheid van de natuur word je uitgenodigd om even buiten je construct te stappen. Het is alsof je een raam opent dat lang dicht zat. Er komt licht binnen. Ruimte. Nieuwsgierigheid.",
+      "body3": "De natuur vindt altijd een weg ook in complexe omstandigheden. En precies dat herinnert jou eraan dat ook jij kunt bewegen, verschuiven, openen.",
+      "li1": "Ruimer perspectief op je eigen patronen",
+      "li2": "Een eerste ervaring van ruimte en vrijheid",
+      "li3": "Meer bewustzijn over wat jou stuurt",
+      "li4": "Nieuwsgierigheid als startpunt voor groei"
+    },
+    "reconstructive": {
+      "title": "Reconstructive",
+      "text": "Ervaar de transformerende kracht van Reconstructive en kom dichter bij je intuïtie, je vrijheid en je kern.",
+      "format": "2 dagen",
+      "for": "individu",
+      "location": "Leuven",
+      "max": "8",
+      "data": {
+        "li1": "25-26 juli 2026 (10u-17u)",
+        "li2": "17-18 oktober 2026 (10u-17u)"
+      },
+      "price": "450€ excl btw",
+      "lunch": "Koffie, thee en lunch inbegrepen",
+      "body1": "Soms voel je dat er nog iets in de weg zit. Iets wat niet via het hoofd loskomt, maar via het lichaam wil gezien worden.",
+      "body2": "Vaak zijn het diepgewortelde patronen, oude verhalen, ingehouden emoties en overlevingsstrategieën die ons onbewust ervan weerhouden om ons potentieel ten volle te leven. Door ermee te werken in het lichaam komt er beweging, helderheid en richting.",
+      "body3": "In de tweedaagse vertraagt de tijd. Je krijgt ruimte om dieper te zakken, voorbij de oppervlakte. Je ontmoet twee delen in jezelf die vaak meer invloed hebben dan je denkt: je kinddeel en je volwassen deel. Wanneer deze twee elkaar ontmoeten, ontstaat er iets krachtigs: een beweging die je niet kunt bedenken, maar wel kunt voelen.",
+      "body4": "De groep vormt daarbij een spiegelend veld. Wat je bij anderen ziet, raakt iets in jou. Wat jij laat zien, opent iets bij hen. Sommige inzichten komen niet via het hoofd. Ze komen via het lichaam als je het de ruimte geeft.",
+      "li1": "Ruimer perspectief op je eigen patronen",
+      "li2": "Meer vrijheid",
+      "li3": "Nieuwe inzichten",
+      "li4": "Doorbraak in patronen die tot nu toe bleven vastzitten",
+      "li5": "Een ervaring die een blijvende indruk nalaat"
+    },
+    "label": {
+      "format": "Format",
+      "for": "Voor",
+      "location": "Locatie",
+      "max": "Max aantal deelnemers",
+      "data": "Data",
+      "price": "Prijs"
+    },
+    "footprints": {
+      "title": "Footprints",
+      "li1": "Een sessie van 60 min is 70 euro (incl BTW)",
+      "li2": "Een sessie van 90 min is 100 euro (incl BTW)",
+      "details": {
+        "text1": "Footprints-methode is een individuele begeleiding van 4 sessies die een essentiële sleutel vormt naar een vrije leven. Wanneer je één van volgende patronen bij jezelf herkent kan Footprints hierop verandering brengen:",
+        "li1": "pleasen",
+        "li2": "zorgen voor",
+        "li3": "constant bezig zijn",
+        "li4": "controleren",
+        "li5": "nog harder je best doen",
+        "text2": "Footprints is een ontmoeting met je eigen innerlijke wereld en opent de deur naar emotionele volwassenhied waarbij jouw plek in het systeem geëerd worden waardoor er helderheid ontstaat. Na de eertse sessie voel je je al lichter, de volgende sessies verdiepen dit gevoel waardoor integratie in het dagelijks leven voelbaar en blijvend wordt."
+      }
+    },
+    "seeMore": "Zie meer...",
+    "collab": "In samenwerking met Elke Busschots, ",
+    "info": "Voor info en aanmelden, mail ",
+    "gold": {
+      "title": "Find your gold",
+      "text": "Ga op een diepgaande reis door natuur en lichaam, en keer terug naar de essentie van wie jij werkelijk bent.",
+      "format": "6 dagen",
+      "for": "individu",
+      "location": "Zuid Noorwegen in een rustige, natuurlijke omgeving",
+      "max": "Kleine groep (max. 6)",
+      "data": "Van 5-12 september 2026",
+      "price": "1750€ excl btw",
+      "body": "Elke dag trekken we de natuur in. Ze spiegelt je zonder oordeel: waar je nog vasthoudt, waar je mag verzachten, waar je mag openen. De natuur laat zien wat je lichaam al wist, maar wat je hoofd misschien nog niet durfde te erkennen. Reconstructive maakt zichtbaar wat je onderweg tegenkomt: oude patronen, beschermingslagen, ingehouden emoties. Door ermee te werken in het lichaam komt er beweging, helderheid en richting. Je voelt hoe je dichter bij je blauwdruk komt dat stille, diepe weten van wie jij in essentie bent. De groep wordt een bedding. Je hoeft het niet alleen te doen, maar je maakt wel je eigen innerlijke reis.",
+      "results": {
+        "title": "Wat levert het op"
+      },
+      "li1": "Meer helderheid",
+      "li2": "Belichaming",
+      "li3": "Rust",
+      "li4": "stevig contact met je kern",
+      "footer": "Voor wie een reset wil, oude lagen wil loslaten en zijn/haar blauwdruk wil herontdekken"
+    },
+    "moreInfo": "Voor meer informatie zie,"
+  },
+  "aanbodCard": {
+    "individual": {
+      "text": "Of je nu op zoek bent naar helderheid, richting, groei of heling: bij Mooyo vind je een plek waar je gezien en gedragen wordt. Ervaar dat het leven meer te bieden heeft wanneer je vanuit je hart durft te bewegen."
+    },
+    "transformatief": {
+      "text": "Maak ervaringen mee die je bewustzijn openen en je uitnodigen om vanuit een nieuw perspectief naar jezelf, je leven en naar de wereld te kijken. Deze ervaringen brengen je frisse inzichten, boren nieuwe gevoelens aan en openen manieren van waarnemen die je perspectief vernieuwen."
+    },
+    "organizations": {
+      "text": "Organisaties die bereid zijn om het hart mee te laten spreken kunnen rekenen op begeleiding die verder gaat dan methodes en modellen. Mooyo biedt ook een teambuidingsactiviteit aan."
+    },
+    "seeMore": "lees meer →"
+  },
+  "mailForm": {
+    "title": "Stuur een bericht",
+    "name": "Naam",
+    "email": "Email",
+    "interest": "Waar ben je in geïnteresseerd",
+    "optional": "vrijblijvend",
+    "service": {
+      "individual": "Individuele begeleiding",
+      "transformatief": "transformatief / Belevingen",
+      "organizations": "Organisaties en Teams",
+      "other": "Iets anders"
+    },
+    "phone": "GSM-nummer",
+    "message": "Bericht",
+    "send": "Verstuur bericht",
+    "success": "Bedankt! Je bericht is verzonden.",
+    "error": "Er is iets misgegaan. Probeer het later opnieuw."
+  }
+}

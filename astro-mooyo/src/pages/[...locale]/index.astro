@@ -19,7 +19,7 @@ const t = useTranslations(lang);
 const translatePath = useTranslatedPath(lang);
 ---
 
-<Layout title="Home">
+<Layout title={t("index.title")} description={t("index.description")}>
   <section class="intro back-gray text-align-center text-gray center">
     <div class="container">
       <div class="center">
