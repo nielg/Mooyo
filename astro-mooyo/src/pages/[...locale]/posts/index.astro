@@ -22,7 +22,7 @@ const POSTS_QUERY = `*[
 const posts = await sanityClient.fetch<SanityDocument[]>(POSTS_QUERY, { lang });
 ---
 
-<Layout title="Blog & Inzichten | Hartgericht Coachen, Stress & Rust | Mooyo">
+<Layout title={t("posts.title")}>
   <section class="back-red text-white">
     <h1 class="text-align-center text-white">Posts</h1>
     <div class="text-margin"></div>
