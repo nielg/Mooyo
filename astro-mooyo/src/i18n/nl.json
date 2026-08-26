@@ -1,6 +1,7 @@
 {
   "404": {
     "title": "Oeps! Pagina niet gevonden",
+    "description": "Pagina niet gevonden. Keer terug naar de homepagina van Mooyo voor hartgerichte begeleiding en coaching.",
     "text": "Het ziet er naar uit dat deze pagina niet meer bestaat of is verhuisd.",
     "btn": "Terug naar home"
   },
@@ -33,6 +34,7 @@
   },
   "index": {
     "title": "Mooyo | Lichaamsgericht & Hartgericht Coachen bij Stress & Burn-out",
+    "description": "Ontdek hartgerichte en lichaamsgerichte coaching in Leuven bij stress, burn-out en vastlopen. Kom thuis bij jezelf en vind rust, veerkracht en richting.",
     "distance": {
       "station": "(op 3min wandelafstand van het treinstation van Leuven)."
     },
@@ -74,10 +76,12 @@
     }
   },
   "welcome": {
-    "title": "Welkom bij Mooyo | Coaching bij Stress, Vastlopen & Desoriëntatie"
+    "title": "Welkom bij Mooyo | Coaching bij Stress, Vastlopen & Desoriëntatie",
+    "description": "Wees welkom bij Mooyo. Een veilige bedding voor wie kampt met desoriëntatie, stress of verlangt naar diepe verstilling, echtheid en innerlijke rust."
   },
   "aanbod": {
     "title": "Aanbod | Coaching & Hartbegeleiding in Leuven | Mooyo",
+    "description": "Bekijk het aanbod van Mooyo: individuele begeleiding, hartcoherentie, Footprints, Deep Time Walk en Reconstructive workshops in Leuven.",
     "forwho": {
       "title": "Begeleiding waarin jij, je lichaam en je relaties centraal staan.",
       "text": "In mijn begeleiding nodig ik je uit om niet alleen te praten over wat er speelt, maar het ook in je lichaam te voelen. Vaak vertelt je lichaam iets wat woorden nog niet kunnen vatten. Door samen stil te staan bij die signalen, ontstaat er ruimte voor echte, duurzame verandering. Ik kijk altijd naar jou in relatie tot je omgeving. We leven en ontwikkelen ons immers in verbinding met anderen. Daarom betrek ik, wanneer dat helpend is, de systemen waarvan jij deel uitmaakt. Gedrag en patronen ontstaan zelden in isolatie; ze zijn meestal onderdeel van een groter geheel. Daarnaast onderzoek ik met jou de interne relaties die je met jezelf hebt: de delen die je beschermen, de delen die je kwetsbaar maken, en de delen die soms botsen. Door deze innerlijke stemmen te leren kennen, ontstaat er meer begrip, mildheid en richting. Zo bouwen we samen aan een begeleidingstraject waarin lichaam, relaties en innerlijke dynamiek elkaar versterken en je helpen om op een authentieke manier te groeien."
@@ -95,6 +99,7 @@
   },
   "filosofie": {
     "title": "Filosofie van Mooyo | Hartgericht Coachen",
+    "description": "Ontdek de vier pijlers van Mooyo: Bewustzijn, Adem, Het Hart en Het Lichaam. Een holistische aanpak voor diepe transformatie en emotionele heelheid.",
     "essentie": {
       "text1": "Mooyo werkt als een zachte maar diepe sleutel. Het raakt lagen die vaak jarenlang gesloten bleven. Door deze opening ontstaat er ruimte, beweging, helderheid.",
       "li1": "<span class='bold'>Kernwerk</span> — We gaan naar de essentie, voorbij de ruis.",
@@ -162,6 +167,7 @@
   },
   "about": {
     "title": "Over Bram Geysen | De Weg naar Hartgericht Coachen | Mooyo",
+    "description": "Maak kennis met Bram Geysen, coach bij Mooyo. Lees over zijn persoonlijke reis en toewijding aan hartgedragen, verbindende en lichaamsgerichte begeleiding.",
     "s1": {
       "title": "Het verhaal van Mooyo",
       "text": "Ontdek de reis die heeft geleid tot de oprichting van Mooyo en de passie achter mijn begeleiding. Dit is mijn persoonlijke verhaal en de kern van wat Mooyo uniek maakt."
@@ -185,6 +191,7 @@
   },
   "posts": {
     "title": "Blog & Inzichten | Hartgericht Coachen, Stress & Rust | Mooyo",
+    "description": "Lees artikels en inzichten over hartgericht coachen, het innerlijk kind, stresshantering en bewustzijn op de blog van Mooyo.",
     "noPosts": "Er zijn momenteel geen berichten beschikbaar"
   },
   "post": {

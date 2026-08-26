@@ -74,10 +74,12 @@
     }
   },
   "welcome": {
-    "title": "Welcome to Mooyo | Coaching for Stress, Getting Stuck & Disorientation"
+    "title": "Welcome to Mooyo | Coaching for Stress, Getting Stuck & Disorientation",
+    "description": "Welcome to Mooyo. A safe haven for anyone navigating disorientation, stress, or longing for deep stillness, authenticity, and inner peace."
   },
   "aanbod": {
     "title": "Offerings | Coaching & Heart-Centered Guidance in Leuven | Mooyo",
+    "description": "Explore Mooyo's offerings: individual coaching, heart coherence, Footprints, Deep Time Walk, and Reconstructive workshops in Leuven.",
     "forwho": {
       "title": "Guidance where you, your body, and your relationships are central.",
       "text": "In my guidance, I invite you not only to talk about what is going on but also to feel it in your body. Often, your body tells you something that words cannot yet grasp. By pausing together at those signals, space is created for real, lasting change. I always look at you in relation to your environment. After all, we live and develop in connection with others. That is why I involve, when helpful, the systems you are part of. Behavior and patterns rarely arise in isolation; they are usually part of a larger whole. In addition, I explore with you the internal relationships you have with yourself: the parts that protect you, the parts that make you vulnerable, and the parts that sometimes clash. By getting to know these inner voices, more understanding, gentleness, and direction emerge. Together, we build a guidance process in which body, relationships, and inner dynamics reinforce each other and help you grow in an authentic way."
@@ -95,6 +97,7 @@
   },
   "filosofie": {
     "title": "Philosophy of Mooyo | Heart-Centered Coaching",
+    "description": "Discover Mooyo's four pillars: Awareness, Breath, The Heart, and The Body. A holistic framework for deep transformation and emotional wholeness.",
     "essentie": {
       "text1": "Mooyo works like a gentle but deep key. It touches layers that often remained closed for years. This opening creates space, movement, clarity.",
       "li1": "<span class='bold'>Core work</span> — We go to the essence, beyond the noise.",
@@ -162,6 +165,7 @@
   },
   "about": {
     "title": "About Bram Geysen | The Path to Heart-Centered Coaching | Mooyo",
+    "description": "Meet Bram Geysen, coach at Mooyo. Learn about his personal journey and dedication to heart-centered, connective, and somatic guidance.",
     "s1": {
       "title": "The story of Mooyo",
       "text": "Discover the journey that led to the founding of Mooyo and the passion behind my guidance. This is my personal story and the core of what makes Mooyo unique."

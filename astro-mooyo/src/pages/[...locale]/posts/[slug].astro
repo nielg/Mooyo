@@ -47,7 +47,7 @@ const postImageUrl = post.image
   : null;
 ---
 
-<Layout title={post?.title || "Post"}>
+<Layout title={post?.title || "Post"} description={post?.description}>
   <section class="back-red text-white">
     <a href={translatePath("/posts")} class="white-btn">
       &larr; {t("post.back")}
