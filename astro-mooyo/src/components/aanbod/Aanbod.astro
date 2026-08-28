@@ -19,13 +19,21 @@ export type Tabs =
     </h1>
   </div>
   <div id="tab-container">
-    <div class="tab" data-tab="individuele_begeleiding">
+    <div
+      class="tab"
+      data-tab="individuele_begeleiding"
+      id="individuele_begeleiding"
+    >
       <h4>{t("Prices.title.individual")}</h4>
     </div>
-    <div class="tab active" data-tab="transformatieve_belevingen">
+    <div
+      class="tab active"
+      data-tab="transformatieve_belevingen"
+      id="transformatieve_belevingen"
+    >
       <h4>{t("Prices.title.transformatief")}</h4>
     </div>
-    <div class="tab" data-tab="organisaties_teams">
+    <div class="tab" data-tab="organisaties_teams" id="organisaties_teams">
       <h4>{t("Prices.title.organizations")}</h4>
     </div>
   </div>
@@ -65,7 +73,7 @@ export type Tabs =
           tab.classList.remove("active");
         }
       });
-
+      console.log("Set history", selectedId);
       history.replaceState(null, "", `#${selectedId}`);
     };
 
@@ -77,12 +85,15 @@ export type Tabs =
     });
 
     const initialHash = window.location.hash.replace("#", "");
+    console.log(initialHash);
 
     const matchingTab = Array.from(tabs).find(
       (tab) => tab.dataset.tab === initialHash,
     );
 
+    console.log(matchingTab);
     if (matchingTab && initialHash) {
+      console.log(true);
       setActiveTab(initialHash);
     } else {
       const defaultTabId = tabs[0].dataset.tab;
