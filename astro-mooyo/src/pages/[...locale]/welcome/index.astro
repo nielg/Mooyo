@@ -21,7 +21,7 @@ export { getStaticPaths };
     <div class="container">
       <Image
         src={zon}
-        alt="tekening"
+        alt={t("global.drawing")}
         class="img"
         width={450}
         height={450}
@@ -74,10 +74,10 @@ export { getStaticPaths };
     </p>
     <div class="btn-container">
       <a href={translatePath("/filosofie")} class="btn red-btn"
-        >Meer weten over de filosofie</a
+        >{t("welcome.philosophyLink")}</a
       >
       <a href={translatePath("/aanbod")} class="btn red-btn"
-        >Meer weten over het aanbod</a
+        >{t("welcome.offeringsLink")}</a
       >
     </div>
   </section>

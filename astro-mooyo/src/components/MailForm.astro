@@ -15,7 +15,7 @@ const btnClasses = color == "red" ? "gray-btn" : "red-btn";
 <section color-variant={color} class="regular-font mail-form-section">
   <h2 class="text-align-center papyrus-font">{t("mailForm.title")}</h2>
 
-  <div class="status-message hidden"></div>
+  <div class="status-message hidden" role="status" aria-live="polite"></div>
 
   <form
     class="mail-form"
@@ -138,6 +138,7 @@ const btnClasses = color == "red" ? "gray-btn" : "red-btn";
 
         // UI State: Loading
         submitBtn.disabled = true;
+        form.setAttribute("aria-busy", "true");
         btnText?.classList.add("hidden");
         loader?.classList.remove("hidden");
         statusMessage.classList.add("hidden");
@@ -168,6 +169,7 @@ const btnClasses = color == "red" ? "gray-btn" : "red-btn";
           statusMessage.className = "status-message error";
         } finally {
           submitBtn.disabled = false;
+          form.removeAttribute("aria-busy");
           btnText?.classList.remove("hidden");
           loader?.classList.add("hidden");
           statusMessage.classList.remove("hidden");

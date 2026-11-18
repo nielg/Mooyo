@@ -33,11 +33,14 @@ const posts = await sanityClient.fetch<SanityDocument[]>(POSTS_QUERY, { lang });
             <div class="post-content">
               <div class="post-meta">
                 <time datetime={post.publishedAt}>
-                  {new Date(post.publishedAt).toLocaleDateString("nl-NL", {
+                  {new Date(post.publishedAt).toLocaleDateString(
+                    lang === "nl" ? "nl-NL" : "en-BE",
+                    {
                     year: "numeric",
                     month: "long",
                     day: "numeric",
-                  })}
+                    },
+                  )}
                 </time>
               </div>
 

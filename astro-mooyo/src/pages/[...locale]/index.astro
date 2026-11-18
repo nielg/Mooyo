@@ -26,7 +26,7 @@ const translatePath = useTranslatedPath(lang);
         <Image
           src={hart_rond}
           class="img hart"
-          alt="Mooyo logo"
+          alt="Mooyo"
           width={450}
           height={450}
           loading="eager"
@@ -51,14 +51,14 @@ const translatePath = useTranslatedPath(lang);
   </section>
 
   <section class="profile back-white text-black regular-font">
-    <Image src={profiel} class="img" alt="Profiel foto van Bram Geysen" />
+    <Image src={profiel} class="img" alt={t("index.profile.imageAlt")} />
     <div class="text">
       <h2 class="text-red papyrus-font">Bram Geysen</h2>
       <p>
         Rondestraat 38 <br /> 3000 Leuven, Belgium <br />
         {t("index.distance.station")}
       </p>
-      <h4 class="title papyrus-font">Contact</h4>
+      <h4 class="title papyrus-font">{t("index.profile.contact")}</h4>
       <p class="text-red">
         <a href="tel:+32473523094">[+32 473 52 30 94]</a>
       </p>
@@ -70,7 +70,7 @@ const translatePath = useTranslatedPath(lang);
       <h4 class="title papyrus-font">Socials</h4>
       <Socials />
       <p class="about-link">
-        <a href={translatePath("/about")}>Lees hier meer over mij</a>
+        <a href={translatePath("/about")}>{t("index.profile.aboutLink")}</a>
       </p>
     </div>
   </section>
