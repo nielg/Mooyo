@@ -1,11 +1,18 @@
 {
   "404": {
     "title": "Oops! Page not found",
+    "description": "Page not found. Return to the Mooyo homepage for heart-centered guidance and coaching.",
     "text": "It looks like this page no longer exists or has been moved.",
     "btn": "Back to home"
   },
   "global": {
-    "hartcirkels": "Heart Circles"
+    "hartcirkels": "Heart Circles",
+    "navigation": "Navigation",
+    "allRightsReserved": "All Rights Reserved",
+    "scrollToTop": "Scroll to top",
+    "drawing": "Drawing",
+    "sunDrawing": "Drawing of the sun",
+    "campingPhoto": "Camping photo with campfire"
   },
   "nav": {
     "filosofie": "PHILOSOPHY",
@@ -15,6 +22,7 @@
     "about": "ABOUT ME"
   },
   "footer": {
+    "navigation": "Navigation",
     "home": "home",
     "welcome": "welcome",
     "filosofie": "philosophy",
@@ -33,8 +41,14 @@
   },
   "index": {
     "title": "Mooyo | Body- & Heart-Centered Coaching for Stress & Burnout",
+    "description": "Discover heart-centered and body-centered coaching in Leuven for stress, burnout, and feeling stuck. Come home to yourself and find calm, resilience, and direction.",
     "distance": {
       "station": "(within 5min walking distance from Leuven train station)."
+    },
+    "profile": {
+      "imageAlt": "Portrait photo of Bram Geysen",
+      "contact": "Contact",
+      "aboutLink": "Read more about me"
     },
     "intro": {
       "text1": " Heart, Life, Soul",
@@ -75,7 +89,9 @@
   },
   "welcome": {
     "title": "Welcome to Mooyo | Coaching for Stress, Getting Stuck & Disorientation",
-    "description": "Welcome to Mooyo. A safe haven for anyone navigating disorientation, stress, or longing for deep stillness, authenticity, and inner peace."
+    "description": "Welcome to Mooyo. A safe haven for anyone navigating disorientation, stress, or longing for deep stillness, authenticity, and inner peace.",
+    "philosophyLink": "Learn more about the philosophy",
+    "offeringsLink": "Learn more about the offerings"
   },
   "aanbod": {
     "title": "Offerings | Coaching & Heart-Centered Guidance in Leuven | Mooyo",
@@ -189,6 +205,7 @@
   },
   "posts": {
     "title": "Blog & Insights | Heart-Centered Coaching, Stress & Calm | Mooyo",
+    "description": "Read articles and insights about heart-centered coaching, the inner child, stress management, and awareness on the Mooyo blog.",
     "noPosts": "There are currently no posts available"
   },
   "post": {

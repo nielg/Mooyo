@@ -12,7 +12,11 @@ const t = useTranslations(lang);
 const translatePath = useTranslatedPath(lang);
 ---
 
-<Layout title={`404 - ${t("404.title")}`} description={t("404.description")}>
+<Layout
+  title={`404 - ${t("404.title")}`}
+  description={t("404.description")}
+  noindex
+>
   <main class="error-container back-red text-white">
     <section class="error-content">
       <div class="error-code">404</div>

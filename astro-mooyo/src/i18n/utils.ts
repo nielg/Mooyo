@@ -31,12 +31,13 @@ export type TranslationKey = NestedKeys<typeof defaultLangJson>;
 
 // Helper function to dynamically access nested keys safely
 function getNestedValue(
-  obj: Record<string, any>,
+  obj: unknown,
   keyPath: string,
 ): string | undefined {
-  const result = keyPath
-    .split(".")
-    .reduce<any>((acc, part) => acc && acc[part], obj);
+  const result = keyPath.split(".").reduce<unknown>((value, part) => {
+    if (typeof value !== "object" || value === null) return undefined;
+    return (value as Record<string, unknown>)[part];
+  }, obj);
   return typeof result === "string" ? result : undefined;
 }
 

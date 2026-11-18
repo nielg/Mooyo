@@ -18,37 +18,63 @@ export type Tabs =
       {t("Prices.header")}
     </h1>
   </div>
-  <div id="tab-container">
-    <div
+  <div id="tab-container" role="tablist">
+    <button
       class="tab"
       data-tab="individuele_begeleiding"
       id="individuele_begeleiding"
+      role="tab"
+      aria-selected="false"
+      aria-controls="panel-individuele_begeleiding"
     >
       <h4>{t("Prices.title.individual")}</h4>
-    </div>
-    <div
+    </button>
+    <button
       class="tab active"
       data-tab="transformatieve_belevingen"
-      id="transformatieve_belevingen"
+      id="tab-transformatieve_belevingen"
+      role="tab"
+      aria-selected="true"
+      aria-controls="panel-transformatieve_belevingen"
     >
       <h4>{t("Prices.title.transformatief")}</h4>
-    </div>
-    <div class="tab" data-tab="organisaties_teams" id="organisaties_teams">
+    </button>
+    <button
+      class="tab"
+      data-tab="organisaties_teams"
+      id="tab-organisaties_teams"
+      role="tab"
+      aria-selected="false"
+      aria-controls="panel-organisaties_teams"
+    >
       <h4>{t("Prices.title.organizations")}</h4>
-    </div>
+    </button>
   </div>
   <div id="details-container">
-    <div id="individuele_begeleiding" class="details" style="display: none;">
+    <div
+      id="panel-individuele_begeleiding"
+      class="details"
+      role="tabpanel"
+      aria-labelledby="individuele_begeleiding"
+      hidden
+    >
       <IndividueleBegeleiding />
     </div>
     <div
-      id="transformatieve_belevingen"
+      id="panel-transformatieve_belevingen"
       class="details"
-      style="display: block;"
+      role="tabpanel"
+      aria-labelledby="tab-transformatieve_belevingen"
     >
       <TransformatieveBeleving />
     </div>
-    <div id="organisaties_teams" class="details" style="display: none;">
+    <div
+      id="panel-organisaties_teams"
+      class="details"
+      role="tabpanel"
+      aria-labelledby="tab-organisaties_teams"
+      hidden
+    >
       <Organisaties />
     </div>
   </div>
@@ -63,17 +89,15 @@ export type Tabs =
 
     const setActiveTab = (selectedId: string) => {
       details.forEach((detail) => {
-        detail.style.display = detail.id === selectedId ? "block" : "none";
+        detail.hidden = detail.id !== `panel-${selectedId}`;
       });
 
       tabs.forEach((tab) => {
-        if (tab.dataset.tab === selectedId) {
-          tab.classList.add("active");
-        } else {
-          tab.classList.remove("active");
-        }
+        const isSelected = tab.dataset.tab === selectedId;
+        tab.classList.toggle("active", isSelected);
+        tab.setAttribute("aria-selected", isSelected ? "true" : "false");
+        tab.tabIndex = isSelected ? 0 : -1;
       });
-      console.log("Set history", selectedId);
       history.replaceState(null, "", `#${selectedId}`);
     };
 
@@ -82,21 +106,47 @@ export type Tabs =
         const tabId = tab.dataset.tab;
         if (tabId) setActiveTab(tabId);
       });
+      tab.addEventListener("keydown", (event) => {
+        if (!["ArrowLeft", "ArrowRight", "Home", "End"].includes(event.key)) {
+          return;
+        }
+
+        event.preventDefault();
+        const currentIndex = Array.from(tabs).indexOf(tab);
+        let nextIndex = currentIndex;
+
+        if (event.key === "ArrowRight") {
+          nextIndex = (currentIndex + 1) % tabs.length;
+        } else if (event.key === "ArrowLeft") {
+          nextIndex = (currentIndex - 1 + tabs.length) % tabs.length;
+        } else if (event.key === "Home") {
+          nextIndex = 0;
+        } else if (event.key === "End") {
+          nextIndex = tabs.length - 1;
+        }
+
+        const nextTab = tabs[nextIndex];
+        const tabId = nextTab.dataset.tab;
+        if (tabId) {
+          setActiveTab(tabId);
+          nextTab.focus();
+        }
+      });
     });
 
     const initialHash = window.location.hash.replace("#", "");
-    console.log(initialHash);
 
     const matchingTab = Array.from(tabs).find(
       (tab) => tab.dataset.tab === initialHash,
     );
 
-    console.log(matchingTab);
     if (matchingTab && initialHash) {
-      console.log(true);
       setActiveTab(initialHash);
     } else {
-      const defaultTabId = tabs[0].dataset.tab;
+      const defaultTab =
+        Array.from(tabs).find((tab) => tab.classList.contains("active")) ??
+        tabs[0];
+      const defaultTabId = defaultTab?.dataset.tab;
       if (defaultTabId) setActiveTab(defaultTabId);
     }
   };
@@ -126,6 +176,7 @@ export type Tabs =
     border: 1px solid var(--mooyo-black);
     padding: 0.2rem 2rem;
     border-radius: 10px 10px 0 0;
+    font: inherit;
     border-bottom: none;
     margin-bottom: -1px;
     cursor: pointer;

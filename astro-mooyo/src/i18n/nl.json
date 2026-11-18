@@ -6,7 +6,13 @@
     "btn": "Terug naar home"
   },
   "global": {
-    "hartcirkels": "Hartcirkels"
+    "hartcirkels": "Hartcirkels",
+    "navigation": "Navigatie",
+    "allRightsReserved": "Alle rechten voorbehouden",
+    "scrollToTop": "Naar boven scrollen",
+    "drawing": "Tekening",
+    "sunDrawing": "Tekening van de zon",
+    "campingPhoto": "Foto kamperen met kampvuur"
   },
   "nav": {
     "filosofie": "FILOSOFIE",
@@ -16,6 +22,7 @@
     "about": "OVER MIJ"
   },
   "footer": {
+    "navigation": "Navigatie",
     "home": "home",
     "welcome": "welkom",
     "filosofie": "filosofie",
@@ -37,6 +44,11 @@
     "description": "Ontdek hartgerichte en lichaamsgerichte coaching in Leuven bij stress, burn-out en vastlopen. Kom thuis bij jezelf en vind rust, veerkracht en richting.",
     "distance": {
       "station": "(op 5min wandelafstand van het treinstation van Leuven)."
+    },
+    "profile": {
+      "imageAlt": "Profiel foto van Bram Geysen",
+      "contact": "Contact",
+      "aboutLink": "Lees hier meer over mij"
     },
     "intro": {
       "text1": " Hart, Leven, Ziel",
@@ -77,7 +89,9 @@
   },
   "welcome": {
     "title": "Welkom bij Mooyo | Coaching bij Stress, Vastlopen & Desoriëntatie",
-    "description": "Wees welkom bij Mooyo. Een veilige bedding voor wie kampt met desoriëntatie, stress of verlangt naar diepe verstilling, echtheid en innerlijke rust."
+    "description": "Wees welkom bij Mooyo. Een veilige bedding voor wie kampt met desoriëntatie, stress of verlangt naar diepe verstilling, echtheid en innerlijke rust.",
+    "philosophyLink": "Meer weten over de filosofie",
+    "offeringsLink": "Meer weten over het aanbod"
   },
   "aanbod": {
     "title": "Aanbod | Coaching & Hartbegeleiding in Leuven | Mooyo",

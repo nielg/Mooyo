@@ -1,22 +1,29 @@
 ---
 import GoogleTMHead from "./GoogleTMHead.astro";
 import { ClientRouter } from "astro:transitions";
+import { getLangFromUrl, getRouteFromUrl, languages, useTranslatedPath } from "@src/i18n/utils";
 
 interface Props {
   title?: string;
   description?: string;
   image?: string;
+  noindex?: boolean;
 }
 
 const {
   title = "Mooyo Hart begeleiding coachen",
   description = "Mooyo is een uitnodiging om volledig aanwezig te zijn met alles wat je meedraagt, precies zoals je bent.",
   image = "/smo-img.png",
+  noindex = false,
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const socialImageURL = new URL(image, Astro.site);
 const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, "");
+const lang = getLangFromUrl(Astro.url);
+const route = getRouteFromUrl(Astro.url);
+const translatePath = useTranslatedPath(lang);
+const locale = lang === "nl" ? "nl_BE" : "en_BE";
 ---
 
 <head>
@@ -29,6 +36,19 @@ const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, "");
   <meta name="keywords" content="Astro, coaching" />
   <link rel="icon" type="image/png" href={`${baseUrl}/favicon.png`} />
   <link rel="canonical" href={canonicalURL} />
+  {noindex && <meta name="robots" content="noindex, nofollow" />}
+  {Object.keys(languages).map((alternateLang) => (
+    <link
+      rel="alternate"
+      hreflang={alternateLang}
+      href={new URL(translatePath(`/${route || ""}`, alternateLang), Astro.site).href}
+    />
+  ))}
+  <link
+    rel="alternate"
+    hreflang="x-default"
+    href={new URL(translatePath(`/${route || ""}`, "nl"), Astro.site).href}
+  />
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
@@ -37,6 +57,7 @@ const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, "");
   <meta property="og:description" content={description} />
   <meta property="og:image" content={socialImageURL} />
   <meta property="og:site_name" content="mooyo" />
+  <meta property="og:locale" content={locale} />
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image" />

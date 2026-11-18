@@ -10,33 +10,41 @@ import whatsapp from "@assets/icons/whatsapp.svg?raw";
     href="https://www.linkedin.com/in/bram-geysen-8096753a6/"
     target="_blank"
     rel="noopener noreferrer"
+    aria-label="LinkedIn"
   >
-    <button title="linkedin" class="btn-reset icon">
+    <span class="btn-reset icon" aria-hidden="true">
       <Fragment set:html={linkedin} />
-    </button>
+    </span>
   </a>
   <a
     href="https://www.facebook.com/profile.php?id=61590629735678"
     target="_blank"
     rel="noopener noreferrer"
+    aria-label="Facebook"
   >
-    <button title="facebook" class="btn-reset icon">
+    <span class="btn-reset icon" aria-hidden="true">
       <Fragment set:html={facebook} />
-    </button>
+    </span>
   </a>
   <a
     href="https://www.instagram.com/bramgeysen/"
     target="_blank"
     rel="noopener noreferrer"
+    aria-label="Instagram"
   >
-    <button title="instagram" class="btn-reset icon">
+    <span class="btn-reset icon" aria-hidden="true">
       <Fragment set:html={instagram} />
-    </button>
+    </span>
   </a>
-  <a href="https://wa.me/32473523094" target="_blank" rel="noopener noreferrer">
-    <button title="whatsapp" class="btn-reset icon">
+  <a
+    href="https://wa.me/32473523094"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="WhatsApp"
+  >
+    <span class="btn-reset icon" aria-hidden="true">
       <Fragment set:html={whatsapp} />
-    </button>
+    </span>
   </a>
 </div>
 

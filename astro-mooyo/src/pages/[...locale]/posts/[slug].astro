@@ -17,23 +17,35 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 const translatePath = useTranslatedPath(lang);
 
-const POST_QUERY = `*[_type == "post" && slug.current == $slug][0]`;
-const post = await sanityClient.fetch<SanityDocument>(POST_QUERY, Astro.params);
+const POST_QUERY = `*[
+  _type == "post"
+  && slug.current == $slug
+  && language == $lang
+][0]`;
+const post = await sanityClient.fetch<SanityDocument>(POST_QUERY, {
+  slug: Astro.params.slug,
+  lang,
+});
 
 export async function getStaticPaths() {
   const SLUGS_QUERY = `*[_type == "post" && defined(slug.current)]{
-    "slug": slug.current
+    "slug": slug.current,
+    language
   }`;
 
-  const posts = await sanityClient.fetch<{ slug: string }[]>(SLUGS_QUERY);
+  const posts = await sanityClient.fetch<{ slug: string; language: string }[]>(
+    SLUGS_QUERY,
+  );
 
   return supportedLanguages.flatMap((l) => {
-    return posts.map((post) => ({
-      params: {
-        locale: l === "nl" ? undefined : l,
-        slug: post.slug,
-      },
-    }));
+    return posts
+      .filter((post) => post.language === l)
+      .map((post) => ({
+        params: {
+          locale: l === "nl" ? undefined : l,
+          slug: post.slug,
+        },
+      }));
   });
 }
 
@@ -68,7 +80,11 @@ const postImageUrl = post.image
     <div class="container back-white text-gray regular-font">
       {Array.isArray(post.body) && <PortableText value={post.body} />}
       <p class="date">
-        {t("post.published")}: {new Date(post.publishedAt).toLocaleDateString()}
+        {t("post.published")}:
+        {" "}
+        {new Date(post.publishedAt).toLocaleDateString(
+          lang === "nl" ? "nl-NL" : "en-BE",
+        )}
       </p>
     </div>
   </section>

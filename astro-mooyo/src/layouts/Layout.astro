@@ -17,19 +17,20 @@ import GoogleTMBody from "@components/head/GoogleTMBody.astro";
 interface Props {
   title: string;
   description?: string;
+  noindex?: boolean;
 }
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 const translatePath = useTranslatedPath(lang);
 const pathname = new URL(Astro.url).pathname;
-const { title, description = "Standaard omschrijving voor Mooyo" } =
+const { title, description = "Standaard omschrijving voor Mooyo", noindex } =
   Astro.props;
 ---
 
 <!doctype html>
 <html lang={lang}>
-  <Head title={title} description={description} />
+  <Head title={title} description={description} noindex={noindex} />
   <body>
     <GoogleTMBody />
     <header>
@@ -51,7 +52,7 @@ const { title, description = "Standaard omschrijving voor Mooyo" } =
       </a>
     </header>
     <Nav pathname={pathname} />
-    <main>
+    <main id="top">
       <slot />
     </main>
     <Footer />
